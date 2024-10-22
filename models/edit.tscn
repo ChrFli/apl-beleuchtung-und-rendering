@@ -18,7 +18,6 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ifc7l"]
 resource_name = "水泥"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("1_45p8i")
 emission_enabled = true
 emission_energy_multiplier = 0.0
@@ -58,7 +57,6 @@ shadow_mesh = SubResource("ArrayMesh_gjv3g")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nxuu2"]
 resource_name = "木紋"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("2_q2r5v")
 emission_enabled = true
 emission_energy_multiplier = 0.0
@@ -98,7 +96,6 @@ shadow_mesh = SubResource("ArrayMesh_pad7l")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e5nkl"]
 resource_name = "櫥櫃"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("3_gowd2")
 emission_enabled = true
 emission_energy_multiplier = 0.0
@@ -170,7 +167,6 @@ shadow_mesh = SubResource("ArrayMesh_4wryg")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6rptv"]
 resource_name = "電器"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("4_yr1gl")
 emission_enabled = true
 emission_energy_multiplier = 0.0
@@ -242,7 +238,6 @@ shadow_mesh = SubResource("ArrayMesh_e83im")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2phrh"]
 resource_name = "棉被"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("5_4kvny")
 emission_enabled = true
 emission_energy_multiplier = 0.0
@@ -550,7 +545,6 @@ shadow_mesh = SubResource("ArrayMesh_08f8w")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3e080"]
 resource_name = "磁磚"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("6_uynxk")
 emission_enabled = true
 emission_energy_multiplier = 0.0
@@ -590,7 +584,6 @@ shadow_mesh = SubResource("ArrayMesh_q8q4a")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t4ncp"]
 resource_name = "木地板"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("7_2swq5")
 emission_enabled = true
 emission_energy_multiplier = 0.0
@@ -694,7 +687,6 @@ shadow_mesh = SubResource("ArrayMesh_lds2q")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mokv3"]
 resource_name = "水龍頭"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("8_58xoq")
 emission_enabled = true
 emission_energy_multiplier = 0.0
@@ -734,7 +726,6 @@ shadow_mesh = SubResource("ArrayMesh_bukbp")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_grj4n"]
 resource_name = "陶瓷"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("9_nfqew")
 emission_enabled = true
 emission_energy_multiplier = 0.0
@@ -840,7 +831,6 @@ shadow_mesh = SubResource("ArrayMesh_s4n5u")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2466v"]
 resource_name = "洗衣機"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("10_jpehw")
 emission_enabled = true
 emission_energy_multiplier = 0.0
@@ -1888,7 +1878,6 @@ shadow_mesh = SubResource("ArrayMesh_322af")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cqvcb"]
 resource_name = "地毯"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("11_p1du6")
 emission_enabled = true
 emission_energy_multiplier = 0.0
@@ -2058,7 +2047,6 @@ shadow_mesh = SubResource("ArrayMesh_tr8lr")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lrvpw"]
 resource_name = "木板牆"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("12_ahkmq")
 emission_enabled = true
 emission_energy_multiplier = 0.0
@@ -3190,7 +3178,6 @@ shadow_mesh = SubResource("ArrayMesh_qybx6")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jsra8"]
 resource_name = "門"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("13_veu4q")
 emission_enabled = true
 emission_energy_multiplier = 0.0
@@ -3680,7 +3667,6 @@ shadow_mesh = SubResource("ArrayMesh_aisuk")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1lthe"]
 resource_name = "Material #42"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("14_b8ixn")
 emission_enabled = true
 emission_energy_multiplier = 0.0
@@ -4834,779 +4820,779 @@ _data = {
 [node name="House" type="Node3D"]
 
 [node name="FrontDoorSteps" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0.105)
+transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, 10.2314, -50.96, 420.176)
 mesh = SubResource("ArrayMesh_0ljik")
 skeleton = NodePath("")
 
 [node name="LivingRoomTable" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -2.05898e-07, 0.105, -1.24)
+transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, 10.2313, -5.26421, -165.164)
 mesh = SubResource("ArrayMesh_4qlwc")
 skeleton = NodePath("")
 
 [node name="KitchenFurniture" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0.945, 0.0749999, -0.9175)
+transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, 421.493, -18.3202, -24.8131)
 mesh = SubResource("ArrayMesh_g7023")
 skeleton = NodePath("")
 
-[node name="櫃子001" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -0.295, 0.06, -1.565)
+[node name="Dresser" type="MeshInstance3D" parent="."]
+transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, -118.152, -24.8481, -306.604)
 mesh = SubResource("ArrayMesh_cmi3e")
 skeleton = NodePath("")
 
-[node name="電話" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -0.275, 0.16, -1.565)
+[node name="Telephone" type="MeshInstance3D" parent="."]
+transform = Transform3D(826.797, 0, 0, 0, 0, 826.797, 0, -826.797, 0, -109.448, 18.6717, -306.604)
 mesh = SubResource("ArrayMesh_cmu8c")
 skeleton = NodePath("")
 
-[node name="樓梯（1樓 - 2樓）" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -0.49, 0.06, -0.645)
+[node name="Stairway" type="MeshInstance3D" parent="."]
+transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, -203.015, -24.8481, 93.7782)
 mesh = SubResource("ArrayMesh_x2f0e")
 skeleton = NodePath("")
 
-[node name="床組（雙人）" type="Node3D" parent="."]
-transform = Transform3D(0, 1, 0, 0, 0, 1, 1, 0, 0, -0.6, 0.1125, -1.48725)
+[node name="Bed" type="Node3D" parent="."]
+transform = Transform3D(0, 1, 0, 0, 0, 1, 1, 0, 0, -1.45164, 0.250443, -1.7921)
 
-[node name="枕頭002" type="MeshInstance3D" parent="床組（雙人）"]
-transform = Transform3D(-1, -1.50996e-07, 0, 1.50996e-07, -1, 0, 0, 0, 1, -0.0707501, 0.0270001, 0.00249999)
+[node name="Pillow02" type="MeshInstance3D" parent="Bed"]
+transform = Transform3D(-435.198, -6.57131e-05, 0, 6.57131e-05, -435.198, 0, 0, 0, 435.198, -303.647, -242.944, -0.310959)
 mesh = SubResource("ArrayMesh_ttfgk")
 skeleton = NodePath("")
 
-[node name="枕頭001" type="MeshInstance3D" parent="床組（雙人）"]
-transform = Transform3D(-1, -1.50996e-07, 0, 1.50996e-07, -1, 0, 0, 0, 1, -0.0707501, -0.0270001, 0.00249999)
+[node name="Pillow01" type="MeshInstance3D" parent="Bed"]
+transform = Transform3D(-435.198, -6.57131e-05, 0, 6.57131e-05, -435.198, 0, 0, 0, 435.198, -303.647, -266.444, -0.310959)
 mesh = SubResource("ArrayMesh_8jhpm")
 skeleton = NodePath("")
 
-[node name="床架（雙人）" type="MeshInstance3D" parent="床組（雙人）"]
-transform = Transform3D(-1, -1.50996e-07, 0, 1.50996e-07, -1, 0, 0, 0, 1, 0.00250004, 0, -0.0525)
+[node name="BedFrame" type="MeshInstance3D" parent="Bed"]
+transform = Transform3D(-435.198, -6.57131e-05, 0, 6.57131e-05, -435.198, 0, 0, 0, 435.198, -271.779, -255.098, -24.2469)
 mesh = SubResource("ArrayMesh_36ak3")
 skeleton = NodePath("")
 
-[node name="床單（雙人）" type="MeshInstance3D" parent="床組（雙人）"]
-transform = Transform3D(-1, -1.50996e-07, 0, 1.50996e-07, -1, 0, 0, 0, 1, 0.00250004, 0, -0.0175)
+[node name="Mattress" type="MeshInstance3D" parent="Bed"]
+transform = Transform3D(-435.198, -6.57131e-05, 0, 6.57131e-05, -435.198, 0, 0, 0, 435.198, -271.769, -254.694, -9.0149)
 mesh = SubResource("ArrayMesh_afdc3")
 skeleton = NodePath("")
 
-[node name="餐桌組" type="Node3D" parent="."]
+[node name="DiningTable" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0.595, 0.11, -1.09)
 
-[node name="餐桌" type="MeshInstance3D" parent="餐桌組"]
-transform = Transform3D(0, -1, 0, 1, 0, 0, 0, 0, 1, 0.025, 0, 0.02)
+[node name="Table" type="MeshInstance3D" parent="DiningTable"]
+transform = Transform3D(0, -435.198, 0, 435.198, 0, 0, 0, 0, 435.198, 279.459, 98.7947, 5.50573)
 mesh = SubResource("ArrayMesh_wjlrm")
 skeleton = NodePath("")
 
-[node name="餐桌椅001" type="MeshInstance3D" parent="餐桌組"]
-transform = Transform3D(-1.19209e-07, -1, -6.21725e-15, 1, -1.19209e-07, 2.98023e-08, -2.98023e-08, 0, 1, 0.0424999, 0.0650001, -0.00500001)
+[node name="Chair01" type="MeshInstance3D" parent="DiningTable"]
+transform = Transform3D(-5.18795e-05, -435.198, -2.70573e-12, 435.198, -5.18795e-05, 1.29699e-05, -1.29699e-05, 0, 435.198, 287.075, 127.083, -5.37421)
 mesh = SubResource("ArrayMesh_marou")
 skeleton = NodePath("")
 
-[node name="餐桌椅002" type="MeshInstance3D" parent="餐桌組"]
-transform = Transform3D(3.57628e-07, 1, 0, -1, 3.57628e-07, 0, 0, 0, 1, 0.0424999, -0.0650001, -0.00500001)
+[node name="Chair02" type="MeshInstance3D" parent="DiningTable"]
+transform = Transform3D(0.000155639, 435.198, 0, -435.198, 0.000155639, 0, 0, 0, 435.198, 287.075, 70.5068, -5.37421)
 mesh = SubResource("ArrayMesh_xsfja")
 skeleton = NodePath("")
 
-[node name="餐桌椅003" type="MeshInstance3D" parent="餐桌組"]
-transform = Transform3D(0, -1, 0, 1, 0, 0, 0, 0, 1, -0.0425, 0.0650001, -0.00500001)
+[node name="Chair03" type="MeshInstance3D" parent="DiningTable"]
+transform = Transform3D(0, -435.198, 0, 435.198, 0, 0, 0, 0, 435.198, 250.083, 127.083, -5.37421)
 mesh = SubResource("ArrayMesh_7hcgl")
 skeleton = NodePath("")
 
-[node name="餐桌椅004" type="MeshInstance3D" parent="餐桌組"]
-transform = Transform3D(9.53674e-07, 1, 0, -1, 9.53674e-07, 0, 0, 0, 1, -0.0425, -0.0650001, -0.00500001)
+[node name="Chair04" type="MeshInstance3D" parent="DiningTable"]
+transform = Transform3D(0.000415037, 435.198, 0, -435.198, 0.000415037, 0, 0, 0, 435.198, 250.083, 70.5068, -5.37421)
 mesh = SubResource("ArrayMesh_e2e5k")
 skeleton = NodePath("")
 
-[node name="地板" type="Node3D" parent="."]
+[node name="Ground_Floor" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0.03, -0.88)
 
-[node name="地板（磁磚）001" type="MeshInstance3D" parent="地板"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.42233e-08, -0.36, -0.03)
+[node name="BathroomFloor01" type="MeshInstance3D" parent="Ground_Floor"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 10.2314, -149.058, -50.99)
 mesh = SubResource("ArrayMesh_q72t0")
 skeleton = NodePath("")
 
-[node name="地板（木板）" type="MeshInstance3D" parent="地板"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.42233e-08, -0.36, -0.03)
+[node name="Floor" type="MeshInstance3D" parent="Ground_Floor"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 10.2314, -149.058, -50.99)
 mesh = SubResource("ArrayMesh_0wsrs")
 skeleton = NodePath("")
 
-[node name="地板（門口）" type="MeshInstance3D" parent="地板"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.42233e-08, -0.36, -0.03)
+[node name="FrontDoorGround" type="MeshInstance3D" parent="Ground_Floor"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 10.2314, -149.058, -50.99)
 mesh = SubResource("ArrayMesh_cbk1i")
 skeleton = NodePath("")
 
-[node name="地板（磁磚）002" type="MeshInstance3D" parent="地板"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.42233e-08, -0.36, -0.03)
+[node name="BathroomFloor02" type="MeshInstance3D" parent="Ground_Floor"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 10.2314, -149.058, -50.99)
 mesh = SubResource("ArrayMesh_u4rbj")
 skeleton = NodePath("")
 
-[node name="馬桶組001" type="Node3D" parent="."]
+[node name="Toilet01" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -1.03239, 0.1015, -0.2575)
 
-[node name="按鈕（馬桶）001" type="MeshInstance3D" parent="馬桶組001"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0291835, 0, 0.0385)
+[node name="ToiletButton01" type="MeshInstance3D" parent="Toilet01"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, -450.73, -262.675, 9.8662)
 mesh = SubResource("ArrayMesh_fktum")
 skeleton = NodePath("")
 
-[node name="馬桶001" type="MeshInstance3D" parent="馬桶組001"]
-transform = Transform3D(0.85, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0.0086578, 0, -0.0158928)
+[node name="ToiletContent01" type="MeshInstance3D" parent="Toilet01"]
+transform = Transform3D(369.918, 0, 0, 0, -5.18795e-05, -435.198, 0, 435.198, -5.18795e-05, -434.262, -262.675, -13.8054)
 mesh = SubResource("ArrayMesh_lae5k")
 skeleton = NodePath("")
 
-[node name="浴缸組" type="Node3D" parent="."]
+[node name="Bathtub" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -0.686437, 0.084, -0.325)
 
-[node name="水龍頭（浴缸）" type="MeshInstance3D" parent="浴缸組"]
-transform = Transform3D(0, -1, 0, 1, 0, 0, 0, 0, 1, -0.0642083, 0, 0.016)
+[node name="Faucet" type="MeshInstance3D" parent="Bathtub"]
+transform = Transform3D(0, -435.198, 0, 435.198, 0, 0, 0, 0, 435.198, -315.761, -233.366, -7.5242)
 mesh = SubResource("ArrayMesh_8qqo7")
 skeleton = NodePath("")
 
-[node name="浴缸" type="MeshInstance3D" parent="浴缸組"]
-transform = Transform3D(0, -1, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.024)
+[node name="Tub" type="MeshInstance3D" parent="Bathtub"]
+transform = Transform3D(0, -435.198, 0, 435.198, 0, 0, 0, 0, 435.198, -287.818, -233.366, -24.9321)
 mesh = SubResource("ArrayMesh_q6ure")
 skeleton = NodePath("")
 
-[node name="洗衣機組" type="Node3D" parent="."]
+[node name="WashingMachine" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -1.043, 0.095, -0.520097)
 
-[node name="洗衣機001" type="MeshInstance3D" parent="洗衣機組"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00200007, 0.0325, -0.035)
+[node name="Machine01" type="MeshInstance3D" parent="WashingMachine"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, -443.507, -134.512, -24.9431)
 mesh = SubResource("ArrayMesh_dkgrb")
 skeleton = NodePath("")
 
-[node name="洗衣機002" type="MeshInstance3D" parent="洗衣機組"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00200007, -0.0325, -0.035)
+[node name="Machine02" type="MeshInstance3D" parent="WashingMachine"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, -443.507, -162.8, -24.9431)
 mesh = SubResource("ArrayMesh_li4vh")
 skeleton = NodePath("")
 
-[node name="洗手盆組001" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -0.631437, 0.1085, -0.531042)
+[node name="Sink" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -0.612158, 0.125674, -0.609213)
 
-[node name="水龍頭（洗手盆）001" type="MeshInstance3D" parent="洗手盆組001"]
-transform = Transform3D(3.57628e-07, 1, 0, -1, 3.57628e-07, 0, 0, 0, 1, 0.0177353, 0, 0.0365)
+[node name="Faucet02" type="MeshInstance3D" parent="Sink"]
+transform = Transform3D(0.000155639, 435.198, 0, -435.198, 0.000155639, 0, 0, 0, 435.198, -256.119, -143.499, 12.1241)
 mesh = SubResource("ArrayMesh_4nvjp")
 skeleton = NodePath("")
 
-[node name="洗手盆001" type="MeshInstance3D" parent="洗手盆組001"]
-transform = Transform3D(3.57628e-07, 1, 0, -1, 3.57628e-07, 0, 0, 0, 1, 0.00750003, 0, -0.0485)
+[node name="Sinkmodel" type="MeshInstance3D" parent="Sink"]
+transform = Transform3D(0.000155639, 435.198, 0, -435.198, 0.000155639, 0, 0, 0, 435.198, -260.573, -143.499, -24.8677)
 mesh = SubResource("ArrayMesh_2r5wr")
 skeleton = NodePath("")
 
-[node name="床組（單人）" type="Node3D" parent="."]
+[node name="SingleBed" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0.96725, 0.107339, -0.65)
 
-[node name="枕頭003" type="MeshInstance3D" parent="床組（單人）"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0707501, 0, 0.00249999)
+[node name="Pillow03" type="MeshInstance3D" parent="SingleBed"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 460.999, -92.2522, -3.26563)
 mesh = SubResource("ArrayMesh_lpqes")
 skeleton = NodePath("")
 
-[node name="床架（單人）" type="MeshInstance3D" parent="床組（單人）"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00250004, 0, -0.0525)
+[node name="Frame02" type="MeshInstance3D" parent="SingleBed"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 429.121, -92.2522, -27.2015)
 mesh = SubResource("ArrayMesh_sprif")
 skeleton = NodePath("")
 
-[node name="床單（單人）" type="MeshInstance3D" parent="床組（單人）"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00250004, 0, -0.0175)
+[node name="Mattres02" type="MeshInstance3D" parent="SingleBed"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 429.121, -92.2522, -11.9696)
 mesh = SubResource("ArrayMesh_vn4ao")
 skeleton = NodePath("")
 
-[node name="電視組" type="Node3D" parent="."]
+[node name="TVStand" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 4.84467e-08, 0.117, -1.09)
 
-[node name="電視" type="MeshInstance3D" parent="電視組"]
-transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0.00499969, -0.00699998)
+[node name="TV" type="MeshInstance3D" parent="TVStand"]
+transform = Transform3D(348.158, 0, 0, 0, 348.158, 0, 0, 0, 348.158, 10.2315, 100.971, -3.20521)
 mesh = SubResource("ArrayMesh_emon8")
 skeleton = NodePath("")
 
-[node name="電視桌" type="MeshInstance3D" parent="電視組"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.54345e-07, 0.00999958, -0.012)
+[node name="Stand01" type="MeshInstance3D" parent="TVStand"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 10.2313, 103.147, -5.38121)
 mesh = SubResource("ArrayMesh_epmer")
 skeleton = NodePath("")
 
-[node name="花瓶組001" type="Node3D" parent="."]
+[node name="Nightstand01" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0.409, 0.1275, -0.846)
 
-[node name="茶几（小）001" type="MeshInstance3D" parent="花瓶組001"]
-transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.8, -3.39127e-07, -3.87573e-07, -0.0315)
+[node name="Stand01" type="MeshInstance3D" parent="Nightstand01"]
+transform = Transform3D(261.119, 0, 0, 0, 261.119, 0, 0, 0, 348.158, 187.818, -7.14968, -9.30849)
 mesh = SubResource("ArrayMesh_ioeqy")
 skeleton = NodePath("")
 
-[node name="花盆001" type="MeshInstance3D" parent="花瓶組001"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00225757, 1.93787e-07, -0.00349998)
+[node name="Vase01" type="MeshInstance3D" parent="Nightstand01"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 186.836, -7.14941, 2.87705)
 mesh = SubResource("ArrayMesh_2b7e2")
 skeleton = NodePath("")
 
-[node name="花瓶組002" type="Node3D" parent="."]
+[node name="Nightstand02" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -0.146, 0.1275, -0.846)
 
-[node name="茶几（小）002" type="MeshInstance3D" parent="花瓶組002"]
-transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.8, -2.42233e-07, -1.93787e-07, -0.0314999)
+[node name="Stand02" type="MeshInstance3D" parent="Nightstand02"]
+transform = Transform3D(261.119, 0, 0, 0, 261.119, 0, 0, 0, 348.158, -53.1615, -7.14957, -9.30844)
 mesh = SubResource("ArrayMesh_o7q6w")
 skeleton = NodePath("")
 
-[node name="花盆002" type="MeshInstance3D" parent="花瓶組002"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00225757, 1.93787e-07, -0.00349992)
+[node name="Vase02" type="MeshInstance3D" parent="Nightstand02"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, -54.1439, -7.14941, 2.87708)
 mesh = SubResource("ArrayMesh_qnby4")
 skeleton = NodePath("")
 
-[node name="箱子001" type="MeshInstance3D" parent="."]
-transform = Transform3D(-1.43051e-08, 0.06, 0, 0, 0, 0.06, 0.06, 1.43051e-08, 0, 0.8, 0.12, -0.8355)
+[node name="Chest01" type="MeshInstance3D" parent="."]
+transform = Transform3D(-6.22554e-06, 26.1119, 0, 0, 0, 26.1119, 26.1119, 6.22554e-06, 0, 358.389, 1.26375, 10.8731)
 mesh = SubResource("ArrayMesh_hioa4")
 skeleton = NodePath("")
 
-[node name="櫃子002" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0.995, 0.0599999, -0.845)
+[node name="Dresser0001" type="MeshInstance3D" parent="."]
+transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, 443.253, -24.8481, 6.73869)
 mesh = SubResource("ArrayMesh_3fh11")
 skeleton = NodePath("")
 
-[node name="衣櫃001" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.12, 1.81195e-08, 0, 0, 0, 0.12, 1.81195e-08, 0.12, 0, 0.386, 0.06, -0.73)
+[node name="Closet" type="MeshInstance3D" parent="."]
+transform = Transform3D(-52.2237, 7.88556e-06, 0, 0, 0, 52.2237, 7.88556e-06, 52.2237, 0, 178.218, -24.8481, 56.7864)
 mesh = SubResource("ArrayMesh_0bmd5")
 skeleton = NodePath("")
 
-[node name="馬桶組002" type="Node3D" parent="."]
+[node name="Toilet02" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0.422611, 0.1015, -0.285)
 
-[node name="馬桶002" type="MeshInstance3D" parent="馬桶組002"]
-transform = Transform3D(0.85, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0.0086578, 0, -0.0158928)
+[node name="ToiletModel02" type="MeshInstance3D" parent="Toilet02"]
+transform = Transform3D(369.918, 0, 0, 0, -5.18795e-05, -435.198, 0, 435.198, -5.18795e-05, 197.496, -250.734, -13.8054)
 mesh = SubResource("ArrayMesh_oot8p")
 skeleton = NodePath("")
 
-[node name="按鈕（馬桶）002" type="MeshInstance3D" parent="馬桶組002"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0291835, 0, 0.0385)
+[node name="ToiletButton02" type="MeshInstance3D" parent="Toilet02"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 181.028, -250.734, 9.8662)
 mesh = SubResource("ArrayMesh_vo4c6")
 skeleton = NodePath("")
 
-[node name="洗手盆組002" type="Node3D" parent="."]
+[node name="Sink02" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0.625, 0.1085, -0.285)
 
-[node name="洗手盆002" type="MeshInstance3D" parent="洗手盆組002"]
-transform = Transform3D(3.57628e-07, 1, 0, -1, 3.57628e-07, 0, 0, 0, 1, 0.00750003, 0, -0.0485)
+[node name="Sinkmode02" type="MeshInstance3D" parent="Sink02"]
+transform = Transform3D(0.000155639, 435.198, 0, -435.198, 0.000155639, 0, 0, 0, 435.198, 284.869, -250.734, -24.9566)
 mesh = SubResource("ArrayMesh_iu8hi")
 skeleton = NodePath("")
 
-[node name="水龍頭（洗手盆）002" type="MeshInstance3D" parent="洗手盆組002"]
-transform = Transform3D(3.57628e-07, 1, 0, -1, 3.57628e-07, 0, 0, 0, 1, 0.0177353, 0, 0.0365)
+[node name="Faucet02" type="MeshInstance3D" parent="Sink02"]
+transform = Transform3D(0.000155639, 435.198, 0, -435.198, 0.000155639, 0, 0, 0, 435.198, 289.323, -250.734, 12.0352)
 mesh = SubResource("ArrayMesh_8fti0")
 skeleton = NodePath("")
 
-[node name="書桌組001" type="Node3D" parent="."]
+[node name="Desk01" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 1, 0.11, -0.285)
 
-[node name="書桌001" type="MeshInstance3D" parent="書桌組001"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.025, -0.025, 0.0200001)
+[node name="DeskModel01" type="MeshInstance3D" parent="Desk01"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 455.309, -261.614, 5.50577)
 mesh = SubResource("ArrayMesh_rjy4s")
 skeleton = NodePath("")
 
-[node name="書桌椅001" type="MeshInstance3D" parent="書桌組001"]
-transform = Transform3D(-1, 5.6426e-07, 0, -5.6426e-07, -1, 0, 0, 0, 1, -0.0400001, 0, -0.00500001)
+[node name="DeskChair01" type="MeshInstance3D" parent="Desk01"]
+transform = Transform3D(-435.198, 0.000245565, 0, -0.000245565, -435.198, 0, 0, 0, 435.198, 427.021, -250.734, -5.37421)
 mesh = SubResource("ArrayMesh_fqy6x")
 skeleton = NodePath("")
 
-[node name="櫃子003" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, 1, 0, 0, 0, 1, 1, 0, 0, 1.045, 0.0599999, -1.49875)
+[node name="Dresser0003" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, 435.198, 0, 0, 0, 435.198, 435.198, 0, 0, 465.013, -24.8481, -277.772)
 mesh = SubResource("ArrayMesh_gf655")
 skeleton = NodePath("")
 
-[node name="櫃子004" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, 1, 0, 0, 0, 1, 1, 0, 0, -0.41, 0.06, -1.515)
+[node name="Dresser0004" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, 435.198, 0, 0, 0, 435.198, 435.198, 0, 0, -168.2, -24.8481, -284.844)
 mesh = SubResource("ArrayMesh_bv8sn")
 skeleton = NodePath("")
 
-[node name="書桌組002" type="Node3D" parent="."]
+[node name="Desk002" type="Node3D" parent="."]
 transform = Transform3D(-1, 1.50996e-07, 0, 0, 0, 1, 1.50996e-07, 1, 0, -1, 0.11, -1.49)
 
-[node name="書桌002" type="MeshInstance3D" parent="書桌組002"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.025, -0.025, 0.0200001)
+[node name="DeskModel02" type="MeshInstance3D" parent="Desk002"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 434.846, -283.354, 5.50577)
 mesh = SubResource("ArrayMesh_ev1tt")
 skeleton = NodePath("")
 
-[node name="書桌椅002" type="MeshInstance3D" parent="書桌組002"]
-transform = Transform3D(-1, 5.6426e-07, 0, -5.6426e-07, -1, 0, 0, 0, 1, -0.0400001, 9.68933e-08, -0.00500001)
+[node name="DeskChair02" type="MeshInstance3D" parent="Desk002"]
+transform = Transform3D(-435.198, 0.000245565, 0, -0.000245565, -435.198, 0, 0, 0, 435.198, 406.558, -272.474, -5.37421)
 mesh = SubResource("ArrayMesh_ych0e")
 skeleton = NodePath("")
 
-[node name="衣櫃002" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.12, 0, 0, 0, 0, 0.12, 0, -0.12, 0, -0.6112, 0.06, -0.76)
+[node name="Closet02" type="MeshInstance3D" parent="."]
+transform = Transform3D(52.2237, 0, 0, 0, 0, 52.2237, 0, -52.2237, 0, -255.761, -24.8481, 43.7305)
 mesh = SubResource("ArrayMesh_g883f")
 skeleton = NodePath("")
 
-[node name="書櫃（大）001" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.1, 6.03983e-09, 0, 0, 0, 0.1, 1.50996e-08, 0.04, 0, -1.06524, 0.246286, -1.18466)
+[node name="Shelve01" type="MeshInstance3D" parent="."]
+transform = Transform3D(-43.5198, 2.62852e-06, 0, 0, 0, 43.5198, 6.57131e-06, 17.4079, 0, -453.358, 56.2231, -141.08)
 mesh = SubResource("ArrayMesh_swede")
 skeleton = NodePath("")
 
-[node name="書櫃（大）002" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.1, 6.03983e-09, 0, 0, 0, 0.1, 1.50996e-08, 0.04, 0, -1.06524, 0.246286, -0.85534)
+[node name="Shelve02" type="MeshInstance3D" parent="."]
+transform = Transform3D(-43.5198, 2.62852e-06, 0, 0, 0, 43.5198, 6.57131e-06, 17.4079, 0, -453.358, 56.2231, 2.23875)
 mesh = SubResource("ArrayMesh_wb1xh")
 skeleton = NodePath("")
 
-[node name="櫃子005" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -0.275, 0.06, -0.845)
+[node name="Dresser0005" type="MeshInstance3D" parent="."]
+transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, -109.448, -24.8481, 6.73869)
 mesh = SubResource("ArrayMesh_olqio")
 skeleton = NodePath("")
 
-[node name="花瓶組003" type="Node3D" parent="."]
+[node name="Nightstand03" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0.766, 0.1275, -0.924001)
 
-[node name="茶几（小）003" type="MeshInstance3D" parent="花瓶組003"]
-transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.8, -2.42233e-07, -1.93787e-07, -0.0314999)
+[node name="Stand03" type="MeshInstance3D" parent="Nightstand03"]
+transform = Transform3D(261.119, 0, 0, 0, 261.119, 0, 0, 0, 348.158, 342.827, 26.7183, -9.30844)
 mesh = SubResource("ArrayMesh_qh5o5")
 skeleton = NodePath("")
 
-[node name="花盆003" type="MeshInstance3D" parent="花瓶組003"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00225757, 1.93787e-07, -0.00349992)
+[node name="Vase03" type="MeshInstance3D" parent="Nightstand03"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 341.844, 26.7184, 2.87708)
 mesh = SubResource("ArrayMesh_tpj2k")
 skeleton = NodePath("")
 
-[node name="地毯（大）" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 1.21117e-08, 0.06, -0.52)
+[node name="Carpet02" type="MeshInstance3D" parent="."]
+transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, 10.2314, -24.8481, 148.178)
 mesh = SubResource("ArrayMesh_acy22")
 skeleton = NodePath("")
 
-[node name="地毯（小）" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -0.7275, 0.06, -1.13)
+[node name="Carpet01" type="MeshInstance3D" parent="."]
+transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, -306.375, -24.8481, -117.293)
 mesh = SubResource("ArrayMesh_6v3m0")
 skeleton = NodePath("")
 
-[node name="花瓶組004" type="Node3D" parent="."]
+[node name="Nightstand04" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0.331, 0.1275, -1.551)
 
-[node name="花盆004" type="MeshInstance3D" parent="花瓶組004"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00225757, 1.93787e-07, -0.00349992)
+[node name="Vase04" type="MeshInstance3D" parent="Nightstand04"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 152.968, 298.96, 2.87708)
 mesh = SubResource("ArrayMesh_o702c")
 skeleton = NodePath("")
 
-[node name="茶几（小）004" type="MeshInstance3D" parent="花瓶組004"]
-transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.8, -2.42233e-07, -1.93787e-07, -0.0314999)
+[node name="Stand04" type="MeshInstance3D" parent="Nightstand04"]
+transform = Transform3D(261.119, 0, 0, 0, 261.119, 0, 0, 0, 348.158, 153.951, 298.96, -9.30844)
 mesh = SubResource("ArrayMesh_ssbij")
 skeleton = NodePath("")
 
-[node name="箱子002" type="MeshInstance3D" parent="."]
-transform = Transform3D(7.15256e-09, -0.06, 0, 0, 0, 0.06, -0.06, -1.07288e-08, 0, -0.49, 0.12, -0.9195)
+[node name="Chest02" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.11278e-06, -26.1119, 0, 0, 0, 26.1119, -26.1119, -4.66915e-06, 0, -203.015, 1.26375, -25.6835)
 mesh = SubResource("ArrayMesh_qkph6")
 skeleton = NodePath("")
 
-[node name="牆壁" type="Node3D" parent="."]
+[node name="AllWalls" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0.18, -0.88)
 
-[node name="內牆009" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(-1.19209e-07, -1.49012e-07, -1, -1, 0, 1.49012e-07, -2.98023e-08, 1, -1.19209e-07, 0.385, 0.3575, 0.0299999)
+[node name="Wall09" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(-5.18795e-05, -6.48497e-05, -435.198, -435.198, 0, 6.48497e-05, -1.29699e-05, 435.198, -5.18795e-05, 177.782, 163.196, 40.2515)
 mesh = SubResource("ArrayMesh_1ooi7")
 skeleton = NodePath("")
 
-[node name="內牆006" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.72, -0.00249985, -0.12)
+[node name="Wall06" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 323.574, 6.52527, -25.0281)
 mesh = SubResource("ArrayMesh_0j3i6")
 skeleton = NodePath("")
 
-[node name="內牆008" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9375, 0.52, -0.12)
+[node name="Wall08" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 418.229, 233.916, -25.0281)
 mesh = SubResource("ArrayMesh_vuink")
 skeleton = NodePath("")
 
-[node name="內牆007" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(-1.19209e-07, -1.49012e-07, -1, -1, 0, 1.49012e-07, -2.98023e-08, 1, -1.19209e-07, 0.82, 0.355, 0.0299999)
+[node name="Wall07" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(-5.18795e-05, -6.48497e-05, -435.198, -435.198, 0, 6.48497e-05, -1.29699e-05, 435.198, -5.18795e-05, 367.093, 162.108, 40.2515)
 mesh = SubResource("ArrayMesh_j6yr3")
 skeleton = NodePath("")
 
-[node name="外牆004" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0775, 0, -0.18)
+[node name="BigWall04" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 479.157, 7.61321, -51.14)
 mesh = SubResource("ArrayMesh_eufsu")
 skeleton = NodePath("")
 
-[node name="外牆002" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.71, -0.7175, -0.18)
+[node name="BigWall02" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 319.222, -304.641, -51.14)
 mesh = SubResource("ArrayMesh_ft4hv")
 skeleton = NodePath("")
 
-[node name="內牆005" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6525, -0.595, -0.12)
+[node name="Wall05" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 294.198, -251.329, -25.0281)
 mesh = SubResource("ArrayMesh_b0ehu")
 skeleton = NodePath("")
 
-[node name="內牆004" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0.615, -0.48, 0.03)
+[node name="Wall04" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(435.198, 0, 0, 0, -5.18795e-05, -435.198, 0, 435.198, -5.18795e-05, 277.878, -201.282, 40.2515)
 mesh = SubResource("ArrayMesh_bwp2n")
 skeleton = NodePath("")
 
-[node name="內牆002" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(-1.19209e-07, -1.49012e-07, -1, -1, 0, 1.49012e-07, -2.98023e-08, 1, -1.19209e-07, 0.385, -0.36, 0.03)
+[node name="Wall02" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(-5.18795e-05, -6.48497e-05, -435.198, -435.198, 0, 6.48497e-05, -1.29699e-05, 435.198, -5.18795e-05, 177.782, -149.058, 40.2515)
 mesh = SubResource("ArrayMesh_bn6hd")
 skeleton = NodePath("")
 
-[node name="外牆001" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 1.21117e-08, -0.71, 0.0299999)
+[node name="BigWall01" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(435.198, 0, 0, 0, -5.18795e-05, -435.198, 0, 435.198, -5.18795e-05, 10.2314, -301.377, 40.2515)
 mesh = SubResource("ArrayMesh_pxbtj")
 skeleton = NodePath("")
 
-[node name="外牆003" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.71, -0.7175, -0.18)
+[node name="BigWall03" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, -298.759, -304.641, -51.14)
 mesh = SubResource("ArrayMesh_edqmb")
 skeleton = NodePath("")
 
-[node name="內牆003" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3775, -0.235, -0.12)
+[node name="Wall03" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, -154.056, -94.6582, -25.0281)
 mesh = SubResource("ArrayMesh_3mk5k")
 skeleton = NodePath("")
 
-[node name="內牆001" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0.0199999, 0.00500028, 0.0299999)
+[node name="Wall01" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(435.198, 0, 0, 0, -5.18795e-05, -435.198, 0, 435.198, -5.18795e-05, 18.9353, 9.78933, 40.2515)
 mesh = SubResource("ArrayMesh_0vb8u")
 skeleton = NodePath("")
 
-[node name="外牆006" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00749971, 0.7175, -0.18)
+[node name="BigWall06" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 6.96758, 319.867, -51.14)
 mesh = SubResource("ArrayMesh_s35na")
 skeleton = NodePath("")
 
-[node name="內牆010" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(-1.19209e-07, -1.49012e-07, -1, -1, 0, 1.49012e-07, -2.98023e-08, 1, -1.19209e-07, -0.37, 0.3575, 0.03)
+[node name="Wall10" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(-5.18795e-05, -6.48497e-05, -435.198, -435.198, 0, 6.48497e-05, -1.29699e-05, 435.198, -5.18795e-05, -150.792, 163.196, 40.2515)
 mesh = SubResource("ArrayMesh_8ik3r")
 skeleton = NodePath("")
 
-[node name="內牆011" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.49, -0.00249985, -0.12)
+[node name="Wall11" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, -203.015, 6.52527, -25.0281)
 mesh = SubResource("ArrayMesh_y2lwn")
 skeleton = NodePath("")
 
-[node name="內牆012" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6025, -0.36, -0.12)
+[node name="Wall12" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, -251.975, -149.058, -25.0281)
 mesh = SubResource("ArrayMesh_1nms2")
 skeleton = NodePath("")
 
-[node name="內牆013" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -0.84, -0.23, 0.03)
+[node name="Wall13" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(435.198, 0, 0, 0, -5.18795e-05, -435.198, 0, 435.198, -5.18795e-05, -355.334, -92.4822, 40.2515)
 mesh = SubResource("ArrayMesh_8c53k")
 skeleton = NodePath("")
 
-[node name="外牆005" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0775, -0.00749993, -0.18)
+[node name="BigWall05" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, -458.694, 4.34926, -51.14)
 mesh = SubResource("ArrayMesh_jpgfq")
 skeleton = NodePath("")
 
-[node name="磁磚001" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.71, -0.7175, -0.18)
+[node name="BathroomWall01" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, -298.759, -304.641, -51.14)
 mesh = SubResource("ArrayMesh_3570l")
 skeleton = NodePath("")
 
-[node name="磁磚004" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6025, -0.36, -0.12)
+[node name="BathroomWall04" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, -251.975, -149.058, -25.0281)
 mesh = SubResource("ArrayMesh_tia3b")
 skeleton = NodePath("")
 
-[node name="磁磚002" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0775, -0.00749993, -0.18)
+[node name="BathroomWall02" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, -458.694, 4.34926, -51.14)
 mesh = SubResource("ArrayMesh_b6hf6")
 skeleton = NodePath("")
 
-[node name="磁磚003" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -0.84, -0.23, 0.03)
+[node name="BathroomWall03" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(435.198, 0, 0, 0, -5.18795e-05, -435.198, 0, 435.198, -5.18795e-05, -355.334, -92.4822, 40.2515)
 mesh = SubResource("ArrayMesh_h0j1m")
 skeleton = NodePath("")
 
-[node name="磁磚008" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(-1.19209e-07, -1.49012e-07, -1, -1, 0, 1.49012e-07, -2.98023e-08, 1, -1.19209e-07, 0.385, -0.36, 0.03)
+[node name="BathroomWall08" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(-5.18795e-05, -6.48497e-05, -435.198, -435.198, 0, 6.48497e-05, -1.29699e-05, 435.198, -5.18795e-05, 177.782, -149.058, 40.2515)
 mesh = SubResource("ArrayMesh_s7tyk")
 skeleton = NodePath("")
 
-[node name="磁磚007" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0.615, -0.48, 0.03)
+[node name="BathroomWall07" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(435.198, 0, 0, 0, -5.18795e-05, -435.198, 0, 435.198, -5.18795e-05, 277.878, -201.282, 40.2515)
 mesh = SubResource("ArrayMesh_lvhiy")
 skeleton = NodePath("")
 
-[node name="磁磚006" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6525, -0.595, -0.12)
+[node name="BathroomWall06" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 294.198, -251.329, -25.0281)
 mesh = SubResource("ArrayMesh_hbnuw")
 skeleton = NodePath("")
 
-[node name="磁磚005" type="MeshInstance3D" parent="牆壁"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.71, -0.7175, -0.18)
+[node name="BathroomWall05" type="MeshInstance3D" parent="AllWalls"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 319.222, -304.641, -51.14)
 mesh = SubResource("ArrayMesh_1ds6q")
 skeleton = NodePath("")
 
-[node name="書櫃（小）001" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, -0.03, 0, 0, 0, 0.06, -0.1, 0, 0, 0.246505, 0.171771, -0.865243)
+[node name="SmallShelve01" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, -13.0559, 0, 0, 0, 26.1119, -43.5198, 0, 0, 117.51, 23.7944, -2.07101)
 mesh = SubResource("ArrayMesh_i113u")
 skeleton = NodePath("")
 
-[node name="書櫃（小）003" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.1, 4.52987e-09, 0, 0, 0, 0.06, 1.50996e-08, 0.03, 0, 0.389758, 0.171771, -1.46651)
+[node name="SmallShelve03" type="MeshInstance3D" parent="."]
+transform = Transform3D(-43.5198, 1.97139e-06, 0, 0, 0, 26.1119, 6.57131e-06, 13.0559, 0, 179.853, 23.7944, -263.741)
 mesh = SubResource("ArrayMesh_mpgx1")
 skeleton = NodePath("")
 
-[node name="書櫃（小）002" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.19209e-08, 0.03, 0, 0, 0, 0.06, 0.1, -5.36442e-09, 0, 0.246505, 0.171771, -0.889758)
+[node name="SmallShelve02" type="MeshInstance3D" parent="."]
+transform = Transform3D(5.18795e-06, 13.0559, 0, 0, 0, 26.1119, 43.5198, -2.33458e-06, 0, 117.51, 23.7944, -12.7399)
 mesh = SubResource("ArrayMesh_vspls")
 skeleton = NodePath("")
 
-[node name="古董陶瓷002" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.5, 0, 0, 0, 0, 2.5, 0, -1.5, 0, -0.32631, 0.0586644, -0.933728)
+[node name="BigVase02" type="MeshInstance3D" parent="."]
+transform = Transform3D(652.796, 0, 0, 0, 0, 1087.99, 0, -652.796, 0, -131.778, -25.4293, -31.8755)
 mesh = SubResource("ArrayMesh_y6po6")
 skeleton = NodePath("")
 
-[node name="古董陶瓷001" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.5, 0, 0, 0, 0, 2.5, 0, -1.5, 0, 0.319537, 0.0586644, -0.218727)
+[node name="BigVase01" type="MeshInstance3D" parent="."]
+transform = Transform3D(652.796, 0, 0, 0, 0, 1087.99, 0, -652.796, 0, 149.293, -25.4293, 279.291)
 mesh = SubResource("ArrayMesh_jdhjf")
 skeleton = NodePath("")
 
-[node name="沙發（小）001" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, 1, 0, 0, 0, 1, 1, 0, 0, 0.155, 0.0600002, -1.24)
+[node name="WhiteChair01" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, 435.198, 0, 0, 0, 435.198, 435.198, 0, 0, 77.6871, -24.848, -165.164)
 mesh = SubResource("ArrayMesh_jcxqb")
 skeleton = NodePath("")
 
-[node name="沙發（大）001" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -9.68933e-08, 0.0600001, -1.385)
+[node name="WhiteCouch01" type="MeshInstance3D" parent="."]
+transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, 10.2314, -24.8481, -228.268)
 mesh = SubResource("ArrayMesh_hi1b6")
 skeleton = NodePath("")
 
-[node name="沙發（小）002" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, -1, 0, 0, 0, 1, -1, 0, 0, -0.155, 0.0600002, -1.24)
+[node name="WhiteChair02" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -57.2242, -24.848, -165.164)
 mesh = SubResource("ArrayMesh_bsd0f")
 skeleton = NodePath("")
 
-[node name="門002" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0.515, 0.06, -0.3975)
+[node name="Door02" type="MeshInstance3D" parent="."]
+transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, 234.358, -24.8481, 201.49)
 mesh = SubResource("ArrayMesh_4efr8")
 skeleton = NodePath("")
 
-[node name="門001" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 1.51396e-08, 0.06, -0.1675)
+[node name="Door01" type="MeshInstance3D" parent="."]
+transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, 10.2314, -24.8481, 301.585)
 mesh = SubResource("ArrayMesh_pn2dq")
 skeleton = NodePath("")
 
-[node name="門003" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, -1, 0, 0, 0, 1, -1, 0, 0, -0.3825, 0.0599999, -1.2375)
+[node name="Door03" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -156.232, -24.8481, -164.076)
 mesh = SubResource("ArrayMesh_gfjl2")
 skeleton = NodePath("")
 
-[node name="門004" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -0.84, 0.06, -0.6475)
+[node name="Door04" type="MeshInstance3D" parent="."]
+transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, -355.334, -24.8481, 92.6902)
 mesh = SubResource("ArrayMesh_jfwq3")
 skeleton = NodePath("")
 
-[node name="冰箱" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.11811, 0, 0, 0, 0, 0.11811, 0, -0.11811, 0, 0.811377, 0.193464, -1.35411)
+[node name="Fridge" type="MeshInstance3D" parent="."]
+transform = Transform3D(51.4012, 0, 0, 0, 0, 51.4012, 0, -51.4012, 0, 363.341, 33.2351, -214.825)
 mesh = SubResource("ArrayMesh_arphm")
 skeleton = NodePath("")
 
-[node name="門005" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, -1, 0, 0, 0, 1, -1, 0, 0, 0.3725, 0.06, -0.52)
+[node name="Door05" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, 172.343, -24.8481, 148.178)
 mesh = SubResource("ArrayMesh_37moc")
 skeleton = NodePath("")
 
-[node name="爐子" type="Node3D" parent="."]
+[node name="Stove" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0.85125, 0.151, -1.09)
 
-[node name="爐台" type="MeshInstance3D" parent="爐子"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.006)
+[node name="Stovemodel" type="MeshInstance3D" parent="Stove"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 379.842, 98.7947, 11.9927)
 mesh = SubResource("ArrayMesh_ujb51")
 skeleton = NodePath("")
 
-[node name="爐子開關001" type="MeshInstance3D" parent="爐子"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.01875, -0.00749993, -0.004)
+[node name="StoveButton01" type="MeshInstance3D" parent="Stove"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 388.002, 95.5308, 12.8631)
 mesh = SubResource("ArrayMesh_828q6")
 skeleton = NodePath("")
 
-[node name="爐子開關002" type="MeshInstance3D" parent="爐子"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.01875, 0.00749993, -0.004)
+[node name="StoveButton02" type="MeshInstance3D" parent="Stove"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 388.002, 102.059, 12.8631)
 mesh = SubResource("ArrayMesh_efr6m")
 skeleton = NodePath("")
 
-[node name="爐架001" type="MeshInstance3D" parent="爐子"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00125012, -0.0199999, -0.002)
+[node name="StovePlace" type="MeshInstance3D" parent="Stove"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 379.298, 90.0908, 13.7335)
 mesh = SubResource("ArrayMesh_ftbfv")
 skeleton = NodePath("")
 
-[node name="爐架002" type="MeshInstance3D" parent="爐子"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00125012, 0.0199999, -0.002)
+[node name="StovePlace02" type="MeshInstance3D" parent="Stove"]
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 379.298, 107.499, 13.7335)
 mesh = SubResource("ArrayMesh_5bvlj")
 skeleton = NodePath("")
 
-[node name="門006" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 3.02792e-09, 0.0599999, -0.8775)
+[node name="Door06" type="MeshInstance3D" parent="."]
+transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, 10.2314, -24.8481, -7.40522)
 mesh = SubResource("ArrayMesh_os55j")
 skeleton = NodePath("")
 
-[node name="球棒" type="MeshInstance3D" parent="."]
-transform = Transform3D(5.96046e-08, 0.422618, 0.906308, -1, 0, 8.9407e-08, 0, -0.906308, 0.422618, -0.341247, 0.165, -0.865)
+[node name="Baseballbat" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.59398e-05, 183.922, 394.423, -435.198, 0, 3.89097e-05, 0, -394.423, 183.922, -138.278, 20.8476, -1.96526)
 mesh = SubResource("ArrayMesh_ro165")
 skeleton = NodePath("")
 
-[node name="鐵撬" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.866025, -0.5, 0, 0, 0, 1, -0.5, -0.866026, 0, -1.02, 0.06, -0.615)
+[node name="Crowbar" type="MeshInstance3D" parent="."]
+transform = Transform3D(376.892, -217.599, 0, 0, 0, 435.198, -217.599, -376.892, 0, -433.67, -24.8481, 106.834)
 mesh = SubResource("ArrayMesh_gy2ay")
 skeleton = NodePath("")
 
-[node name="鑰匙" type="MeshInstance3D" parent="."]
-transform = Transform3D(2.12132, 2.12132, 0, 0, 0, 3, 2.12132, -2.12132, 0, -1.03, 0.179502, -0.8)
+[node name="MysteryBox" type="MeshInstance3D" parent="."]
+transform = Transform3D(923.193, 923.193, 0, 0, 0, 1305.59, 923.193, -923.193, 0, -438.022, 27.1589, 26.3226)
 mesh = SubResource("ArrayMesh_yhjmc")
 skeleton = NodePath("")
 
-[node name="書001" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, -1, 0, 0, 0, 1, -1, 0, 0, -1.05048, 0.179504, -1.12753)
+[node name="Book001" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -446.935, 27.1597, -116.218)
 mesh = SubResource("ArrayMesh_61fgm")
 skeleton = NodePath("")
 
-[node name="文件001" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.422618, 0.906308, 0, 0, 0, 1, 0.906308, 0.422618, 0, 1.02816, 0.135, -0.227263)
+[node name="TopBook01" type="MeshInstance3D" parent="."]
+transform = Transform3D(-183.922, 394.423, 0, 0, 0, 435.198, 394.423, 183.922, 0, 457.684, 7.79172, 275.576)
 mesh = SubResource("ArrayMesh_uj441")
 skeleton = NodePath("")
 
-[node name="掛畫（A）001" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0.585, 0.18, -0.865)
+[node name="Portrait (A) 01" type="MeshInstance3D" parent="."]
+transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, 264.822, 27.3756, -1.96526)
 mesh = SubResource("ArrayMesh_qmjuy")
 skeleton = NodePath("")
 
-[node name="掛畫（B）001" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, 0, 1, -1, 0, 0, 0, -1, 0, -0.0599997, 0.25, -1.585)
+[node name="Portrait (B) 01" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, 0, 435.198, -435.198, 0, 0, 0, -435.198, 0, -15.8803, 57.8394, -315.307)
 mesh = SubResource("ArrayMesh_gbfoj")
 skeleton = NodePath("")
 
-[node name="保險箱" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, -1, 0, 0, 0, 1, -1, 0, 0, 0.695, 0.0599999, -0.285)
+[node name="Safe" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, 312.694, -24.8481, 250.449)
 mesh = SubResource("ArrayMesh_4vaxl")
 skeleton = NodePath("")
 
-[node name="掛畫（A）002" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -0.8, 0.18, -1.585)
+[node name="Portrait (A) 02" type="MeshInstance3D" parent="."]
+transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, -337.927, 27.3756, -315.307)
 mesh = SubResource("ArrayMesh_hair7")
 skeleton = NodePath("")
 
-[node name="掛畫（B）002" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, 0, 1, -1, 0, 0, 0, -1, 0, 0.9425, 0.25, -0.865)
+[node name="Portrait (B) 02" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, 0, 435.198, -435.198, 0, 0, 0, -435.198, 0, 420.405, 57.8394, -1.96526)
 mesh = SubResource("ArrayMesh_ard1m")
 skeleton = NodePath("")
 
-[node name="掛畫（A）003" type="MeshInstance3D" parent="."]
-transform = Transform3D(5.96046e-08, -1, 0, 0, 0, 1, -1, -8.9407e-08, 0, -0.365, 0.2, -0.645)
+[node name="Portrait (A) 03" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.59398e-05, -435.198, 0, 0, 0, 435.198, -435.198, -3.89097e-05, 0, -148.616, 36.0796, 93.7782)
 mesh = SubResource("ArrayMesh_ll0gx")
 skeleton = NodePath("")
 
-[node name="文件002" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.965926, -0.258819, 0, 0, 0, 1, -0.258819, -0.965926, 0, 0.155, 0.175986, -0.84)
+[node name="TopBook02" type="MeshInstance3D" parent="."]
+transform = Transform3D(420.369, -112.637, 0, 0, 0, 435.198, -112.637, -420.369, 0, 77.6871, 25.6287, 8.9147)
 mesh = SubResource("ArrayMesh_5natw")
 skeleton = NodePath("")
 
-[node name="文件003" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.422618, -0.906308, 0, 0, 0, 1, -0.906308, 0.422618, 0, -1.04, 0.253316, -0.72)
+[node name="TopBook03" type="MeshInstance3D" parent="."]
+transform = Transform3D(-183.922, -394.423, 0, 0, 0, 435.198, -394.423, 183.922, 0, -442.374, 59.2825, 61.1384)
 mesh = SubResource("ArrayMesh_3rrc7")
 skeleton = NodePath("")
 
-[node name="書002" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, -1, 0, 0, 0, 1, -1, 0, 0, -1.05048, 0.179504, -0.910481)
+[node name="Book002" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -446.935, 27.1597, -21.7585)
 mesh = SubResource("ArrayMesh_rpykl")
 skeleton = NodePath("")
 
-[node name="書003" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, -1, 0, 0, 0, 1, -1, 0, 0, -1.05048, 0.179504, -0.860481)
+[node name="Book003" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -446.935, 27.1597, 0.00139219)
 mesh = SubResource("ArrayMesh_b7lud")
 skeleton = NodePath("")
 
-[node name="書004" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, -1, 0, 0, 0, 1, -1, 0, 0, -1.05048, 0.179504, -0.964511)
+[node name="Book004" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -446.935, 27.1597, -45.2722)
 mesh = SubResource("ArrayMesh_q3p5g")
 skeleton = NodePath("")
 
-[node name="書005" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, -1, 0, 0, 0, 1, -1, 0, 0, -1.05048, 0.179504, -0.718905)
+[node name="Book005" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -446.935, 27.1597, 61.6149)
 mesh = SubResource("ArrayMesh_xqy2h")
 skeleton = NodePath("")
 
-[node name="書006" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, -1, 0, 0, 0, 1, -1, 0, 0, -1.05048, 0.179504, -1.29383)
+[node name="Book006" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -446.935, 27.1597, -188.591)
 mesh = SubResource("ArrayMesh_4vr8m")
 skeleton = NodePath("")
 
-[node name="書007" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, -1, 0, 0, 0, 1, -1, 0, 0, -1.06, 0.135, -1.565)
+[node name="Book007" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -451.078, 7.79172, -306.604)
 mesh = SubResource("ArrayMesh_5r53f")
 skeleton = NodePath("")
 
-[node name="書008" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, -1, 0, 0, 0, 1, -1, 0, 0, -1.06, 0.135, -1.515)
+[node name="Book008" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -451.078, 7.79172, -284.844)
 mesh = SubResource("ArrayMesh_ar3ls")
 skeleton = NodePath("")
 
-[node name="書009" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, -1, 0, 0, 0, 1, -1, 0, 0, 0.404516, 0.131702, -1.56258)
+[node name="Book009" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, 186.276, 6.35644, -305.55)
 mesh = SubResource("ArrayMesh_etkdr")
 skeleton = NodePath("")
 
-[node name="書010" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, -1, 0, 0, 0, 1, -1, 0, 0, 0.404516, 0.131702, -1.42991)
+[node name="Book010" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, 186.276, 6.35644, -247.813)
 mesh = SubResource("ArrayMesh_t3ask")
 skeleton = NodePath("")
 
-[node name="書011" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, -1, 0, 0, 0, 1, -1, 0, 0, 0.404516, 0.131702, -1.47991)
+[node name="Book011" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, 186.276, 6.35644, -269.573)
 mesh = SubResource("ArrayMesh_c4sdh")
 skeleton = NodePath("")
 
-[node name="書012" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, -1, 0, 0, 0, 1, -1, 0, 0, -1.06, 0.253315, -1.27109)
+[node name="Book012" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -451.078, 59.2821, -178.695)
 mesh = SubResource("ArrayMesh_tfory")
 skeleton = NodePath("")
 
-[node name="書013" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, -1, 0, 0, 0, 1, -1, 0, 0, -1.06, 0.253315, -1.32109)
+[node name="Book013" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -451.078, 59.2821, -200.454)
 mesh = SubResource("ArrayMesh_uqaoj")
 skeleton = NodePath("")
 
-[node name="書014" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, -1, 0, 0, 0, 1, -1, 0, 0, -1.06, 0.253315, -0.995)
+[node name="Book014" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -451.078, 59.2821, -58.5409)
 mesh = SubResource("ArrayMesh_cho8n")
 skeleton = NodePath("")
 
-[node name="書015" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, -1, 0, 0, 0, 1, -1, 0, 0, -1.06, 0.253315, -0.945)
+[node name="Book015" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -451.078, 59.2821, -36.7811)
 mesh = SubResource("ArrayMesh_18dhc")
 skeleton = NodePath("")
 
-[node name="書016" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, -1, 0, 0, 0, 1, -1, 0, 0, -1.06, 0.253315, -0.884999)
+[node name="Book016" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -451.078, 59.2821, -10.6688)
 mesh = SubResource("ArrayMesh_hww1v")
 skeleton = NodePath("")
 
-[node name="書017" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, 1, 0, 0, 0, 1, 1, 0, 0, 1.06, 0.135, -0.35)
+[node name="Book017" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, 435.198, 0, 0, 0, 435.198, 435.198, 0, 0, 471.541, 7.79172, 222.161)
 mesh = SubResource("ArrayMesh_4y4m0")
 skeleton = NodePath("")
 
-[node name="書018" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, 1, 0, 0, 0, 1, 1, 0, 0, 1.06, 0.135, -0.3)
+[node name="Book018" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, 435.198, 0, 0, 0, 435.198, 435.198, 0, 0, 471.541, 7.79172, 243.921)
 mesh = SubResource("ArrayMesh_p5owv")
 skeleton = NodePath("")
 
-[node name="書019" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, -3.49691e-07, 0, 0, 0, 1, -3.49691e-07, -1, 0, 0.345, 0.175989, -0.86)
+[node name="Book019" type="MeshInstance3D" parent="."]
+transform = Transform3D(435.198, -0.000152185, 0, 0, 0, 435.198, -0.000152185, -435.198, 0, 160.375, 25.63, 0.210728)
 mesh = SubResource("ArrayMesh_ikh4m")
 skeleton = NodePath("")
 
-[node name="書020" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, -3.49691e-07, 0, 0, 0, 1, -3.49691e-07, -1, 0, 0.209908, 0.131702, -0.850485)
+[node name="Book020" type="MeshInstance3D" parent="."]
+transform = Transform3D(435.198, -0.000152185, 0, 0, 0, 435.198, -0.000152185, -435.198, 0, 101.583, 6.35644, 4.35163)
 mesh = SubResource("ArrayMesh_lmebu")
 skeleton = NodePath("")
 
-[node name="書021" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, -3.49691e-07, 0, 0, 0, 1, -3.49691e-07, -1, 0, 0.259908, 0.131702, -0.850485)
+[node name="Book021" type="MeshInstance3D" parent="."]
+transform = Transform3D(435.198, -0.000152185, 0, 0, 0, 435.198, -0.000152185, -435.198, 0, 123.343, 6.35644, 4.35163)
 mesh = SubResource("ArrayMesh_02tvh")
 skeleton = NodePath("")
 
-[node name="文件004" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.422618, 0.906308, 0, 0, 0, 1, 0.906308, 0.422618, 0, 0.15, 0.175989, -0.91)
+[node name="TopBook04" type="MeshInstance3D" parent="."]
+transform = Transform3D(-183.922, 394.423, 0, 0, 0, 435.198, 394.423, 183.922, 0, 75.5111, 25.63, -21.5492)
 mesh = SubResource("ArrayMesh_72pqa")
 skeleton = NodePath("")
 
-[node name="文件005" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.906308, 0.422618, 0, 0, 0, 1, 0.422618, 0.906308, 0, 0.15, 0.185989, -0.91)
+[node name="TopBook05" type="MeshInstance3D" parent="."]
+transform = Transform3D(-394.423, 183.922, 0, 0, 0, 435.198, 183.922, 394.423, 0, 75.5111, 29.982, -21.5492)
 mesh = SubResource("ArrayMesh_unsvs")
 skeleton = NodePath("")
 
-[node name="書022" type="MeshInstance3D" parent="."]
-transform = Transform3D(-1, 3.25841e-07, 0, 0, 0, 1, 3.25841e-07, 1, 0, 0.342582, 0.131702, -0.904516)
+[node name="Book022" type="MeshInstance3D" parent="."]
+transform = Transform3D(-435.198, 0.000141805, 0, 0, 0, 435.198, 0.000141805, 435.198, 0, 159.322, 6.35644, -19.1625)
 mesh = SubResource("ArrayMesh_v0au6")
 skeleton = NodePath("")
 
-[node name="書023" type="MeshInstance3D" parent="."]
-transform = Transform3D(-1, 3.25841e-07, 0, 0, 0, 1, 3.25841e-07, 1, 0, 0.2114, 0.131702, -0.904516)
+[node name="Book023" type="MeshInstance3D" parent="."]
+transform = Transform3D(-435.198, 0.000141805, 0, 0, 0, 435.198, 0.000141805, 435.198, 0, 102.232, 6.35644, -19.1625)
 mesh = SubResource("ArrayMesh_k3aty")
 skeleton = NodePath("")
 
