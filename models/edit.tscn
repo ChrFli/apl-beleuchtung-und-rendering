@@ -4913,6 +4913,8 @@ transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 10.2314, -1
 mesh = SubResource("ArrayMesh_0wsrs")
 skeleton = NodePath("")
 
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground_Floor/Floor"]
+
 [node name="FrontDoorGround" type="MeshInstance3D" parent="Ground_Floor"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 10.2314, -149.058, -50.99)
 mesh = SubResource("ArrayMesh_cbk1i")

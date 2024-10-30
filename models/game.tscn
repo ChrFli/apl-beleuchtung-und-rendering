@@ -7,7 +7,7 @@
 [node name="Game" type="Node3D"]
 
 [node name="House" parent="." instance=ExtResource("1_poi54")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96.5653, 86.7489, -218.489)
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 96.5653, 86.7489, -218.489)
 
 [node name="CharDummy" parent="." instance=ExtResource("2_kukve")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 85.2297, 153.722, -68.3005)
@@ -16,8 +16,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 85.2297, 153.722, -68.3005)
 transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 33.7402, 0)
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.736097, 0.676876, 0, -0.676876, 0.736097, 94.7265, 275.604, 101.768)
-fov = 71.2
+transform = Transform3D(0.99946, -0.031383, 0.00975068, 0.0240312, 0.900335, 0.434533, -0.0224159, -0.434064, 0.900603, 93.567, 233.527, 95.8453)
+fov = 14.0625
 near = 0.056
 far = 412.81
 
