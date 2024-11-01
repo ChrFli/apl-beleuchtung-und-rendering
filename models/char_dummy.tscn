@@ -14,6 +14,12 @@ height = 1.7
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.90194, 0)
 script = ExtResource("1_20cs2")
 
+[node name="Head" type="Node3D" parent="."]
+transform = Transform3D(10, 0, -1.13687e-13, 0, 10, 0, 1.13687e-13, 0, 10, 0, -1, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Head"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.072802, 1.81768, 2.42707)
+
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, -1, 0)
 shape = SubResource("BoxShape3D_clfvh")
@@ -23,5 +29,9 @@ transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, -0.838045, 0)
 mesh = SubResource("SphereMesh_haavp")
 
 [node name="RayCast3D" type="RayCast3D" parent="."]
-transform = Transform3D(15, 0, 0, 0, -6.55671e-07, -20, 0, 15, -8.74228e-07, 0, 2.98244, -6.31685)
+transform = Transform3D(200, 0, 0, 0, -6.55671e-07, -20, 0, 15, -8.74228e-07, 0, 2.98244, -6.31685)
+script = ExtResource("2_bn8t2")
+
+[node name="RayCast3D2" type="RayCast3D" parent="."]
+transform = Transform3D(-8.28097, 14.9871, -5.68434e-14, 8.73478e-06, 2.7148e-08, -20, -199.828, -0.621073, -8.74228e-07, 0, 2.98244, 0.252459)
 script = ExtResource("2_bn8t2")

@@ -1,21 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://cs0j2mkyn65g1"]
+[gd_scene load_steps=5 format=3 uid="uid://cs0j2mkyn65g1"]
 
 [ext_resource type="PackedScene" uid="uid://drxna0qrhrswo" path="res://models/door.tscn" id="1_22fkl"]
 [ext_resource type="PackedScene" uid="uid://chtutpgwaitak" path="res://models/char_dummy.tscn" id="2_70los"]
-
-[sub_resource type="GDScript" id="GDScript_s4tmn"]
-script/source = "extends Camera3D
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-"
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_iquhi"]
 size = Vector3(1, 0.942383, 1)
@@ -27,10 +13,6 @@ size = Vector3(1, 0.942383, 1)
 [node name="CharDummy" parent="." instance=ExtResource("2_70los")]
 transform = Transform3D(0.08, 0, 0, 0, 0.08, 0, 0, 0, 0.08, -0.0631066, 0.90268, 1.22029)
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0504484, 2.84146, 4.1624)
-script = SubResource("GDScript_s4tmn")
-
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
@@ -38,7 +20,7 @@ transform = Transform3D(10, 0, 0, 0, 0.5, 0, 0, 0, 10, 0, -0.231831, 0.00665569)
 shape = SubResource("BoxShape3D_iquhi")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
-transform = Transform3D(10, 0, 0, 0, 0.5, 0, 0, 0, 10, 0, -0.2615, 0)
+transform = Transform3D(20.7519, 0, 0, 0, 0.886336, 0, 0, 0, 17.7267, 0, -0.2615, 0)
 mesh = SubResource("BoxMesh_c1w26")
 
 [node name="Door" parent="." instance=ExtResource("1_22fkl")]

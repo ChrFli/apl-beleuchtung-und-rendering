@@ -1,6 +1,6 @@
 extends RayCast3D
 
-
+#Kommt das Raycast,welches am Körper gebunden ist, nah genug an Objekt/Tür kann man interagieren
 
 func _process(delta):
 	if is_colliding():
