@@ -8,6 +8,9 @@ const SENSITIVITY = 0.005
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
 
+
+
+
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
@@ -32,6 +35,9 @@ func _physics_process(delta: float) -> void:
 	# Get the input direction and handle movement/deceleration
 	var input_dir: Vector2 = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	var direction: Vector3 = (head.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	
+
+
 	
 	if direction:
 		velocity.x = direction.x * SPEED
