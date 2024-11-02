@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://cs0j2mkyn65g1"]
+[gd_scene load_steps=5 format=3 uid="uid://cs0j2mkyn65g1"]
 
 [ext_resource type="PackedScene" uid="uid://drxna0qrhrswo" path="res://models/door.tscn" id="1_22fkl"]
-[ext_resource type="PackedScene" uid="uid://chtutpgwaitak" path="res://models/char_dummy.tscn" id="2_70los"]
-[ext_resource type="PackedScene" uid="uid://dkmni3owxoxev" path="res://models/char_Zombie.tscn" id="3_sopfp"]
+[ext_resource type="PackedScene" uid="uid://chtutpgwaitak" path="res://models/char_dummy.tscn" id="2_bfdo2"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_iquhi"]
 size = Vector3(1, 0.942383, 1)
@@ -10,10 +9,6 @@ size = Vector3(1, 0.942383, 1)
 [sub_resource type="BoxMesh" id="BoxMesh_c1w26"]
 
 [node name="Node3D" type="Node3D"]
-
-[node name="CharDummy" parent="." instance=ExtResource("2_70los")]
-transform = Transform3D(0.08, 0, 0, 0, 0.08, 0, 0, 0, 0.08, -0.0631066, 0.90268, 1.22029)
-visible = false
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
@@ -42,5 +37,5 @@ shape = SubResource("BoxShape3D_iquhi")
 transform = Transform3D(20.7519, 0, 0, 0, 0.886336, 0, 0, 0, 17.7267, 0, -0.2615, 0)
 mesh = SubResource("BoxMesh_c1w26")
 
-[node name="CharacterBody3D" parent="." instance=ExtResource("3_sopfp")]
-transform = Transform3D(-0.339625, 0, -2.9691e-08, 0, 0.339625, 0, 2.9691e-08, 0, -0.339625, 0.104459, 0.189519, 3.11857)
+[node name="CharDummy" parent="." instance=ExtResource("2_bfdo2")]
+transform = Transform3D(0.155331, 0, 0, 0, 0.155331, 0, 0, 0, 0.155331, -0.252013, 1.645, 5.58073)

@@ -1,29 +1,30 @@
-[gd_scene load_steps=5 format=3 uid="uid://dkmni3owxoxev"]
+[gd_scene load_steps=4 format=3 uid="uid://dkmni3owxoxev"]
 
-[ext_resource type="Script" path="res://scripts/char_dummy.gd" id="1_6hf27"]
+[ext_resource type="Script" path="res://scripts/char_zombie.gd" id="1_7f0ha"]
 [ext_resource type="ArrayMesh" uid="uid://dac0nesmnb4i7" path="res://models/Zed_1.obj" id="2_nu2u6"]
-[ext_resource type="Script" path="res://scripts/raycast3d.gd" id="3_vju00"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_q0qdn"]
 
 [node name="CharacterBody3D" type="CharacterBody3D"]
-script = ExtResource("1_6hf27")
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+script = ExtResource("1_7f0ha")
+
+[node name="Head" type="Node3D" parent="."]
+transform = Transform3D(0.602045, 0, 0, 0, 0.435574, 0, 0, 0, 0.602045, -0.0638257, 4.15439, 1.22088)
+
+[node name="SpringArm3D" type="SpringArm3D" parent="Head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.418434, -0.0890343, -2.45403)
+spring_length = 2.0
+margin = 0.5
+
+[node name="Camera3D" type="Camera3D" parent="Head/SpringArm3D"]
+transform = Transform3D(-1.66101, 0, -1.4521e-07, 0, 2.29582, 0, 1.4521e-07, 0, -1.66101, 0.516672, 6.68874, -1.59993)
 
 [node name="Zed1" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0527169, 3.43131, 0.101572)
 mesh = ExtResource("2_nu2u6")
 skeleton = NodePath("")
 
-[node name="Head" type="Node3D" parent="."]
-transform = Transform3D(0.918, 0, 0, 0, 0.918, 0, 0, 0, 0.5, -0.321861, -0.728376, 1.7994)
-
-[node name="Camera3D" type="Camera3D" parent="Head"]
-transform = Transform3D(-1, 6.83571e-09, -8.6885e-08, -6.83571e-09, 0.987697, 0.156383, 8.6885e-08, 0.156383, -0.987697, -0.0862703, 7.50887, -2.95272)
-
-[node name="RayCast3D" type="RayCast3D" parent="Head"]
-transform = Transform3D(-3.21942, -2.81451e-07, 1.23026e-14, 0, -1.40725e-07, -3.21942, 2.81451e-07, -3.21942, 1.40725e-07, 0, 4.45096, 0)
-script = ExtResource("3_vju00")
-
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(3.86657, 0, 0, 0, 3.86657, 0, 0, 0, 3.86657, 0.75747, 3.71689, -0.034996)
+transform = Transform3D(3.86657, 0, 0, 0, 3.86657, 0, 0, 0, 3.86657, 0.000777125, 3.71689, -0.034996)
 shape = SubResource("CapsuleShape3D_q0qdn")

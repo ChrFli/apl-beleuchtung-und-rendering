@@ -1,28 +1,23 @@
 extends CharacterBody3D
 
-const SPEED = 10.0
-const JUMP_VELOCITY = 50.0
-const GRAVITY = 50.0  # Erhöhe diesen Wert, um das Objekt schneller fallen zu lassen
-const SENSITIVITY = 0.005
 
-@onready var head = $Head
-@onready var camera = $Head/Camera3D
-
-
-
+const SPEED = 5.0
+const JUMP_VELOCITY = 4.5
+const GRAVITY = 10
+@onready  var pivot = $Head
+@onready var camera = $Head/SpringArm3D/Camera3D
+@export var sens =0.5
 
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-
-func _unhandled_input(event: InputEvent):
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	
+func _input(event):
 	if event is InputEventMouseMotion:
-		head.rotate_y(-event.relative.x * SENSITIVITY)
-		camera.rotate_x(-event.relative.y * SENSITIVITY)
-		# Clamp camera pitch to avoid flipping
-		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-40), deg_to_rad(60))
-
-
-
+		pivot.rotate_y(deg_to_rad(-event.relative.x * sens))
+		pivot.rotate_x(deg_to_rad(-event.relative.y * sens))
+		camera.rotation.x = clamp(pivot.rotation.x, deg_to_rad(-40), deg_to_rad(45))
+		
+	
 func _physics_process(delta: float) -> void:
 	# Add gravity to the velocity
 	if not is_on_floor():
@@ -34,11 +29,11 @@ func _physics_process(delta: float) -> void:
 
 	# Get the input direction and handle movement/deceleration
 	var input_dir: Vector2 = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
-	var direction: Vector3 = (head.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	var direction: Vector3 = (pivot.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	
 	
 	if Input.is_action_just_pressed("quit"):
 		get_tree().quit()
-
 
 	
 	if direction:
