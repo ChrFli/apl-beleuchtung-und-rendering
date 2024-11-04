@@ -1,19 +1,21 @@
-[gd_scene load_steps=4 format=3 uid="uid://bc2a1r42hhfxg"]
+[gd_scene load_steps=5 format=3 uid="uid://bc2a1r42hhfxg"]
 
-[ext_resource type="PackedScene" uid="uid://b6m8p6ipe8usb" path="res://models/edit.tscn" id="1_poi54"]
-[ext_resource type="PackedScene" uid="uid://bblra0wbjfcj4" path="res://models/ground_static.tscn" id="2_2mp0a"]
-[ext_resource type="PackedScene" uid="uid://chtutpgwaitak" path="res://models/char_dummy.tscn" id="2_kukve"]
+[ext_resource type="PackedScene" uid="uid://b6m8p6ipe8usb" path="res://scenes/edit.tscn" id="1_poi54"]
+[ext_resource type="PackedScene" uid="uid://bblra0wbjfcj4" path="res://scenes/ground_static.tscn" id="2_2mp0a"]
+[ext_resource type="PackedScene" uid="uid://chtutpgwaitak" path="res://scenes/char_dummy.tscn" id="2_kukve"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_a53ek"]
 
 [node name="Game" type="Node3D"]
 
 [node name="House" parent="." instance=ExtResource("1_poi54")]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 96.5653, 86.7489, -218.489)
+transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, 0.101952, 38.5172, -7.06744)
 
 [node name="CharDummy" parent="." instance=ExtResource("2_kukve")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 85.2297, 153.722, -68.3005)
+transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, 0.370964, 60.1598, -0.848694)
 
 [node name="Ground_Static" parent="." instance=ExtResource("2_2mp0a")]
-transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 33.7402, 0)
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0.377502, 31.5298, -2.57593)
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(0.99946, -0.031383, 0.00975068, 0.0240312, 0.900335, 0.434533, -0.0224159, -0.434064, 0.900603, 93.567, 233.527, 95.8453)
@@ -37,3 +39,7 @@ light_size = 1.0
 light_specular = 16.0
 spot_range = 45.4375
 spot_angle = 89.99
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 94.4542, 90.7069, -214.693)
+mesh = SubResource("SphereMesh_a53ek")

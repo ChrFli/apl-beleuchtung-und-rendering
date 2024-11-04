@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cs0j2mkyn65g1"]
 
-[ext_resource type="PackedScene" uid="uid://drxna0qrhrswo" path="res://models/door.tscn" id="1_22fkl"]
-[ext_resource type="PackedScene" uid="uid://chtutpgwaitak" path="res://models/char_dummy.tscn" id="2_bfdo2"]
+[ext_resource type="PackedScene" uid="uid://drxna0qrhrswo" path="res://scenes/door.tscn" id="1_22fkl"]
+[ext_resource type="PackedScene" uid="uid://chtutpgwaitak" path="res://scenes/char_dummy.tscn" id="2_bfdo2"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_iquhi"]
 size = Vector3(1, 0.942383, 1)

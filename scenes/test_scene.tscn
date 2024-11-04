@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=4 uid="uid://clgni3ek56r0e"]
 
 [ext_resource type="Texture2D" uid="uid://cixp24n4yj3oy" path="res://models/House_6.png" id="2_0sfir"]
-[ext_resource type="PackedScene" uid="uid://chtutpgwaitak" path="res://models/char_dummy.tscn" id="2_hk53w"]
+[ext_resource type="PackedScene" uid="uid://chtutpgwaitak" path="res://scenes/char_dummy.tscn" id="2_hk53w"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pb7eb"]
 size = Vector3(500, 1, 500)

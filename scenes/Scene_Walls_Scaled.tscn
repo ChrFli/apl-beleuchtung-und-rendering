@@ -1,24 +1,24 @@
-[gd_scene load_steps=319 format=4 uid="uid://b6m8p6ipe8usb"]
+[gd_scene load_steps=317 format=4 uid="uid://c1orscakbr36m"]
 
-[ext_resource type="Texture2D" uid="uid://tdct658fbhkp" path="res://models/House_0.png" id="1_45p8i"]
-[ext_resource type="Texture2D" uid="uid://fy8rwu456ac8" path="res://models/House_1.png" id="2_q2r5v"]
-[ext_resource type="Texture2D" uid="uid://c7myfgmbhlk0c" path="res://models/House_2.png" id="3_gowd2"]
-[ext_resource type="Texture2D" uid="uid://dv2hnbq4033gr" path="res://models/House_3.png" id="4_yr1gl"]
-[ext_resource type="Texture2D" uid="uid://da7k2a7m2ns40" path="res://models/House_4.png" id="5_4kvny"]
-[ext_resource type="Texture2D" uid="uid://dnjpn38g5d8pg" path="res://models/House_5.png" id="6_uynxk"]
-[ext_resource type="Texture2D" uid="uid://cixp24n4yj3oy" path="res://models/House_6.png" id="7_2swq5"]
-[ext_resource type="Texture2D" uid="uid://bnysjba5ndp2j" path="res://models/House_7.png" id="8_58xoq"]
-[ext_resource type="Texture2D" uid="uid://2e6nn04gyy6r" path="res://models/House_8.png" id="9_nfqew"]
-[ext_resource type="Texture2D" uid="uid://bcajus2atdr5i" path="res://models/House_9.png" id="10_jpehw"]
-[ext_resource type="Texture2D" uid="uid://cli7o23lenq7p" path="res://models/House_10.png" id="11_p1du6"]
-[ext_resource type="Texture2D" uid="uid://pgm1lkve5qy6" path="res://models/House_11.png" id="12_ahkmq"]
-[ext_resource type="Texture2D" uid="uid://d3kfpn2fqs5ob" path="res://models/House_12.png" id="13_veu4q"]
-[ext_resource type="Texture2D" uid="uid://dm23t0u305oru" path="res://models/House_13.png" id="14_b8ixn"]
+[ext_resource type="Texture2D" uid="uid://tdct658fbhkp" path="res://models/House_0.png" id="1_ikplh"]
+[ext_resource type="Texture2D" uid="uid://fy8rwu456ac8" path="res://models/House_1.png" id="2_5qvl1"]
+[ext_resource type="Texture2D" uid="uid://c7myfgmbhlk0c" path="res://models/House_2.png" id="3_140o5"]
+[ext_resource type="Texture2D" uid="uid://dv2hnbq4033gr" path="res://models/House_3.png" id="4_5sc42"]
+[ext_resource type="Texture2D" uid="uid://da7k2a7m2ns40" path="res://models/House_4.png" id="5_r5bwb"]
+[ext_resource type="Texture2D" uid="uid://dnjpn38g5d8pg" path="res://models/House_5.png" id="6_3ppbq"]
+[ext_resource type="Texture2D" uid="uid://cixp24n4yj3oy" path="res://models/House_6.png" id="7_dk28y"]
+[ext_resource type="Texture2D" uid="uid://bnysjba5ndp2j" path="res://models/House_7.png" id="8_i0t28"]
+[ext_resource type="Texture2D" uid="uid://2e6nn04gyy6r" path="res://models/House_8.png" id="9_nhhjo"]
+[ext_resource type="Texture2D" uid="uid://bcajus2atdr5i" path="res://models/House_9.png" id="10_45bu2"]
+[ext_resource type="Texture2D" uid="uid://cli7o23lenq7p" path="res://models/House_10.png" id="11_ifoet"]
+[ext_resource type="Texture2D" uid="uid://pgm1lkve5qy6" path="res://models/House_11.png" id="12_04qhq"]
+[ext_resource type="Texture2D" uid="uid://d3kfpn2fqs5ob" path="res://models/House_12.png" id="13_2y4r8"]
+[ext_resource type="Texture2D" uid="uid://dm23t0u305oru" path="res://models/House_13.png" id="14_pos0p"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ifc7l"]
 resource_name = "水泥"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_45p8i")
+albedo_texture = ExtResource("1_ikplh")
 emission_enabled = true
 emission_energy_multiplier = 0.0
 
@@ -36,7 +36,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_0ljik"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_pxptf"]
 resource_name = "樓梯（門口）"
 _surfaces = [{
 "aabb": AABB(-0.075, -0.045, 0, 0.15, 0.09, 0.045),
@@ -57,7 +57,7 @@ shadow_mesh = SubResource("ArrayMesh_gjv3g")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nxuu2"]
 resource_name = "木紋"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("2_q2r5v")
+albedo_texture = ExtResource("2_5qvl1")
 emission_enabled = true
 emission_energy_multiplier = 0.0
 
@@ -75,7 +75,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_4qlwc"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_lovkk"]
 resource_name = "茶几（大）001"
 _surfaces = [{
 "aabb": AABB(-0.06, -0.04, -0.045, 0.120001, 0.0800008, 0.05),
@@ -96,7 +96,7 @@ shadow_mesh = SubResource("ArrayMesh_pad7l")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e5nkl"]
 resource_name = "櫥櫃"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("3_gowd2")
+albedo_texture = ExtResource("3_140o5")
 emission_enabled = true
 emission_energy_multiplier = 0.0
 
@@ -114,7 +114,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_g7023"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_4goe6"]
 resource_name = "櫥櫃組"
 _surfaces = [{
 "aabb": AABB(-0.125, -0.0325, -0.015, 0.25, 0.2525, 0.22),
@@ -146,7 +146,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_cmi3e"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_r1emb"]
 resource_name = "櫃子001"
 _surfaces = [{
 "aabb": AABB(-0.075, -0.025, 0, 0.15, 0.05, 0.1),
@@ -167,7 +167,7 @@ shadow_mesh = SubResource("ArrayMesh_4wryg")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6rptv"]
 resource_name = "電器"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("4_yr1gl")
+albedo_texture = ExtResource("4_5sc42")
 emission_enabled = true
 emission_energy_multiplier = 0.0
 
@@ -185,7 +185,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_cmu8c"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_cg0g6"]
 resource_name = "電話"
 _surfaces = [{
 "aabb": AABB(-0.009, -0.0125, 0, 0.018, 0.025, 0.00912563),
@@ -217,7 +217,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_x2f0e"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_qu0rc"]
 resource_name = "樓梯（1樓 - 2樓）"
 _surfaces = [{
 "aabb": AABB(-0.105, -0.225, -2.42233e-08, 0.21, 0.45, 0.3),
@@ -238,7 +238,7 @@ shadow_mesh = SubResource("ArrayMesh_e83im")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2phrh"]
 resource_name = "棉被"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("5_4kvny")
+albedo_texture = ExtResource("5_r5bwb")
 emission_enabled = true
 emission_energy_multiplier = 0.0
 
@@ -257,7 +257,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_ttfgk"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_wtgnq"]
 resource_name = "枕頭002"
 _surfaces = [{
 "aabb": AABB(-0.02, -0.025, 0, 0.04, 0.05, 0.01),
@@ -291,7 +291,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_8jhpm"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_fd32a"]
 resource_name = "枕頭001"
 _surfaces = [{
 "aabb": AABB(-0.02, -0.025, 0, 0.04, 0.05, 0.01),
@@ -324,7 +324,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_36ak3"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_buv8r"]
 resource_name = "床架（雙人）"
 _surfaces = [{
 "aabb": AABB(-0.09525, -0.0675, 0, 0.2005, 0.135, 0.105),
@@ -356,7 +356,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_afdc3"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_svvrm"]
 resource_name = "床單（雙人）"
 _surfaces = [{
 "aabb": AABB(-0.10025, -0.0725, 0, 0.1955, 0.145, 0.025),
@@ -388,7 +388,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_wjlrm"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_cgesc"]
 resource_name = "餐桌"
 _surfaces = [{
 "aabb": AABB(-0.045, -0.075, -0.07, 0.09, 0.2, 0.075),
@@ -421,7 +421,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_marou"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_p4etq"]
 resource_name = "餐桌椅001"
 _surfaces = [{
 "aabb": AABB(-0.02, -0.02, -0.045, 0.05, 0.04, 0.1),
@@ -455,7 +455,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_xsfja"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_i4rhp"]
 resource_name = "餐桌椅002"
 _surfaces = [{
 "aabb": AABB(-0.02, -0.02, -0.045, 0.05, 0.04, 0.1),
@@ -489,7 +489,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_7hcgl"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_o4aje"]
 resource_name = "餐桌椅003"
 _surfaces = [{
 "aabb": AABB(-0.02, -0.02, -0.045, 0.05, 0.04, 0.1),
@@ -523,7 +523,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_e2e5k"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_8xc7k"]
 resource_name = "餐桌椅004"
 _surfaces = [{
 "aabb": AABB(-0.02, -0.02, -0.045, 0.05, 0.04, 0.1),
@@ -545,7 +545,7 @@ shadow_mesh = SubResource("ArrayMesh_08f8w")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3e080"]
 resource_name = "磁磚"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("6_uynxk")
+albedo_texture = ExtResource("6_3ppbq")
 emission_enabled = true
 emission_energy_multiplier = 0.0
 
@@ -563,7 +563,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_q72t0"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_slmhh"]
 resource_name = "地板（磁磚）001"
 _surfaces = [{
 "aabb": AABB(-1.07, -0.35, 0.06, 0.46, 0.48, 1e-05),
@@ -584,7 +584,7 @@ shadow_mesh = SubResource("ArrayMesh_q8q4a")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t4ncp"]
 resource_name = "木地板"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("7_2swq5")
+albedo_texture = ExtResource("7_dk28y")
 emission_enabled = true
 emission_energy_multiplier = 0.0
 
@@ -602,7 +602,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_0wsrs"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_3mehh"]
 resource_name = "地板（木板）"
 _surfaces = [{
 "aabb": AABB(-1.07, -0.35, -6.20701e-08, 2.14, 1.42, 0.06),
@@ -634,7 +634,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_cbk1i"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_j2ff1"]
 resource_name = "地板（門口）"
 _surfaces = [{
 "aabb": AABB(-0.35, -0.67, -1.21117e-08, 0.7, 0.32, 0.06),
@@ -666,7 +666,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_u4rbj"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_6bb3q"]
 resource_name = "地板（磁磚）002"
 _surfaces = [{
 "aabb": AABB(0.385001, -0.35, 0.0599999, 0.275, 0.23, 1e-05),
@@ -687,7 +687,7 @@ shadow_mesh = SubResource("ArrayMesh_lds2q")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mokv3"]
 resource_name = "水龍頭"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("8_58xoq")
+albedo_texture = ExtResource("8_i0t28")
 emission_enabled = true
 emission_energy_multiplier = 0.0
 
@@ -705,7 +705,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_fktum"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_k6x5w"]
 resource_name = "按鈕（馬桶）001"
 _surfaces = [{
 "aabb": AABB(-0.00242705, -0.00285317, 0, 0.00542705, 0.00570634, 0.003),
@@ -726,7 +726,7 @@ shadow_mesh = SubResource("ArrayMesh_bukbp")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_grj4n"]
 resource_name = "陶瓷"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("9_nfqew")
+albedo_texture = ExtResource("9_nhhjo")
 emission_enabled = true
 emission_energy_multiplier = 0.0
 
@@ -744,7 +744,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_lae5k"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_idajr"]
 resource_name = "馬桶001"
 _surfaces = [{
 "aabb": AABB(-0.0544333, -0.0256072, -0.0275, 0.0884954, 0.0800001, 0.055),
@@ -776,7 +776,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_8qqo7"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_f28b6"]
 resource_name = "水龍頭（浴缸）"
 _surfaces = [{
 "aabb": AABB(-0.00820697, -0.012, 0, 0.016414, 0.0137918, 0.008),
@@ -809,7 +809,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_q6ure"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_aebig"]
 resource_name = "浴缸"
 _surfaces = [{
 "aabb": AABB(-0.04, -0.075, 0, 0.08, 0.15, 0.04),
@@ -831,7 +831,7 @@ shadow_mesh = SubResource("ArrayMesh_s4n5u")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2466v"]
 resource_name = "洗衣機"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("10_jpehw")
+albedo_texture = ExtResource("10_45bu2")
 emission_enabled = true
 emission_energy_multiplier = 0.0
 
@@ -850,7 +850,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_dkgrb"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_b7s2s"]
 resource_name = "洗衣機001"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.025, 0, 0.054, 0.05, 0.07),
@@ -884,7 +884,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_li4vh"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_0me7t"]
 resource_name = "洗衣機002"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.025, 0, 0.054, 0.05, 0.07),
@@ -917,7 +917,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_4nvjp"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_u4avm"]
 resource_name = "水龍頭（洗手盆）001"
 _surfaces = [{
 "aabb": AABB(-0.00820697, -0.009, 0, 0.016414, 0.0107918, 0.012),
@@ -949,7 +949,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_2r5wr"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_ssw54"]
 resource_name = "洗手盆001"
 _surfaces = [{
 "aabb": AABB(-0.03, -0.0275, 0, 0.06, 0.04, 0.085),
@@ -982,7 +982,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_lpqes"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_wcyq2"]
 resource_name = "枕頭003"
 _surfaces = [{
 "aabb": AABB(-0.02, -0.025, 0, 0.04, 0.05, 0.01),
@@ -1015,7 +1015,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_sprif"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_rc54n"]
 resource_name = "床架（單人）"
 _surfaces = [{
 "aabb": AABB(-0.09525, -0.0375, 0, 0.2005, 0.075, 0.105),
@@ -1047,7 +1047,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_vn4ao"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_bqfda"]
 resource_name = "床單（單人）"
 _surfaces = [{
 "aabb": AABB(-0.10025, -0.0425, 0, 0.1955, 0.085, 0.025),
@@ -1079,7 +1079,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_emon8"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_euitk"]
 resource_name = "電視"
 _surfaces = [{
 "aabb": AABB(-0.045, -0.04375, 0, 0.09, 0.06875, 0.08),
@@ -1111,7 +1111,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_epmer"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_ki482"]
 resource_name = "電視桌"
 _surfaces = [{
 "aabb": AABB(-0.11, -0.04, -0.045, 0.220001, 0.0600009, 0.05),
@@ -1143,7 +1143,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_ioeqy"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_2my0f"]
 resource_name = "茶几（小）001"
 _surfaces = [{
 "aabb": AABB(-0.04, -0.04, -0.045, 0.0800005, 0.0800008, 0.08),
@@ -1176,7 +1176,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_2b7e2"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_rsg6i"]
 resource_name = "花盆001"
 _surfaces = [{
 "aabb": AABB(-0.0191266, -0.0224847, 0, 0.0427684, 0.0449694, 0.055),
@@ -1209,7 +1209,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_o7q6w"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_477vc"]
 resource_name = "茶几（小）002"
 _surfaces = [{
 "aabb": AABB(-0.04, -0.04, -0.045, 0.0800005, 0.0800008, 0.08),
@@ -1242,7 +1242,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_qnby4"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_m2scr"]
 resource_name = "花盆002"
 _surfaces = [{
 "aabb": AABB(-0.0191266, -0.0224847, 0, 0.0427684, 0.0449694, 0.055),
@@ -1275,7 +1275,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_hioa4"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_vk7w7"]
 resource_name = "箱子001"
 _surfaces = [{
 "aabb": AABB(-0.575, -1.15, -1, 1.15, 2.3, 1.15),
@@ -1307,7 +1307,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_3fh11"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_68040"]
 resource_name = "櫃子002"
 _surfaces = [{
 "aabb": AABB(-0.075, -0.025, 0, 0.15, 0.05, 0.1),
@@ -1339,7 +1339,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_0bmd5"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_ilyxd"]
 resource_name = "衣櫃001"
 _surfaces = [{
 "aabb": AABB(-0.485, -0.595, 0, 0.495, 1.19, 1.792),
@@ -1371,7 +1371,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_oot8p"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_iowd8"]
 resource_name = "馬桶002"
 _surfaces = [{
 "aabb": AABB(-0.0544333, -0.0256072, -0.0275, 0.0884954, 0.0800001, 0.055),
@@ -1403,7 +1403,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_vo4c6"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_gxktm"]
 resource_name = "按鈕（馬桶）002"
 _surfaces = [{
 "aabb": AABB(-0.00242705, -0.00285317, 0, 0.00542705, 0.00570634, 0.003),
@@ -1435,7 +1435,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_iu8hi"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_2p01d"]
 resource_name = "洗手盆002"
 _surfaces = [{
 "aabb": AABB(-0.03, -0.0275, 0, 0.06, 0.04, 0.085),
@@ -1467,7 +1467,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_8fti0"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_s3tl3"]
 resource_name = "水龍頭（洗手盆）002"
 _surfaces = [{
 "aabb": AABB(-0.00820697, -0.009, 0, 0.016414, 0.0107918, 0.012),
@@ -1499,7 +1499,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_rjy4s"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_g15sh"]
 resource_name = "書桌001"
 _surfaces = [{
 "aabb": AABB(-0.045, -0.075, -0.07, 0.09, 0.2, 0.075),
@@ -1532,7 +1532,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_fqy6x"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_mbbbu"]
 resource_name = "書桌椅001"
 _surfaces = [{
 "aabb": AABB(-0.02, -0.02, -0.045, 0.05, 0.04, 0.1),
@@ -1565,7 +1565,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_gf655"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_y8do6"]
 resource_name = "櫃子003"
 _surfaces = [{
 "aabb": AABB(-0.075, -0.025, 0, 0.15, 0.05, 0.1),
@@ -1597,7 +1597,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_bv8sn"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_p8sog"]
 resource_name = "櫃子004"
 _surfaces = [{
 "aabb": AABB(-0.075, -0.025, 0, 0.15, 0.05, 0.1),
@@ -1629,7 +1629,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_ev1tt"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_6lhq0"]
 resource_name = "書桌002"
 _surfaces = [{
 "aabb": AABB(-0.045, -0.075, -0.07, 0.09, 0.2, 0.075),
@@ -1662,7 +1662,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_ych0e"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_vk1kb"]
 resource_name = "書桌椅002"
 _surfaces = [{
 "aabb": AABB(-0.02, -0.02, -0.045, 0.05, 0.04, 0.1),
@@ -1695,7 +1695,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_g883f"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_0wkgo"]
 resource_name = "衣櫃002"
 _surfaces = [{
 "aabb": AABB(-0.485, -0.595, 0, 0.495, 1.19, 1.792),
@@ -1727,7 +1727,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_swede"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_lffd5"]
 resource_name = "書櫃（大）001"
 _surfaces = [{
 "aabb": AABB(-0.6423, -4.11649, -1.86286, 0.689879, 8.23299, 1.93315),
@@ -1759,7 +1759,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_wb1xh"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_swc5u"]
 resource_name = "書櫃（大）002"
 _surfaces = [{
 "aabb": AABB(-0.6423, -4.11649, -1.86286, 0.689879, 8.23299, 1.93315),
@@ -1791,7 +1791,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_olqio"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_nogkc"]
 resource_name = "櫃子005"
 _surfaces = [{
 "aabb": AABB(-0.075, -0.025, 0, 0.15, 0.05, 0.1),
@@ -1823,7 +1823,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_qh5o5"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_l76bw"]
 resource_name = "茶几（小）003"
 _surfaces = [{
 "aabb": AABB(-0.04, -0.04, -0.045, 0.0800005, 0.0800008, 0.08),
@@ -1856,7 +1856,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_tpj2k"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_5rxxx"]
 resource_name = "花盆003"
 _surfaces = [{
 "aabb": AABB(-0.0191266, -0.0224847, 0, 0.0427684, 0.0449694, 0.055),
@@ -1878,7 +1878,7 @@ shadow_mesh = SubResource("ArrayMesh_322af")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cqvcb"]
 resource_name = "地毯"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("11_p1du6")
+albedo_texture = ExtResource("11_ifoet")
 emission_enabled = true
 emission_energy_multiplier = 0.0
 
@@ -1896,7 +1896,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_acy22"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_h7pdv"]
 resource_name = "地毯（大）"
 _surfaces = [{
 "aabb": AABB(-0.275, -0.225, 0, 0.55, 0.45, 0.002),
@@ -1928,7 +1928,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_6v3m0"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_cyg0c"]
 resource_name = "地毯（小）"
 _surfaces = [{
 "aabb": AABB(-0.225, -0.15, 0, 0.45, 0.3, 0.002),
@@ -1961,7 +1961,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_o702c"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_lc1te"]
 resource_name = "花盆004"
 _surfaces = [{
 "aabb": AABB(-0.0191266, -0.0224847, 0, 0.0427684, 0.0449694, 0.055),
@@ -1994,7 +1994,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_ssbij"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_svxds"]
 resource_name = "茶几（小）004"
 _surfaces = [{
 "aabb": AABB(-0.04, -0.04, -0.045, 0.0800005, 0.0800008, 0.08),
@@ -2026,7 +2026,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_qkph6"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_2udth"]
 resource_name = "箱子002"
 _surfaces = [{
 "aabb": AABB(-0.575, -1.15, -1, 1.15, 2.3, 1.15),
@@ -2047,11 +2047,11 @@ shadow_mesh = SubResource("ArrayMesh_tr8lr")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lrvpw"]
 resource_name = "木板牆"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("12_ahkmq")
+albedo_texture = ExtResource("12_04qhq")
 emission_enabled = true
 emission_energy_multiplier = 0.0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_utqxb"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_x1sof"]
 _surfaces = [{
 "aabb": AABB(-0.3525, -0.15, -1.51396e-09, 0.705, 0.3, 0.0150001),
 "format": 34359742465,
@@ -2065,7 +2065,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_1ooi7"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_rjwm3"]
 resource_name = "內牆009"
 _surfaces = [{
 "aabb": AABB(-0.3525, -0.15, -1.51396e-09, 0.705, 0.3, 0.0150001),
@@ -2081,9 +2081,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("61G4vZ+ZGb6WssQz7FG4vZ+ZGb7zwnU87lG4vbnMTD32wnU861G4vbnMTD2Cc84z61G4vbnMTD2Cc84z7lG4vbnMTD32wnU86VG4PbnMTD0Gw3U861G4PbnMTD33degz61G4PbnMTD33degz6VG4PbnMTD0Gw3U861G4PZ+ZGb4Nw3U861G4PZ+ZGb7P9/sz61G4PZ+ZGb7P9/sz61G4PZ+ZGb4Nw3U84Hq0Pp+ZGb6OwnU84Hq0Pp+ZGb4AAAAA4Hq0Pp+ZGb4AAAAA4Hq0Pp+ZGb6OwnU84Hq0Pp+ZGT6OwnU84Hq0Pp+ZGT6pE1Cw4Hq0Pp+ZGT6pE1Cw4Hq0Pp+ZGT6OwnU84Hq0vp+ZGT6RwnU84Hq0vp+ZGT6pE9Cw4Hq0vp+ZGT6pE9Cw4Hq0vp+ZGT6RwnU84Hq0vp+ZGb6RwnU84Hq0vp+ZGb6pE1Aw4Hq0vp+ZGb6pE1Aw4Hq0vp+ZGb6RwnU87FG4vZ+ZGb7zwnU861G4vZ+ZGb6WssQz61G4PbnMTD33degz61G4PZ+ZGb7P9/sz4Hq0Pp+ZGb4AAAAA4Hq0Pp+ZGT6pE1Cw61G4vbnMTD2Cc84z4Hq0vp+ZGT6pE9Cw61G4vZ+ZGb6WssQz4Hq0vp+ZGb6pE1Aw7FG4vZ+ZGb7zwnU84Hq0vp+ZGb6RwnU84Hq0vp+ZGT6RwnU87lG4vbnMTD32wnU84Hq0Pp+ZGb6OwnU861G4PZ+ZGb4Nw3U86VG4PbnMTD0Gw3U84Hq0Pp+ZGT6OwnU8/v//f///AID+//9///8AgP7//3///wCA/v//f////v//fwAA/3//v/9/AAD/f/+//38AAP9//7//fwAA/3//vwAA/3//f/+/AAD/f/9//78AAP9//3//vwAA/3//f/+//38AAP9//7//fwAA/3//v/9/AAD/f/+//38AAP9//7////9//////////3//////////f/////////9///////9//////////3//////////f/////////9/////////AAD/f/9//78AAP9//3//vwAA/3//f/+/AAD/f/9//7//fwAA/3//v/9/AAD/f/+//38AAP9//7//fwAA/3//vwAAAAAAAP+/AAAAAAAA/78AAAAAAAD/vwAAAAAAAP+//v8AAAAA/7/+/wAAAAD/v////v8AAP+///8AAAAA/7//f/9//v//v/9//3/+//+//3//f/7//7//f/9//v//v/9//3////+//3//f////7//f/9/////v/9//3////+/")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_utqxb")
+shadow_mesh = SubResource("ArrayMesh_x1sof")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_8njit"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_ql5or"]
 _surfaces = [{
 "aabb": AABB(-0.35, -0.0075, 0, 0.7, 0.015, 0.3),
 "format": 34359742465,
@@ -2097,7 +2097,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_0j3i6"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_nnkiq"]
 resource_name = "內牆006"
 _surfaces = [{
 "aabb": AABB(-0.35, -0.0075, 0, 0.7, 0.015, 0.3),
@@ -2113,9 +2113,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("NzOzPpDC9TsAAAAANzOzvpDC9TsAAAAANzOzvpDC9bsAAAAANzOzPpDC9bsAAAAANzOzPpDC9TufmZk+NzOzPpDC9bufmZk+NzOzvpDC9bufmZk+NzOzvpDC9TufmZk+NzOzPpDC9bufmZk+NzOzPpDC9bsAAAAANzOzvpDC9bsAAAAANzOzvpDC9bufmZk+NzOzPpDC9TufmZk+NzOzPpDC9TsAAAAANzOzPpDC9bsAAAAANzOzPpDC9bufmZk+NzOzvpDC9TufmZk+NzOzvpDC9TsAAAAANzOzPpDC9TsAAAAANzOzPpDC9TufmZk+NzOzvpDC9bufmZk+NzOzvpDC9bsAAAAANzOzvpDC9TsAAAAANzOzvpDC9TufmZk+/////wAA/7//////AAD/v/////8AAP+//////wAA/7//f/9//v//v/9//3/+//+//3//f/7//7//f/9//v//v/9/AAD///+//38AAP///7//fwAA////v/9/AAD///+/////f/9///////9//3///////3//f///////f/9/////f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/vwAA/3//fwCAAAD/f/9/AIAAAP9//38AgAAA/3//fwCA")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_8njit")
+shadow_mesh = SubResource("ArrayMesh_ql5or")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_fxyin"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_83ebl"]
 _surfaces = [{
 "aabb": AABB(-0.1325, -0.0075, 0, 0.265, 0.015, 0.3),
 "format": 34359742465,
@@ -2129,7 +2129,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_vuink"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_1lxnv"]
 resource_name = "內牆008"
 _surfaces = [{
 "aabb": AABB(-0.1325, -0.0075, 0, 0.265, 0.015, 0.3),
@@ -2145,9 +2145,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("Fq4HPpDC9TsAAAAAFq4HvpDC9TsAAAAAFq4HvpDC9bsAAAAAFq4HPpDC9bsAAAAAFq4HPpDC9TuWmZk+Fq4HPpDC9buWmZk+Fq4HvpDC9buWmZk+Fq4HvpDC9TuWmZk+Fq4HPpDC9buWmZk+Fq4HPpDC9bsAAAAAFq4HvpDC9bsAAAAAFq4HvpDC9buWmZk+Fq4HPpDC9TuWmZk+Fq4HPpDC9TsAAAAAFq4HPpDC9bsAAAAAFq4HPpDC9buWmZk+Fq4HvpDC9TuWmZk+Fq4HvpDC9TsAAAAAFq4HPpDC9TsAAAAAFq4HPpDC9TuWmZk+Fq4HvpDC9buWmZk+Fq4HvpDC9bsAAAAAFq4HvpDC9TsAAAAAFq4HvpDC9TuWmZk+/////wAA/7//////AAD/v/////8AAP+//////wAA/7//f/9/////v/9//3////+//3//f/7//7//f/9//v//v/9/AAD///+//38AAP///7//fwAA////v/9/AAD///+/////f/9///////9//3///////3//f///////f/9/////f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/vwAA/3//fwCAAAD/f/9/AIAAAP9//38AgAAA/3//fwCA")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_fxyin")
+shadow_mesh = SubResource("ArrayMesh_83ebl")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_6lejs"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_y0d2l"]
 _surfaces = [{
 "aabb": AABB(-0.1575, -0.15, 0, 0.5075, 0.3, 0.0150001),
 "format": 34359742465,
@@ -2161,7 +2161,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_j6yr3"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_fal8a"]
 resource_name = "內牆007"
 _surfaces = [{
 "aabb": AABB(-0.1575, -0.15, 0, 0.5075, 0.3, 0.0150001),
@@ -2177,9 +2177,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("zcxMvZ+ZGb4NcbQzzsxMvZ+ZGb7swnU80MxMvbnMTD3wwnU8zcxMvbnMTD0g0r8zzcxMvbnMTD0g0r8z0MxMvbnMTD3wwnU8ysxMPbnMTD0Nw3U8zcxMPbnMTD1ZF/czzcxMPbnMTD1ZF/czysxMPbnMTD0Nw3U8zMxMPZ+ZGb4Vw3U8zcxMPZ+ZGb6YTAU0zcxMPZ+ZGb6YTAU0zMxMPZ+ZGb4Vw3U8MjOzPp+ZGb6QwnU8MjOzPp+ZGb4AAAAAMjOzPp+ZGb4AAAAAMjOzPp+ZGb6QwnU8MjOzPp+ZGT6QwnU8MjOzPp+ZGT4AAAAAMjOzPp+ZGT4AAAAAMjOzPp+ZGT6QwnU8oEchvp+ZGT6iwnU8oEchvp+ZGT6EDY8yoEchvp+ZGT6EDY8yoEchvp+ZGT6iwnU8oUchvp+ZGb6iwnU8oUchvp+ZGb4ijpUyoUchvp+ZGb4ijpUyoUchvp+ZGb6iwnU8zsxMvZ+ZGb7swnU8zcxMvZ+ZGb4NcbQzzcxMPbnMTD1ZF/czzcxMPZ+ZGb6YTAU0MjOzPp+ZGb4AAAAAMjOzPp+ZGT4AAAAAzcxMvbnMTD0g0r8zoEchvp+ZGT6EDY8yzcxMvZ+ZGb4NcbQzoUchvp+ZGb4ijpUyzsxMvZ+ZGb7swnU8oUchvp+ZGb6iwnU8oEchvp+ZGT6iwnU80MxMvbnMTD3wwnU8MjOzPp+ZGb6QwnU8zMxMPZ+ZGb4Vw3U8ysxMPbnMTD0Nw3U8MjOzPp+ZGT6QwnU8/v//f///AID+//9///8AgP7//3////7//v//f///AID/fwAA/3//v/9/AAD/f/+//38AAP9//7//fwAA/3//vwAA/3//f/+/AAD/f/9//78AAP9//3//vwAA/3//f/+//38AAP9//7//fwAA/3//v/9/AAD/f/+//38AAP9//7////9//////////3//////////f/////////9///////9//////////3//////////f/////////9/////////AAD/f/9//78AAP9//3//vwAA/3//f/+/AAD/f/9//7//fwAA/3//v/9/AAD/f/+//38AAP9//7//fwAA/3//vwAAAAAAAP+/AAAAAAAA/78AAAAAAAD/vwAAAAAAAP+//v8AAAAA/7/+/wAAAAD/v////v8AAP+///8AAAAA/7//f/9//v//v/9//3/+//+//3//f/7//7//f/9//v//v/9//3////+//3//f////7//f/9/////v/9//3////+/")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_6lejs")
+shadow_mesh = SubResource("ArrayMesh_y0d2l")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_ttw0b"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_afx6o"]
 _surfaces = [{
 "aabb": AABB(-0.0075, -0.725, 0, 0.015, 1.45, 0.36),
 "format": 34359742465,
@@ -2193,7 +2193,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_eufsu"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_3r3vu"]
 resource_name = "外牆004"
 _surfaces = [{
 "aabb": AABB(-0.0075, -0.725, 0, 0.015, 1.45, 0.36),
@@ -2209,9 +2209,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("kML1O5aZOT8AAAAAkML1u5aZOT8AAAAAkML1u5aZOb8AAAAAkML1O5aZOb8AAAAAkML1O5aZOT/xUbg+kML1O5aZOb/xUbg+kML1u5aZOb/xUbg+kML1u5aZOT/xUbg+kML1O5aZOb/xUbg+kML1O5aZOb8AAAAAkML1u5aZOb8AAAAAkML1u5aZOb/xUbg+kML1O5aZOT/xUbg+kML1O5aZOT8AAAAAkML1O5aZOb8AAAAAkML1O5aZOb/xUbg+kML1u5aZOT/xUbg+kML1u5aZOT8AAAAAkML1O5aZOT8AAAAAkML1O5aZOT/xUbg+kML1u5aZOb/xUbg+kML1u5aZOb8AAAAAkML1u5aZOT8AAAAAkML1u5aZOT/xUbg+/////wAA/7//////AAD/v/////8AAP+//////wAA/7//f/9/////v/9//3////+//3//f////7//f/9/////v/9/AAD///+//38AAP///7//fwAA////v/9/AAD///+/////f/9///////9//3///////3//f///////f/9/////f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/vwAA/3//fwCAAAD/f/9/AIAAAP9//38AgAAA/3//fwCA")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_ttw0b")
+shadow_mesh = SubResource("ArrayMesh_afx6o")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_0a3w0"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_y6gb7"]
 _surfaces = [{
 "aabb": AABB(-0.36, -0.0075, 0, 0.72, 0.015, 0.36),
 "format": 34359742465,
@@ -2225,7 +2225,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_ft4hv"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_ut3e5"]
 resource_name = "外牆002"
 _surfaces = [{
 "aabb": AABB(-0.36, -0.0075, 0, 0.72, 0.015, 0.36),
@@ -2241,9 +2241,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("tx6FvZDC9TsAAAAA61G4vpDC9bsAAAAA61G4PpDC9bsAAAAAZ2amvpDC9TsAAAAA61G4vpDC9TsAAAAA61G4PpDC9TsAAAAAYGamvpDC9TvuUbg+61G4vpDC9bvuUbg+61G4vpDC9TvuUbg+nx6FvZDC9TvuUbg+61G4PpDC9bvuUbg+61G4PpDC9TvuUbg+61G4PpDC9bvuUbg+61G4PpDC9bsAAAAA61G4vpDC9bsAAAAA61G4vpDC9bvuUbg+61G4PpDC9TvuUbg+61G4PpDC9TsAAAAA61G4PpDC9bsAAAAA61G4PpDC9bvuUbg+Z2amvpDC9TsAAAAAYGamvpDC9TvuUbg+61G4vpDC9TvuUbg+61G4vpDC9TsAAAAA61G4vpDC9bvuUbg+61G4vpDC9bsAAAAA61G4vpDC9TsAAAAA61G4vpDC9TvuUbg+nx6FvZDC9TvuUbg+tx6FvZDC9TsAAAAA61G4PpDC9TsAAAAA61G4PpDC9TvuUbg+/////wAA/7//////AAD/v/////8AAP+//////wAA/7//////AAD/v/////8AAP+//3//f////7//f/9/////v/9//3////+//3//f/7//7//f/9//v//v/9//3/+//+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7////9//3///////3//f///////f/9///////9//3////9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+/AAD/f/9/AIAAAP9//38AgAAA/3//fwCAAAD/f/9/AID/f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/vw==")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_0a3w0")
+shadow_mesh = SubResource("ArrayMesh_y6gb7")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_ebnby"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_qxs2u"]
 _surfaces = [{
 "aabb": AABB(-0.0075, -0.115, 0, 0.015, 0.23, 0.3),
 "format": 34359742465,
@@ -2257,7 +2257,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_b0ehu"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_idyhc"]
 resource_name = "內牆005"
 _surfaces = [{
 "aabb": AABB(-0.0075, -0.115, 0, 0.015, 0.23, 0.3),
@@ -2273,9 +2273,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("kML1Ow6F6z0AAAAAkML1uw6F6z0AAAAAkML1uw6F670AAAAAkML1Ow6F670AAAAAkML1Ow6F6z2fmZk+kML1Ow6F672fmZk+kML1uw6F672fmZk+kML1uw6F6z2fmZk+kML1Ow6F672fmZk+kML1Ow6F670AAAAAkML1uw6F670AAAAAkML1uw6F672fmZk+kML1Ow6F6z2fmZk+kML1Ow6F6z0AAAAAkML1Ow6F670AAAAAkML1Ow6F672fmZk+kML1uw6F6z2fmZk+kML1uw6F6z0AAAAAkML1Ow6F6z0AAAAAkML1Ow6F6z2fmZk+/////wAA/7//////AAD/v/////8AAP+//////wAA/7//f/9/////v/9//3////+//3//f////7//f/9/////v/9/AAD///+//38AAP///7//fwAA////v/9/AAD///+/////f/9///////9//3///////3//f///////f/9/////f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/vw==")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_ebnby")
+shadow_mesh = SubResource("ArrayMesh_qxs2u")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_2kj1h"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_sc54v"]
 _surfaces = [{
 "aabb": AABB(-0.23, -0.15, 0, 0.26, 0.3, 0.0150001),
 "format": 34359742465,
@@ -2289,7 +2289,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_bwp2n"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_l6w7a"]
 resource_name = "內牆004"
 _surfaces = [{
 "aabb": AABB(-0.23, -0.15, 0, 0.26, 0.3, 0.0150001),
@@ -2305,9 +2305,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("48L1PKCZGb4AAAAA48L1PKCZGb6QwnU848L1PKCZGT6QwnU848L1PKCZGT4AAAAA48L1PKCZGT4AAAAA48L1PKCZGT6QwnU8KYVrvqCZGT6QwnU8KYVrvqCZGT4AAAAAKYVrvqCZGT4AAAAAKYVrvqCZGT6QwnU8KIVrvqCZGb6QwnU8KIVrvqCZGb4AAAAAKIVrvqCZGb4AAAAAKIVrvqCZGb6QwnU8mpkZvqCZGb75wnU8mpkZvqCZGb74U9MzmpkZvqCZGb74U9MzmpkZvqCZGb75wnU8mpkZvrnMTD3zwnU8mpkZvrnMTD29UsYzmpkZvrnMTD29UsYzmpkZvrnMTD3zwnU8zcxMvbnMTD3zwnU8zcxMvbnMTD29UsYzzcxMvbnMTD29UsYzzcxMvbnMTD3zwnU8zcxMvaCZGb75wnU8zcxMvaCZGb74U9MzzcxMvaCZGb74U9MzzcxMvaCZGb75wnU848L1PKCZGb6QwnU848L1PKCZGb4AAAAAKIVrvqCZGb4AAAAAmpkZvqCZGb74U9MzmpkZvrnMTD29UsYzKYVrvqCZGT4AAAAAzcxMvbnMTD29UsYz48L1PKCZGT4AAAAA48L1PKCZGb4AAAAAzcxMvaCZGb74U9Mz////f/////////9//////////3//////////f///////f///////v/9///////+//3///////7//f///////vwAA/3//f/+/AAD/f/9//78AAP9//3//vwAA/3//f/+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7////9//////////3//////////f/////////9///////9/AAAAAP+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+/AAD/f/9//78AAP9//3//vwAA/3//f/+/AAD/f/9//7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v///AAAAAP+///8AAAAA/7/+/wAAAAD/v/7/AAAAAP+/AAAAAAAA/78AAAAAAAD/vwAAAAAAAP+/AAAAAAAA/78=")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_2kj1h")
+shadow_mesh = SubResource("ArrayMesh_sc54v")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_1fi4q"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_x713u"]
 _surfaces = [{
 "aabb": AABB(-0.35, -0.15, 0, 0.7, 0.3, 0.0150001),
 "format": 34359742465,
@@ -2321,7 +2321,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_bn6hd"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_xoeib"]
 resource_name = "內牆002"
 _surfaces = [{
 "aabb": AABB(-0.35, -0.15, 0, 0.7, 0.3, 0.0150001),
@@ -2337,9 +2337,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("zcxMvZ+ZGb4NcbQzzsxMvZ+ZGb7swnU80MxMvbnMTD3wwnU8zcxMvbnMTD0g0r8zzcxMvbnMTD0g0r8z0MxMvbnMTD3wwnU8ysxMPbnMTD0Nw3U8zcxMPbnMTD1ZF/czzcxMPbnMTD1ZF/czysxMPbnMTD0Nw3U8zMxMPZ+ZGb4Vw3U8zcxMPZ+ZGb6YTAU0MjOzPp+ZGb6QwnU8MjOzPp+ZGb4AAAAAhT0KPp+ZGb7aD78zzcxMPZ+ZGb6YTAU0zMxMPZ+ZGb4Vw3U8MjOzPp+ZGb4AAAAAMjOzPp+ZGb6QwnU8MjOzPp+ZGT6QwnU8MjOzPp+ZGT4AAAAAMjOzvp+ZGT6QwnU8MjOzvp+ZGT4AAAAA6T0KPp+ZGT4AAAAAMjOzPp+ZGT4AAAAAMjOzPp+ZGT6QwnU8MjOzvp+ZGT4AAAAAMjOzvp+ZGT6QwnU8MjOzvp+ZGb6QwnU8MjOzvp+ZGb4AAAAAMjOzvp+ZGb4AAAAAMjOzvp+ZGb6QwnU8zsxMvZ+ZGb7swnU8zcxMvZ+ZGb4NcbQzzcxMPZ+ZGb6YTAU0hT0KPp+ZGb7aD78z6T0KPp+ZGT4AAAAAzcxMPbnMTD1ZF/czMjOzvp+ZGT4AAAAAzcxMvbnMTD0g0r8zzcxMvZ+ZGb4NcbQzMjOzvp+ZGb4AAAAAzsxMvZ+ZGb7swnU8MjOzvp+ZGb6QwnU8MjOzvp+ZGT6QwnU80MxMvbnMTD3wwnU8MjOzPp+ZGb6QwnU8zMxMPZ+ZGb4Vw3U8ysxMPbnMTD0Nw3U8MjOzPp+ZGT6QwnU8/v//f///AID+//9///8AgP7//3////7//v//f///AID/fwAA/3//v/9/AAD/f/+//38AAP9//7//fwAA/3//vwAA/3//f/+/AAD/f/9//78AAP9//3//vwAA/3//f/+//38AAP9//7//fwAA/3//v/9/AAD/f/+//38AAP9//7//fwAA/3//v////3//////////f/////////9//////////3///////3//////////f/////////9//////////3//////////f////////wAA/3//f/+/AAD/f/9//78AAP9//3//vwAA/3//f/+//38AAP9//7//fwAA/3//v/9/AAD/f/+//38AAP9//78AAAAAAAD/vwAAAAAAAP+/AAAAAAAA/78AAAAAAAD/v/7/AAAAAP+///8AAAAA/7////7/AAD/v///AAAAAP+//3//f/7//7//f/9//v//v/9//3/+//+//3//f/7//7//f/9/////v/9//3////+//3//f////7//f/9/////vw==")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_1fi4q")
+shadow_mesh = SubResource("ArrayMesh_x713u")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_tels2"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_pgswn"]
 _surfaces = [{
 "aabb": AABB(-0.35, -0.15, 0, 0.7, 0.3, 0.015),
 "format": 34359742465,
@@ -2353,7 +2353,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_pxbtj"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_5a4wi"]
 resource_name = "外牆001"
 _surfaces = [{
 "aabb": AABB(-0.35, -0.15, 0, 0.7, 0.3, 0.015),
@@ -2369,9 +2369,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("61G4vZ2ZGb6pE1Az61G4vZ2ZGb7EwnU87FG4vcbMTD3FwnU87FG4vcbMTD34U1Mz7FG4vcbMTD34U1Mz7FG4vcbMTD3FwnU86VG4PcbMTD3FwnU86VG4PcbMTD34U1Mz6VG4PcbMTD34U1Mz6VG4PcbMTD3FwnU86VG4PZ2ZGb7EwnU86VG4PZ2ZGb6pE1Az6VG4PZ2ZGb6pE1Az6VG4PZ2ZGb7EwnU8MzOzPp2ZGb6QwnU8MzOzPp2ZGb4AAAAAMzOzPp2ZGb4AAAAAMzOzPp2ZGb6QwnU8MzOzPp2ZGT6QwnU8MzOzPp2ZGT4AAAAAMzOzPp2ZGT4AAAAAMzOzPp2ZGT6QwnU8MzOzvp2ZGT6QwnU8MzOzvp2ZGT4AAAAAMzOzvp2ZGT4AAAAAMzOzvp2ZGT6QwnU8MzOzvp2ZGb6QwnU8MzOzvp2ZGb4AAAAAMzOzvp2ZGb4AAAAAMzOzvp2ZGb6QwnU861G4vZ2ZGb7EwnU861G4vZ2ZGb6pE1Az6VG4PcbMTD34U1Mz6VG4PZ2ZGb6pE1AzMzOzPp2ZGb4AAAAAMzOzPp2ZGT4AAAAA7FG4vcbMTD34U1MzMzOzvp2ZGT4AAAAA61G4vZ2ZGb6pE1AzMzOzvp2ZGb4AAAAA61G4vZ2ZGb7EwnU8MzOzvp2ZGb6QwnU8MzOzvp2ZGT6QwnU87FG4vcbMTD3FwnU8MzOzPp2ZGb6QwnU86VG4PZ2ZGb7EwnU86VG4PcbMTD3FwnU8MzOzPp2ZGT6QwnU8////f/////////9//////////3//////////f///////fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/vwAA/3//f/+/AAD/f/9//78AAP9//3//vwAA/3//f/+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7////9//////////3//////////f/////////9///////9///////+//3///////7//f///////v/9///////+/AAD/f/9//78AAP9//3//vwAA/3//f/+/AAD/f/9//7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/vwAAAAAAAP+/AAD+/wAA/78AAP7/AAD/vwAAAAAAAP+//v8AAAAA/7/+/wAAAAD/v////v8AAP+////+/wAA/7//f/9//v//v/9//3/+//+//3//f/7//7//f/9//v//v/9//3////+//3//f////7//f/9/////v/9//3////+/")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_tels2")
+shadow_mesh = SubResource("ArrayMesh_pgswn")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_3qkh0"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_au51q"]
 _surfaces = [{
 "aabb": AABB(-0.36, -0.0075, 0, 0.72, 0.015, 0.36),
 "format": 34359742465,
@@ -2385,7 +2385,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_edqmb"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_k8dew"]
 resource_name = "外牆003"
 _surfaces = [{
 "aabb": AABB(-0.36, -0.0075, 0, 0.72, 0.015, 0.36),
@@ -2401,9 +2401,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("wszMPZDC9TsAAAAA61G4vpDC9bsAAAAA61G4PpDC9bsAAAAA61G4vpDC9TsAAAAA61G4PpDC9TsAAAAA3czMPZDC9TvrUbg+61G4vpDC9bvrUbg+61G4vpDC9TvrUbg+61G4PpDC9bvrUbg+61G4PpDC9TvrUbg+61G4PpDC9bvrUbg+61G4PpDC9bsAAAAA61G4vpDC9bsAAAAA61G4vpDC9bvrUbg+61G4PpDC9TvrUbg+61G4PpDC9TsAAAAA61G4PpDC9bsAAAAA61G4PpDC9bvrUbg+61G4vpDC9bvrUbg+61G4vpDC9bsAAAAA61G4vpDC9TsAAAAA61G4vpDC9TvrUbg+61G4PpDC9TsAAAAA61G4PpDC9TvrUbg+3czMPZDC9TvrUbg+wszMPZDC9TsAAAAA/////wAA/7//////AAD/v/////8AAP+//////wAA/7//////AAD/v/9//3/+//+//3//f////7//f/9/////v/9//3/+//+//3//f/7//7//fwAA////v/9/AAD///+//38AAP///7//fwAA////v////3//f///////f/9///////9//3///////3//f///AAD/f/9/AIAAAP9//38AgAAA/3//fwCAAAD/f/9/AID/f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/vw==")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_3qkh0")
+shadow_mesh = SubResource("ArrayMesh_au51q")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_8t1vg"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_3myxq"]
 _surfaces = [{
 "aabb": AABB(-0.00749999, -0.225, 0, 0.015, 0.45, 0.3),
 "format": 34359742465,
@@ -2417,7 +2417,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_3mk5k"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_7pn7j"]
 resource_name = "內牆003"
 _surfaces = [{
 "aabb": AABB(-0.00749999, -0.225, 0, 0.015, 0.45, 0.3),
@@ -2433,9 +2433,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("e8L1O2VmZj4AAAAAe8L1u2VmZj4AAAAAe8L1u2VmZr4AAAAAe8L1O2VmZr4AAAAAe8L1O2VmZj6amZk+e8L1O2VmZr6amZk+e8L1u2VmZr6amZk+e8L1u2VmZj6amZk+e8L1O2VmZr6amZk+e8L1O2VmZr4AAAAAe8L1u2VmZr4AAAAAe8L1u2VmZr6amZk+e8L1O2VmZj6amZk+e8L1O2VmZj4AAAAAe8L1O2VmZr4AAAAAe8L1O2VmZr6amZk+e8L1u2VmZj6amZk+e8L1u2VmZj4AAAAAe8L1O2VmZj4AAAAAe8L1O2VmZj6amZk+e8L1u2VmZr6amZk+e8L1u2VmZr4AAAAAe8L1u2VmZj4AAAAAe8L1u2VmZj6amZk+/////wAA/7//////AAD/v/////8AAP+//////wAA/7//f/9/////v/9//3////+//3//f////7//f/9/////v/9/AAD///+//38AAP///7//fwAA////v/9/AAD///+/////f/9///////9//3///////3//f///////f/9/////f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/vwAA/3//fwCAAAD/f/9/AIAAAP9//38AgAAA/3//fwCA")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_8t1vg")
+shadow_mesh = SubResource("ArrayMesh_3myxq")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_e6wuc"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_1ngbl"]
 _surfaces = [{
 "aabb": AABB(-0.39, -0.15, -1.4534e-07, 0.74, 0.3, 0.0150002),
 "format": 34359742465,
@@ -2449,7 +2449,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_0vb8u"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_6fyqy"]
 resource_name = "內牆001"
 _surfaces = [{
 "aabb": AABB(-0.39, -0.15, -1.4534e-07, 0.74, 0.3, 0.0150002),
@@ -2465,9 +2465,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("oUfhvZ+ZGb6pE9AwoUfhvZ+ZGb6RwnU8oUfhvc3MTD2VwnU8oUfhvc3MTD2pE1AxoUfhvc3MTD2pE1AxoUfhvc3MTD2VwnU8NlyPPc3MTD2VwnU8NlyPPc3MTD2/DhwxNlyPPc3MTD2/DhwxNlyPPc3MTD2VwnU8NlyPPZ+ZGb6RwnU8NlyPPZ+ZGb6pE9AwNlyPPZ+ZGb6pE9AwNlyPPZ+ZGb6RwnU8NDOzPp2ZGb5cwnU8NDOzPp2ZGb6pE1CzNDOzPp2ZGb6pE1CzNDOzPp2ZGb5cwnU8MzOzPp2ZGT6QwnU8MzOzPp2ZGT4AAAAAMzOzPp2ZGT4AAAAAMzOzPp2ZGT6QwnU8BK7HvpuZGT4ownU8BK7HvpuZGT6oE9CzBK7HvpuZGT6oE9CzBK7HvpuZGT4ownU8Ba7Hvp6ZGb70wXU8Ba7Hvp6ZGb6/Dhy0Ba7Hvp6ZGb6/Dhy0Ba7Hvp6ZGb70wXU8oUfhvZ+ZGb6RwnU8oUfhvZ+ZGb6pE9AwNlyPPc3MTD2/DhwxNlyPPZ+ZGb6pE9AwNDOzPp2ZGb6pE1CzMzOzPp2ZGT4AAAAAoUfhvc3MTD2pE1AxBK7HvpuZGT6oE9CzoUfhvZ+ZGb6pE9AwBa7Hvp6ZGb6/Dhy0oUfhvZ+ZGb6RwnU8Ba7Hvp6ZGb70wXU8BK7HvpuZGT4ownU8oUfhvc3MTD2VwnU8NDOzPp2ZGb5cwnU8NlyPPZ+ZGb6RwnU8NlyPPc3MTD2VwnU8MzOzPp2ZGT6QwnU8////f/////////9//////////3//////////f///////fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/vwAA/3//f/+/AAD/f/9//78AAP9//3//vwAA/3//f/+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7////9//////////3//////////f/////////9///////9///////+//3///////7//f///////v/9///////+/AAD/f/9//78AAP9//3//vwAA/3//f/+/AAD/f/9//7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/vwAA//8AAP+/AAD+/wAA/78AAP7/AAD/vwAA//8AAP+//v8AAAAA/7///wAAAAD/v////v8AAP+//v/+/wAA/7//f/9//v//v/9//3/+//+//3//f/7//7//f/9//v//v/9//3////+//3//f////7//f/9/////v/9//3////+/")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_e6wuc")
+shadow_mesh = SubResource("ArrayMesh_1ngbl")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_4v1br"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_d1fwr"]
 _surfaces = [{
 "aabb": AABB(-1.0775, -0.0075, 0, 2.155, 0.015, 0.36),
 "format": 34359742465,
@@ -2481,7 +2481,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_s35na"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_3vgii"]
 resource_name = "外牆006"
 _surfaces = [{
 "aabb": AABB(-1.0775, -0.0075, 0, 2.155, 0.015, 0.36),
@@ -2497,9 +2497,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("heuJP5DC9TsAAAAAheuJv5DC9TsAAAAAheuJv5DC9bsAAAAAheuJP5DC9bsAAAAAheuJP5DC9TvnUbg+heuJP5DC9bvnUbg+heuJv5DC9bvnUbg+heuJv5DC9TvnUbg+heuJP5DC9bvnUbg+heuJP5DC9bsAAAAAheuJv5DC9bsAAAAAheuJv5DC9bvnUbg+heuJP5DC9TvnUbg+heuJP5DC9TsAAAAAheuJP5DC9bsAAAAAheuJP5DC9bvnUbg+heuJv5DC9TvnUbg+heuJv5DC9TsAAAAAheuJP5DC9TsAAAAAheuJP5DC9TvnUbg+heuJv5DC9bvnUbg+heuJv5DC9bsAAAAAheuJv5DC9TsAAAAAheuJv5DC9TvnUbg+/////wAA/7//////AAD/v/////8AAP+//////wAA/7//f/9//v//v/9//3/+//+//3//f/7//7//f/9//v//v/9/AAD///+//38AAP///7//fwAA////v/9/AAD///+/////f/9///////9//3///////3//f///////f/9/////f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/vwAA/3//fwCAAAD/f/9/AIAAAP9//38AgAAA/3//fwCA")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_4v1br")
+shadow_mesh = SubResource("ArrayMesh_d1fwr")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_xonng"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_3280w"]
 _surfaces = [{
 "aabb": AABB(-0.3525, -0.15, -7.56979e-10, 0.705, 0.3, 0.0150001),
 "format": 34359742465,
@@ -2513,7 +2513,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_8ik3r"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_fetka"]
 resource_name = "內牆010"
 _surfaces = [{
 "aabb": AABB(-0.3525, -0.15, -7.56979e-10, 0.705, 0.3, 0.0150001),
@@ -2529,9 +2529,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("zcxMvZ+ZGb4NcbQzzsxMvZ+ZGb7swnU80MxMvbnMTD3wwnU8zcxMvbnMTD0g0r8zzcxMvbnMTD0g0r8z0MxMvbnMTD3wwnU8ysxMPbnMTD0Nw3U8zcxMPbnMTD1ZF/czzcxMPbnMTD1ZF/czysxMPbnMTD0Nw3U8zMxMPZ+ZGb4Vw3U8zcxMPZ+ZGb6YTAU0zcxMPZ+ZGb6YTAU0zMxMPZ+ZGb4Vw3U84Hq0Pp+ZGb6OwnU84Hq0Pp+ZGb4AAAAA4Hq0Pp+ZGb4AAAAA4Hq0Pp+ZGb6OwnU84Hq0Pp+ZGT6OwnU84Hq0Pp+ZGT6pE1Cw4Hq0Pp+ZGT6pE1Cw4Hq0Pp+ZGT6OwnU84Hq0vp+ZGT6RwnU84Hq0vp+ZGT4AAAAA4Hq0vp+ZGT4AAAAA4Hq0vp+ZGT6RwnU84Hq0vp+ZGb6RwnU84Hq0vp+ZGb6pE1Aw4Hq0vp+ZGb6pE1Aw4Hq0vp+ZGb6RwnU8zsxMvZ+ZGb7swnU8zcxMvZ+ZGb4NcbQzzcxMPbnMTD1ZF/czzcxMPZ+ZGb6YTAU04Hq0Pp+ZGb4AAAAA4Hq0Pp+ZGT6pE1CwzcxMvbnMTD0g0r8z4Hq0vp+ZGT4AAAAAzcxMvZ+ZGb4NcbQz4Hq0vp+ZGb6pE1AwzsxMvZ+ZGb7swnU84Hq0vp+ZGb6RwnU84Hq0vp+ZGT6RwnU80MxMvbnMTD3wwnU84Hq0Pp+ZGb6OwnU8zMxMPZ+ZGb4Vw3U8ysxMPbnMTD0Nw3U84Hq0Pp+ZGT6OwnU8/v//f///AID+//9///8AgP7//3////7//v//f///AID/fwAA/3//v/9/AAD/f/+//38AAP9//7//fwAA/3//vwAA/3//f/+/AAD/f/9//78AAP9//3//vwAA/3//f/+//38AAP9//7//fwAA/3//v/9/AAD/f/+//38AAP9//7////9//////////3//////////f/////////9///////9//////////3//////////f/////////9/////////AAD/f/9//78AAP9//3//vwAA/3//f/+/AAD/f/9//7//fwAA/3//v/9/AAD/f/+//38AAP9//7//fwAA/3//vwAAAAAAAP+/AAAAAAAA/78AAAAAAAD/vwAAAAAAAP+//v8AAAAA/7/+/wAAAAD/v////v8AAP+///8AAAAA/7//f/9//v//v/9//3/+//+//3//f/7//7//f/9//v//v/9//3////+//3//f////7//f/9/////v/9//3////+/")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_xonng")
+shadow_mesh = SubResource("ArrayMesh_3280w")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_pat1e"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_ka15u"]
 _surfaces = [{
 "aabb": AABB(-0.12, -0.0075, 0, 0.24, 0.015, 0.3),
 "format": 34359742465,
@@ -2545,7 +2545,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_y2lwn"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_ee5cc"]
 resource_name = "內牆011"
 _surfaces = [{
 "aabb": AABB(-0.12, -0.0075, 0, 0.24, 0.015, 0.3),
@@ -2561,9 +2561,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("iML1PZDC9TsAAAAAiML1vZDC9TsAAAAAiML1vZDC9bsAAAAAiML1PZDC9bsAAAAAiML1PZDC9TuamZk+iML1PZDC9buamZk+iML1vZDC9buamZk+iML1vZDC9TuamZk+iML1PZDC9buamZk+iML1PZDC9bsAAAAAiML1vZDC9bsAAAAAiML1vZDC9buamZk+iML1PZDC9TuamZk+iML1PZDC9TsAAAAAiML1PZDC9bsAAAAAiML1PZDC9buamZk+iML1vZDC9TuamZk+iML1vZDC9TsAAAAAiML1PZDC9TsAAAAAiML1PZDC9TuamZk+iML1vZDC9buamZk+iML1vZDC9bsAAAAAiML1vZDC9TsAAAAAiML1vZDC9TuamZk+/////wAA/7//////AAD/v/////8AAP+//////wAA/7//f/9/////v/9//3////+//3//f/7//7//f/9//v//v/9/AAD///+//38AAP///7//fwAA////v/9/AAD///+/////f/9///////9//3///////3//f///////f/9/////f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/vwAA/3//fwCAAAD/f/9/AIAAAP9//38AgAAA/3//fwCA")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_pat1e")
+shadow_mesh = SubResource("ArrayMesh_ka15u")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_4104i"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_bevdd"]
 _surfaces = [{
 "aabb": AABB(-0.00750003, -0.35, 0, 0.0150001, 0.7, 0.3),
 "format": 34359742465,
@@ -2577,7 +2577,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_1nms2"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_t40aa"]
 resource_name = "內牆012"
 _surfaces = [{
 "aabb": AABB(-0.00750003, -0.35, 0, 0.0150001, 0.7, 0.3),
@@ -2593,9 +2593,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("ycL1u6uH6z0AAAAAycL1OzIzsz4AAAAAycL1uzIzsz4AAAAAycL1OzIzs74AAAAAycL1uzIzs74AAAAAycL1ux+D6z2amZk+ycL1OzIzsz6amZk+ycL1OzIzs76amZk+ycL1uzIzsz6amZk+ycL1uzIzs76amZk+ycL1OzIzs76amZk+ycL1OzIzs74AAAAAycL1uzIzs74AAAAAycL1uzIzs76amZk+ycL1OzIzsz6amZk+ycL1OzIzsz4AAAAAycL1OzIzs74AAAAAycL1OzIzs76amZk+ycL1uzIzsz6amZk+ycL1uzIzsz4AAAAAycL1OzIzsz4AAAAAycL1OzIzsz6amZk+ycL1u6uH6z0AAAAAycL1uzIzsz4AAAAAycL1uzIzsz6amZk+ycL1ux+D6z2amZk+/////wAA/7//////AAD/v/////8AAP+//////wAA/7//////AAD/v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//fwAA////v/9/AAD///+//38AAP///7//fwAA////v////3//f///////f/9///////9//3///////3//f////3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/78AAP9//38AgAAA/3//fwCAAAD/f/9/AIAAAP9//38AgA==")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_4104i")
+shadow_mesh = SubResource("ArrayMesh_bevdd")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_1ilhw"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_o7be5"]
 _surfaces = [{
 "aabb": AABB(-0.23, -0.15, 0, 0.46, 0.3, 0.0150001),
 "format": 34359742465,
@@ -2609,7 +2609,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_8c53k"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_tcun0"]
 resource_name = "內牆013"
 _surfaces = [{
 "aabb": AABB(-0.23, -0.15, 0, 0.46, 0.3, 0.0150001),
@@ -2625,9 +2625,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("KYVrPqCZGb4AAAAAKYVrPqCZGb6QwnU8KYVrPqCZGT6QwnU8KYVrPqCZGT4AAAAAKYVrPqCZGT4AAAAAKYVrPqCZGT6QwnU8KYVrvqCZGT6QwnU8KYVrvqCZGT4AAAAAKYVrvqCZGT4AAAAAKYVrvqCZGT6QwnU8KIVrvqCZGb6QwnU8KIVrvqCZGb4AAAAAKIVrvqCZGb4AAAAAKIVrvqCZGb6QwnU8zcxMvaCZGb74wnU8zcxMvaCZGb6pE9AzzcxMvaCZGb6pE9AzzcxMvaCZGb74wnU8zcxMvbnMTD3zwnU8zcxMvbnMTD29UsYzzcxMvbnMTD29UsYzzcxMvbnMTD3zwnU8zcxMPbnMTD3zwnU8zcxMPbnMTD29UsYzzcxMPbnMTD29UsYzzcxMPbnMTD3zwnU8zcxMPaCZGb74wnU8zcxMPaCZGb6pE9AzzcxMPaCZGb6pE9AzzcxMPaCZGb74wnU8KYVrPqCZGb6QwnU8KYVrPqCZGb4AAAAAKIVrvqCZGb4AAAAAzcxMvaCZGb6pE9AzzcxMvbnMTD29UsYzKYVrvqCZGT4AAAAAzcxMPbnMTD29UsYzKYVrPqCZGT4AAAAAKYVrPqCZGb4AAAAAzcxMPaCZGb6pE9Az////f/////////9//////////3//////////f///////f///////v/9///////+//3///////7//f///////vwAA/3//f/+/AAD/f/9//78AAP9//3//vwAA/3//f/+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7////9//////////3//////////f/////////9///////9/AAAAAP+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+/AAD/f/9//78AAP9//3//vwAA/3//f/+/AAD/f/9//7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v///AAAAAP+///8AAAAA/7/+/wAAAAD/v/7/AAAAAP+/AAAAAAAA/78AAAAAAAD/vwAAAAAAAP+/AAAAAAAA/78=")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_1ilhw")
+shadow_mesh = SubResource("ArrayMesh_o7be5")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_1qpv8"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_jiem7"]
 _surfaces = [{
 "aabb": AABB(-0.0075, -0.7175, 0, 0.015, 1.435, 0.36),
 "format": 34359742465,
@@ -2641,7 +2641,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_jpgfq"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_528ve"]
 resource_name = "外牆005"
 _surfaces = [{
 "aabb": AABB(-0.0075, -0.7175, 0, 0.015, 1.435, 0.36),
@@ -2657,9 +2657,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("kML1Ozszc74AAAAAkML1uxCuN78AAAAAkML1OxCuN78AAAAAkML1uxCuNz8AAAAAkML1OxCuNz8AAAAAkML1Oyczc77rUbg+kML1uxCuN7/rUbg+kML1uxCuNz/rUbg+kML1OxCuN7/rUbg+kML1OxCuNz/rUbg+kML1OxCuN7/rUbg+kML1OxCuN78AAAAAkML1uxCuN78AAAAAkML1uxCuN7/rUbg+kML1uxCuNz/rUbg+kML1uxCuNz8AAAAAkML1OxCuNz8AAAAAkML1OxCuNz/rUbg+kML1uxCuN7/rUbg+kML1uxCuN78AAAAAkML1uxCuNz8AAAAAkML1uxCuNz/rUbg+kML1Oyczc77rUbg+kML1OxCuNz/rUbg+kML1OxCuNz8AAAAAkML1Ozszc74AAAAA/////wAA/7//////AAD/v/////8AAP+//////wAA/7//////AAD/v/9//3/+//+//3//f////7//f/9/////v/9//3////+//3//f////7//fwAA////v/9/AAD///+//38AAP///7//fwAA////v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+/AAD/f/9/AIAAAP9//38AgAAA/3//fwCAAAD/f/9/AID///9//3///////3//f///////f/9///////9//3///w==")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_1qpv8")
+shadow_mesh = SubResource("ArrayMesh_jiem7")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_ul30o"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_h4fr0"]
 _surfaces = [{
 "aabb": AABB(-0.36, 0.0075, 0, 0.46, 1e-05, 0.36),
 "format": 34359742465,
@@ -2673,7 +2673,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_3570l"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_af6rn"]
 resource_name = "磁磚001"
 _surfaces = [{
 "aabb": AABB(-0.36, 0.0075, 0, 0.46, 1e-05, 0.36),
@@ -2689,9 +2689,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("61G4vpDC9TvrUbg+61G4vpDC9TsAAAAAwszMPZDC9TsAAAAA3czMPZDC9TvrUbg+/3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/78=")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_ul30o")
+shadow_mesh = SubResource("ArrayMesh_h4fr0")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_s8f4l"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_fc6hy"]
 _surfaces = [{
 "aabb": AABB(-0.00750003, -0.35, 0, 1e-05, 0.465005, 0.3),
 "format": 34359742465,
@@ -2705,7 +2705,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_tia3b"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_lffhr"]
 resource_name = "磁磚004"
 _surfaces = [{
 "aabb": AABB(-0.00750003, -0.35, 0, 1e-05, 0.465005, 0.3),
@@ -2721,9 +2721,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("ycL1ux+D6z2amZk+ycL1uzIzs76amZk+ycL1uzIzs74AAAAAycL1u6uH6z0AAAAAAAD/f/9/AIAAAP9//38AgAAA/3//fwCAAAD/f/9/AIA=")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_s8f4l")
+shadow_mesh = SubResource("ArrayMesh_fc6hy")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_1xqqt"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_usyg2"]
 _surfaces = [{
 "aabb": AABB(0.0075, -0.7175, 0, 1e-05, 0.48, 0.36),
 "format": 34359742465,
@@ -2737,7 +2737,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_b6hf6"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_slp30"]
 resource_name = "磁磚002"
 _surfaces = [{
 "aabb": AABB(0.0075, -0.7175, 0, 1e-05, 0.48, 0.36),
@@ -2753,9 +2753,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("kML1OxCuN7/rUbg+kML1Oyczc77rUbg+kML1Ozszc74AAAAAkML1OxCuN78AAAAA////f/9///////9//3///////3//f///////f/9///8=")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_1xqqt")
+shadow_mesh = SubResource("ArrayMesh_usyg2")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_d3lgu"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_pakpq"]
 _surfaces = [{
 "aabb": AABB(-0.23, -0.15, 0.015, 0.46, 0.3, 1e-05),
 "format": 34359742465,
@@ -2769,7 +2769,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_h0j1m"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_eqxmd"]
 resource_name = "磁磚003"
 _surfaces = [{
 "aabb": AABB(-0.23, -0.15, 0.015, 0.46, 0.3, 1e-05),
@@ -2785,9 +2785,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("KYVrPqCZGb6QwnU8zcxMPaCZGb74wnU8zcxMPbnMTD3zwnU8KYVrPqCZGT6QwnU8KYVrvqCZGT6QwnU8zcxMvbnMTD3zwnU8zcxMvaCZGb74wnU8KIVrvqCZGb6QwnU8/3//f////7//f/9/////v/9//3////+//3//f/7//7//f/9//v//v/9//3/+//+//3//f/7//7//f/9//v//vw==")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_d3lgu")
+shadow_mesh = SubResource("ArrayMesh_pakpq")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_or1ly"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_dft1f"]
 _surfaces = [{
 "aabb": AABB(0.135, -0.15, 0, 0.215, 0.3, 1e-05),
 "format": 34359742465,
@@ -2801,7 +2801,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_s7tyk"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_07edr"]
 resource_name = "磁磚008"
 _surfaces = [{
 "aabb": AABB(0.135, -0.15, 0, 0.215, 0.3, 1e-05),
@@ -2817,9 +2817,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("6T0KPp+ZGT4AAAAAhT0KPp+ZGb7aD78zMjOzPp+ZGb4AAAAAMjOzPp+ZGT4AAAAAAAAAAAAA/78AAAAAAAD/vwAAAAAAAP+/AAAAAAAA/78=")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_or1ly")
+shadow_mesh = SubResource("ArrayMesh_dft1f")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_5xiad"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_74mv4"]
 _surfaces = [{
 "aabb": AABB(-0.23, -0.15, 0.015, 0.26, 0.3, 1e-05),
 "format": 34359742465,
@@ -2833,7 +2833,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_lvhiy"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_xpatv"]
 resource_name = "磁磚007"
 _surfaces = [{
 "aabb": AABB(-0.23, -0.15, 0.015, 0.26, 0.3, 1e-05),
@@ -2849,9 +2849,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("48L1PKCZGb6QwnU8zcxMvaCZGb75wnU8zcxMvbnMTD3zwnU848L1PKCZGT6QwnU8KYVrvqCZGT6QwnU8mpkZvrnMTD3zwnU8mpkZvqCZGb75wnU8KIVrvqCZGb6QwnU8/3//f////7//f/9/////v/9//3////+//3//f////7//f/9//v//v/9//3/+//+//3//f/7//7//f/9//v//vw==")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_5xiad")
+shadow_mesh = SubResource("ArrayMesh_74mv4")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_cgupk"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_dlj7i"]
 _surfaces = [{
 "aabb": AABB(-0.0075, -0.115, 0, 1e-05, 0.23, 0.3),
 "format": 34359742465,
@@ -2865,7 +2865,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_hbnuw"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_qfpvi"]
 resource_name = "磁磚006"
 _surfaces = [{
 "aabb": AABB(-0.0075, -0.115, 0, 1e-05, 0.23, 0.3),
@@ -2881,9 +2881,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("kML1uw6F672fmZk+kML1uw6F670AAAAAkML1uw6F6z0AAAAAkML1uw6F6z2fmZk+AAD/f/9/AIAAAP9//38AgAAA/3//fwCAAAD/f/9/AIA=")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_cgupk")
+shadow_mesh = SubResource("ArrayMesh_dlj7i")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_p85uk"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_67ilq"]
 _surfaces = [{
 "aabb": AABB(-0.325, 0.0075, 0, 0.26, 1e-05, 0.36),
 "format": 34359742465,
@@ -2897,7 +2897,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_1ds6q"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_iay7x"]
 resource_name = "磁磚005"
 _surfaces = [{
 "aabb": AABB(-0.325, 0.0075, 0, 0.26, 1e-05, 0.36),
@@ -2913,7 +2913,7 @@ _surfaces = [{
 "vertex_data": PackedByteArray("tx6FvZDC9TsAAAAAnx6FvZDC9TvuUbg+YGamvpDC9TvuUbg+Z2amvpDC9TsAAAAA/3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/78=")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_p85uk")
+shadow_mesh = SubResource("ArrayMesh_67ilq")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_w5trf"]
 _surfaces = [{
@@ -2929,7 +2929,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_i113u"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_uv5ss"]
 resource_name = "書櫃（小）001"
 _surfaces = [{
 "aabb": AABB(-0.6423, -4.11649, -1.86286, 0.689879, 8.23299, 1.93315),
@@ -2961,7 +2961,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_mpgx1"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_q8xqn"]
 resource_name = "書櫃（小）003"
 _surfaces = [{
 "aabb": AABB(-0.6423, -4.11649, -1.86286, 0.689879, 8.23299, 1.93315),
@@ -2993,7 +2993,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_vspls"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_7wqyk"]
 resource_name = "書櫃（小）002"
 _surfaces = [{
 "aabb": AABB(-0.6423, -4.11649, -1.86286, 0.689879, 8.23299, 1.93315),
@@ -3026,7 +3026,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_y6po6"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_ahv00"]
 resource_name = "古董陶瓷002"
 _surfaces = [{
 "aabb": AABB(-0.0191266, -0.0224847, 0, 0.0427684, 0.0449694, 0.055),
@@ -3060,7 +3060,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_jdhjf"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_ueqvw"]
 resource_name = "古董陶瓷001"
 _surfaces = [{
 "aabb": AABB(-0.0191266, -0.0224847, 0, 0.0427684, 0.0449694, 0.055),
@@ -3093,7 +3093,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_jcxqb"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_mi8yr"]
 resource_name = "沙發（小）001"
 _surfaces = [{
 "aabb": AABB(-0.055, -0.035, -3.6335e-08, 0.11, 0.1, 0.085),
@@ -3125,7 +3125,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_hi1b6"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_g17w8"]
 resource_name = "沙發（大）001"
 _surfaces = [{
 "aabb": AABB(-0.11, -0.0350002, -6.05583e-09, 0.22, 0.1, 0.085),
@@ -3157,7 +3157,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_bsd0f"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_dh2fj"]
 resource_name = "沙發（小）002"
 _surfaces = [{
 "aabb": AABB(-0.055, -0.035, -3.6335e-08, 0.11, 0.1, 0.085),
@@ -3178,7 +3178,7 @@ shadow_mesh = SubResource("ArrayMesh_qybx6")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jsra8"]
 resource_name = "門"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("13_veu4q")
+albedo_texture = ExtResource("13_2y4r8")
 emission_enabled = true
 emission_energy_multiplier = 0.0
 
@@ -3196,7 +3196,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_4efr8"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_m7fpk"]
 resource_name = "門002"
 _surfaces = [{
 "aabb": AABB(-0.05, -0.0025, 0, 0.1, 0.005, 0.2),
@@ -3228,7 +3228,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_pn2dq"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_dgw68"]
 resource_name = "門001"
 _surfaces = [{
 "aabb": AABB(-0.09, -0.0025, 0, 0.18, 0.005, 0.2),
@@ -3260,7 +3260,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_gfjl2"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_oo7k1"]
 resource_name = "門003"
 _surfaces = [{
 "aabb": AABB(-0.05, -0.0025, 0, 0.1, 0.005, 0.2),
@@ -3292,7 +3292,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_jfwq3"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_t3k0x"]
 resource_name = "門004"
 _surfaces = [{
 "aabb": AABB(-0.05, -0.0025, 0, 0.1, 0.005, 0.2),
@@ -3324,7 +3324,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_arphm"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_er5yj"]
 resource_name = "冰箱"
 _surfaces = [{
 "aabb": AABB(1.48968, -0.325, -1.13, 0.700001, 0.650001, 1.67),
@@ -3356,7 +3356,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_37moc"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_785se"]
 resource_name = "門005"
 _surfaces = [{
 "aabb": AABB(-0.05, -0.0025, 0, 0.1, 0.005, 0.2),
@@ -3388,7 +3388,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_ujb51"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_17tj1"]
 resource_name = "爐台"
 _surfaces = [{
 "aabb": AABB(-0.0275, -0.0425, 0, 0.055, 0.085, 0.002),
@@ -3420,7 +3420,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_828q6"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_bb12r"]
 resource_name = "爐子開關001"
 _surfaces = [{
 "aabb": AABB(-0.00242705, -0.00285317, 0, 0.00542705, 0.00570634, 0.003),
@@ -3452,7 +3452,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_efr6m"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_qe6k5"]
 resource_name = "爐子開關002"
 _surfaces = [{
 "aabb": AABB(-0.00242705, -0.00285317, 0, 0.00542705, 0.00570634, 0.003),
@@ -3484,7 +3484,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_ftbfv"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_lpnwe"]
 resource_name = "爐架001"
 _surfaces = [{
 "aabb": AABB(-0.0114127, -0.012, -0.002, 0.0228254, 0.024, 0.00550003),
@@ -3516,7 +3516,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_5bvlj"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_ldne0"]
 resource_name = "爐架002"
 _surfaces = [{
 "aabb": AABB(-0.0114127, -0.012, -0.002, 0.0228254, 0.024, 0.00550003),
@@ -3548,7 +3548,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_os55j"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_5blqd"]
 resource_name = "門006"
 _surfaces = [{
 "aabb": AABB(-0.09, -0.0025, 0, 0.18, 0.005, 0.2),
@@ -3581,7 +3581,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_ro165"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_rvg78"]
 resource_name = "球棒"
 _surfaces = [{
 "aabb": AABB(-0.00404509, -0.00475528, 0, 0.00904508, 0.00951057, 0.085),
@@ -3614,7 +3614,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_gy2ay"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_owjgg"]
 resource_name = "鐵撬"
 _surfaces = [{
 "aabb": AABB(-0.043, -0.0105, 0, 0.066, 0.0154999, 0.005),
@@ -3646,7 +3646,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_yhjmc"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_i5kuq"]
 resource_name = "鑰匙"
 _surfaces = [{
 "aabb": AABB(-0.0005, -0.000499999, 0, 0.002, 0.000999997, 0.0002),
@@ -3667,7 +3667,7 @@ shadow_mesh = SubResource("ArrayMesh_aisuk")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1lthe"]
 resource_name = "Material #42"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("14_b8ixn")
+albedo_texture = ExtResource("14_pos0p")
 emission_enabled = true
 emission_energy_multiplier = 0.0
 
@@ -3685,7 +3685,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_61fgm"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_b76e0"]
 resource_name = "書001"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.01, 0, 0.05, 0.02, 0.025),
@@ -3717,7 +3717,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_uj441"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_s5pw3"]
 resource_name = "文件001"
 _surfaces = [{
 "aabb": AABB(-0.01, -0.015, 0, 0.02, 0.03, 0.01),
@@ -3749,7 +3749,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_qmjuy"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_85g3v"]
 resource_name = "掛畫（A）001"
 _surfaces = [{
 "aabb": AABB(-0.0375, -0.005, 0, 0.075, 0.01, 0.105),
@@ -3781,7 +3781,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_gbfoj"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_synb1"]
 resource_name = "掛畫（B）001"
 _surfaces = [{
 "aabb": AABB(-0.0375, -0.005, 0, 0.075, 0.01, 0.105),
@@ -3813,7 +3813,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_4vaxl"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_vfyp5"]
 resource_name = "保險箱"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.032, 0, 0.05, 0.057, 0.06),
@@ -3845,7 +3845,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_hair7"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_ueery"]
 resource_name = "掛畫（A）002"
 _surfaces = [{
 "aabb": AABB(-0.0375, -0.005, 0, 0.075, 0.01, 0.105),
@@ -3877,7 +3877,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_ard1m"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_0e2o6"]
 resource_name = "掛畫（B）002"
 _surfaces = [{
 "aabb": AABB(-0.0375, -0.005, 0, 0.075, 0.01, 0.105),
@@ -3909,7 +3909,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_ll0gx"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_ffks6"]
 resource_name = "掛畫（A）003"
 _surfaces = [{
 "aabb": AABB(-0.0375, -0.005, 0, 0.075, 0.01, 0.105),
@@ -3941,7 +3941,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_5natw"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_f041r"]
 resource_name = "文件002"
 _surfaces = [{
 "aabb": AABB(-0.01, -0.015, 0, 0.02, 0.03, 0.01),
@@ -3973,7 +3973,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_3rrc7"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_sojpf"]
 resource_name = "文件003"
 _surfaces = [{
 "aabb": AABB(-0.01, -0.015, 0, 0.02, 0.03, 0.01),
@@ -4005,7 +4005,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_rpykl"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_ndp7q"]
 resource_name = "書002"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.01, 0, 0.05, 0.02, 0.025),
@@ -4037,7 +4037,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_b7lud"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_ibtuv"]
 resource_name = "書003"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.01, 0, 0.05, 0.02, 0.025),
@@ -4069,7 +4069,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_q3p5g"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_bmfvu"]
 resource_name = "書004"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.01, 0, 0.05, 0.02, 0.025),
@@ -4101,7 +4101,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_xqy2h"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_eokf1"]
 resource_name = "書005"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.01, 0, 0.05, 0.02, 0.025),
@@ -4133,7 +4133,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_4vr8m"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_g5uru"]
 resource_name = "書006"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.01, 0, 0.05, 0.02, 0.025),
@@ -4165,7 +4165,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_5r53f"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_3dnxp"]
 resource_name = "書007"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.01, 0, 0.05, 0.02, 0.025),
@@ -4197,7 +4197,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_ar3ls"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_o2gry"]
 resource_name = "書008"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.01, 0, 0.05, 0.02, 0.025),
@@ -4229,7 +4229,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_etkdr"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_yniv3"]
 resource_name = "書009"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.01, 0, 0.05, 0.02, 0.025),
@@ -4261,7 +4261,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_t3ask"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_quiff"]
 resource_name = "書010"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.01, 0, 0.05, 0.02, 0.025),
@@ -4293,7 +4293,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_c4sdh"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_0ry7i"]
 resource_name = "書011"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.01, 0, 0.05, 0.02, 0.025),
@@ -4325,7 +4325,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_tfory"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_ynvok"]
 resource_name = "書012"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.01, 0, 0.05, 0.02, 0.025),
@@ -4357,7 +4357,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_uqaoj"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_cedyg"]
 resource_name = "書013"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.01, 0, 0.05, 0.02, 0.025),
@@ -4389,7 +4389,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_cho8n"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_nlitb"]
 resource_name = "書014"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.01, 0, 0.05, 0.02, 0.025),
@@ -4421,7 +4421,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_18dhc"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_orr38"]
 resource_name = "書015"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.01, 0, 0.05, 0.02, 0.025),
@@ -4453,7 +4453,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_hww1v"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_vf7ih"]
 resource_name = "書016"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.01, 0, 0.05, 0.02, 0.025),
@@ -4485,7 +4485,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_4y4m0"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_cvi6p"]
 resource_name = "書017"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.01, 0, 0.05, 0.02, 0.025),
@@ -4517,7 +4517,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_p5owv"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_fdnxe"]
 resource_name = "書018"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.01, 0, 0.05, 0.02, 0.025),
@@ -4549,7 +4549,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_ikh4m"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_m50ng"]
 resource_name = "書019"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.01, 0, 0.05, 0.02, 0.025),
@@ -4581,7 +4581,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_lmebu"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_303pl"]
 resource_name = "書020"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.01, 0, 0.05, 0.02, 0.025),
@@ -4613,7 +4613,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_02tvh"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_aqe2i"]
 resource_name = "書021"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.01, 0, 0.05, 0.02, 0.025),
@@ -4645,7 +4645,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_72pqa"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_kj3iq"]
 resource_name = "文件004"
 _surfaces = [{
 "aabb": AABB(-0.01, -0.015, 0, 0.02, 0.03, 0.01),
@@ -4677,7 +4677,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_unsvs"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_cqfnm"]
 resource_name = "文件005"
 _surfaces = [{
 "aabb": AABB(-0.01, -0.015, 0, 0.02, 0.03, 0.01),
@@ -4709,7 +4709,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_v0au6"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_s70ya"]
 resource_name = "書022"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.01, 0, 0.05, 0.02, 0.025),
@@ -4741,7 +4741,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_k3aty"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_a7pvu"]
 resource_name = "書023"
 _surfaces = [{
 "aabb": AABB(-0.025, -0.01, 0, 0.05, 0.02, 0.025),
@@ -4759,94 +4759,36 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_72kec")
 
-[sub_resource type="Animation" id="Animation_mccvt"]
-resource_name = "Take 001"
-length = 3.33333
-tracks/0/type = "rotation_3d"
-tracks/0/imported = true
-tracks/0/enabled = true
-tracks/0/path = NodePath("箱子001")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(0, 1, -0.5, -0.5, -0.5, 0.5)
-tracks/1/type = "rotation_3d"
-tracks/1/imported = true
-tracks/1/enabled = true
-tracks/1/path = NodePath("衣櫃001")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = PackedFloat32Array(0, 1, -4.32978e-17, -0.707107, -0.707107, 4.32978e-17)
-tracks/2/type = "rotation_3d"
-tracks/2/imported = true
-tracks/2/enabled = true
-tracks/2/path = NodePath("書櫃（大）001")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = PackedFloat32Array(0, 1, -4.32978e-17, -0.707107, -0.707107, 4.32978e-17)
-tracks/3/type = "rotation_3d"
-tracks/3/imported = true
-tracks/3/enabled = true
-tracks/3/path = NodePath("書櫃（大）002")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = PackedFloat32Array(0, 1, -4.32978e-17, -0.707107, -0.707107, 4.32978e-17)
-tracks/4/type = "rotation_3d"
-tracks/4/imported = true
-tracks/4/enabled = true
-tracks/4/path = NodePath("箱子002")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = PackedFloat32Array(0, 1, 0.5, -0.5, -0.5, -0.5)
-tracks/5/type = "rotation_3d"
-tracks/5/imported = true
-tracks/5/enabled = true
-tracks/5/path = NodePath("書櫃（小）003")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = PackedFloat32Array(0, 1, -4.32978e-17, -0.707107, -0.707107, 4.32978e-17)
-tracks/6/type = "rotation_3d"
-tracks/6/imported = true
-tracks/6/enabled = true
-tracks/6/path = NodePath("書櫃（小）002")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = PackedFloat32Array(0, 1, 0.5, 0.5, 0.5, -0.5)
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_6o2kt"]
-_data = {
-"Take 001": SubResource("Animation_mccvt")
-}
-
-[node name="House" type="Node3D"]
+[node name="Node3D" type="Node3D"]
 
 [node name="FrontDoorSteps" type="MeshInstance3D" parent="."]
-transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, 10.2314, -50.96, 420.176)
-mesh = SubResource("ArrayMesh_0ljik")
+transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, 10.215, -13.8525, 451.364)
+mesh = SubResource("ArrayMesh_pxptf")
 skeleton = NodePath("")
 
 [node name="LivingRoomTable" type="MeshInstance3D" parent="."]
 transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, 10.2313, -5.26421, -165.164)
-mesh = SubResource("ArrayMesh_4qlwc")
+mesh = SubResource("ArrayMesh_lovkk")
 skeleton = NodePath("")
 
 [node name="KitchenFurniture" type="MeshInstance3D" parent="."]
 transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, 421.493, -18.3202, -24.8131)
-mesh = SubResource("ArrayMesh_g7023")
+mesh = SubResource("ArrayMesh_4goe6")
 skeleton = NodePath("")
 
 [node name="Dresser" type="MeshInstance3D" parent="."]
 transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, -118.152, -24.8481, -306.604)
-mesh = SubResource("ArrayMesh_cmi3e")
+mesh = SubResource("ArrayMesh_r1emb")
 skeleton = NodePath("")
 
 [node name="Telephone" type="MeshInstance3D" parent="."]
 transform = Transform3D(826.797, 0, 0, 0, 0, 826.797, 0, -826.797, 0, -109.448, 18.6717, -306.604)
-mesh = SubResource("ArrayMesh_cmu8c")
+mesh = SubResource("ArrayMesh_cg0g6")
 skeleton = NodePath("")
 
 [node name="Stairway" type="MeshInstance3D" parent="."]
 transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, -203.015, -24.8481, 93.7782)
-mesh = SubResource("ArrayMesh_x2f0e")
+mesh = SubResource("ArrayMesh_qu0rc")
 skeleton = NodePath("")
 
 [node name="Bed" type="Node3D" parent="."]
@@ -4854,22 +4796,22 @@ transform = Transform3D(0, 1, 0, 0, 0, 1, 1, 0, 0, -1.45164, 0.250443, -1.7921)
 
 [node name="Pillow02" type="MeshInstance3D" parent="Bed"]
 transform = Transform3D(-435.198, -6.57131e-05, 0, 6.57131e-05, -435.198, 0, 0, 0, 435.198, -303.647, -242.944, -0.310959)
-mesh = SubResource("ArrayMesh_ttfgk")
+mesh = SubResource("ArrayMesh_wtgnq")
 skeleton = NodePath("")
 
 [node name="Pillow01" type="MeshInstance3D" parent="Bed"]
 transform = Transform3D(-435.198, -6.57131e-05, 0, 6.57131e-05, -435.198, 0, 0, 0, 435.198, -303.647, -266.444, -0.310959)
-mesh = SubResource("ArrayMesh_8jhpm")
+mesh = SubResource("ArrayMesh_fd32a")
 skeleton = NodePath("")
 
 [node name="BedFrame" type="MeshInstance3D" parent="Bed"]
 transform = Transform3D(-435.198, -6.57131e-05, 0, 6.57131e-05, -435.198, 0, 0, 0, 435.198, -271.779, -255.098, -24.2469)
-mesh = SubResource("ArrayMesh_36ak3")
+mesh = SubResource("ArrayMesh_buv8r")
 skeleton = NodePath("")
 
 [node name="Mattress" type="MeshInstance3D" parent="Bed"]
 transform = Transform3D(-435.198, -6.57131e-05, 0, 6.57131e-05, -435.198, 0, 0, 0, 435.198, -271.769, -254.694, -9.0149)
-mesh = SubResource("ArrayMesh_afdc3")
+mesh = SubResource("ArrayMesh_svvrm")
 skeleton = NodePath("")
 
 [node name="DiningTable" type="Node3D" parent="."]
@@ -4877,27 +4819,27 @@ transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0.595, 0.11, -1.09)
 
 [node name="Table" type="MeshInstance3D" parent="DiningTable"]
 transform = Transform3D(0, -435.198, 0, 435.198, 0, 0, 0, 0, 435.198, 279.459, 98.7947, 5.50573)
-mesh = SubResource("ArrayMesh_wjlrm")
+mesh = SubResource("ArrayMesh_cgesc")
 skeleton = NodePath("")
 
 [node name="Chair01" type="MeshInstance3D" parent="DiningTable"]
 transform = Transform3D(-5.18795e-05, -435.198, -2.70573e-12, 435.198, -5.18795e-05, 1.29699e-05, -1.29699e-05, 0, 435.198, 287.075, 127.083, -5.37421)
-mesh = SubResource("ArrayMesh_marou")
+mesh = SubResource("ArrayMesh_p4etq")
 skeleton = NodePath("")
 
 [node name="Chair02" type="MeshInstance3D" parent="DiningTable"]
 transform = Transform3D(0.000155639, 435.198, 0, -435.198, 0.000155639, 0, 0, 0, 435.198, 287.075, 70.5068, -5.37421)
-mesh = SubResource("ArrayMesh_xsfja")
+mesh = SubResource("ArrayMesh_i4rhp")
 skeleton = NodePath("")
 
 [node name="Chair03" type="MeshInstance3D" parent="DiningTable"]
 transform = Transform3D(0, -435.198, 0, 435.198, 0, 0, 0, 0, 435.198, 250.083, 127.083, -5.37421)
-mesh = SubResource("ArrayMesh_7hcgl")
+mesh = SubResource("ArrayMesh_o4aje")
 skeleton = NodePath("")
 
 [node name="Chair04" type="MeshInstance3D" parent="DiningTable"]
 transform = Transform3D(0.000415037, 435.198, 0, -435.198, 0.000415037, 0, 0, 0, 435.198, 250.083, 70.5068, -5.37421)
-mesh = SubResource("ArrayMesh_e2e5k")
+mesh = SubResource("ArrayMesh_8xc7k")
 skeleton = NodePath("")
 
 [node name="Ground_Floor" type="Node3D" parent="."]
@@ -4905,24 +4847,22 @@ transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0.03, -0.88)
 
 [node name="BathroomFloor01" type="MeshInstance3D" parent="Ground_Floor"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 10.2314, -149.058, -50.99)
-mesh = SubResource("ArrayMesh_q72t0")
+mesh = SubResource("ArrayMesh_slmhh")
 skeleton = NodePath("")
 
 [node name="Floor" type="MeshInstance3D" parent="Ground_Floor"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 10.2314, -149.058, -50.99)
-mesh = SubResource("ArrayMesh_0wsrs")
+mesh = SubResource("ArrayMesh_3mehh")
 skeleton = NodePath("")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground_Floor/Floor"]
 
 [node name="FrontDoorGround" type="MeshInstance3D" parent="Ground_Floor"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 10.2314, -149.058, -50.99)
-mesh = SubResource("ArrayMesh_cbk1i")
+mesh = SubResource("ArrayMesh_j2ff1")
 skeleton = NodePath("")
 
 [node name="BathroomFloor02" type="MeshInstance3D" parent="Ground_Floor"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 10.2314, -149.058, -50.99)
-mesh = SubResource("ArrayMesh_u4rbj")
+mesh = SubResource("ArrayMesh_6bb3q")
 skeleton = NodePath("")
 
 [node name="Toilet01" type="Node3D" parent="."]
@@ -4930,12 +4870,12 @@ transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -1.03239, 0.1015, -0.2575)
 
 [node name="ToiletButton01" type="MeshInstance3D" parent="Toilet01"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, -450.73, -262.675, 9.8662)
-mesh = SubResource("ArrayMesh_fktum")
+mesh = SubResource("ArrayMesh_k6x5w")
 skeleton = NodePath("")
 
 [node name="ToiletContent01" type="MeshInstance3D" parent="Toilet01"]
 transform = Transform3D(369.918, 0, 0, 0, -5.18795e-05, -435.198, 0, 435.198, -5.18795e-05, -434.262, -262.675, -13.8054)
-mesh = SubResource("ArrayMesh_lae5k")
+mesh = SubResource("ArrayMesh_idajr")
 skeleton = NodePath("")
 
 [node name="Bathtub" type="Node3D" parent="."]
@@ -4943,12 +4883,12 @@ transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -0.686437, 0.084, -0.325)
 
 [node name="Faucet" type="MeshInstance3D" parent="Bathtub"]
 transform = Transform3D(0, -435.198, 0, 435.198, 0, 0, 0, 0, 435.198, -315.761, -233.366, -7.5242)
-mesh = SubResource("ArrayMesh_8qqo7")
+mesh = SubResource("ArrayMesh_f28b6")
 skeleton = NodePath("")
 
 [node name="Tub" type="MeshInstance3D" parent="Bathtub"]
 transform = Transform3D(0, -435.198, 0, 435.198, 0, 0, 0, 0, 435.198, -287.818, -233.366, -24.9321)
-mesh = SubResource("ArrayMesh_q6ure")
+mesh = SubResource("ArrayMesh_aebig")
 skeleton = NodePath("")
 
 [node name="WashingMachine" type="Node3D" parent="."]
@@ -4956,12 +4896,12 @@ transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -1.043, 0.095, -0.520097)
 
 [node name="Machine01" type="MeshInstance3D" parent="WashingMachine"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, -443.507, -134.512, -24.9431)
-mesh = SubResource("ArrayMesh_dkgrb")
+mesh = SubResource("ArrayMesh_b7s2s")
 skeleton = NodePath("")
 
 [node name="Machine02" type="MeshInstance3D" parent="WashingMachine"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, -443.507, -162.8, -24.9431)
-mesh = SubResource("ArrayMesh_li4vh")
+mesh = SubResource("ArrayMesh_0me7t")
 skeleton = NodePath("")
 
 [node name="Sink" type="Node3D" parent="."]
@@ -4969,12 +4909,12 @@ transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -0.612158, 0.125674, -0.6092
 
 [node name="Faucet02" type="MeshInstance3D" parent="Sink"]
 transform = Transform3D(0.000155639, 435.198, 0, -435.198, 0.000155639, 0, 0, 0, 435.198, -256.119, -143.499, 12.1241)
-mesh = SubResource("ArrayMesh_4nvjp")
+mesh = SubResource("ArrayMesh_u4avm")
 skeleton = NodePath("")
 
 [node name="Sinkmodel" type="MeshInstance3D" parent="Sink"]
 transform = Transform3D(0.000155639, 435.198, 0, -435.198, 0.000155639, 0, 0, 0, 435.198, -260.573, -143.499, -24.8677)
-mesh = SubResource("ArrayMesh_2r5wr")
+mesh = SubResource("ArrayMesh_ssw54")
 skeleton = NodePath("")
 
 [node name="SingleBed" type="Node3D" parent="."]
@@ -4982,17 +4922,17 @@ transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0.96725, 0.107339, -0.65)
 
 [node name="Pillow03" type="MeshInstance3D" parent="SingleBed"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 460.999, -92.2522, -3.26563)
-mesh = SubResource("ArrayMesh_lpqes")
+mesh = SubResource("ArrayMesh_wcyq2")
 skeleton = NodePath("")
 
 [node name="Frame02" type="MeshInstance3D" parent="SingleBed"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 429.121, -92.2522, -27.2015)
-mesh = SubResource("ArrayMesh_sprif")
+mesh = SubResource("ArrayMesh_rc54n")
 skeleton = NodePath("")
 
 [node name="Mattres02" type="MeshInstance3D" parent="SingleBed"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 429.121, -92.2522, -11.9696)
-mesh = SubResource("ArrayMesh_vn4ao")
+mesh = SubResource("ArrayMesh_bqfda")
 skeleton = NodePath("")
 
 [node name="TVStand" type="Node3D" parent="."]
@@ -5000,12 +4940,12 @@ transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 4.84467e-08, 0.117, -1.09)
 
 [node name="TV" type="MeshInstance3D" parent="TVStand"]
 transform = Transform3D(348.158, 0, 0, 0, 348.158, 0, 0, 0, 348.158, 10.2315, 100.971, -3.20521)
-mesh = SubResource("ArrayMesh_emon8")
+mesh = SubResource("ArrayMesh_euitk")
 skeleton = NodePath("")
 
 [node name="Stand01" type="MeshInstance3D" parent="TVStand"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 10.2313, 103.147, -5.38121)
-mesh = SubResource("ArrayMesh_epmer")
+mesh = SubResource("ArrayMesh_ki482")
 skeleton = NodePath("")
 
 [node name="Nightstand01" type="Node3D" parent="."]
@@ -5013,12 +4953,12 @@ transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0.409, 0.1275, -0.846)
 
 [node name="Stand01" type="MeshInstance3D" parent="Nightstand01"]
 transform = Transform3D(261.119, 0, 0, 0, 261.119, 0, 0, 0, 348.158, 187.818, -7.14968, -9.30849)
-mesh = SubResource("ArrayMesh_ioeqy")
+mesh = SubResource("ArrayMesh_2my0f")
 skeleton = NodePath("")
 
 [node name="Vase01" type="MeshInstance3D" parent="Nightstand01"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 186.836, -7.14941, 2.87705)
-mesh = SubResource("ArrayMesh_2b7e2")
+mesh = SubResource("ArrayMesh_rsg6i")
 skeleton = NodePath("")
 
 [node name="Nightstand02" type="Node3D" parent="."]
@@ -5026,27 +4966,27 @@ transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -0.146, 0.1275, -0.846)
 
 [node name="Stand02" type="MeshInstance3D" parent="Nightstand02"]
 transform = Transform3D(261.119, 0, 0, 0, 261.119, 0, 0, 0, 348.158, -53.1615, -7.14957, -9.30844)
-mesh = SubResource("ArrayMesh_o7q6w")
+mesh = SubResource("ArrayMesh_477vc")
 skeleton = NodePath("")
 
 [node name="Vase02" type="MeshInstance3D" parent="Nightstand02"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, -54.1439, -7.14941, 2.87708)
-mesh = SubResource("ArrayMesh_qnby4")
+mesh = SubResource("ArrayMesh_m2scr")
 skeleton = NodePath("")
 
 [node name="Chest01" type="MeshInstance3D" parent="."]
 transform = Transform3D(-6.22554e-06, 26.1119, 0, 0, 0, 26.1119, 26.1119, 6.22554e-06, 0, 358.389, 1.26375, 10.8731)
-mesh = SubResource("ArrayMesh_hioa4")
+mesh = SubResource("ArrayMesh_vk7w7")
 skeleton = NodePath("")
 
 [node name="Dresser0001" type="MeshInstance3D" parent="."]
 transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, 443.253, -24.8481, 6.73869)
-mesh = SubResource("ArrayMesh_3fh11")
+mesh = SubResource("ArrayMesh_68040")
 skeleton = NodePath("")
 
 [node name="Closet" type="MeshInstance3D" parent="."]
 transform = Transform3D(-52.2237, 7.88556e-06, 0, 0, 0, 52.2237, 7.88556e-06, 52.2237, 0, 178.218, -24.8481, 56.7864)
-mesh = SubResource("ArrayMesh_0bmd5")
+mesh = SubResource("ArrayMesh_ilyxd")
 skeleton = NodePath("")
 
 [node name="Toilet02" type="Node3D" parent="."]
@@ -5054,12 +4994,12 @@ transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0.422611, 0.1015, -0.285)
 
 [node name="ToiletModel02" type="MeshInstance3D" parent="Toilet02"]
 transform = Transform3D(369.918, 0, 0, 0, -5.18795e-05, -435.198, 0, 435.198, -5.18795e-05, 197.496, -250.734, -13.8054)
-mesh = SubResource("ArrayMesh_oot8p")
+mesh = SubResource("ArrayMesh_iowd8")
 skeleton = NodePath("")
 
 [node name="ToiletButton02" type="MeshInstance3D" parent="Toilet02"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 181.028, -250.734, 9.8662)
-mesh = SubResource("ArrayMesh_vo4c6")
+mesh = SubResource("ArrayMesh_gxktm")
 skeleton = NodePath("")
 
 [node name="Sink02" type="Node3D" parent="."]
@@ -5067,12 +5007,12 @@ transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0.625, 0.1085, -0.285)
 
 [node name="Sinkmode02" type="MeshInstance3D" parent="Sink02"]
 transform = Transform3D(0.000155639, 435.198, 0, -435.198, 0.000155639, 0, 0, 0, 435.198, 284.869, -250.734, -24.9566)
-mesh = SubResource("ArrayMesh_iu8hi")
+mesh = SubResource("ArrayMesh_2p01d")
 skeleton = NodePath("")
 
 [node name="Faucet02" type="MeshInstance3D" parent="Sink02"]
 transform = Transform3D(0.000155639, 435.198, 0, -435.198, 0.000155639, 0, 0, 0, 435.198, 289.323, -250.734, 12.0352)
-mesh = SubResource("ArrayMesh_8fti0")
+mesh = SubResource("ArrayMesh_s3tl3")
 skeleton = NodePath("")
 
 [node name="Desk01" type="Node3D" parent="."]
@@ -5080,22 +5020,22 @@ transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 1, 0.11, -0.285)
 
 [node name="DeskModel01" type="MeshInstance3D" parent="Desk01"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 455.309, -261.614, 5.50577)
-mesh = SubResource("ArrayMesh_rjy4s")
+mesh = SubResource("ArrayMesh_g15sh")
 skeleton = NodePath("")
 
 [node name="DeskChair01" type="MeshInstance3D" parent="Desk01"]
 transform = Transform3D(-435.198, 0.000245565, 0, -0.000245565, -435.198, 0, 0, 0, 435.198, 427.021, -250.734, -5.37421)
-mesh = SubResource("ArrayMesh_fqy6x")
+mesh = SubResource("ArrayMesh_mbbbu")
 skeleton = NodePath("")
 
 [node name="Dresser0003" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, 435.198, 0, 0, 0, 435.198, 435.198, 0, 0, 465.013, -24.8481, -277.772)
-mesh = SubResource("ArrayMesh_gf655")
+mesh = SubResource("ArrayMesh_y8do6")
 skeleton = NodePath("")
 
 [node name="Dresser0004" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, 435.198, 0, 0, 0, 435.198, 435.198, 0, 0, -168.2, -24.8481, -284.844)
-mesh = SubResource("ArrayMesh_bv8sn")
+mesh = SubResource("ArrayMesh_p8sog")
 skeleton = NodePath("")
 
 [node name="Desk002" type="Node3D" parent="."]
@@ -5103,32 +5043,32 @@ transform = Transform3D(-1, 1.50996e-07, 0, 0, 0, 1, 1.50996e-07, 1, 0, -1, 0.11
 
 [node name="DeskModel02" type="MeshInstance3D" parent="Desk002"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 434.846, -283.354, 5.50577)
-mesh = SubResource("ArrayMesh_ev1tt")
+mesh = SubResource("ArrayMesh_6lhq0")
 skeleton = NodePath("")
 
 [node name="DeskChair02" type="MeshInstance3D" parent="Desk002"]
 transform = Transform3D(-435.198, 0.000245565, 0, -0.000245565, -435.198, 0, 0, 0, 435.198, 406.558, -272.474, -5.37421)
-mesh = SubResource("ArrayMesh_ych0e")
+mesh = SubResource("ArrayMesh_vk1kb")
 skeleton = NodePath("")
 
 [node name="Closet02" type="MeshInstance3D" parent="."]
 transform = Transform3D(52.2237, 0, 0, 0, 0, 52.2237, 0, -52.2237, 0, -255.761, -24.8481, 43.7305)
-mesh = SubResource("ArrayMesh_g883f")
+mesh = SubResource("ArrayMesh_0wkgo")
 skeleton = NodePath("")
 
 [node name="Shelve01" type="MeshInstance3D" parent="."]
 transform = Transform3D(-43.5198, 2.62852e-06, 0, 0, 0, 43.5198, 6.57131e-06, 17.4079, 0, -453.358, 56.2231, -141.08)
-mesh = SubResource("ArrayMesh_swede")
+mesh = SubResource("ArrayMesh_lffd5")
 skeleton = NodePath("")
 
 [node name="Shelve02" type="MeshInstance3D" parent="."]
 transform = Transform3D(-43.5198, 2.62852e-06, 0, 0, 0, 43.5198, 6.57131e-06, 17.4079, 0, -453.358, 56.2231, 2.23875)
-mesh = SubResource("ArrayMesh_wb1xh")
+mesh = SubResource("ArrayMesh_swc5u")
 skeleton = NodePath("")
 
 [node name="Dresser0005" type="MeshInstance3D" parent="."]
 transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, -109.448, -24.8481, 6.73869)
-mesh = SubResource("ArrayMesh_olqio")
+mesh = SubResource("ArrayMesh_nogkc")
 skeleton = NodePath("")
 
 [node name="Nightstand03" type="Node3D" parent="."]
@@ -5136,22 +5076,22 @@ transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0.766, 0.1275, -0.924001)
 
 [node name="Stand03" type="MeshInstance3D" parent="Nightstand03"]
 transform = Transform3D(261.119, 0, 0, 0, 261.119, 0, 0, 0, 348.158, 342.827, 26.7183, -9.30844)
-mesh = SubResource("ArrayMesh_qh5o5")
+mesh = SubResource("ArrayMesh_l76bw")
 skeleton = NodePath("")
 
 [node name="Vase03" type="MeshInstance3D" parent="Nightstand03"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 341.844, 26.7184, 2.87708)
-mesh = SubResource("ArrayMesh_tpj2k")
+mesh = SubResource("ArrayMesh_5rxxx")
 skeleton = NodePath("")
 
 [node name="Carpet02" type="MeshInstance3D" parent="."]
 transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, 10.2314, -24.8481, 148.178)
-mesh = SubResource("ArrayMesh_acy22")
+mesh = SubResource("ArrayMesh_h7pdv")
 skeleton = NodePath("")
 
 [node name="Carpet01" type="MeshInstance3D" parent="."]
 transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, -306.375, -24.8481, -117.293)
-mesh = SubResource("ArrayMesh_6v3m0")
+mesh = SubResource("ArrayMesh_cyg0c")
 skeleton = NodePath("")
 
 [node name="Nightstand04" type="Node3D" parent="."]
@@ -5159,17 +5099,17 @@ transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0.331, 0.1275, -1.551)
 
 [node name="Vase04" type="MeshInstance3D" parent="Nightstand04"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 152.968, 298.96, 2.87708)
-mesh = SubResource("ArrayMesh_o702c")
+mesh = SubResource("ArrayMesh_lc1te")
 skeleton = NodePath("")
 
 [node name="Stand04" type="MeshInstance3D" parent="Nightstand04"]
 transform = Transform3D(261.119, 0, 0, 0, 261.119, 0, 0, 0, 348.158, 153.951, 298.96, -9.30844)
-mesh = SubResource("ArrayMesh_ssbij")
+mesh = SubResource("ArrayMesh_svxds")
 skeleton = NodePath("")
 
 [node name="Chest02" type="MeshInstance3D" parent="."]
 transform = Transform3D(3.11278e-06, -26.1119, 0, 0, 0, 26.1119, -26.1119, -4.66915e-06, 0, -203.015, 1.26375, -25.6835)
-mesh = SubResource("ArrayMesh_qkph6")
+mesh = SubResource("ArrayMesh_2udth")
 skeleton = NodePath("")
 
 [node name="AllWalls" type="Node3D" parent="."]
@@ -5177,207 +5117,207 @@ transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0.18, -0.88)
 
 [node name="Wall09" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(-5.18795e-05, -6.48497e-05, -435.198, -435.198, 0, 6.48497e-05, -1.29699e-05, 435.198, -5.18795e-05, 177.782, 163.196, 40.2515)
-mesh = SubResource("ArrayMesh_1ooi7")
+mesh = SubResource("ArrayMesh_rjwm3")
 skeleton = NodePath("")
 
 [node name="Wall06" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 323.574, 6.52527, -25.0281)
-mesh = SubResource("ArrayMesh_0j3i6")
+mesh = SubResource("ArrayMesh_nnkiq")
 skeleton = NodePath("")
 
 [node name="Wall08" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 418.229, 233.916, -25.0281)
-mesh = SubResource("ArrayMesh_vuink")
+mesh = SubResource("ArrayMesh_1lxnv")
 skeleton = NodePath("")
 
 [node name="Wall07" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(-5.18795e-05, -6.48497e-05, -435.198, -435.198, 0, 6.48497e-05, -1.29699e-05, 435.198, -5.18795e-05, 367.093, 162.108, 40.2515)
-mesh = SubResource("ArrayMesh_j6yr3")
+mesh = SubResource("ArrayMesh_fal8a")
 skeleton = NodePath("")
 
 [node name="BigWall04" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 479.157, 7.61321, -51.14)
-mesh = SubResource("ArrayMesh_eufsu")
+mesh = SubResource("ArrayMesh_3r3vu")
 skeleton = NodePath("")
 
 [node name="BigWall02" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 319.222, -304.641, -51.14)
-mesh = SubResource("ArrayMesh_ft4hv")
+mesh = SubResource("ArrayMesh_ut3e5")
 skeleton = NodePath("")
 
 [node name="Wall05" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 294.198, -251.329, -25.0281)
-mesh = SubResource("ArrayMesh_b0ehu")
+mesh = SubResource("ArrayMesh_idyhc")
 skeleton = NodePath("")
 
 [node name="Wall04" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(435.198, 0, 0, 0, -5.18795e-05, -435.198, 0, 435.198, -5.18795e-05, 277.878, -201.282, 40.2515)
-mesh = SubResource("ArrayMesh_bwp2n")
+mesh = SubResource("ArrayMesh_l6w7a")
 skeleton = NodePath("")
 
 [node name="Wall02" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(-5.18795e-05, -6.48497e-05, -435.198, -435.198, 0, 6.48497e-05, -1.29699e-05, 435.198, -5.18795e-05, 177.782, -149.058, 40.2515)
-mesh = SubResource("ArrayMesh_bn6hd")
+mesh = SubResource("ArrayMesh_xoeib")
 skeleton = NodePath("")
 
 [node name="BigWall01" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(435.198, 0, 0, 0, -5.18795e-05, -435.198, 0, 435.198, -5.18795e-05, 10.2314, -301.377, 40.2515)
-mesh = SubResource("ArrayMesh_pxbtj")
+mesh = SubResource("ArrayMesh_5a4wi")
 skeleton = NodePath("")
 
 [node name="BigWall03" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, -298.759, -304.641, -51.14)
-mesh = SubResource("ArrayMesh_edqmb")
+mesh = SubResource("ArrayMesh_k8dew")
 skeleton = NodePath("")
 
 [node name="Wall03" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, -154.056, -94.6582, -25.0281)
-mesh = SubResource("ArrayMesh_3mk5k")
+mesh = SubResource("ArrayMesh_7pn7j")
 skeleton = NodePath("")
 
 [node name="Wall01" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(435.198, 0, 0, 0, -5.18795e-05, -435.198, 0, 435.198, -5.18795e-05, 18.9353, 9.78933, 40.2515)
-mesh = SubResource("ArrayMesh_0vb8u")
+mesh = SubResource("ArrayMesh_6fyqy")
 skeleton = NodePath("")
 
 [node name="BigWall06" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 6.96758, 319.867, -51.14)
-mesh = SubResource("ArrayMesh_s35na")
+mesh = SubResource("ArrayMesh_3vgii")
 skeleton = NodePath("")
 
 [node name="Wall10" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(-5.18795e-05, -6.48497e-05, -435.198, -435.198, 0, 6.48497e-05, -1.29699e-05, 435.198, -5.18795e-05, -150.792, 163.196, 40.2515)
-mesh = SubResource("ArrayMesh_8ik3r")
+mesh = SubResource("ArrayMesh_fetka")
 skeleton = NodePath("")
 
 [node name="Wall11" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, -203.015, 6.52527, -25.0281)
-mesh = SubResource("ArrayMesh_y2lwn")
+mesh = SubResource("ArrayMesh_ee5cc")
 skeleton = NodePath("")
 
 [node name="Wall12" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, -251.975, -149.058, -25.0281)
-mesh = SubResource("ArrayMesh_1nms2")
+mesh = SubResource("ArrayMesh_t40aa")
 skeleton = NodePath("")
 
 [node name="Wall13" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(435.198, 0, 0, 0, -5.18795e-05, -435.198, 0, 435.198, -5.18795e-05, -355.334, -92.4822, 40.2515)
-mesh = SubResource("ArrayMesh_8c53k")
+mesh = SubResource("ArrayMesh_tcun0")
 skeleton = NodePath("")
 
 [node name="BigWall05" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, -458.694, 4.34926, -51.14)
-mesh = SubResource("ArrayMesh_jpgfq")
+mesh = SubResource("ArrayMesh_528ve")
 skeleton = NodePath("")
 
 [node name="BathroomWall01" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, -298.759, -304.641, -51.14)
-mesh = SubResource("ArrayMesh_3570l")
+mesh = SubResource("ArrayMesh_af6rn")
 skeleton = NodePath("")
 
 [node name="BathroomWall04" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, -251.975, -149.058, -25.0281)
-mesh = SubResource("ArrayMesh_tia3b")
+mesh = SubResource("ArrayMesh_lffhr")
 skeleton = NodePath("")
 
 [node name="BathroomWall02" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, -458.694, 4.34926, -51.14)
-mesh = SubResource("ArrayMesh_b6hf6")
+mesh = SubResource("ArrayMesh_slp30")
 skeleton = NodePath("")
 
 [node name="BathroomWall03" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(435.198, 0, 0, 0, -5.18795e-05, -435.198, 0, 435.198, -5.18795e-05, -355.334, -92.4822, 40.2515)
-mesh = SubResource("ArrayMesh_h0j1m")
+mesh = SubResource("ArrayMesh_eqxmd")
 skeleton = NodePath("")
 
 [node name="BathroomWall08" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(-5.18795e-05, -6.48497e-05, -435.198, -435.198, 0, 6.48497e-05, -1.29699e-05, 435.198, -5.18795e-05, 177.782, -149.058, 40.2515)
-mesh = SubResource("ArrayMesh_s7tyk")
+mesh = SubResource("ArrayMesh_07edr")
 skeleton = NodePath("")
 
 [node name="BathroomWall07" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(435.198, 0, 0, 0, -5.18795e-05, -435.198, 0, 435.198, -5.18795e-05, 277.878, -201.282, 40.2515)
-mesh = SubResource("ArrayMesh_lvhiy")
+mesh = SubResource("ArrayMesh_xpatv")
 skeleton = NodePath("")
 
 [node name="BathroomWall06" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 294.198, -251.329, -25.0281)
-mesh = SubResource("ArrayMesh_hbnuw")
+mesh = SubResource("ArrayMesh_qfpvi")
 skeleton = NodePath("")
 
 [node name="BathroomWall05" type="MeshInstance3D" parent="AllWalls"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 319.222, -304.641, -51.14)
-mesh = SubResource("ArrayMesh_1ds6q")
+mesh = SubResource("ArrayMesh_iay7x")
 skeleton = NodePath("")
 
 [node name="SmallShelve01" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, -13.0559, 0, 0, 0, 26.1119, -43.5198, 0, 0, 117.51, 23.7944, -2.07101)
-mesh = SubResource("ArrayMesh_i113u")
+mesh = SubResource("ArrayMesh_uv5ss")
 skeleton = NodePath("")
 
 [node name="SmallShelve03" type="MeshInstance3D" parent="."]
 transform = Transform3D(-43.5198, 1.97139e-06, 0, 0, 0, 26.1119, 6.57131e-06, 13.0559, 0, 179.853, 23.7944, -263.741)
-mesh = SubResource("ArrayMesh_mpgx1")
+mesh = SubResource("ArrayMesh_q8xqn")
 skeleton = NodePath("")
 
 [node name="SmallShelve02" type="MeshInstance3D" parent="."]
 transform = Transform3D(5.18795e-06, 13.0559, 0, 0, 0, 26.1119, 43.5198, -2.33458e-06, 0, 117.51, 23.7944, -12.7399)
-mesh = SubResource("ArrayMesh_vspls")
+mesh = SubResource("ArrayMesh_7wqyk")
 skeleton = NodePath("")
 
 [node name="BigVase02" type="MeshInstance3D" parent="."]
 transform = Transform3D(652.796, 0, 0, 0, 0, 1087.99, 0, -652.796, 0, -131.778, -25.4293, -31.8755)
-mesh = SubResource("ArrayMesh_y6po6")
+mesh = SubResource("ArrayMesh_ahv00")
 skeleton = NodePath("")
 
 [node name="BigVase01" type="MeshInstance3D" parent="."]
 transform = Transform3D(652.796, 0, 0, 0, 0, 1087.99, 0, -652.796, 0, 149.293, -25.4293, 279.291)
-mesh = SubResource("ArrayMesh_jdhjf")
+mesh = SubResource("ArrayMesh_ueqvw")
 skeleton = NodePath("")
 
 [node name="WhiteChair01" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, 435.198, 0, 0, 0, 435.198, 435.198, 0, 0, 77.6871, -24.848, -165.164)
-mesh = SubResource("ArrayMesh_jcxqb")
+mesh = SubResource("ArrayMesh_mi8yr")
 skeleton = NodePath("")
 
 [node name="WhiteCouch01" type="MeshInstance3D" parent="."]
 transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, 10.2314, -24.8481, -228.268)
-mesh = SubResource("ArrayMesh_hi1b6")
+mesh = SubResource("ArrayMesh_g17w8")
 skeleton = NodePath("")
 
 [node name="WhiteChair02" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -57.2242, -24.848, -165.164)
-mesh = SubResource("ArrayMesh_bsd0f")
+mesh = SubResource("ArrayMesh_dh2fj")
 skeleton = NodePath("")
 
 [node name="Door02" type="MeshInstance3D" parent="."]
 transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, 234.358, -24.8481, 201.49)
-mesh = SubResource("ArrayMesh_4efr8")
+mesh = SubResource("ArrayMesh_m7fpk")
 skeleton = NodePath("")
 
 [node name="Door01" type="MeshInstance3D" parent="."]
 transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, 10.2314, -24.8481, 301.585)
-mesh = SubResource("ArrayMesh_pn2dq")
+mesh = SubResource("ArrayMesh_dgw68")
 skeleton = NodePath("")
 
 [node name="Door03" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -156.232, -24.8481, -164.076)
-mesh = SubResource("ArrayMesh_gfjl2")
+mesh = SubResource("ArrayMesh_oo7k1")
 skeleton = NodePath("")
 
 [node name="Door04" type="MeshInstance3D" parent="."]
 transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, -355.334, -24.8481, 92.6902)
-mesh = SubResource("ArrayMesh_jfwq3")
+mesh = SubResource("ArrayMesh_t3k0x")
 skeleton = NodePath("")
 
 [node name="Fridge" type="MeshInstance3D" parent="."]
 transform = Transform3D(51.4012, 0, 0, 0, 0, 51.4012, 0, -51.4012, 0, 363.341, 33.2351, -214.825)
-mesh = SubResource("ArrayMesh_arphm")
+mesh = SubResource("ArrayMesh_er5yj")
 skeleton = NodePath("")
 
 [node name="Door05" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, 172.343, -24.8481, 148.178)
-mesh = SubResource("ArrayMesh_37moc")
+mesh = SubResource("ArrayMesh_785se")
 skeleton = NodePath("")
 
 [node name="Stove" type="Node3D" parent="."]
@@ -5385,220 +5325,215 @@ transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0.85125, 0.151, -1.09)
 
 [node name="Stovemodel" type="MeshInstance3D" parent="Stove"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 379.842, 98.7947, 11.9927)
-mesh = SubResource("ArrayMesh_ujb51")
+mesh = SubResource("ArrayMesh_17tj1")
 skeleton = NodePath("")
 
 [node name="StoveButton01" type="MeshInstance3D" parent="Stove"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 388.002, 95.5308, 12.8631)
-mesh = SubResource("ArrayMesh_828q6")
+mesh = SubResource("ArrayMesh_bb12r")
 skeleton = NodePath("")
 
 [node name="StoveButton02" type="MeshInstance3D" parent="Stove"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 388.002, 102.059, 12.8631)
-mesh = SubResource("ArrayMesh_efr6m")
+mesh = SubResource("ArrayMesh_qe6k5")
 skeleton = NodePath("")
 
 [node name="StovePlace" type="MeshInstance3D" parent="Stove"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 379.298, 90.0908, 13.7335)
-mesh = SubResource("ArrayMesh_ftbfv")
+mesh = SubResource("ArrayMesh_lpnwe")
 skeleton = NodePath("")
 
 [node name="StovePlace02" type="MeshInstance3D" parent="Stove"]
 transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 379.298, 107.499, 13.7335)
-mesh = SubResource("ArrayMesh_5bvlj")
+mesh = SubResource("ArrayMesh_ldne0")
 skeleton = NodePath("")
 
 [node name="Door06" type="MeshInstance3D" parent="."]
 transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, 10.2314, -24.8481, -7.40522)
-mesh = SubResource("ArrayMesh_os55j")
+mesh = SubResource("ArrayMesh_5blqd")
 skeleton = NodePath("")
 
 [node name="Baseballbat" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.59398e-05, 183.922, 394.423, -435.198, 0, 3.89097e-05, 0, -394.423, 183.922, -138.278, 20.8476, -1.96526)
-mesh = SubResource("ArrayMesh_ro165")
+mesh = SubResource("ArrayMesh_rvg78")
 skeleton = NodePath("")
 
 [node name="Crowbar" type="MeshInstance3D" parent="."]
 transform = Transform3D(376.892, -217.599, 0, 0, 0, 435.198, -217.599, -376.892, 0, -433.67, -24.8481, 106.834)
-mesh = SubResource("ArrayMesh_gy2ay")
+mesh = SubResource("ArrayMesh_owjgg")
 skeleton = NodePath("")
 
 [node name="MysteryBox" type="MeshInstance3D" parent="."]
 transform = Transform3D(923.193, 923.193, 0, 0, 0, 1305.59, 923.193, -923.193, 0, -438.022, 27.1589, 26.3226)
-mesh = SubResource("ArrayMesh_yhjmc")
+mesh = SubResource("ArrayMesh_i5kuq")
 skeleton = NodePath("")
 
 [node name="Book001" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -446.935, 27.1597, -116.218)
-mesh = SubResource("ArrayMesh_61fgm")
+mesh = SubResource("ArrayMesh_b76e0")
 skeleton = NodePath("")
 
 [node name="TopBook01" type="MeshInstance3D" parent="."]
 transform = Transform3D(-183.922, 394.423, 0, 0, 0, 435.198, 394.423, 183.922, 0, 457.684, 7.79172, 275.576)
-mesh = SubResource("ArrayMesh_uj441")
+mesh = SubResource("ArrayMesh_s5pw3")
 skeleton = NodePath("")
 
 [node name="Portrait (A) 01" type="MeshInstance3D" parent="."]
 transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, 264.822, 27.3756, -1.96526)
-mesh = SubResource("ArrayMesh_qmjuy")
+mesh = SubResource("ArrayMesh_85g3v")
 skeleton = NodePath("")
 
 [node name="Portrait (B) 01" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, 0, 435.198, -435.198, 0, 0, 0, -435.198, 0, -15.8803, 57.8394, -315.307)
-mesh = SubResource("ArrayMesh_gbfoj")
+mesh = SubResource("ArrayMesh_synb1")
 skeleton = NodePath("")
 
 [node name="Safe" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, 312.694, -24.8481, 250.449)
-mesh = SubResource("ArrayMesh_4vaxl")
+mesh = SubResource("ArrayMesh_vfyp5")
 skeleton = NodePath("")
 
 [node name="Portrait (A) 02" type="MeshInstance3D" parent="."]
 transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, -337.927, 27.3756, -315.307)
-mesh = SubResource("ArrayMesh_hair7")
+mesh = SubResource("ArrayMesh_ueery")
 skeleton = NodePath("")
 
 [node name="Portrait (B) 02" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, 0, 435.198, -435.198, 0, 0, 0, -435.198, 0, 420.405, 57.8394, -1.96526)
-mesh = SubResource("ArrayMesh_ard1m")
+mesh = SubResource("ArrayMesh_0e2o6")
 skeleton = NodePath("")
 
 [node name="Portrait (A) 03" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.59398e-05, -435.198, 0, 0, 0, 435.198, -435.198, -3.89097e-05, 0, -148.616, 36.0796, 93.7782)
-mesh = SubResource("ArrayMesh_ll0gx")
+mesh = SubResource("ArrayMesh_ffks6")
 skeleton = NodePath("")
 
 [node name="TopBook02" type="MeshInstance3D" parent="."]
 transform = Transform3D(420.369, -112.637, 0, 0, 0, 435.198, -112.637, -420.369, 0, 77.6871, 25.6287, 8.9147)
-mesh = SubResource("ArrayMesh_5natw")
+mesh = SubResource("ArrayMesh_f041r")
 skeleton = NodePath("")
 
 [node name="TopBook03" type="MeshInstance3D" parent="."]
 transform = Transform3D(-183.922, -394.423, 0, 0, 0, 435.198, -394.423, 183.922, 0, -442.374, 59.2825, 61.1384)
-mesh = SubResource("ArrayMesh_3rrc7")
+mesh = SubResource("ArrayMesh_sojpf")
 skeleton = NodePath("")
 
 [node name="Book002" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -446.935, 27.1597, -21.7585)
-mesh = SubResource("ArrayMesh_rpykl")
+mesh = SubResource("ArrayMesh_ndp7q")
 skeleton = NodePath("")
 
 [node name="Book003" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -446.935, 27.1597, 0.00139219)
-mesh = SubResource("ArrayMesh_b7lud")
+mesh = SubResource("ArrayMesh_ibtuv")
 skeleton = NodePath("")
 
 [node name="Book004" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -446.935, 27.1597, -45.2722)
-mesh = SubResource("ArrayMesh_q3p5g")
+mesh = SubResource("ArrayMesh_bmfvu")
 skeleton = NodePath("")
 
 [node name="Book005" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -446.935, 27.1597, 61.6149)
-mesh = SubResource("ArrayMesh_xqy2h")
+mesh = SubResource("ArrayMesh_eokf1")
 skeleton = NodePath("")
 
 [node name="Book006" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -446.935, 27.1597, -188.591)
-mesh = SubResource("ArrayMesh_4vr8m")
+mesh = SubResource("ArrayMesh_g5uru")
 skeleton = NodePath("")
 
 [node name="Book007" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -451.078, 7.79172, -306.604)
-mesh = SubResource("ArrayMesh_5r53f")
+mesh = SubResource("ArrayMesh_3dnxp")
 skeleton = NodePath("")
 
 [node name="Book008" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -451.078, 7.79172, -284.844)
-mesh = SubResource("ArrayMesh_ar3ls")
+mesh = SubResource("ArrayMesh_o2gry")
 skeleton = NodePath("")
 
 [node name="Book009" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, 186.276, 6.35644, -305.55)
-mesh = SubResource("ArrayMesh_etkdr")
+mesh = SubResource("ArrayMesh_yniv3")
 skeleton = NodePath("")
 
 [node name="Book010" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, 186.276, 6.35644, -247.813)
-mesh = SubResource("ArrayMesh_t3ask")
+mesh = SubResource("ArrayMesh_quiff")
 skeleton = NodePath("")
 
 [node name="Book011" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, 186.276, 6.35644, -269.573)
-mesh = SubResource("ArrayMesh_c4sdh")
+mesh = SubResource("ArrayMesh_0ry7i")
 skeleton = NodePath("")
 
 [node name="Book012" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -451.078, 59.2821, -178.695)
-mesh = SubResource("ArrayMesh_tfory")
+mesh = SubResource("ArrayMesh_ynvok")
 skeleton = NodePath("")
 
 [node name="Book013" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -451.078, 59.2821, -200.454)
-mesh = SubResource("ArrayMesh_uqaoj")
+mesh = SubResource("ArrayMesh_cedyg")
 skeleton = NodePath("")
 
 [node name="Book014" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -451.078, 59.2821, -58.5409)
-mesh = SubResource("ArrayMesh_cho8n")
+mesh = SubResource("ArrayMesh_nlitb")
 skeleton = NodePath("")
 
 [node name="Book015" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -451.078, 59.2821, -36.7811)
-mesh = SubResource("ArrayMesh_18dhc")
+mesh = SubResource("ArrayMesh_orr38")
 skeleton = NodePath("")
 
 [node name="Book016" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -451.078, 59.2821, -10.6688)
-mesh = SubResource("ArrayMesh_hww1v")
+mesh = SubResource("ArrayMesh_vf7ih")
 skeleton = NodePath("")
 
 [node name="Book017" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, 435.198, 0, 0, 0, 435.198, 435.198, 0, 0, 471.541, 7.79172, 222.161)
-mesh = SubResource("ArrayMesh_4y4m0")
+mesh = SubResource("ArrayMesh_cvi6p")
 skeleton = NodePath("")
 
 [node name="Book018" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, 435.198, 0, 0, 0, 435.198, 435.198, 0, 0, 471.541, 7.79172, 243.921)
-mesh = SubResource("ArrayMesh_p5owv")
+mesh = SubResource("ArrayMesh_fdnxe")
 skeleton = NodePath("")
 
 [node name="Book019" type="MeshInstance3D" parent="."]
 transform = Transform3D(435.198, -0.000152185, 0, 0, 0, 435.198, -0.000152185, -435.198, 0, 160.375, 25.63, 0.210728)
-mesh = SubResource("ArrayMesh_ikh4m")
+mesh = SubResource("ArrayMesh_m50ng")
 skeleton = NodePath("")
 
 [node name="Book020" type="MeshInstance3D" parent="."]
 transform = Transform3D(435.198, -0.000152185, 0, 0, 0, 435.198, -0.000152185, -435.198, 0, 101.583, 6.35644, 4.35163)
-mesh = SubResource("ArrayMesh_lmebu")
+mesh = SubResource("ArrayMesh_303pl")
 skeleton = NodePath("")
 
 [node name="Book021" type="MeshInstance3D" parent="."]
 transform = Transform3D(435.198, -0.000152185, 0, 0, 0, 435.198, -0.000152185, -435.198, 0, 123.343, 6.35644, 4.35163)
-mesh = SubResource("ArrayMesh_02tvh")
+mesh = SubResource("ArrayMesh_aqe2i")
 skeleton = NodePath("")
 
 [node name="TopBook04" type="MeshInstance3D" parent="."]
 transform = Transform3D(-183.922, 394.423, 0, 0, 0, 435.198, 394.423, 183.922, 0, 75.5111, 25.63, -21.5492)
-mesh = SubResource("ArrayMesh_72pqa")
+mesh = SubResource("ArrayMesh_kj3iq")
 skeleton = NodePath("")
 
 [node name="TopBook05" type="MeshInstance3D" parent="."]
 transform = Transform3D(-394.423, 183.922, 0, 0, 0, 435.198, 183.922, 394.423, 0, 75.5111, 29.982, -21.5492)
-mesh = SubResource("ArrayMesh_unsvs")
+mesh = SubResource("ArrayMesh_cqfnm")
 skeleton = NodePath("")
 
 [node name="Book022" type="MeshInstance3D" parent="."]
 transform = Transform3D(-435.198, 0.000141805, 0, 0, 0, 435.198, 0.000141805, 435.198, 0, 159.322, 6.35644, -19.1625)
-mesh = SubResource("ArrayMesh_v0au6")
+mesh = SubResource("ArrayMesh_s70ya")
 skeleton = NodePath("")
 
 [node name="Book023" type="MeshInstance3D" parent="."]
 transform = Transform3D(-435.198, 0.000141805, 0, 0, 0, 435.198, 0.000141805, 435.198, 0, 102.232, 6.35644, -19.1625)
-mesh = SubResource("ArrayMesh_k3aty")
+mesh = SubResource("ArrayMesh_a7pvu")
 skeleton = NodePath("")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_6o2kt")
-}
