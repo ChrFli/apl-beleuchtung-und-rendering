@@ -22,7 +22,7 @@ albedo_texture = ExtResource("1_45p8i")
 emission_enabled = true
 emission_energy_multiplier = 0.0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_f2vou"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_2fviq"]
 _surfaces = [{
 "aabb": AABB(-0.075, -0.045, 0, 0.15, 0.09, 0.045),
 "format": 34359742465,
@@ -52,7 +52,7 @@ _surfaces = [{
 "vertex_data": PackedByteArray("mpmZPZHCdbyTwnU8mpmZPexROL2TwnU8mpmZvexROL2TwnU8mpmZvZHCdbyTwnU8mpmZPY7CdTyRwvU8mpmZPZHCdbyRwvU8mpmZvZHCdbyRwvU8mpmZvY7CdTyRwvU8mpmZPetROD3sUTg9mpmZPY7CdTzsUTg9mpmZvY7CdTzsUTg9mpmZvetROD3sUTg9mpmZvY7CdTyRwvU8mpmZvY7CdTzsUTg9mpmZPY7CdTzsUTg9mpmZPY7CdTyRwvU8mpmZvZHCdbyTwnU8mpmZvZHCdbyRwvU8mpmZPZHCdbyRwvU8mpmZPZHCdbyTwnU8mpmZPexROL2TwnU8mpmZPexROL0AAAAAmpmZvexROL0AAAAAmpmZvexROL2TwnU8mpmZPexROL0AAAAAmpmZPexROD0AAAAAmpmZvexROD0AAAAAmpmZvexROL0AAAAA/3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//fwAA////v/9/AAD///+//////wAA/7//////////v/////8AAP+//////wAA/78=")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_f2vou")
+shadow_mesh = SubResource("ArrayMesh_2fviq")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nxuu2"]
 resource_name = "木紋"
@@ -203,7 +203,7 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ajtci")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_ga4ws"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_8ux3o"]
 _surfaces = [{
 "aabb": AABB(-0.105, -0.225, -2.42233e-08, 0.21, 0.45, 0.3),
 "format": 34359742465,
@@ -233,7 +233,7 @@ _surfaces = [{
 "vertex_data": PackedByteArray("OArXPRWuR74S16M8OArXPWdmZr4S16M8NwrXvWdmZr4S16M8NwrXvRWuR74S16M8OArXPcP1KL4P1yM9OArXPRWuR74P1yM9NwrXvRWuR74P1yM9NwrXvcP1KL4P1yM9OArXPXE9Cr6VwnU9OArXPcP1KL6VwnU9NwrXvcP1KL6VwnU9NwrXvXE9Cr6VwnU9OArXPT8K170N16M9OArXPXE9Cr4N16M9NwrXvXE9Cr4N16M9NwrXvT8K170N16M9OArXPZuZmb3QzMw9OArXPT8K173QzMw9NwrXvT8K173QzMw9NwrXvZuZmb3QzMw9OArXPe9ROL2TwvU9OArXPZuZmb2TwvU9NwrXvZuZmb2TwvU9NwrXve9ROL2TwvU9OArXPZvCdbwrXA8+OArXPe9ROL0rXA8+NwrXve9ROL0rXA8+NwrXvZvCdbwrXA8+OArXPYTCdTwM1yM+OArXPZvCdbwM1yM+NwrXvZvCdbwM1yM+NwrXvYTCdTwM1yM+OArXPelROD3uUTg+OArXPYTCdTzuUTg+NwrXvYTCdTzuUTg+NwrXvelROD3uUTg+OArXPZiZmT3PzEw+OArXPelROD3PzEw+NwrXvelROD3PzEw+NwrXvZiZmT3PzEw+OArXPTwK1z2xR2E+OArXPZiZmT2xR2E+NwrXvZiZmT2xR2E+NwrXvTwK1z2xR2E+OArXPXA9Cj6RwnU+OArXPTwK1z2RwnU+NwrXvTwK1z2RwnU+NwrXvXA9Cj6RwnU+OArXPcH1KD65HoU+OArXPXA9Cj65HoU+NwrXvXA9Cj65HoU+NwrXvcH1KD65HoU+OArXPROuRz4pXI8+OArXPcH1KD4pXI8+NwrXvcH1KD4pXI8+NwrXvROuRz4pXI8+OArXPWVmZj6amZk+OArXPROuRz6amZk+NwrXvROuRz6amZk+NwrXvWVmZj6amZk+NwrXvROuRz4pXI8+NwrXvROuRz6amZk+OArXPROuRz6amZk+OArXPROuRz4pXI8+NwrXvcH1KD65HoU+NwrXvcH1KD4pXI8+OArXPcH1KD4pXI8+OArXPcH1KD65HoU+NwrXvXA9Cj6RwnU+NwrXvXA9Cj65HoU+OArXPXA9Cj65HoU+OArXPXA9Cj6RwnU+NwrXvTwK1z2xR2E+NwrXvTwK1z2RwnU+OArXPTwK1z2RwnU+OArXPTwK1z2xR2E+NwrXvZiZmT3PzEw+NwrXvZiZmT2xR2E+OArXPZiZmT2xR2E+OArXPZiZmT3PzEw+NwrXvelROD3uUTg+NwrXvelROD3PzEw+OArXPelROD3PzEw+OArXPelROD3uUTg+NwrXvYTCdTwM1yM+NwrXvYTCdTzuUTg+OArXPYTCdTzuUTg+OArXPYTCdTwM1yM+NwrXvZvCdbwrXA8+NwrXvZvCdbwM1yM+OArXPZvCdbwM1yM+OArXPZvCdbwrXA8+NwrXve9ROL2TwvU9NwrXve9ROL0rXA8+OArXPe9ROL0rXA8+OArXPe9ROL2TwvU9NwrXvZuZmb3QzMw9NwrXvZuZmb2TwvU9OArXPZuZmb2TwvU9OArXPZuZmb3QzMw9NwrXvT8K170N16M9NwrXvT8K173QzMw9OArXPT8K173QzMw9OArXPT8K170N16M9NwrXvXE9Cr6VwnU9NwrXvXE9Cr4N16M9OArXPXE9Cr4N16M9OArXPXE9Cr6VwnU9NwrXvcP1KL4P1yM9NwrXvcP1KL6VwnU9OArXPcP1KL6VwnU9OArXPcP1KL4P1yM9NwrXvRWuR74S16M8NwrXvRWuR74P1yM9OArXPRWuR74P1yM9OArXPRWuR74S16M8OArXPWdmZr4S16M8NwrXPWVmZr4AAAAALwrXvWVmZr6pE9CyNwrXvWdmZr4S16M8/3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v/9/AAAAAP7//38AAAAA/v//fwAA/v/+//9/AAD+//7/")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_ga4ws")
+shadow_mesh = SubResource("ArrayMesh_8ux3o")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2phrh"]
 resource_name = "棉被"
@@ -542,14 +542,14 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_qjoqy")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3e080"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p08iy"]
 resource_name = "磁磚"
 vertex_color_use_as_albedo = true
 albedo_texture = ExtResource("6_uynxk")
 emission_enabled = true
 emission_energy_multiplier = 0.0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_qnl63"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_4rxj4"]
 _surfaces = [{
 "aabb": AABB(-1.07, -0.35, 0.06, 0.46, 0.48, 1e-05),
 "format": 34359742465,
@@ -571,7 +571,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 6,
 "index_data": PackedByteArray("AAABAAIAAgADAAAA"),
-"material": SubResource("StandardMaterial3D_3e080"),
+"material": SubResource("StandardMaterial3D_p08iy"),
 "name": "磁磚",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -579,7 +579,7 @@ _surfaces = [{
 "vertex_data": PackedByteArray("wvWIv58eBT6EwnU98Sgcv7MeBT6GwnU98CgcvzIzs76EwnU9wvWIvzIzs76EwnU9/3//f/7//7//f/9//v//v/9//3/+//+//3//f/7//78=")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_qnl63")
+shadow_mesh = SubResource("ArrayMesh_4rxj4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t4ncp"]
 resource_name = "木地板"
@@ -588,7 +588,7 @@ albedo_texture = ExtResource("7_2swq5")
 emission_enabled = true
 emission_energy_multiplier = 0.0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_p00rt"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_pw362"]
 _surfaces = [{
 "aabb": AABB(-1.07, -0.35, -6.20701e-08, 2.14, 1.42, 0.06),
 "format": 34359742465,
@@ -618,9 +618,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("w/WIP7/1iD+BwnU9w/WIPzIzsz6BwnU9oHC9PjIzsz6BwnU9oHC9Pr/1iD+BwnU9mnC9vjIzsz55wnU9nXC9vjIzs76BwnU98SgcvzIzs76EwnU98CgcvzIzsz58wnU9w/WIPzIzs75tS4Uzw/WIP7/1iD9tS4Wzw/WIv7/1iD9tS4Wzw/WIvzIzs75tS4Uz8CgcvzIzsz58wnU98Sgcv7MeBT6GwnU9wvWIv58eBT6EwnU9nnC9vsH1iD+BwnU9mnC9vjIzsz55wnU98CgcvzIzsz58wnU9nnC9vsH1iD+BwnU98CgcvzIzsz58wnU9wvWIv58eBT6EwnU9w/WIv8D1iD+BwnU9nnC9vsH1iD+BwnU9wvWIv58eBT6EwnU9oHC9PjIzsz6BwnU9oHC9PjIzs76BwnU9nXC9vjIzs76BwnU9nXC9vjIzsz6BwnU9oHC9PsH1iD+BwnU9nnC9vjIzsz6BwnU9nnC9vsH1iD+BwnU97R7FPnHC9b2BwnU9yx7FPjIzs76BwnU9m3C9PjIzs76BwnU9m3C9PjIzsz6BwnU9u/UoP+nC9b2BwnU9wfWIPzIzsz6BwnU9wfWIPzIzs76BwnU9yPUoPzIzs76BwnU9/3//f/7//7//f/9//v//v/9//3/+//+//3//f/7//7//f/9/////v/9//3////+//3//f////7//f/9/////v///AAAAAP+///8AAAAA/7///wAAAAD/v///AAAAAP+//3//f/7//7//f/9//v//v/9//3/+//+//3//f////7//f/9/////v/9//3////+//3//f/7//7//f/9//v//v/9//3/+//+//3//f/7//7//f/9//v//v/9//3/+//+//3//f/7//7//f/9//v//v/9//3/+//+//3//f/7//7//f/9//v//v/9//3/+//+//3//f/7//7//f/9//v//v/9//3////+//3//f////7//f/9//v//v/9//3/+//+//3//f/7//7//f/9//v//v/9//3/+//+/")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_p00rt")
+shadow_mesh = SubResource("ArrayMesh_pw362")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_ejbwl"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_tdi5x"]
 _surfaces = [{
 "aabb": AABB(-0.35, -0.67, -1.21117e-08, 0.7, 0.32, 0.06),
 "format": 34359742465,
@@ -650,9 +650,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("nZmZvSOFK7+pE1CynZmZvSOFK7+NwnU9nZmZveZ6FL+NwnU9nZmZveZ6FL+pE1CynZmZveZ6FL+pE1CynZmZveZ6FL+NwnU9lpmZPeZ6FL+NwnU9lpmZPeZ6FL+pE1CylpmZPeZ6FL+pE1CylpmZPeZ6FL+NwnU9lpmZPSOFK7+NwnU9lpmZPSOFK7+pE1CylpmZPSOFK7+pE1CylpmZPSOFK7+NwnU9MjOzPiOFK7+NwnU9MjOzPiOFK7+pE1CyMjOzPiOFK7+pE1CyMjOzPiOFK7+NwnU9MjOzPjszs76NwnU9MjOzPjszs76pE1CyNDOzvjszs76pE1CyNDOzvjszs76NwnU9NDOzviOFK7+NwnU9NDOzviOFK7+pE1CyNDOzviOFK7+pE1CyNDOzviOFK7+NwnU9nZmZvSOFK7+NwnU9nZmZvSOFK7+pE1CylpmZPeZ6FL+pE1CylpmZPSOFK7+pE1CyMjOzPiOFK7+pE1CyMjOzPjszs76pE1CynZmZveZ6FL+pE1CyNDOzvjszs76pE1CynZmZvSOFK7+pE1CyNDOzviOFK7+pE1CynZmZvSOFK7+NwnU9NDOzviOFK7+NwnU9NDOzvjszs76NwnU9nZmZveZ6FL+NwnU9MjOzPiOFK7+NwnU9lpmZPSOFK7+NwnU9lpmZPeZ6FL+NwnU9MjOzPjszs76NwnU9////f/9///////9//3///////3//f///////f/9/////fwAA////v/9/AAD///+//38AAP///7//fwAA////vwAA/3//fwCAAAD/f/9/AIAAAP9//38AgAAA/3//fwCA/38AAP///7//fwAA////v/9/AAD///+//38AAP///7////9//3///////3//f///////f/9///////9//3///wAA/3//fwCAAAD/f/9/AIAAAP9//38AgAAA/3//fwCA/38AAP///7//fwAA////v/9/AAD///+//38AAP///7//////AAD/v/////8AAP+//////wAA/7//////AAD/v/////8AAP+//////wAA/7//////AAD/v/////8AAP+//3//f/7//7//f/9//v//v/9//3/+//+//3//f/7//7//f/9//v//v/9//3/+//+//3//f/7//7//f/9//v//vw==")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_ejbwl")
+shadow_mesh = SubResource("ArrayMesh_tdi5x")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_7y4sa"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_pxcbh"]
 _surfaces = [{
 "aabb": AABB(0.385001, -0.35, 0.0599999, 0.275, 0.23, 1e-05),
 "format": 34359742465,
@@ -674,7 +674,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 6,
 "index_data": PackedByteArray("AAABAAIAAgADAAAA"),
-"material": SubResource("StandardMaterial3D_3e080"),
+"material": SubResource("StandardMaterial3D_p08iy"),
 "name": "磁磚",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -682,7 +682,7 @@ _surfaces = [{
 "vertex_data": PackedByteArray("u/UoP+nC9b2BwnU9yPUoPzIzs76BwnU9yx7FPjIzs76BwnU97R7FPnHC9b2BwnU9/3//f/7//7//f/9//v//v/9//3/+//+//3//f/7//78=")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_7y4sa")
+shadow_mesh = SubResource("ArrayMesh_pxcbh")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mokv3"]
 resource_name = "水龍頭"
@@ -2681,7 +2681,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 6,
 "index_data": PackedByteArray("AAABAAIAAgADAAAA"),
-"material": SubResource("StandardMaterial3D_3e080"),
+"material": SubResource("StandardMaterial3D_p08iy"),
 "name": "磁磚",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -2713,7 +2713,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 6,
 "index_data": PackedByteArray("AAABAAIAAgADAAAA"),
-"material": SubResource("StandardMaterial3D_3e080"),
+"material": SubResource("StandardMaterial3D_p08iy"),
 "name": "磁磚",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -2745,7 +2745,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 6,
 "index_data": PackedByteArray("AAABAAIAAgADAAAA"),
-"material": SubResource("StandardMaterial3D_3e080"),
+"material": SubResource("StandardMaterial3D_p08iy"),
 "name": "磁磚",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -2777,7 +2777,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 18,
 "index_data": PackedByteArray("AAABAAIAAwAAAAIABAADAAIABQAGAAcABQAHAAQABQAEAAIA"),
-"material": SubResource("StandardMaterial3D_3e080"),
+"material": SubResource("StandardMaterial3D_p08iy"),
 "name": "磁磚",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -2809,7 +2809,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 6,
 "index_data": PackedByteArray("AAABAAIAAgADAAAA"),
-"material": SubResource("StandardMaterial3D_3e080"),
+"material": SubResource("StandardMaterial3D_p08iy"),
 "name": "磁磚",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -2841,7 +2841,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 18,
 "index_data": PackedByteArray("AAABAAIAAwAAAAIABAADAAIABQAGAAcABQAHAAQABQAEAAIA"),
-"material": SubResource("StandardMaterial3D_3e080"),
+"material": SubResource("StandardMaterial3D_p08iy"),
 "name": "磁磚",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -2873,7 +2873,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 6,
 "index_data": PackedByteArray("AAABAAIAAgADAAAA"),
-"material": SubResource("StandardMaterial3D_3e080"),
+"material": SubResource("StandardMaterial3D_p08iy"),
 "name": "磁磚",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -2905,7 +2905,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 6,
 "index_data": PackedByteArray("AAABAAIAAgADAAAA"),
-"material": SubResource("StandardMaterial3D_3e080"),
+"material": SubResource("StandardMaterial3D_p08iy"),
 "name": "磁磚",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
