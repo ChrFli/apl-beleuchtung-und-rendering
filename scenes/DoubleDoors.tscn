@@ -155,8 +155,9 @@ shape = SubResource("BoxShape3D_qui8k")
 [node name="hinge2" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01288, 0, 0)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="hinge2"]
+[node name="StaticBody3D" type="StaticBody3D" parent="hinge2" node_paths=PackedStringArray("playeranimation")]
 script = ExtResource("1_hflle")
+playeranimation = NodePath("../../AnimationPlayer")
 
 [node name="門003" type="MeshInstance3D" parent="hinge2/StaticBody3D"]
 transform = Transform3D(10.098, 0, 0, 0, 1.20417e-07, 10.098, 0, -10.098, 1.20417e-07, -0.507387, -1.08547, -0.0181712)

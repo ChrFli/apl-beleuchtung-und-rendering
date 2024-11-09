@@ -4878,7 +4878,7 @@ shape = SubResource("ConcavePolygonShape3D_qjjnn")
 [node name="Static_BigWall02" type="StaticBody3D" parent="Walls"]
 
 [node name="BigWall02" type="MeshInstance3D" parent="Walls/Static_BigWall02"]
-transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 319.222, -304.641, -51.14)
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 319.758, -304.578, -51.2649)
 mesh = SubResource("ArrayMesh_xex71")
 skeleton = NodePath("")
 
@@ -4922,7 +4922,7 @@ shape = SubResource("ConcavePolygonShape3D_l03sh")
 [node name="Static_BathroomWall05" type="StaticBody3D" parent="Walls"]
 
 [node name="BathroomWall05" type="MeshInstance3D" parent="Walls/Static_BathroomWall05"]
-transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 318.53, -307.227, -51.14)
+transform = Transform3D(451.06, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 320.346, -305.36, -51.3078)
 mesh = SubResource("ArrayMesh_anb2w")
 skeleton = NodePath("")
 
@@ -4944,7 +4944,7 @@ shape = SubResource("ConcavePolygonShape3D_x4kby")
 [node name="Static_BathroomWall06" type="StaticBody3D" parent="Walls"]
 
 [node name="BathroomWall06" type="MeshInstance3D" parent="Walls/Static_BathroomWall06"]
-transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 294.198, -251.329, -25.0281)
+transform = Transform3D(435.198, 0, 0, 0, 435.198, 0, 0, 0, 435.198, 294.198, -252.309, -25.0281)
 mesh = SubResource("ArrayMesh_ti6wm")
 skeleton = NodePath("")
 
@@ -4966,7 +4966,7 @@ shape = SubResource("ConcavePolygonShape3D_m8xtk")
 [node name="Static_BathroomWall08" type="StaticBody3D" parent="Walls"]
 
 [node name="BathroomWall08" type="MeshInstance3D" parent="Walls/Static_BathroomWall08"]
-transform = Transform3D(-5.18795e-05, -7.09028e-05, -435.198, -435.198, -1.90231e-05, 5.18795e-05, -1.90231e-05, 435.198, -7.09028e-05, 177.782, -149.058, 40.2515)
+transform = Transform3D(-5.24374e-05, -7.09028e-05, -435.198, -439.878, -1.90231e-05, 5.18795e-05, -1.92277e-05, 435.198, -7.09028e-05, 177.782, -149.058, 40.2515)
 mesh = SubResource("ArrayMesh_lrjqt")
 skeleton = NodePath("")
 
