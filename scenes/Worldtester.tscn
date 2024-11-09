@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cs0j2mkyn65g1"]
+[gd_scene load_steps=6 format=3 uid="uid://cs0j2mkyn65g1"]
 
 [ext_resource type="PackedScene" uid="uid://drxna0qrhrswo" path="res://scenes/door.tscn" id="1_22fkl"]
 [ext_resource type="PackedScene" uid="uid://chtutpgwaitak" path="res://scenes/char_dummy.tscn" id="2_bfdo2"]
+[ext_resource type="PackedScene" uid="uid://ce244th5ihfds" path="res://DoubleDoors.tscn" id="3_sq84n"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_iquhi"]
 size = Vector3(1, 0.942383, 1)
@@ -39,3 +40,6 @@ mesh = SubResource("BoxMesh_c1w26")
 
 [node name="CharDummy" parent="." instance=ExtResource("2_bfdo2")]
 transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -0.252013, 1.645, 5.58073)
+
+[node name="DoubleDoors" parent="." instance=ExtResource("3_sq84n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.17882, 1.29076, -0.246839)
