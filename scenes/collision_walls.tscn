@@ -1478,7 +1478,7 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_635jq")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_huim4"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_binqj"]
 _surfaces = [{
 "aabb": AABB(-0.0375, -0.005, 0, 0.075, 0.01, 0.105),
 "format": 34359742465,
@@ -1508,7 +1508,7 @@ _surfaces = [{
 "vertex_data": PackedByteArray("mpkZPQrXozsAAAAAmpkZvQrXozsAAAAAmpkZvQrXo7sAAAAAmpkZPQrXo7sAAAAAmpkZPQrXozs9Ctc9mpkZPQrXo7s9Ctc9mpkZvQrXo7s9Ctc9mpkZvQrXozs9Ctc9rkfhPG4SA7tcj8I9rkfhPG4SA7sK1yM8rkfhvG4SA7sK1yM8rkfhvG4SA7tcj8I9mpkZPQrXozs9Ctc9mpkZPQrXozsAAAAAmpkZPQrXo7sAAAAAmpkZPQrXo7s9Ctc9mpkZvQrXozs9Ctc9mpkZvQrXozsAAAAAmpkZPQrXozsAAAAAmpkZPQrXozs9Ctc9mpkZvQrXo7s9Ctc9mpkZvQrXo7sAAAAAmpkZvQrXozsAAAAAmpkZvQrXozs9Ctc9rkfhPArXo7sK1yM8mpkZPQrXo7sAAAAAmpkZvQrXo7sAAAAArkfhvArXo7sK1yM8rkfhPArXo7tcj8I9mpkZPQrXo7s9Ctc9rkfhvArXo7tcj8I9mpkZvQrXo7s9Ctc9rkfhPG4SA7sK1yM8rkfhPArXo7sK1yM8rkfhvArXo7sK1yM8rkfhvG4SA7sK1yM8rkfhPG4SA7tcj8I9rkfhPArXo7tcj8I9rkfhPArXo7sK1yM8rkfhPG4SA7sK1yM8rkfhvG4SA7tcj8I9rkfhvArXo7tcj8I9rkfhPArXo7tcj8I9rkfhPG4SA7tcj8I9rkfhvG4SA7sK1yM8rkfhvArXo7sK1yM8rkfhvArXo7tcj8I9rkfhvG4SA7tcj8I9/////////7//////////v/////////+//////////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9/AAD///+//38AAP///7//fwAA////v/9/AAD///+/////f/9///////9//3///////3//f///////f/9/////f/////////9///////7//3//////////f////////wAA/3//fwCAAAD/f/9/AIAAAP9//38AgAAA/3//fwCA/38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v/9//38AAP+//3//fwAA/7//f/9/AAD/v/9//38AAP+/AAD/f/7///8AAP9//v///wAA/3//////AAD/f///////////AAD/v/////8AAP+//////wAA/7//////AAD/v////3/+/wCA////f/7/AID///9///8AgP///3//////")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_huim4")
+shadow_mesh = SubResource("ArrayMesh_binqj")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_se65a"]
 _surfaces = [{
@@ -5841,152 +5841,154 @@ shape = SubResource("ConcavePolygonShape3D_33ywb")
 
 [node name="Books" type="Node3D" parent="."]
 
-[node name="Book013" type="MeshInstance3D" parent="Books"]
+[node name="Static_Books" type="StaticBody3D" parent="Books"]
+
+[node name="Book013" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(0, -435.198, 0, 435.198, 0, -1.90231e-05, 1.90231e-05, 0, 435.198, -451.078, 200.454, 59.2821)
 mesh = SubResource("ArrayMesh_6ovkd")
 skeleton = NodePath("")
 
-[node name="Book014" type="MeshInstance3D" parent="Books"]
+[node name="Book014" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(0, -435.198, 0, 435.198, 0, -1.90231e-05, 1.90231e-05, 0, 435.198, -451.078, 58.5409, 59.2821)
 mesh = SubResource("ArrayMesh_heq7i")
 skeleton = NodePath("")
 
-[node name="Book015" type="MeshInstance3D" parent="Books"]
+[node name="Book015" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(0, -435.198, 0, 435.198, 0, -1.90231e-05, 1.90231e-05, 0, 435.198, -451.078, 36.7811, 59.2821)
 mesh = SubResource("ArrayMesh_1w0sk")
 skeleton = NodePath("")
 
-[node name="Book016" type="MeshInstance3D" parent="Books"]
+[node name="Book016" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(0, -435.198, 0, 435.198, 0, -1.90231e-05, 1.90231e-05, 0, 435.198, -451.078, 10.6688, 59.2821)
 mesh = SubResource("ArrayMesh_0hnyn")
 skeleton = NodePath("")
 
-[node name="Book017" type="MeshInstance3D" parent="Books"]
+[node name="Book017" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(0, 435.198, 0, -435.198, 0, -1.90231e-05, -1.90231e-05, 0, 435.198, 471.541, -222.161, 7.79171)
 mesh = SubResource("ArrayMesh_ae7c8")
 skeleton = NodePath("")
 
-[node name="Book018" type="MeshInstance3D" parent="Books"]
+[node name="Book018" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(0, 435.198, 0, -435.198, 0, -1.90231e-05, -1.90231e-05, 0, 435.198, 471.541, -243.921, 7.79171)
 mesh = SubResource("ArrayMesh_oudfp")
 skeleton = NodePath("")
 
-[node name="Book019" type="MeshInstance3D" parent="Books"]
+[node name="Book019" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(435.198, -0.000152185, 0, 0.000152185, 435.198, -1.90231e-05, 6.65222e-12, 1.90231e-05, 435.198, 160.375, -0.210729, 25.63)
 mesh = SubResource("ArrayMesh_yu4jr")
 skeleton = NodePath("")
 
-[node name="Book020" type="MeshInstance3D" parent="Books"]
+[node name="Book020" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(435.198, -0.000152185, 0, 0.000152185, 435.198, -1.90231e-05, 6.65222e-12, 1.90231e-05, 435.198, 101.583, -4.35163, 6.35644)
 mesh = SubResource("ArrayMesh_1uqlg")
 skeleton = NodePath("")
 
-[node name="Book021" type="MeshInstance3D" parent="Books"]
+[node name="Book021" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(435.198, -0.000152185, 0, 0.000152185, 435.198, -1.90231e-05, 6.65222e-12, 1.90231e-05, 435.198, 123.343, -4.35163, 6.35644)
 mesh = SubResource("ArrayMesh_rftgq")
 skeleton = NodePath("")
 
-[node name="TopBook04" type="MeshInstance3D" parent="Books"]
+[node name="TopBook04" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(-183.922, 394.423, 0, -394.423, -183.922, -1.90231e-05, -1.72408e-05, -8.03949e-06, 435.198, 75.5111, 21.5492, 25.63)
 mesh = SubResource("ArrayMesh_jhmy0")
 skeleton = NodePath("")
 
-[node name="TopBook05" type="MeshInstance3D" parent="Books"]
+[node name="TopBook05" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(-394.423, 183.922, 0, -183.922, -394.423, -1.90231e-05, -8.03949e-06, -1.72408e-05, 435.198, 75.5111, 21.5492, 29.982)
 mesh = SubResource("ArrayMesh_wvx7s")
 skeleton = NodePath("")
 
-[node name="Book022" type="MeshInstance3D" parent="Books"]
+[node name="Book022" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(-435.198, 0.000141805, 0, -0.000141805, -435.198, -1.90231e-05, -6.19849e-12, -1.90231e-05, 435.198, 159.322, 19.1625, 6.35644)
 mesh = SubResource("ArrayMesh_6v22t")
 skeleton = NodePath("")
 
-[node name="Book023" type="MeshInstance3D" parent="Books"]
+[node name="Book023" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(-435.198, 0.000141805, 0, -0.000141805, -435.198, -1.90231e-05, -6.19849e-12, -1.90231e-05, 435.198, 102.232, 19.1625, 6.35644)
 mesh = SubResource("ArrayMesh_m2aij")
 skeleton = NodePath("")
 
-[node name="TopBook02" type="MeshInstance3D" parent="Books"]
+[node name="TopBook02" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(420.369, -112.637, 0, 112.637, 420.369, -1.90231e-05, 4.92352e-06, 1.83749e-05, 435.198, 77.6871, -8.9147, 25.6287)
 mesh = SubResource("ArrayMesh_hlwbg")
 skeleton = NodePath("")
 
-[node name="TopBook03" type="MeshInstance3D" parent="Books"]
+[node name="TopBook03" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(-183.922, -394.423, 0, 394.423, -183.922, -1.90231e-05, 1.72408e-05, -8.03949e-06, 435.198, -442.374, -61.1384, 59.2825)
 mesh = SubResource("ArrayMesh_iuwbj")
 skeleton = NodePath("")
 
-[node name="Book002" type="MeshInstance3D" parent="Books"]
+[node name="Book002" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(0, -435.198, 0, 435.198, 0, -1.90231e-05, 1.90231e-05, 0, 435.198, -446.935, 21.7585, 27.1597)
 mesh = SubResource("ArrayMesh_cc7ap")
 skeleton = NodePath("")
 
-[node name="Book003" type="MeshInstance3D" parent="Books"]
+[node name="Book003" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(0, -435.198, 0, 435.198, 0, -1.90231e-05, 1.90231e-05, 0, 435.198, -446.935, -0.00139338, 27.1597)
 mesh = SubResource("ArrayMesh_vh417")
 skeleton = NodePath("")
 
-[node name="Book004" type="MeshInstance3D" parent="Books"]
+[node name="Book004" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(0, -435.198, 0, 435.198, 0, -1.90231e-05, 1.90231e-05, 0, 435.198, -446.935, 45.2722, 27.1597)
 mesh = SubResource("ArrayMesh_q68rb")
 skeleton = NodePath("")
 
-[node name="Book005" type="MeshInstance3D" parent="Books"]
+[node name="Book005" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(0, -435.198, 0, 435.198, 0, -1.90231e-05, 1.90231e-05, 0, 435.198, -446.935, -61.6149, 27.1597)
 mesh = SubResource("ArrayMesh_e1211")
 skeleton = NodePath("")
 
-[node name="Book006" type="MeshInstance3D" parent="Books"]
+[node name="Book006" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(0, -435.198, 0, 435.198, 0, -1.90231e-05, 1.90231e-05, 0, 435.198, -446.935, 188.591, 27.1597)
 mesh = SubResource("ArrayMesh_wm1sp")
 skeleton = NodePath("")
 
-[node name="Book007" type="MeshInstance3D" parent="Books"]
+[node name="Book007" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(0, -435.198, 0, 435.198, 0, -1.90231e-05, 1.90231e-05, 0, 435.198, -451.078, 306.604, 7.79174)
 mesh = SubResource("ArrayMesh_146xh")
 skeleton = NodePath("")
 
-[node name="Book008" type="MeshInstance3D" parent="Books"]
+[node name="Book008" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(0, -435.198, 0, 435.198, 0, -1.90231e-05, 1.90231e-05, 0, 435.198, -451.078, 284.844, 7.79173)
 mesh = SubResource("ArrayMesh_vl4qi")
 skeleton = NodePath("")
 
-[node name="Book009" type="MeshInstance3D" parent="Books"]
+[node name="Book009" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(0, -435.198, 0, 435.198, 0, -1.90231e-05, 1.90231e-05, 0, 435.198, 186.276, 305.55, 6.35646)
 mesh = SubResource("ArrayMesh_wire4")
 skeleton = NodePath("")
 
-[node name="Book010" type="MeshInstance3D" parent="Books"]
+[node name="Book010" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(0, -435.198, 0, 435.198, 0, -1.90231e-05, 1.90231e-05, 0, 435.198, 186.276, 247.813, 6.35645)
 mesh = SubResource("ArrayMesh_xlo8v")
 skeleton = NodePath("")
 
-[node name="Book011" type="MeshInstance3D" parent="Books"]
+[node name="Book011" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(0, -435.198, 0, 435.198, 0, -1.90231e-05, 1.90231e-05, 0, 435.198, 186.276, 269.573, 6.35645)
 mesh = SubResource("ArrayMesh_qnvk2")
 skeleton = NodePath("")
 
-[node name="Book012" type="MeshInstance3D" parent="Books"]
+[node name="Book012" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(0, -435.198, 0, 435.198, 0, -1.90231e-05, 1.90231e-05, 0, 435.198, -451.078, 178.695, 59.2821)
 mesh = SubResource("ArrayMesh_em7lh")
 skeleton = NodePath("")
 
-[node name="Book001" type="MeshInstance3D" parent="Books"]
+[node name="Book001" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(0, -435.198, 0, 0, 0, 435.198, -435.198, 0, 0, -446.935, 27.1597, -116.218)
 mesh = SubResource("ArrayMesh_rac7b")
 skeleton = NodePath("")
 
-[node name="TopBook01" type="MeshInstance3D" parent="Books"]
+[node name="TopBook01" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(-183.922, 394.423, 0, 0, 0, 435.198, 394.423, 183.922, 0, 457.684, -11.4134, 39.602)
 mesh = SubResource("ArrayMesh_c2tvt")
 skeleton = NodePath("")
 
-[node name="Book024" type="MeshInstance3D" parent="Books"]
+[node name="Book024" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(0, -435.198, 0, 435.198, 0, -1.90231e-05, 1.90231e-05, 0, 435.198, -446.935, 116.218, 27.1597)
 mesh = SubResource("ArrayMesh_rac7b")
 skeleton = NodePath("")
 
-[node name="TopBook06" type="MeshInstance3D" parent="Books"]
+[node name="TopBook06" type="MeshInstance3D" parent="Books/Static_Books"]
 transform = Transform3D(-183.922, 394.423, 0, -394.423, -183.922, -1.90231e-05, -1.72408e-05, -8.03949e-06, 435.198, 457.684, -275.576, 7.79171)
 mesh = SubResource("ArrayMesh_c2tvt")
 skeleton = NodePath("")
