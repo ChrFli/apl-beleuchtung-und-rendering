@@ -1,9 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://cs0j2mkyn65g1"]
+[gd_scene load_steps=8 format=3 uid="uid://cs0j2mkyn65g1"]
 
 [ext_resource type="PackedScene" uid="uid://drxna0qrhrswo" path="res://scenes/door.tscn" id="1_22fkl"]
 [ext_resource type="PackedScene" uid="uid://chtutpgwaitak" path="res://scenes/char_dummy.tscn" id="2_bfdo2"]
 [ext_resource type="PackedScene" uid="uid://ce244th5ihfds" path="res://scenes/DoubleDoors.tscn" id="3_sq84n"]
-[ext_resource type="PackedScene" uid="uid://bwm5hodfk3qj1" path="res://Interactables/key.tscn" id="4_kv6a0"]
 [ext_resource type="PackedScene" uid="uid://87o8j3yk4itq" path="res://Interactables/portrait.tscn" id="5_g7abt"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_iquhi"]
@@ -51,6 +50,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.17882, 1.29076, -0.246839)
 
 [node name="Portrait" parent="." instance=ExtResource("5_g7abt")]
 transform = Transform3D(0.0593863, 0, 0, 0, 0.0593863, 0, 0, 0, 0.0593863, -3.0755, 0.189519, 2.65149)
-
-[node name="Key" parent="." instance=ExtResource("4_kv6a0")]
-transform = Transform3D(0.447983, 0, 0, 0, 0.447983, 0, 0, 0, 0.447983, -3.44579, 0.189519, 6.01322)
