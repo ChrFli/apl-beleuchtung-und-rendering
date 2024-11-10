@@ -8,18 +8,11 @@ const SENSITIVITY = 0.005
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
 
-var has_key = false
 
-# Function to return the current state of has_key
-func _haskey():
-	return has_key
 
-func pick_up_key():
-	has_key = true
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	add_to_group("player")
 
 func _unhandled_input(event: InputEvent):
 	if event is InputEventMouseMotion:

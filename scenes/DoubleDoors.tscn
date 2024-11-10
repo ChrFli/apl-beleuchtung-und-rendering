@@ -144,7 +144,7 @@ script = ExtResource("1_hflle")
 playeranimation = NodePath("../../AnimationPlayer")
 
 [node name="門002" type="MeshInstance3D" parent="hinge1/StaticBody3D"]
-transform = Transform3D(10.098, 0, 0, 0, 0, 10.098, 0, -10.098, 0, 0.00373018, -1.08718, -0.0179876)
+transform = Transform3D(10.098, 0, 0, 0, -4.41398e-07, 10.098, 0, -10.098, -4.41398e-07, 0.00373018, -1.08718, -0.0179876)
 mesh = SubResource("ArrayMesh_i13jd")
 skeleton = NodePath("")
 
