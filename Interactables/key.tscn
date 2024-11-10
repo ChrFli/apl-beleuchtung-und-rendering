@@ -1,23 +1,23 @@
 [gd_scene load_steps=9 format=4 uid="uid://cs4kqh2mabj3d"]
 
+[ext_resource type="Texture2D" uid="uid://k4t2toqtyhx" path="res://textures/rust_key_0.png" id="1_jwfe3"]
 [ext_resource type="Script" path="res://scripts/key.gd" id="1_o4ovy"]
-[ext_resource type="Texture2D" uid="uid://25juds8lmiru" path="res://textures/rust_key_0.png" id="1_tnlqw"]
-[ext_resource type="Texture2D" uid="uid://7bqgapii4fdh" path="res://textures/rust_key_1.png" id="2_j76se"]
-[ext_resource type="Texture2D" uid="uid://bkixsc12nnnfx" path="res://textures/rust_key_2.png" id="3_0grrf"]
+[ext_resource type="Texture2D" uid="uid://dybqouoboh2ih" path="res://textures/rust_key_1.png" id="2_135x0"]
+[ext_resource type="Texture2D" uid="uid://c51f32cieeeof" path="res://textures/rust_key_2.png" id="3_wutq4"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2fp0m"]
 resource_name = "phong2"
-albedo_texture = ExtResource("1_tnlqw")
+albedo_texture = ExtResource("1_jwfe3")
 metallic = 1.0
-metallic_texture = ExtResource("2_j76se")
+metallic_texture = ExtResource("2_135x0")
 metallic_texture_channel = 2
 roughness = 0.9
-roughness_texture = ExtResource("2_j76se")
+roughness_texture = ExtResource("2_135x0")
 roughness_texture_channel = 1
 normal_enabled = true
-normal_texture = ExtResource("3_0grrf")
+normal_texture = ExtResource("3_wutq4")
 ao_enabled = true
-ao_texture = ExtResource("2_j76se")
+ao_texture = ExtResource("2_135x0")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_s25sv"]
 _surfaces = [{
