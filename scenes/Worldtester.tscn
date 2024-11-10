@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://cs0j2mkyn65g1"]
+[gd_scene load_steps=7 format=3 uid="uid://cs0j2mkyn65g1"]
 
 [ext_resource type="PackedScene" uid="uid://drxna0qrhrswo" path="res://scenes/door.tscn" id="1_22fkl"]
 [ext_resource type="PackedScene" uid="uid://chtutpgwaitak" path="res://scenes/char_dummy.tscn" id="2_bfdo2"]
 [ext_resource type="PackedScene" uid="uid://ce244th5ihfds" path="res://scenes/DoubleDoors.tscn" id="3_sq84n"]
+[ext_resource type="PackedScene" uid="uid://btq4psiatfjmu" path="res://Interactables/key.tscn" id="4_kv6a0"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_iquhi"]
 size = Vector3(1, 0.942383, 1)
@@ -25,7 +26,8 @@ mesh = SubResource("BoxMesh_c1w26")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00548887, 1.24774, -0.00220132)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.663662, 0.985437)
+transform = Transform3D(1.37306, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.663662, 0.985437)
+omni_range = 11.4552
 
 [node name="StaticBody3D2" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.77968, 8.73693, -14.2168)
@@ -43,3 +45,6 @@ transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -0.252013, 1.645, 5.
 
 [node name="DoubleDoors" parent="." instance=ExtResource("3_sq84n")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.17882, 1.29076, -0.246839)
+
+[node name="Key" parent="." instance=ExtResource("4_kv6a0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.12068, 0.896022, 4.66502)

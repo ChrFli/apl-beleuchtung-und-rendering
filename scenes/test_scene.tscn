@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://eelx8utxq7f2" path="res://scenes/collision_walls.tscn" id="3_0v6e8"]
 [ext_resource type="PackedScene" uid="uid://drxna0qrhrswo" path="res://scenes/door.tscn" id="4_ahox0"]
 [ext_resource type="PackedScene" uid="uid://ce244th5ihfds" path="res://scenes/DoubleDoors.tscn" id="4_uksla"]
-[ext_resource type="PackedScene" uid="uid://dkmni3owxoxev" path="res://scenes/char_Zombie.tscn" id="6_6lgxh"]
+[ext_resource type="PackedScene" uid="uid://btq4psiatfjmu" path="res://Interactables/key.tscn" id="6_3plwi"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pb7eb"]
 size = Vector3(500, 1, 500)
@@ -52,7 +52,7 @@ shadow_mesh = SubResource("ArrayMesh_57v2b")
 [node name="Test_Scene" type="Node3D"]
 
 [node name="CharDummy" parent="." instance=ExtResource("2_hk53w")]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.409973, -1.39336, 40.3797)
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 2.17941, -1.26832, 36.6214)
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.84734, 52.9313, 364.541)
@@ -80,7 +80,7 @@ light_angular_distance = 8.25
 transform = Transform3D(0.1, 0, 0, 0, -4.37114e-09, 0.1, 0, -0.1, -4.37114e-09, 0, -15.0556, 0)
 
 [node name="Door" parent="." instance=ExtResource("4_ahox0")]
-transform = Transform3D(-1.83594e-07, 0, -4.20013, 0, 4.28676, 0, 4.20013, 0, -1.83594e-07, 17.3453, -12.9319, 15.1175)
+transform = Transform3D(-1.83594e-07, 0, -4.20013, 0, 4.28676, 0, 4.20013, 0, -1.83594e-07, 17.4045, -12.9319, 15.0905)
 
 [node name="Door2" parent="." instance=ExtResource("4_ahox0")]
 transform = Transform3D(-4.32277, 0, 3.66223e-07, 0, 4.26267, 0, -3.77909e-07, 0, -4.18911, 23.1952, -12.8605, 20.1744)
@@ -97,8 +97,5 @@ transform = Transform3D(3.87794, 0, 0, 0, 4.32731, 0, 0, 0, 4.02151, 1.03195, -1
 [node name="Door4" parent="." instance=ExtResource("4_ahox0")]
 transform = Transform3D(-1.88954e-07, 0, 4.18911, 0, 4.26267, 0, -4.32277, 0, -1.83112e-07, -15.0763, -12.8438, -16.5502)
 
-[node name="CharacterBody3D" parent="." instance=ExtResource("6_6lgxh")]
-transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 33.2738, -17.7076, 12.0083)
-
-[node name="CharacterBody3D2" parent="." instance=ExtResource("6_6lgxh")]
-transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 38.433, -17.7252, 17.3928)
+[node name="Key" parent="." instance=ExtResource("6_3plwi")]
+transform = Transform3D(3.90397, 0, 0, 0, 3.90397, 0, 0, 0, 3.90397, -5.38974, -13.9283, 32.6462)
