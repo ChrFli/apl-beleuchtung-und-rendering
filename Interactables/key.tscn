@@ -1,9 +1,9 @@
-[gd_scene load_steps=9 format=4 uid="uid://cv2o8ktobemjl"]
+[gd_scene load_steps=9 format=4 uid="uid://cyij4yy6u7uxg"]
 
-[ext_resource type="Texture2D" uid="uid://k4t2toqtyhx" path="res://textures/rust_key_0.png" id="1_jwfe3"]
+[ext_resource type="Texture2D" path="res://textures/rust_key_0.png" id="1_jwfe3"]
 [ext_resource type="Script" path="res://Interactables/key.gd" id="1_uykx3"]
-[ext_resource type="Texture2D" uid="uid://dybqouoboh2ih" path="res://textures/rust_key_1.png" id="2_135x0"]
-[ext_resource type="Texture2D" uid="uid://c51f32cieeeof" path="res://textures/rust_key_2.png" id="3_wutq4"]
+[ext_resource type="Texture2D" path="res://textures/rust_key_1.png" id="2_135x0"]
+[ext_resource type="Texture2D" path="res://textures/rust_key_2.png" id="3_wutq4"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dnnir"]
 resource_name = "phong2"
