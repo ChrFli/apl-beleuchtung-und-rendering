@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-const SPEED = 10.0
+const SPEED = 15.0
 const JUMP_VELOCITY = 20.0
 const GRAVITY = 50.0  # Erhöhe diesen Wert, um das Objekt schneller fallen zu lassen
 const SENSITIVITY = 0.005

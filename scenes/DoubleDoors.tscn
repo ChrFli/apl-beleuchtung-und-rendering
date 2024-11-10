@@ -1,0 +1,174 @@
+[gd_scene load_steps=11 format=4 uid="uid://ce244th5ihfds"]
+
+[ext_resource type="Script" path="res://scripts/doubledoors.gd" id="1_hflle"]
+[ext_resource type="Texture2D" uid="uid://d3kfpn2fqs5ob" path="res://models/House_12.png" id="2_5sfo2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fyjnp"]
+resource_name = "門"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("2_5sfo2")
+emission_enabled = true
+emission_energy_multiplier = 0.0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_4oi6l"]
+_surfaces = [{
+"aabb": AABB(-0.05, -0.0025, 0, 0.1, 0.005, 0.2),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQABQADAAIAAgAGAAUABAAAAAMAAwAFAAQABwABAAAAAAAEAAcABgACAAEAAQAHAAYA"),
+"name": "門",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("zcxMPQrXIzsAAAAAzcxMvQrXIzsAAAAAzcxMvQrXI7sAAAAAzcxMPQrXI7sAAAAAzcxMPQrXIzvPzEw+zcxMPQrXI7vPzEw+zcxMvQrXI7vPzEw+zcxMvQrXIzvPzEw+")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_i13jd"]
+resource_name = "門002"
+_surfaces = [{
+"aabb": AABB(-0.05, -0.0025, 0, 0.1, 0.005, 0.2),
+"attribute_data": PackedByteArray("CECCPgBMPT8IQII+W+p0P7bkJD5b6nQ/tuQkPgBMPT+Xje47JQM9P6aQxj0lAz0/ppDGPUzYdD+Xje47TNh0P+pXfz9A8RM88Fd/P5WMNj8elvw+nIw2PxiW/D7A8xM85EAKO5QELz/kQAo7QM02PRe8yz1AzTY9F7zLPZQELz/obX8/ACXYO+ptfz/LNDY/NFT7PtE0Nj8vVPs+ACfYO5Y3gT5AYjY9ljeBPiYYLz8jZR0+JhgvPyNlHT5AYjY9"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_fyjnp"),
+"name": "門",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("zcxMPQrXIzsAAAAAzcxMvQrXIzsAAAAAzcxMvQrXI7sAAAAAzcxMPQrXI7sAAAAAzcxMPQrXIzvPzEw+zcxMPQrXI7vPzEw+zcxMvQrXI7vPzEw+zcxMvQrXIzvPzEw+zcxMPQrXI7vPzEw+zcxMPQrXI7sAAAAAzcxMvQrXI7sAAAAAzcxMvQrXI7vPzEw+zcxMPQrXIzvPzEw+zcxMPQrXIzsAAAAAzcxMPQrXI7sAAAAAzcxMPQrXI7vPzEw+zcxMvQrXIzvPzEw+zcxMvQrXIzsAAAAAzcxMPQrXIzsAAAAAzcxMPQrXIzvPzEw+zcxMvQrXI7vPzEw+zcxMvQrXI7sAAAAAzcxMvQrXIzsAAAAAzcxMvQrXIzvPzEw+//////9//////////3//////////f/////////9/////f/9//38AgP9//3//fwCA/3//f/9/AID/f/9//38AgP9/AAD///+//38AAP///7//fwAA////v/9/AAD///+/////f/9/AID///9//38AgP///3//fwCA////f/9/AID/f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/vwAA/3//fwCAAAD/f/9/AIAAAP9//38AgAAA/3//fwCA")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_4oi6l")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qui8k"]
+size = Vector3(1.02788, 0.824951, 1)
+
+[sub_resource type="Animation" id="Animation_4awm6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("hinge1:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("hinge2:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_1r7ct"]
+resource_name = "closedouble"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("hinge1:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 1.5708, 0), Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("hinge2:rotation")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, -1.5708, 0), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_pg5k8"]
+resource_name = "opendouble"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("hinge1:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 1.5708, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("hinge2:rotation")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, -1.5708, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7ae4j"]
+_data = {
+"RESET": SubResource("Animation_4awm6"),
+"closedouble": SubResource("Animation_1r7ct"),
+"opendouble": SubResource("Animation_pg5k8")
+}
+
+[node name="DoubleDoors" type="Node3D"]
+
+[node name="hinge1" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0142, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="hinge1" node_paths=PackedStringArray("playeranimation")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.505118, 0, 0)
+script = ExtResource("1_hflle")
+playeranimation = NodePath("../../AnimationPlayer")
+
+[node name="門002" type="MeshInstance3D" parent="hinge1/StaticBody3D"]
+transform = Transform3D(10.098, 0, 0, 0, 0, 10.098, 0, -10.098, 0, 0.00373018, -1.08718, -0.0179876)
+mesh = SubResource("ArrayMesh_i13jd")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="hinge1/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 2.5, 0, 0, 0, 0.1, -0.00527191, -0.0650175, 0)
+shape = SubResource("BoxShape3D_qui8k")
+
+[node name="hinge2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01288, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="hinge2" node_paths=PackedStringArray("playeranimation")]
+script = ExtResource("1_hflle")
+playeranimation = NodePath("../../AnimationPlayer")
+
+[node name="門003" type="MeshInstance3D" parent="hinge2/StaticBody3D"]
+transform = Transform3D(10.098, 0, 0, 0, 1.20417e-07, 10.098, 0, -10.098, 1.20417e-07, -0.507387, -1.08547, -0.0181712)
+mesh = SubResource("ArrayMesh_i13jd")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="hinge2/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 2.5, 0, 0, 0, 0.1, -0.498052, -0.0641619, 0)
+shape = SubResource("BoxShape3D_qui8k")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_7ae4j")
+}
