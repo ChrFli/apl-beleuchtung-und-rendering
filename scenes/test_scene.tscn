@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://drxna0qrhrswo" path="res://scenes/door.tscn" id="4_ahox0"]
 [ext_resource type="PackedScene" uid="uid://ce244th5ihfds" path="res://scenes/DoubleDoors.tscn" id="4_uksla"]
 [ext_resource type="PackedScene" uid="uid://dkmni3owxoxev" path="res://scenes/char_Zombie.tscn" id="6_6lgxh"]
-[ext_resource type="PackedScene" uid="uid://cyij4yy6u7uxg" path="res://Interactables/key.tscn" id="7_43nmy"]
+[ext_resource type="PackedScene" uid="uid://bwm5hodfk3qj1" path="res://Interactables/key.tscn" id="7_43nmy"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pb7eb"]
 size = Vector3(500, 1, 500)
