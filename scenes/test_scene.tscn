@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://clgni3ek56r0e"]
+[gd_scene load_steps=11 format=4 uid="uid://clgni3ek56r0e"]
 
 [ext_resource type="Texture2D" uid="uid://cixp24n4yj3oy" path="res://models/House_6.png" id="2_0sfir"]
 [ext_resource type="PackedScene" uid="uid://chtutpgwaitak" path="res://scenes/char_dummy.tscn" id="2_hk53w"]
@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://drxna0qrhrswo" path="res://scenes/door.tscn" id="4_ahox0"]
 [ext_resource type="PackedScene" uid="uid://ce244th5ihfds" path="res://scenes/DoubleDoors.tscn" id="4_uksla"]
 [ext_resource type="PackedScene" uid="uid://dkmni3owxoxev" path="res://scenes/char_Zombie.tscn" id="6_6lgxh"]
-[ext_resource type="PackedScene" uid="uid://bwm5hodfk3qj1" path="res://Interactables/key.tscn" id="7_43nmy"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pb7eb"]
 size = Vector3(500, 1, 500)
@@ -103,6 +102,3 @@ transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 
 
 [node name="CharacterBody3D2" parent="." instance=ExtResource("6_6lgxh")]
 transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 38.433, -17.7252, 17.3928)
-
-[node name="Key" parent="." instance=ExtResource("7_43nmy")]
-transform = Transform3D(4.20272, 0, 0, 0, 4.20272, 0, 0, 0, 4.20272, -0.335489, -15.2703, 34.2026)

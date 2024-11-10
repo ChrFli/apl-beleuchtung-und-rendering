@@ -5220,6 +5220,7 @@ skeleton = NodePath("")
 
 [node name="Portrait (A) 02" type="MeshInstance3D" parent="Furniture/Static_Portraits"]
 transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, -337.927, 27.3756, -315.307)
+visible = false
 mesh = SubResource("ArrayMesh_0vrjg")
 skeleton = NodePath("")
 
