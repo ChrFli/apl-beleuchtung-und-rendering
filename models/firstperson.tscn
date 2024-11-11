@@ -164,8 +164,8 @@ transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 0, 0, 0)
 mesh = SubResource("ArrayMesh_foedh")
 skeleton = NodePath("")
 
-[node name="RayCast3D" type="RayCast3D" parent="Node3D"]
-transform = Transform3D(45.4894, 0, 0, 0, 1.78873e-08, 27.7279, 0, -1.5, 3.30651e-07, -0.0277953, 1.57842, -1.76867)
+[node name="RayCast3D" type="RayCast3D" parent="Node3D/Camera3D"]
+transform = Transform3D(45.4894, 0, 0, 0, 1.78873e-08, 27.7279, 0, -1.5, 3.30651e-07, -0.0277953, -0.0453902, -1.76867)
 script = ExtResource("3_gtlgt")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
