@@ -2,7 +2,7 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c51f32cieeeof"
+uid="uid://bkixsc12nnnfx"
 path.s3tc="res://.godot/imported/rust_key_2.png-a1b338b20d7c31459630ac2adfbb44d7.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
@@ -28,7 +28,7 @@ compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=1
-roughness/src_normal="res://Interactables/rust_key_2.png"
+roughness/src_normal="res://rust_key_2.png"
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

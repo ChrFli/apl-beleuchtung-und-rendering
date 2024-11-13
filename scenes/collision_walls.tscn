@@ -1478,7 +1478,7 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_635jq")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_huim4"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_binqj"]
 _surfaces = [{
 "aabb": AABB(-0.0375, -0.005, 0, 0.075, 0.01, 0.105),
 "format": 34359742465,
@@ -1508,7 +1508,7 @@ _surfaces = [{
 "vertex_data": PackedByteArray("mpkZPQrXozsAAAAAmpkZvQrXozsAAAAAmpkZvQrXo7sAAAAAmpkZPQrXo7sAAAAAmpkZPQrXozs9Ctc9mpkZPQrXo7s9Ctc9mpkZvQrXo7s9Ctc9mpkZvQrXozs9Ctc9rkfhPG4SA7tcj8I9rkfhPG4SA7sK1yM8rkfhvG4SA7sK1yM8rkfhvG4SA7tcj8I9mpkZPQrXozs9Ctc9mpkZPQrXozsAAAAAmpkZPQrXo7sAAAAAmpkZPQrXo7s9Ctc9mpkZvQrXozs9Ctc9mpkZvQrXozsAAAAAmpkZPQrXozsAAAAAmpkZPQrXozs9Ctc9mpkZvQrXo7s9Ctc9mpkZvQrXo7sAAAAAmpkZvQrXozsAAAAAmpkZvQrXozs9Ctc9rkfhPArXo7sK1yM8mpkZPQrXo7sAAAAAmpkZvQrXo7sAAAAArkfhvArXo7sK1yM8rkfhPArXo7tcj8I9mpkZPQrXo7s9Ctc9rkfhvArXo7tcj8I9mpkZvQrXo7s9Ctc9rkfhPG4SA7sK1yM8rkfhPArXo7sK1yM8rkfhvArXo7sK1yM8rkfhvG4SA7sK1yM8rkfhPG4SA7tcj8I9rkfhPArXo7tcj8I9rkfhPArXo7sK1yM8rkfhPG4SA7sK1yM8rkfhvG4SA7tcj8I9rkfhvArXo7tcj8I9rkfhPArXo7tcj8I9rkfhPG4SA7tcj8I9rkfhvG4SA7sK1yM8rkfhvArXo7sK1yM8rkfhvArXo7tcj8I9rkfhvG4SA7tcj8I9/////////7//////////v/////////+//////////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9/AAD///+//38AAP///7//fwAA////v/9/AAD///+/////f/9///////9//3///////3//f///////f/9/////f/////////9///////7//3//////////f////////wAA/3//fwCAAAD/f/9/AIAAAP9//38AgAAA/3//fwCA/38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v/9//38AAP+//3//fwAA/7//f/9/AAD/v/9//38AAP+/AAD/f/7///8AAP9//v///wAA/3//////AAD/f///////////AAD/v/////8AAP+//////wAA/7//////AAD/v////3/+/wCA////f/7/AID///9///8AgP///3//////")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_huim4")
+shadow_mesh = SubResource("ArrayMesh_binqj")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_se65a"]
 _surfaces = [{
@@ -5220,6 +5220,7 @@ skeleton = NodePath("")
 
 [node name="Portrait (A) 02" type="MeshInstance3D" parent="Furniture/Static_Portraits"]
 transform = Transform3D(435.198, 0, 0, 0, 0, 435.198, 0, -435.198, 0, -337.927, 27.3756, -315.307)
+visible = false
 mesh = SubResource("ArrayMesh_0vrjg")
 skeleton = NodePath("")
 

@@ -18,7 +18,7 @@ script = ExtResource("1_20cs2")
 transform = Transform3D(10, 0, -1.13687e-13, 0, 10, 0, 1.13687e-13, 0, 10, 0, -1, 0)
 
 [node name="RayCast3D" type="RayCast3D" parent="Head"]
-transform = Transform3D(50, 1.70531e-14, -9.93883e-22, 0, -6.55671e-08, -2, -5.68435e-13, 1.5, -8.74228e-08, -7.18144e-15, 0.398244, -0.631685)
+transform = Transform3D(60.7455, 1.70531e-14, -2.21048e-20, 0, -6.55671e-08, -44.4818, -6.90597e-13, 1.5, -1.94436e-06, -0.0277953, 0.0316195, -0.652548)
 script = ExtResource("2_bn8t2")
 
 [node name="Camera3D" type="Camera3D" parent="Head"]
