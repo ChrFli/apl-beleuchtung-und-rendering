@@ -6,11 +6,12 @@
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_q0qdn"]
 
 [node name="CharacterBody3D" type="CharacterBody3D"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 0, 0, 0)
 script = ExtResource("1_7f0ha")
 
 [node name="Head" type="Node3D" parent="."]
 transform = Transform3D(0.602045, 0, 0, 0, 0.435574, 0, 0, 0, 0.602045, -0.0638257, 4.15439, 1.22088)
+visible = false
 
 [node name="SpringArm3D" type="SpringArm3D" parent="Head"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.418434, -0.0890343, -2.45403)
@@ -19,6 +20,7 @@ margin = 0.5
 
 [node name="Camera3D" type="Camera3D" parent="Head/SpringArm3D"]
 transform = Transform3D(-1.66101, 0, -1.4521e-07, 0, 2.29582, 0, 1.4521e-07, 0, -1.66101, 0.516672, 6.68874, -1.59993)
+visible = false
 
 [node name="Zed1" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0527169, 3.43131, 0.101572)
@@ -27,4 +29,5 @@ skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(3.86657, 0, 0, 0, 3.86657, 0, 0, 0, 3.86657, 0.000777125, 3.71689, -0.034996)
+visible = false
 shape = SubResource("CapsuleShape3D_q0qdn")
