@@ -1,13 +1,15 @@
-[gd_scene load_steps=13 format=4 uid="uid://clgni3ek56r0e"]
+[gd_scene load_steps=15 format=4 uid="uid://c00mi5j34onc2"]
 
-[ext_resource type="Texture2D" uid="uid://cixp24n4yj3oy" path="res://models/House_6.png" id="2_0sfir"]
-[ext_resource type="PackedScene" uid="uid://eelx8utxq7f2" path="res://scenes/collision_walls.tscn" id="3_0v6e8"]
-[ext_resource type="PackedScene" uid="uid://drxna0qrhrswo" path="res://Interactables/door.tscn" id="4_ahox0"]
-[ext_resource type="PackedScene" uid="uid://ce244th5ihfds" path="res://Interactables/DoubleDoors.tscn" id="4_uksla"]
-[ext_resource type="PackedScene" uid="uid://dkmni3owxoxev" path="res://scenes/char_Zombie.tscn" id="6_6lgxh"]
-[ext_resource type="PackedScene" uid="uid://cyij4yy6u7uxg" path="res://Interactables/key.tscn" id="7_ni7v1"]
-[ext_resource type="PackedScene" uid="uid://8ai42fc24mip" path="res://models/firstperson.tscn" id="8_cynqb"]
-[ext_resource type="PackedScene" uid="uid://87o8j3yk4itq" path="res://Interactables/portrait.tscn" id="8_gpb7v"]
+[ext_resource type="PackedScene" uid="uid://8ai42fc24mip" path="res://models/firstperson.tscn" id="1_6pjqg"]
+[ext_resource type="Texture2D" uid="uid://cixp24n4yj3oy" path="res://models/House_6.png" id="2_2fnbq"]
+[ext_resource type="PackedScene" uid="uid://eelx8utxq7f2" path="res://scenes/collision_walls.tscn" id="3_uv3rf"]
+[ext_resource type="PackedScene" uid="uid://drxna0qrhrswo" path="res://Interactables/door.tscn" id="4_fu0tw"]
+[ext_resource type="PackedScene" uid="uid://ce244th5ihfds" path="res://Interactables/DoubleDoors.tscn" id="5_rjupd"]
+[ext_resource type="PackedScene" uid="uid://dkmni3owxoxev" path="res://scenes/char_Zombie.tscn" id="6_wmgl3"]
+[ext_resource type="PackedScene" uid="uid://87o8j3yk4itq" path="res://Interactables/portrait.tscn" id="7_hpput"]
+[ext_resource type="PackedScene" uid="uid://cyij4yy6u7uxg" path="res://Interactables/key.tscn" id="8_5rgyq"]
+[ext_resource type="PackedScene" uid="uid://b2u6goope0hlo" path="res://Interactables/main_key.tscn" id="9_ntuix"]
+[ext_resource type="PackedScene" uid="uid://5qimst4ek3ld" path="res://Interactables/DoorNoKey.tscn" id="10_0gyjm"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pb7eb"]
 size = Vector3(500, 1, 500)
@@ -15,7 +17,7 @@ size = Vector3(500, 1, 500)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t4ncp"]
 resource_name = "木地板"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("2_0sfir")
+albedo_texture = ExtResource("2_2fnbq")
 emission_enabled = true
 emission_energy_multiplier = 0.0
 
@@ -53,8 +55,14 @@ shadow_mesh = SubResource("ArrayMesh_57v2b")
 
 [node name="Test_Scene" type="Node3D"]
 
-[node name="Firstperson" parent="." instance=ExtResource("8_cynqb")]
-transform = Transform3D(1, 0, 0, 0, 1.65371, 0, 0, 0, 1, 0.984959, -15.4942, 15.5432)
+[node name="Firstperson" parent="." instance=ExtResource("1_6pjqg")]
+transform = Transform3D(1.57635, 0, 0, 0, 3.07424, 0, 0, 0, 1.4278, 0.786084, -16.548, 12.592)
+
+[node name="Camera3D" parent="Firstperson/Node3D" index="0"]
+transform = Transform3D(0.634378, 0, 0, 0, 0.325284, 0, 0, 0, 0.700378, 0.0767683, 1.8541, -0.125408)
+
+[node name="RayCast3D" parent="Firstperson/Node3D/Camera3D" index="0"]
+transform = Transform3D(186.418, -0.182614, -4.6901e-09, 0, -1.01379e-05, 136.273, -0.14678, -231.929, -5.95667e-06, -0.028621, -0.0453901, -4.11976)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.9484, 0)
@@ -75,41 +83,47 @@ light_indirect_energy = 8.6
 light_volumetric_fog_energy = 1.2
 light_angular_distance = 8.25
 
-[node name="CollisionWalls" parent="." instance=ExtResource("3_0v6e8")]
+[node name="CollisionWalls" parent="." instance=ExtResource("3_uv3rf")]
 transform = Transform3D(0.1, 0, 0, 0, -4.37114e-09, 0.1, 0, -0.1, -4.37114e-09, 0, -15.0556, 0)
 
-[node name="Door" parent="." instance=ExtResource("4_ahox0")]
-transform = Transform3D(-1.83594e-07, 0, -4.20013, 0, 4.28676, 0, 4.20013, 0, -1.83594e-07, 17.3453, -12.9319, 15.1175)
-
-[node name="Door2" parent="." instance=ExtResource("4_ahox0")]
+[node name="Door2" parent="." instance=ExtResource("4_fu0tw")]
 transform = Transform3D(-4.32277, 0, 3.66223e-07, 0, 4.26267, 0, -3.77909e-07, 0, -4.18911, 23.1952, -12.8605, 20.1744)
 
-[node name="Door3" parent="." instance=ExtResource("4_ahox0")]
+[node name="Door3" parent="." instance=ExtResource("4_fu0tw")]
 transform = Transform3D(-4.37471, 0, -3.67187e-07, 0, 4.28676, 0, 3.8245e-07, 0, -4.20013, -35.7271, -12.8917, 9.39718)
 
-[node name="DoubleDoors" parent="." instance=ExtResource("4_uksla")]
+[node name="DoubleDoors" parent="." instance=ExtResource("5_rjupd")]
 transform = Transform3D(3.87794, 0, 0, 0, 4.32731, 0, 0, 0, 4.02151, 1.03195, -12.8671, -0.532533)
 
-[node name="DoubleDoors2" parent="." instance=ExtResource("4_uksla")]
-transform = Transform3D(3.87794, 0, 0, 0, 4.32731, 0, 0, 0, 4.02151, 1.03195, -12.8671, 30.4216)
+[node name="DoubleDoors2" parent="." instance=ExtResource("5_rjupd")]
+transform = Transform3D(-3.87794, 0, -3.51572e-07, 0, 4.32731, 0, 3.3902e-07, 0, -4.02151, 1.03195, -12.8671, 30.4216)
 
-[node name="Door4" parent="." instance=ExtResource("4_ahox0")]
+[node name="Door4" parent="." instance=ExtResource("4_fu0tw")]
 transform = Transform3D(-1.88954e-07, 0, 4.18911, 0, 4.26267, 0, -4.32277, 0, -1.83112e-07, -15.0763, -12.8438, -16.5502)
 
-[node name="CharacterBody3D" parent="." instance=ExtResource("6_6lgxh")]
+[node name="CharacterBody3D" parent="." instance=ExtResource("6_wmgl3")]
 transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 33.2738, -17.7076, 12.0083)
 
-[node name="CharacterBody3D2" parent="." instance=ExtResource("6_6lgxh")]
+[node name="CharacterBody3D2" parent="." instance=ExtResource("6_wmgl3")]
 transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 38.433, -17.7252, 17.3928)
 
-[node name="Portrait" parent="." instance=ExtResource("8_gpb7v")]
+[node name="Portrait" parent="." instance=ExtResource("7_hpput")]
 transform = Transform3D(0.1, 0, 0, 0, 0.097598, 0, 0, 0, 0.097598, -35.076, -12.7612, -31.4526)
 
-[node name="Key" parent="." instance=ExtResource("7_ni7v1")]
-transform = Transform3D(0.0576048, 0, 0, 0, -3.03252e-09, -0.14255, 0, 0.069376, -6.23106e-09, 9.49415, -12.2916, 2.00151)
+[node name="Key" parent="." instance=ExtResource("8_5rgyq")]
+transform = Transform3D(0.0576048, 0, 0, 0, -3.03252e-09, -0.14255, 0, 0.069376, -6.23106e-09, 11.2773, -12.3548, 2.03418)
 
 [node name="StaticBody3D" parent="Key" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 1.42109e-14, 0, 3.55271e-15, 2.36421, 0, 0, 0)
 
-[editable path="Door"]
+[node name="CollisionShape3D" parent="Key/StaticBody3D" index="1"]
+transform = Transform3D(2.2, 0, 0, 0, 2.022, -1.42109e-14, 0, 0, 1, -4.48828, 0.807274, 0.311672)
+
+[node name="MainKey" parent="." instance=ExtResource("9_ntuix")]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, -35.6613, -10.5752, -31.5261)
+
+[node name="DoorNoKey" parent="." instance=ExtResource("10_0gyjm")]
+transform = Transform3D(5.13825e-08, 0, -4.1735, 0, 4.29142, 0, 4.30885, 0, 4.97685e-08, 17.4471, -12.8558, 15.1177)
+
+[editable path="Firstperson"]
 [editable path="Key"]

@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 
 const SPEED = 15.0
-const JUMP_VELOCITY = 4.5
+const JUMP_VELOCITY = 10
 const GRAVITY = 10
 
 var melee_damage= 50
@@ -24,7 +24,7 @@ func _unhandled_input(event: InputEvent):
 		rotate_y(-event.relative.x * 0.005)
 		camera.rotate_x(-event.relative.y * 0.005)
 		# Clamp camera pitch to avoid flipping
-		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-40), deg_to_rad(60))
+		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-85), deg_to_rad(60))
 		
 		
 func melee():
