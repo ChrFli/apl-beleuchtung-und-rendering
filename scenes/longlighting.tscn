@@ -56,13 +56,7 @@ shadow_mesh = SubResource("ArrayMesh_57v2b")
 [node name="Test_Scene" type="Node3D"]
 
 [node name="Firstperson" parent="." instance=ExtResource("1_6pjqg")]
-transform = Transform3D(1.57635, 0, 0, 0, 3.07424, 0, 0, 0, 1.4278, 0.786084, -16.548, 12.592)
-
-[node name="Camera3D" parent="Firstperson/Node3D" index="0"]
-transform = Transform3D(0.634378, 0, 0, 0, 0.325284, 0, 0, 0, 0.700378, 0.0767683, 1.8541, -0.125408)
-
-[node name="RayCast3D" parent="Firstperson/Node3D/Camera3D" index="0"]
-transform = Transform3D(186.418, -0.182614, -4.6901e-09, 0, -1.01379e-05, 136.273, -0.14678, -231.929, -5.95667e-06, -0.028621, -0.0453901, -4.11976)
+transform = Transform3D(1, 0, 0, 0, 3.36991, 0, 0, 0, 1, 8.33506, -12.7719, 15.0715)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.9484, 0)
@@ -125,5 +119,4 @@ transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.371
 [node name="DoorNoKey" parent="." instance=ExtResource("10_0gyjm")]
 transform = Transform3D(5.13825e-08, 0, -4.1735, 0, 4.29142, 0, 4.30885, 0, 4.97685e-08, 17.4471, -12.8558, 15.1177)
 
-[editable path="Firstperson"]
 [editable path="Key"]
