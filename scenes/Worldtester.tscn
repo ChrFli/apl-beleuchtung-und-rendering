@@ -1,10 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://cs0j2mkyn65g1"]
+[gd_scene load_steps=11 format=3 uid="uid://cs0j2mkyn65g1"]
 
-[ext_resource type="PackedScene" uid="uid://drxna0qrhrswo" path="res://scenes/door.tscn" id="1_22fkl"]
-[ext_resource type="PackedScene" uid="uid://ce244th5ihfds" path="res://scenes/DoubleDoors.tscn" id="3_sq84n"]
-[ext_resource type="PackedScene" uid="uid://cs4kqh2mabj3d" path="res://Interactables/key.tscn" id="5_fnc06"]
+[ext_resource type="PackedScene" uid="uid://drxna0qrhrswo" path="res://Interactables/door.tscn" id="1_22fkl"]
+[ext_resource type="PackedScene" uid="uid://ce244th5ihfds" path="res://Interactables/DoubleDoors.tscn" id="3_sq84n"]
+[ext_resource type="PackedScene" uid="uid://cyij4yy6u7uxg" path="res://Interactables/key.tscn" id="5_fnc06"]
 [ext_resource type="PackedScene" uid="uid://87o8j3yk4itq" path="res://Interactables/portrait.tscn" id="5_g7abt"]
 [ext_resource type="PackedScene" uid="uid://8ai42fc24mip" path="res://models/firstperson.tscn" id="5_spx1d"]
+[ext_resource type="PackedScene" uid="uid://5qimst4ek3ld" path="res://Interactables/DoorNoKey.tscn" id="6_8g3t1"]
+[ext_resource type="PackedScene" uid="uid://syxlhnv3s8vq" path="res://Interactables/DoubleDoorNoKey.tscn" id="7_gh5pl"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_iquhi"]
 size = Vector3(1, 0.942383, 1)
@@ -50,7 +52,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.17882, 1.29076, -0.246839)
 transform = Transform3D(0.0593863, 0, 0, 0, 0.0593863, 0, 0, 0, 0.0593863, -3.0755, 0.189519, 2.65149)
 
 [node name="Key" parent="." instance=ExtResource("5_fnc06")]
-transform = Transform3D(0.205799, 0, 0, 0, 0.205799, 0, 0, 0, 0.205799, -5.05975, 1.66891, 4.85702)
+transform = Transform3D(0.356655, 0, 0, 0, 0.275347, 0, 0, 0, 0.117594, -2.42133, 0.768892, 4.85702)
 
 [node name="Firstperson" parent="." instance=ExtResource("5_spx1d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.786084, 0.189519, 5.93496)
+
+[node name="DoorNoKey" parent="." instance=ExtResource("6_8g3t1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.16879, 1.31903, 4.56698)
+
+[node name="DoubleDoorsNoKey" parent="." instance=ExtResource("7_gh5pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.92876, 1.28496, 2.54154)

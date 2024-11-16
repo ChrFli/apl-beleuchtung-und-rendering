@@ -75,33 +75,6 @@ tracks/1/keys = {
 "values": [Vector3(0.449383, -0.257266, -1.174), Vector3(0.365792, -0.257266, -1.52628)]
 }
 
-[sub_resource type="Animation" id="Animation_7pvql"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Node3D/Camera3D/Melee:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(-0.0245147, 0.407481, 0.10352)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Node3D/Camera3D/Melee:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0.365792, -0.257266, -1.52628)]
-}
-
 [sub_resource type="Animation" id="Animation_j7ma8"]
 resource_name = "MeleeReturn"
 step = 0.02
@@ -130,6 +103,33 @@ tracks/1/keys = {
 "values": [Vector3(0.365792, -0.257266, -1.52628), Vector3(0.449, -0.257, -1.174)]
 }
 
+[sub_resource type="Animation" id="Animation_7pvql"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node3D/Camera3D/Melee:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.0245147, 0.407481, 0.10352)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node3D/Camera3D/Melee:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.365792, -0.257266, -1.52628)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vdihq"]
 _data = {
 "MeleeAttack": SubResource("Animation_c2uwn"),
@@ -141,7 +141,7 @@ _data = {
 script = ExtResource("1_d1630")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1.31841, 0, 0, 0, 1.6482, 0, 1, 0)
 shape = SubResource("CapsuleShape3D_ajbgd")
 
 [node name="Node3D" type="Node3D" parent="."]
@@ -150,6 +150,10 @@ shape = SubResource("CapsuleShape3D_ajbgd")
 transform = Transform3D(0.852733, 0, 0, 0, 0.852733, 0, 0, 0, 0.852733, 0, 1.62381, 0)
 fov = 34.6278
 
+[node name="RayCast3D" type="RayCast3D" parent="Node3D/Camera3D"]
+transform = Transform3D(259.137, -0.00191477, 0.180289, -0.1991, 0.00462992, 234.191, -0.204416, -2.43191, 0.445716, -0.0277953, -0.0453902, -2.45152)
+script = ExtResource("3_gtlgt")
+
 [node name="Area3D" type="Area3D" parent="Node3D/Camera3D"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/Camera3D/Area3D"]
@@ -157,16 +161,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.97466, 0, 0, -1.51086)
 shape = SubResource("BoxShape3D_rwcb8")
 
 [node name="Melee" type="Node3D" parent="Node3D/Camera3D"]
-transform = Transform3D(0.912203, -0.104536, 0.396179, 0.103304, 0.994348, 0.0245122, -0.396502, 0.0185667, 0.917846, 0.365792, -0.257266, -1.52628)
+transform = Transform3D(0.912203, -0.104536, 0.396179, 0.103304, 0.994348, 0.0245122, -0.396502, 0.0185668, 0.917846, 0.365792, -0.257266, -1.52628)
 
 [node name="Crowbar" type="MeshInstance3D" parent="Node3D/Camera3D/Melee"]
 transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 0, 0, 0)
 mesh = SubResource("ArrayMesh_foedh")
 skeleton = NodePath("")
-
-[node name="RayCast3D" type="RayCast3D" parent="Node3D/Camera3D"]
-transform = Transform3D(45.4894, 0, 0, 0, 1.78873e-08, 27.7279, 0, -1.5, 3.30651e-07, -0.0277953, -0.0453902, -1.76867)
-script = ExtResource("3_gtlgt")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

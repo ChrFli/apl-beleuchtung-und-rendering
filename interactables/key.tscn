@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=4 uid="uid://cyij4yy6u7uxg"]
 
-[ext_resource type="Texture2D" path="res://textures/rust_key_0.png" id="1_jwfe3"]
-[ext_resource type="Script" path="res://Interactables/key.gd" id="1_uykx3"]
-[ext_resource type="Texture2D" path="res://textures/rust_key_1.png" id="2_135x0"]
-[ext_resource type="Texture2D" path="res://textures/rust_key_2.png" id="3_wutq4"]
+[ext_resource type="Script" path="res://scripts/key.gd" id="1_2jkup"]
+[ext_resource type="Texture2D" uid="uid://25juds8lmiru" path="res://textures/rust_key_0.png" id="1_jwfe3"]
+[ext_resource type="Texture2D" uid="uid://7bqgapii4fdh" path="res://textures/rust_key_1.png" id="2_135x0"]
+[ext_resource type="Texture2D" uid="uid://bkixsc12nnnfx" path="res://textures/rust_key_2.png" id="3_wutq4"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dnnir"]
 resource_name = "phong2"
@@ -60,7 +60,7 @@ height = 0.0650757
 [node name="Key" type="Node3D"]
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
-script = ExtResource("1_uykx3")
+script = ExtResource("1_2jkup")
 
 [node name="key1_low_phong2_0" type="MeshInstance3D" parent="StaticBody3D"]
 transform = Transform3D(0.045281, 0, 0, 0, 0.045281, 0, 0, 0, 0.045281, 0, 0, 0)

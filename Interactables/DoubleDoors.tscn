@@ -10,7 +10,7 @@ albedo_texture = ExtResource("2_5sfo2")
 emission_enabled = true
 emission_energy_multiplier = 0.0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_4oi6l"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_qyrbe"]
 _surfaces = [{
 "aabb": AABB(-0.05, -0.0025, 0, 0.1, 0.005, 0.2),
 "format": 34359742465,
@@ -40,7 +40,7 @@ _surfaces = [{
 "vertex_data": PackedByteArray("zcxMPQrXIzsAAAAAzcxMvQrXIzsAAAAAzcxMvQrXI7sAAAAAzcxMPQrXI7sAAAAAzcxMPQrXIzvPzEw+zcxMPQrXI7vPzEw+zcxMvQrXI7vPzEw+zcxMvQrXIzvPzEw+zcxMPQrXI7vPzEw+zcxMPQrXI7sAAAAAzcxMvQrXI7sAAAAAzcxMvQrXI7vPzEw+zcxMPQrXIzvPzEw+zcxMPQrXIzsAAAAAzcxMPQrXI7sAAAAAzcxMPQrXI7vPzEw+zcxMvQrXIzvPzEw+zcxMvQrXIzsAAAAAzcxMPQrXIzsAAAAAzcxMPQrXIzvPzEw+zcxMvQrXI7vPzEw+zcxMvQrXI7sAAAAAzcxMvQrXIzsAAAAAzcxMvQrXIzvPzEw+//////9//////////3//////////f/////////9/////f/9//38AgP9//3//fwCA/3//f/9/AID/f/9//38AgP9/AAD///+//38AAP///7//fwAA////v/9/AAD///+/////f/9/AID///9//38AgP///3//fwCA////f/9/AID/f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/vwAA/3//fwCAAAD/f/9/AIAAAP9//38AgAAA/3//fwCA")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_4oi6l")
+shadow_mesh = SubResource("ArrayMesh_qyrbe")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qui8k"]
 size = Vector3(1.02788, 0.824951, 1)
