@@ -14,5 +14,5 @@ func interact():
 				animation_player.play("closeportrait")
 			if toggle == true:
 				animation_player.play("openportrait")
-			await get_tree().create_timer(1.0, false).timeout
+			await get_tree().create_timer(0.5, false).timeout
 			interactable = true

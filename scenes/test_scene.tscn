@@ -1,14 +1,12 @@
 [gd_scene load_steps=13 format=4 uid="uid://clgni3ek56r0e"]
 
-
 [ext_resource type="Texture2D" uid="uid://cixp24n4yj3oy" path="res://models/House_6.png" id="2_0sfir"]
-[ext_resource type="PackedScene" uid="uid://chtutpgwaitak" path="res://scenes/char_dummy.tscn" id="2_hk53w"]
 [ext_resource type="PackedScene" uid="uid://eelx8utxq7f2" path="res://scenes/collision_walls.tscn" id="3_0v6e8"]
-[ext_resource type="PackedScene" uid="uid://drxna0qrhrswo" path="res://scenes/door.tscn" id="4_ahox0"]
-[ext_resource type="PackedScene" uid="uid://ce244th5ihfds" path="res://scenes/DoubleDoors.tscn" id="4_uksla"]
+[ext_resource type="PackedScene" uid="uid://drxna0qrhrswo" path="res://Interactables/door.tscn" id="4_ahox0"]
+[ext_resource type="PackedScene" uid="uid://ce244th5ihfds" path="res://Interactables/DoubleDoors.tscn" id="4_uksla"]
 [ext_resource type="PackedScene" uid="uid://dkmni3owxoxev" path="res://scenes/char_Zombie.tscn" id="6_6lgxh"]
-
-[ext_resource type="PackedScene" uid="uid://cs4kqh2mabj3d" path="res://Interactables/key.tscn" id="7_ni7v1"]
+[ext_resource type="PackedScene" uid="uid://cyij4yy6u7uxg" path="res://Interactables/key.tscn" id="7_ni7v1"]
+[ext_resource type="PackedScene" uid="uid://8ai42fc24mip" path="res://models/firstperson.tscn" id="8_cynqb"]
 [ext_resource type="PackedScene" uid="uid://87o8j3yk4itq" path="res://Interactables/portrait.tscn" id="8_gpb7v"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pb7eb"]
@@ -55,11 +53,8 @@ shadow_mesh = SubResource("ArrayMesh_57v2b")
 
 [node name="Test_Scene" type="Node3D"]
 
-[node name="CharDummy" parent="." instance=ExtResource("2_hk53w")]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.409973, -1.39336, 40.3797)
-
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.84734, 52.9313, 364.541)
+[node name="Firstperson" parent="." instance=ExtResource("8_cynqb")]
+transform = Transform3D(1, 0, 0, 0, 1.65371, 0, 0, 0, 1, 0.984959, -15.4942, 15.5432)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.9484, 0)
@@ -107,8 +102,14 @@ transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 
 [node name="CharacterBody3D2" parent="." instance=ExtResource("6_6lgxh")]
 transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 38.433, -17.7252, 17.3928)
 
-[node name="Key" parent="." instance=ExtResource("7_ni7v1")]
-transform = Transform3D(0.251917, 0, 0, 0, 0.251917, 0, 0, 0, 0.251917, -3.37885, -16.3814, 36.8935)
-
 [node name="Portrait" parent="." instance=ExtResource("8_gpb7v")]
 transform = Transform3D(0.1, 0, 0, 0, 0.097598, 0, 0, 0, 0.097598, -35.076, -12.7612, -31.4526)
+
+[node name="Key" parent="." instance=ExtResource("7_ni7v1")]
+transform = Transform3D(0.0576048, 0, 0, 0, -3.03252e-09, -0.14255, 0, 0.069376, -6.23106e-09, 9.49415, -12.2916, 2.00151)
+
+[node name="StaticBody3D" parent="Key" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 1.42109e-14, 0, 3.55271e-15, 2.36421, 0, 0, 0)
+
+[editable path="Door"]
+[editable path="Key"]

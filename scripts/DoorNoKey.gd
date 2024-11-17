@@ -8,7 +8,7 @@ func interact():
 	# Find the player node in the "player" group (assuming you've added the player to this group in Chardummy.gd)
 	var player = get_tree().get_nodes_in_group("player")[0]  # Assuming there's only one player
 
-	if player and player._haskey():  # Check if player has the key
+	if player :  # Check if player has the key
 		if interactable:
 			interactable = false
 			toggle = !toggle
