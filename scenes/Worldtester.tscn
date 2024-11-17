@@ -1,8 +1,5 @@
 [gd_scene load_steps=20 format=4 uid="uid://cs0j2mkyn65g1"]
 
-[ext_resource type="PackedScene" uid="uid://drxna0qrhrswo" path="res://Interactables/door.tscn" id="1_22fkl"]
-[ext_resource type="PackedScene" uid="uid://ce244th5ihfds" path="res://Interactables/DoubleDoors.tscn" id="3_sq84n"]
-[ext_resource type="PackedScene" uid="uid://cyij4yy6u7uxg" path="res://Interactables/key.tscn" id="5_fnc06"]
 [ext_resource type="PackedScene" uid="uid://87o8j3yk4itq" path="res://Interactables/portrait.tscn" id="5_g7abt"]
 [ext_resource type="PackedScene" uid="uid://8ai42fc24mip" path="res://models/firstperson.tscn" id="5_spx1d"]
 [ext_resource type="PackedScene" uid="uid://5qimst4ek3ld" path="res://Interactables/DoorNoKey.tscn" id="6_8g3t1"]

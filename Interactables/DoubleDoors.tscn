@@ -42,8 +42,15 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_qyrbe")
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_qui8k"]
-size = Vector3(1.02788, 0.824951, 1)
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_u327c"]
+render_priority = 0
+shader = ExtResource("3_3qp55")
+shader_parameter/uv_offset = Vector2(1, 0)
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_global_scale = Vector2(1, 1)
+shader_parameter/saturation_factor = 1.5
+shader_parameter/darkness_factor = 0.8
+shader_parameter/texture_albedo = ExtResource("4_rihpb")
 
 [sub_resource type="Animation" id="Animation_4awm6"]
 length = 0.001
@@ -134,6 +141,8 @@ _data = {
 }
 
 [node name="DoubleDoors" type="Node3D"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+
 
 [node name="hinge1" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0142, 0, 0)
@@ -147,6 +156,9 @@ playeranimation = NodePath("../../AnimationPlayer")
 transform = Transform3D(10.098, 0, 0, 0, -4.41398e-07, 10.098, 0, -10.098, -4.41398e-07, 0.00373018, -1.08718, -0.0179876)
 mesh = SubResource("ArrayMesh_i13jd")
 skeleton = NodePath("")
+
+surface_material_override/0 = SubResource("ShaderMaterial_u327c")
+
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="hinge1/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 2.5, 0, 0, 0, 0.1, -0.00527191, -0.0650175, 0)

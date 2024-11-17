@@ -88,6 +88,7 @@ func _physics_process(delta: float) -> void:
 		movement_timer = RANDOM_MOVEMENT_INTERVAL  # Resette den Timer
 		set_random_direction()  # Setze eine neue zufällige Richtung
 
+<<<<<<< HEAD
 	# Setze die Geschwindigkeit in der zufälligen Richtung
 	velocity.x = random_direction.x * SPEED
 	velocity.z = random_direction.z * SPEED
@@ -96,5 +97,39 @@ func _physics_process(delta: float) -> void:
 	if random_direction.length() > 0:
 		# Drehe das Modell nur, wenn eine Bewegungsrichtung vorhanden ist
 		rotation.y = lerp_angle(rotation.y, random_direction.angle_to(Vector3.BACK), 0.1)
+=======
+<<<<<<< Updated upstream
+	
+	if direction:
+		velocity.x = direction.x * SPEED
+		velocity.z = direction.z * SPEED
+	else:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity.z = move_toward(velocity.z, 0, SPEED)
+=======
+	# Setze die Geschwindigkeit in der zufälligen Richtung
+	velocity.x = random_direction.x * SPEED
+	velocity.z = random_direction.z * SPEED
+>>>>>>> Christin
 
+	# Drehe das Modell in die Bewegungsrichtung
+	if random_direction.length() > 0:
+		# Berechne den Zielwinkel in Y Richtung direkt anhand des Bewegungsvektors
+		var target_rotation = atan2(random_direction.x, random_direction.z)
+		# Setze die Rotation in Y zur Bewegungsrichtung
+		rotation.y = lerp_angle(rotation.y, target_rotation, 0.1)
+>>>>>>> Stashed changes
+
+	# Kollision und Bewegung durchführen
 	move_and_slide()
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+	
+=======
+
+	# Wenn wir in eine Kollision geraten, bewegen wir uns in eine neue Richtung
+	if is_on_floor() and is_on_wall():
+		set_random_direction()  # Neue zufällige Richtung bei Kollision
+>>>>>>> Stashed changes
+>>>>>>> Christin

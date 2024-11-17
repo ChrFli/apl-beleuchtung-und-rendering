@@ -2,7 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
+
 uid="uid://b7o6ubegpwoml"
+
 path.s3tc="res://.godot/imported/table_lamp_01_1.png-2e3030f4c39c6f041f044e20aa4f14a6.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
