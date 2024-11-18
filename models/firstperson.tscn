@@ -6,7 +6,7 @@
 [ext_resource type="Script" path="res://scripts/reticle.gd" id="4_6dw3u"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ajbgd"]
-height = 1.77559
+height = 2.73106
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rwcb8"]
 
@@ -143,7 +143,7 @@ _data = {
 script = ExtResource("1_d1630")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1.31841, 0, 0, 0, 1.6482, 0, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1.31841, 0, 0, 0, 1.6482, 0, 2.0271, 0)
 shape = SubResource("CapsuleShape3D_ajbgd")
 
 [node name="Node3D" type="Node3D" parent="."]
