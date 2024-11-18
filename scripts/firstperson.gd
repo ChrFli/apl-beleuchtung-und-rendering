@@ -3,7 +3,7 @@ extends CharacterBody3D
 
 const SPEED = 15.0
 const JUMP_VELOCITY = 10
-const GRAVITY = 10
+const GRAVITY = 20
 
 var melee_damage= 50
 

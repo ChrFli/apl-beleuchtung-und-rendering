@@ -149,7 +149,7 @@ shape = SubResource("CapsuleShape3D_ajbgd")
 [node name="Node3D" type="Node3D" parent="."]
 
 [node name="Camera3D" type="Camera3D" parent="Node3D"]
-transform = Transform3D(0.852733, 0, 0, 0, 0.852733, 0, 0, 0, 0.852733, 0, 1.62381, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.07415, 0)
 fov = 34.6278
 
 [node name="RayCast3D" type="RayCast3D" parent="Node3D/Camera3D"]
