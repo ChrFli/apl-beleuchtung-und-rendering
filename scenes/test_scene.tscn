@@ -128,5 +128,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.6233, -8.16321, 5.97698)
 [node name="SmallLamp5" parent="." instance=ExtResource("9_c21k0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.3844, -14.8115, 1.58833)
 
+[node name="SmallLamp6" parent="." instance=ExtResource("9_c21k0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.7208, -12.522, -27.5212)
+
+[node name="SmallLamp7" parent="." instance=ExtResource("9_c21k0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.5105, -13.6736, -4.53097)
+
 [editable path="Door"]
 [editable path="Key"]
