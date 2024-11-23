@@ -6,7 +6,7 @@
 [ext_resource type="Script" path="res://scripts/reticle.gd" id="4_6dw3u"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ajbgd"]
-height = 1.77559
+height = 2.73106
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rwcb8"]
 
@@ -143,17 +143,17 @@ _data = {
 script = ExtResource("1_d1630")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1.31841, 0, 0, 0, 1.6482, 0, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1.31841, 0, 0, 0, 1.6482, 0, 2.0271, 0)
 shape = SubResource("CapsuleShape3D_ajbgd")
 
 [node name="Node3D" type="Node3D" parent="."]
 
 [node name="Camera3D" type="Camera3D" parent="Node3D"]
-transform = Transform3D(0.852733, 0, 0, 0, 0.852733, 0, 0, 0, 0.852733, 0, 1.62381, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.92482, 0)
 fov = 34.6278
 
 [node name="RayCast3D" type="RayCast3D" parent="Node3D/Camera3D"]
-transform = Transform3D(36.2659, 0, 0, 0, -1.60709e-07, -28.9273, 0, 3.67659, -1.26445e-06, -0.028621, -0.0453904, -0.30735)
+transform = Transform3D(49.31, 0, 0, 0, -2.18557e-07, -60, 0, 5, -2.62268e-06, -0.028621, -0.0453904, -0.30735)
 script = ExtResource("3_gtlgt")
 
 [node name="Area3D" type="Area3D" parent="Node3D/Camera3D"]

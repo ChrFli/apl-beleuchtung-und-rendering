@@ -1,0 +1,67 @@
+[gd_scene load_steps=8 format=3 uid="uid://coqnppu3804v3"]
+
+[sub_resource type="Gradient" id="Gradient_2o4ff"]
+offsets = PackedFloat32Array(0.161616, 0.643939)
+colors = PackedColorArray(0, 0, 0, 1, 0.494118, 0.164706, 0.0588235, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_yqfo5"]
+gradient = SubResource("Gradient_2o4ff")
+
+[sub_resource type="Curve" id="Curve_0ino8"]
+_data = [Vector2(0, 0.0116278), 0.0, 0.0, 0, 0, Vector2(0.150943, 0.988372), 0.0, 0.0, 0, 0, Vector2(1, 0.151163), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_x4raw"]
+curve = SubResource("Curve_0ino8")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_lirht"]
+lifetime_randomness = 0.18
+emission_shape_scale = Vector3(0, 1, 1)
+angle_min = 1.07288e-05
+angle_max = 360.0
+direction = Vector3(0, 1, 0)
+spread = 0.0
+initial_velocity_min = 1.0
+initial_velocity_max = 4.0
+angular_velocity_min = -1.60933e-05
+angular_velocity_max = 40.0
+gravity = Vector3(0, 0, 0)
+linear_accel_min = 0.999998
+linear_accel_max = 5.0
+scale_min = 0.1
+scale_max = 0.7
+scale_curve = SubResource("CurveTexture_x4raw")
+color_initial_ramp = SubResource("GradientTexture1D_yqfo5")
+hue_variation_min = -0.16
+hue_variation_max = 0.24
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qjqw1"]
+transparency = 1
+blend_mode = 1
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.347108, 0.140977, 0.0904316, 1)
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_31v1k"]
+material = SubResource("StandardMaterial3D_qjqw1")
+
+[node name="ShaderFlame" type="Node3D"]
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+amount = 500
+lifetime = 0.32
+local_coords = true
+draw_order = 3
+process_material = SubResource("ParticleProcessMaterial_lirht")
+draw_pass_1 = SubResource("QuadMesh_31v1k")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+light_color = Color(1, 0.772549, 0.384314, 1)
+light_energy = 3.38
+light_indirect_energy = 2.587
+light_size = 0.14

@@ -5980,7 +5980,7 @@ mesh = SubResource("ArrayMesh_rac7b")
 skeleton = NodePath("")
 
 [node name="TopBook01" type="MeshInstance3D" parent="Books/Static_Books"]
-transform = Transform3D(-183.922, 394.423, 0, 0, 0, 435.198, 394.423, 183.922, 0, 457.684, -11.4134, 39.602)
+transform = Transform3D(435.116, -7.61213, -3.56936, -7.60815, -435.131, 0.516757, -3.57785, -0.454261, -435.183, 457.684, -7.50188, 23.0272)
 mesh = SubResource("ArrayMesh_c2tvt")
 skeleton = NodePath("")
 
