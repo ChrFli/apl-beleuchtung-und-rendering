@@ -14,7 +14,8 @@ var health = 100
 
 func _ready(): 
 	player =  get_node(player_path)
-	
+	add_to_group("Vikto")  # Add to the enemy group
+
 	
 	
 	
@@ -35,7 +36,7 @@ func _process(delta):
 	
 	#lifepoints 
 	if health <= 0:
-		queue_free()
+		die()
 	
 	
 	
@@ -49,4 +50,6 @@ func _target_in_range():
 func _hit_finished():
 	player.hit()
 	
-	
+func die():
+	print(name, "has died.")
+	queue_free()  # Remove the enemy from the scene
