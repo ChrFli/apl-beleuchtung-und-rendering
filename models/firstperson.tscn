@@ -154,7 +154,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.92482, 0)
 fov = 34.6278
 
 [node name="RayCast3D" type="RayCast3D" parent="Node3D/Camera3D"]
-transform = Transform3D(49.31, 0, 0, 0, -2.18557e-07, -60, 0, 5, -2.62268e-06, -0.028621, -0.0453904, -0.30735)
+transform = Transform3D(49.31, 0, 0, 0, -3.54743e-07, -60, 0, 8.11556, -2.62268e-06, -0.028621, -0.0453904, -0.30735)
 script = ExtResource("3_gtlgt")
 
 [node name="Melee" type="Node3D" parent="Node3D/Camera3D"]

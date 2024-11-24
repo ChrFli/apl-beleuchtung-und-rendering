@@ -237,7 +237,6 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="ColorRect" type="ColorRect" parent="UI"]
-visible = false
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1082.0
