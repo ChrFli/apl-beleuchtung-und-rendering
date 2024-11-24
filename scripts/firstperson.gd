@@ -16,6 +16,7 @@ signal player_hit
 @onready var melee_hitbox=$Node3D/Camera3D/Hitbox
 
 var has_key = false
+var has_masterkey = false
 
 
 func _ready():
@@ -62,6 +63,12 @@ func _haskey():
 
 func pick_up_key():
 	has_key = true
+
+func _hasmasterkey():
+	return has_masterkey
+
+func pick_up_masterkey():
+	has_masterkey = true
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.

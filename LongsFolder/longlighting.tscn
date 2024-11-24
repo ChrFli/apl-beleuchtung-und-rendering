@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=4 uid="uid://c00mi5j34onc2"]
+[gd_scene load_steps=36 format=4 uid="uid://c00mi5j34onc2"]
 
 [ext_resource type="PackedScene" uid="uid://8ai42fc24mip" path="res://models/firstperson.tscn" id="1_jheb1"]
 [ext_resource type="Texture2D" uid="uid://cixp24n4yj3oy" path="res://models/House_6.png" id="2_5cjet"]
@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://ce244th5ihfds" path="res://Interactables/DoubleDoors.tscn" id="5_7gk7y"]
 [ext_resource type="PackedScene" uid="uid://87o8j3yk4itq" path="res://Interactables/portrait.tscn" id="7_3pxvb"]
 [ext_resource type="PackedScene" uid="uid://cyij4yy6u7uxg" path="res://Interactables/key.tscn" id="8_w5d1o"]
-[ext_resource type="PackedScene" uid="uid://b2u6goope0hlo" path="res://Interactables/main_key.tscn" id="9_kx3sj"]
+[ext_resource type="PackedScene" uid="uid://b2u6goope0hlo" path="res://Interactables/masterkey.tscn" id="9_kx3sj"]
 [ext_resource type="PackedScene" uid="uid://5qimst4ek3ld" path="res://Interactables/DoorNoKey.tscn" id="10_7yiju"]
 [ext_resource type="Texture2D" uid="uid://g5mrp3ub2xw7" path="res://TestingLightTexture/table_lamp_01_0.png" id="11_dqkov"]
 [ext_resource type="Texture2D" uid="uid://buro7ueeenbay" path="res://TestingLightTexture/table_lamp_01_2.png" id="12_gyf5d"]
@@ -18,6 +18,8 @@
 [ext_resource type="Texture2D" uid="uid://n1xaw4xymlac" path="res://TestingLightTexture/ceiling_light_1.png" id="17_fd4st"]
 [ext_resource type="Texture2D" uid="uid://cvsgu5st4ggwc" path="res://TestingLightTexture/ceiling_light_2.jpg" id="18_2may8"]
 [ext_resource type="Texture2D" uid="uid://df4y1tt1yssxr" path="res://TestingLightTexture/ceiling_light_3.png" id="19_7wa2w"]
+[ext_resource type="PackedScene" uid="uid://syxlhnv3s8vq" path="res://Interactables/FrontDoor.tscn" id="19_nuxd8"]
+[ext_resource type="PackedScene" uid="uid://bvabvch8ao2jd" path="res://LongsFolder/Shaderscene.tscn" id="20_d2r0j"]
 
 [sub_resource type="Environment" id="Environment_ydjuo"]
 background_mode = 1
@@ -179,7 +181,7 @@ shadow_mesh = SubResource("ArrayMesh_sii73")
 environment = SubResource("Environment_ydjuo")
 
 [node name="Firstperson" parent="." instance=ExtResource("1_jheb1")]
-transform = Transform3D(1, 0, 0, 0, 2.28245, 0, 0, 0, 1, 8.33506, -12.7719, 15.0715)
+transform = Transform3D(1, 0, 0, 0, 1.78749, 0, 0, 0, 1, 8.33506, -12.7719, 15.0715)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.9484, 0)
@@ -309,9 +311,6 @@ transform = Transform3D(-1.88954e-07, 0, 4.18911, 0, 4.26267, 0, -4.32277, 0, -1
 [node name="DoubleDoors" parent="NavigationRegion3D" instance=ExtResource("5_7gk7y")]
 transform = Transform3D(3.87794, 0, 0, 0, 4.32731, 0, 0, 0, 4.02151, 1.03195, -12.8671, -0.532533)
 
-[node name="DoubleDoors2" parent="NavigationRegion3D" instance=ExtResource("5_7gk7y")]
-transform = Transform3D(-3.87794, 0, -3.51572e-07, 0, 4.32731, 0, 3.3902e-07, 0, -4.02151, 1.03195, -12.8671, 30.4216)
-
 [node name="CharacterBody3D" parent="." instance=ExtResource("14_co8b0")]
 transform = Transform3D(2.3831, 0, 0, 0, 2.3831, 0, 0, 0, 2.3831, 30.9228, -16.8081, -20.0021)
 player_path = NodePath("../Firstperson")
@@ -360,5 +359,11 @@ omni_range = 11.4427
 [node name="CharacterBody3D2" parent="." instance=ExtResource("14_co8b0")]
 transform = Transform3D(2.3831, 0, 0, 0, 2.3831, 0, 0, 0, 2.3831, 24.4159, -16.8081, -20.0021)
 player_path = NodePath("../Firstperson")
+
+[node name="FrontDoor" parent="." instance=ExtResource("19_nuxd8")]
+transform = Transform3D(3.88193, 0, 0, 0, 4.2867, 0, 0, 0, 3.88193, 1.04422, -12.8753, 30.456)
+
+[node name="Node3D" parent="." instance=ExtResource("20_d2r0j")]
+transform = Transform3D(1.68068, 0, 0, 0, -4.34958e-08, -1.28004, 0, 0.995068, -5.59525e-08, 1.13551, -13.8814, -29.2687)
 
 [editable path="NavigationRegion3D/Key"]

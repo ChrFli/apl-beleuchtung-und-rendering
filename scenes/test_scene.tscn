@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://bsvfmundr6br5" path="res://scenes/SmallLamp.tscn" id="9_c21k0"]
 [ext_resource type="PackedScene" uid="uid://coqnppu3804v3" path="res://scenes/Shader_Flame.tscn" id="10_hadp4"]
 [ext_resource type="PackedScene" uid="uid://c02vtrok50c3d" path="res://LongsFolder/zombie.tscn" id="10_isx5u"]
-[ext_resource type="PackedScene" uid="uid://b2u6goope0hlo" path="res://Interactables/main_key.tscn" id="10_rhe5y"]
+[ext_resource type="PackedScene" uid="uid://b2u6goope0hlo" path="res://Interactables/masterkey.tscn" id="10_rhe5y"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pb7eb"]
 size = Vector3(500, 1, 500)
