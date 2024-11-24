@@ -46,6 +46,7 @@ func mele3e():
 func melee():
 	if Input.is_action_just_pressed("Fire"):
 		if not melee_anim.is_playing():
+			melee_anim.play("MeleeReturn")
 			melee_anim.play("MeleeAttack")
 		if melee_anim.current_animation == "MeleeAttack":
 			for body in melee_hitbox.get_overlapping_bodies():

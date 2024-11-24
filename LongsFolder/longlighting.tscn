@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=4 uid="uid://c00mi5j34onc2"]
+[gd_scene load_steps=34 format=4 uid="uid://c00mi5j34onc2"]
 
 [ext_resource type="PackedScene" uid="uid://8ai42fc24mip" path="res://models/firstperson.tscn" id="1_jheb1"]
 [ext_resource type="Texture2D" uid="uid://cixp24n4yj3oy" path="res://models/House_6.png" id="2_5cjet"]
@@ -14,7 +14,6 @@
 [ext_resource type="Texture2D" uid="uid://bx1t4rillxfmj" path="res://TestingLightTexture/table_lamp_01_1.png" id="13_j1e8v"]
 [ext_resource type="Texture2D" uid="uid://dt11ci8tvmooe" path="res://TestingLightTexture/table_lamp_01_3.png" id="14_20a5j"]
 [ext_resource type="PackedScene" uid="uid://c02vtrok50c3d" path="res://LongsFolder/zombie.tscn" id="14_co8b0"]
-[ext_resource type="Script" path="res://LongsFolder/AIZombie.gd" id="15_hibih"]
 [ext_resource type="Texture2D" uid="uid://buvhg3mshv3a0" path="res://TestingLightTexture/ceiling_light_0.jpg" id="16_7pca5"]
 [ext_resource type="Texture2D" uid="uid://n1xaw4xymlac" path="res://TestingLightTexture/ceiling_light_1.png" id="17_fd4st"]
 [ext_resource type="Texture2D" uid="uid://cvsgu5st4ggwc" path="res://TestingLightTexture/ceiling_light_2.jpg" id="18_2may8"]
@@ -315,7 +314,6 @@ transform = Transform3D(-3.87794, 0, -3.51572e-07, 0, 4.32731, 0, 3.3902e-07, 0,
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("14_co8b0")]
 transform = Transform3D(2.3831, 0, 0, 0, 2.3831, 0, 0, 0, 2.3831, 30.9228, -16.8081, -20.0021)
-script = ExtResource("15_hibih")
 player_path = NodePath("../Firstperson")
 
 [node name="lamp_01" type="Node3D" parent="."]
@@ -358,5 +356,9 @@ light_energy = 16.0
 shadow_enabled = true
 distance_fade_enabled = true
 omni_range = 11.4427
+
+[node name="CharacterBody3D2" parent="." instance=ExtResource("14_co8b0")]
+transform = Transform3D(2.3831, 0, 0, 0, 2.3831, 0, 0, 0, 2.3831, 24.4159, -16.8081, -20.0021)
+player_path = NodePath("../Firstperson")
 
 [editable path="NavigationRegion3D/Key"]
