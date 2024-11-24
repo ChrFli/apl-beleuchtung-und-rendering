@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bvabvch8ao2jd"]
+
+[ext_resource type="Shader" path="res://LongsFolder/Shadertest.gdshader" id="1_pwpkt"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_c6xe3"]
+render_priority = 0
+shader = ExtResource("1_pwpkt")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_vqowd"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.721581, 0, 0, 0, 0.721581, 0, 0, 0, 0.721581, 0, 0, 0)
+material_override = SubResource("ShaderMaterial_c6xe3")
+mesh = SubResource("PlaneMesh_vqowd")
