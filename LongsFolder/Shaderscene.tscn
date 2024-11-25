@@ -1,0 +1,106 @@
+[gd_scene load_steps=19 format=4 uid="uid://bvabvch8ao2jd"]
+
+[ext_resource type="Shader" path="res://LongsFolder/Shadertest.gdshader" id="1_pwpkt"]
+[ext_resource type="Shader" path="res://LongsFolder/Shadersball.gdshader" id="2_i6gng"]
+[ext_resource type="Shader" path="res://LongsFolder/ShaderBox.gdshader" id="3_x6v18"]
+[ext_resource type="Shader" path="res://LongsFolder/Shaderwall.gdshader" id="4_cxaws"]
+[ext_resource type="Shader" path="res://LongsFolder/Walltester.gdshader" id="5_mf5t0"]
+[ext_resource type="Texture2D" uid="uid://dnjpn38g5d8pg" path="res://models/House_5.png" id="6_nkm6m"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_c6xe3"]
+render_priority = 0
+shader = ExtResource("1_pwpkt")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_vqowd"]
+uv2_padding = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_icx3e"]
+render_priority = 0
+shader = ExtResource("2_i6gng")
+shader_parameter/iTime = null
+shader_parameter/iResolution = null
+
+[sub_resource type="SphereMesh" id="SphereMesh_2oeea"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_s4nib"]
+render_priority = 0
+shader = ExtResource("3_x6v18")
+
+[sub_resource type="BoxMesh" id="BoxMesh_vp1uk"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ikhem"]
+render_priority = 0
+shader = ExtResource("4_cxaws")
+
+[sub_resource type="BoxMesh" id="BoxMesh_stde2"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kvvt4"]
+render_priority = 0
+shader = ExtResource("5_mf5t0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3e080"]
+resource_name = "磁磚"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("6_nkm6m")
+emission_enabled = true
+emission_energy_multiplier = 0.0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_lmfd7"]
+_surfaces = [{
+"aabb": AABB(-0.325, 0.0075, 0, 0.26, 1e-05, 0.36),
+"format": 34359742465,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAgADAAAA"),
+"name": "磁磚",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("tx6FvZDC9TsAAAAAnx6FvZDC9TvuUbg+YGamvpDC9TvuUbg+Z2amvpDC9TsAAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_14nge"]
+resource_name = "磁磚005"
+_surfaces = [{
+"aabb": AABB(-0.325, 0.0075, 0, 0.26, 1e-05, 0.36),
+"attribute_data": PackedByteArray("ALS0vTo83MAAtLS94uExwR4ePkDi4THBKB4+QDo83MA="),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAgADAAAA"),
+"material": SubResource("StandardMaterial3D_3e080"),
+"name": "磁磚",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("tx6FvZDC9TsAAAAAnx6FvZDC9TvuUbg+YGamvpDC9TvuUbg+Z2amvpDC9TsAAAAA/3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/78=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_lmfd7")
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.721581, 0, 0, 0, 0.721581, 0, 0, 0, 0.721581, 0, 0, 0)
+material_override = SubResource("ShaderMaterial_c6xe3")
+mesh = SubResource("PlaneMesh_vqowd")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.28414, 0, 0)
+material_override = SubResource("ShaderMaterial_icx3e")
+mesh = SubResource("SphereMesh_2oeea")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.41132, 0, 0)
+material_override = SubResource("ShaderMaterial_s4nib")
+mesh = SubResource("BoxMesh_vp1uk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.07197, 0, 0, 0, 2.00892, 0, 0, 0, 0.25233, 7.44533, 0, 0)
+material_override = SubResource("ShaderMaterial_ikhem")
+mesh = SubResource("BoxMesh_stde2")
+
+[node name="BathroomWall05" type="MeshInstance3D" parent="."]
+transform = Transform3D(-9.05142, -7.63474e-07, -3.33725e-14, 0, -3.81737e-07, 8.73312, -7.91301e-07, 8.73312, 3.81737e-07, 8.9603, -0.575438, 0.0218468)
+material_override = SubResource("ShaderMaterial_kvvt4")
+mesh = SubResource("ArrayMesh_14nge")
+skeleton = NodePath("")
