@@ -16,4 +16,3 @@ void fragment() {
     // Output the color
     ALBEDO = colour;
 }
-
