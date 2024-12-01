@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=4 uid="uid://syxlhnv3s8vq"]
 
-[ext_resource type="Script" path="res://scripts/doubledoors.gd" id="1_hb0o4"]
+[ext_resource type="Script" path="res://LongsFolder/FrontDoorscript.gd" id="1_yy6s1"]
 [ext_resource type="Texture2D" uid="uid://d3kfpn2fqs5ob" path="res://models/House_12.png" id="2_6anol"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fyjnp"]
@@ -168,14 +168,14 @@ _data = {
 "opendouble": SubResource("Animation_pg5k8")
 }
 
-[node name="DoubleDoorsNoKey" type="Node3D"]
+[node name="FrontDoor" type="Node3D"]
 
 [node name="hinge1" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0142, 0, 0)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="hinge1" node_paths=PackedStringArray("playeranimation")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.505118, 0, 0)
-script = ExtResource("1_hb0o4")
+script = ExtResource("1_yy6s1")
 playeranimation = NodePath("../../AnimationPlayer")
 
 [node name="門002" type="MeshInstance3D" parent="hinge1/StaticBody3D"]
@@ -191,7 +191,7 @@ shape = SubResource("BoxShape3D_t2g1f")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01429, 0, 0)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="hinge2" node_paths=PackedStringArray("playeranimation")]
-script = ExtResource("1_hb0o4")
+script = ExtResource("1_yy6s1")
 playeranimation = NodePath("../../AnimationPlayer")
 
 [node name="門003" type="MeshInstance3D" parent="hinge2/StaticBody3D"]

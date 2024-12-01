@@ -8,8 +8,6 @@
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ajbgd"]
 height = 2.73106
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_rwcb8"]
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iqftp"]
 resource_name = "水泥"
 vertex_color_use_as_albedo = true
@@ -49,6 +47,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_wie80")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_uy88k"]
+size = Vector3(1, 1, 3.20239)
+
 [sub_resource type="Animation" id="Animation_c2uwn"]
 resource_name = "MeleeAttack"
 step = 0.02
@@ -59,10 +60,10 @@ tracks/0/path = NodePath("Node3D/Camera3D/Melee:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.28),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.28, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector3(0.0872664, 1.71217, 1.58825), Vector3(-0.31765, 1.71217, 0.472984)]
+"values": [Vector3(0.0872664, 1.71217, 1.58825), Vector3(-0.31765, 1.71217, 0.472984), Vector3(0.0872664, 1.71217, 1.58825)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -71,10 +72,10 @@ tracks/1/path = NodePath("Node3D/Camera3D/Melee:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.28),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.28, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector3(0.449383, -0.257266, -1.174), Vector3(0.365792, -0.257266, -1.52628)]
+"values": [Vector3(0.449383, -0.257266, -1.174), Vector3(0.365792, -0.257266, -1.52628), Vector3(0.449383, -0.257266, -1.174)]
 }
 
 [sub_resource type="Animation" id="Animation_j7ma8"]
@@ -153,14 +154,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.92482, 0)
 fov = 34.6278
 
 [node name="RayCast3D" type="RayCast3D" parent="Node3D/Camera3D"]
-transform = Transform3D(49.31, 0, 0, 0, -2.18557e-07, -60, 0, 5, -2.62268e-06, -0.028621, -0.0453904, -0.30735)
+transform = Transform3D(49.31, 0, 0, 0, -3.54743e-07, -60, 0, 8.11556, -2.62268e-06, -0.028621, -0.0453904, -0.30735)
 script = ExtResource("3_gtlgt")
-
-[node name="Area3D" type="Area3D" parent="Node3D/Camera3D"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/Camera3D/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.97466, 0, 0, -1.51086)
-shape = SubResource("BoxShape3D_rwcb8")
 
 [node name="Melee" type="Node3D" parent="Node3D/Camera3D"]
 transform = Transform3D(0.912203, -0.104536, 0.396179, 0.103304, 0.994348, 0.0245122, -0.396502, 0.0185668, 0.917846, 0.365792, -0.257266, -1.52628)
@@ -169,6 +164,15 @@ transform = Transform3D(0.912203, -0.104536, 0.396179, 0.103304, 0.994348, 0.024
 transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 0, 0, 0)
 mesh = SubResource("ArrayMesh_foedh")
 skeleton = NodePath("")
+
+[node name="Hitbox" type="Area3D" parent="Node3D/Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.28368)
+collision_layer = 4294967295
+collision_mask = 4294967295
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/Camera3D/Hitbox"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.1012)
+shape = SubResource("BoxShape3D_uy88k")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

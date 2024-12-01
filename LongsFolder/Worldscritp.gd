@@ -18,6 +18,7 @@ func _process(delta):
 func _on_firstperson_player_hit() -> void:
 	hit_rect.visible= true
 	await get_tree().create_timer(0.5).timeout
+
 	hit_rect.visible=false
 	
 	
