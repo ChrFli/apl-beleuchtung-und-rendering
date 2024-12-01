@@ -1,4 +1,5 @@
-[gd_scene load_steps=36 format=4 uid="uid://c00mi5j34onc2"]
+[gd_scene load_steps=43 format=4 uid="uid://c00mi5j34onc2"]
+
 
 [ext_resource type="PackedScene" uid="uid://8ai42fc24mip" path="res://models/firstperson.tscn" id="1_jheb1"]
 [ext_resource type="Texture2D" uid="uid://cixp24n4yj3oy" path="res://models/House_6.png" id="2_5cjet"]
@@ -7,7 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://ce244th5ihfds" path="res://Interactables/DoubleDoors.tscn" id="5_7gk7y"]
 [ext_resource type="PackedScene" uid="uid://87o8j3yk4itq" path="res://Interactables/portrait.tscn" id="7_3pxvb"]
 [ext_resource type="PackedScene" uid="uid://cyij4yy6u7uxg" path="res://Interactables/key.tscn" id="8_w5d1o"]
-[ext_resource type="PackedScene" uid="uid://beq6xq13jemgj" path="res://Interactables/masterkey.tscn" id="9_kx3sj"]
+
+[ext_resource type="PackedScene" uid="uid://b2u6goope0hlo" path="res://Interactables/masterkey.tscn" id="9_kx3sj"]
 [ext_resource type="PackedScene" uid="uid://5qimst4ek3ld" path="res://Interactables/DoorNoKey.tscn" id="10_7yiju"]
 [ext_resource type="Texture2D" uid="uid://g5mrp3ub2xw7" path="res://TestingLightTexture/table_lamp_01_0.png" id="11_dqkov"]
 [ext_resource type="Texture2D" uid="uid://buro7ueeenbay" path="res://TestingLightTexture/table_lamp_01_2.png" id="12_gyf5d"]
@@ -18,8 +20,10 @@
 [ext_resource type="Texture2D" uid="uid://n1xaw4xymlac" path="res://TestingLightTexture/ceiling_light_1.png" id="17_fd4st"]
 [ext_resource type="Texture2D" uid="uid://cvsgu5st4ggwc" path="res://TestingLightTexture/ceiling_light_2.jpg" id="18_2may8"]
 [ext_resource type="Texture2D" uid="uid://df4y1tt1yssxr" path="res://TestingLightTexture/ceiling_light_3.png" id="19_7wa2w"]
-[ext_resource type="PackedScene" uid="uid://74l3mfx8nbbn" path="res://Interactables/FrontDoor.tscn" id="19_nuxd8"]
+
+[ext_resource type="PackedScene" uid="uid://syxlhnv3s8vq" path="res://Interactables/FrontDoor.tscn" id="19_nuxd8"]
 [ext_resource type="PackedScene" uid="uid://bvabvch8ao2jd" path="res://LongsFolder/Shaderscene.tscn" id="20_d2r0j"]
+[ext_resource type="Shader" path="res://LongsFolder/Waterwaves.gdshader" id="21_7mk0v"]
 
 [sub_resource type="Environment" id="Environment_ydjuo"]
 background_mode = 1
@@ -177,14 +181,53 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_sii73")
 
-[node name="Test_Scene" type="WorldEnvironment"]
-environment = SubResource("Environment_ydjuo")
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_2jt4g"]
+noise_type = 3
+fractal_type = 2
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_22tx6"]
+seamless = true
+as_normal_map = true
+bump_strength = 11.5
+noise = SubResource("FastNoiseLite_2jt4g")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_tjfr2"]
+noise_type = 4
+seed = 5
+frequency = 0.0031
+fractal_type = 2
+fractal_octaves = 10
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_40at8"]
+invert = true
+noise = SubResource("FastNoiseLite_tjfr2")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qei7w"]
+render_priority = 0
+shader = ExtResource("21_7mk0v")
+shader_parameter/albedo = Color(0.248408, 0.0178673, 0.0578264, 1)
+shader_parameter/metallic = 0.0
+shader_parameter/roughness = 0.02
+shader_parameter/wave_direction = Vector2(2, 0)
+shader_parameter/wave_2_direction = Vector2(0, 1)
+shader_parameter/time_scale = 0.01
+shader_parameter/texture_normal = SubResource("NoiseTexture2D_22tx6")
+shader_parameter/texture_normal2 = SubResource("NoiseTexture2D_40at8")
+
+[sub_resource type="QuadMesh" id="QuadMesh_vwf7l"]
+subdivide_width = 200
+subdivide_depth = 200
+orientation = 1
+
+
 
 [node name="Firstperson" parent="." instance=ExtResource("1_jheb1")]
-transform = Transform3D(1, 0, 0, 0, 1.94682, 0, 0, 0, 1, 8.33506, -12.7719, 15.0715)
+
+transform = Transform3D(1, 0, 0, 0, 1.78749, 0, 0, 0, 1, 8.33506, -12.7719, 15.0715)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.9484, 0)
+visible = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.99978, 0)
@@ -204,7 +247,7 @@ light_angular_distance = 8.25
 
 [node name="StaticBody3D2" type="StaticBody3D" parent="."]
 transform = Transform3D(4.54563, 0, 0, 0, 4.54563, 0, 0, 0, 4.54563, -0.0693305, -1.84676, -8.61529)
-visible = false
+
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D2"]
 transform = Transform3D(20.7248, 0, 0, 0, 0.88518, 0, 0, 0, 17.7036, 0.2289, -0.2615, 0)
@@ -318,6 +361,9 @@ player_path = NodePath("../Firstperson")
 transform = Transform3D(0.8676, 0, 0, 0, 0.867512, 0, 0, 0, 0.867512, 24.0382, -6.70654, 25.022)
 
 [node name="defaultMaterial" type="MeshInstance3D" parent="lamp_01"]
+
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.24591, 0)
+
 mesh = SubResource("ArrayMesh_bm1o6")
 skeleton = NodePath("")
 
@@ -365,4 +411,9 @@ transform = Transform3D(3.88193, 0, 0, 0, 4.2867, 0, 0, 0, 3.88193, 1.04422, -12
 [node name="Node3D" parent="." instance=ExtResource("20_d2r0j")]
 transform = Transform3D(1.68068, 0, 0, 0, -4.34958e-08, -1.28004, 0, 0.995068, -5.59525e-08, 1.13551, -13.8814, -29.2687)
 
-[editable path="NavigationRegion3D/Key"]
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="."]
+transform = Transform3D(6.07185, 0, 0, 0, 0.878742, 0, 0, 0, 3.2863, -28.6105, -16.1832, 23.383)
+material_override = SubResource("ShaderMaterial_qei7w")
+mesh = SubResource("QuadMesh_vwf7l")
+

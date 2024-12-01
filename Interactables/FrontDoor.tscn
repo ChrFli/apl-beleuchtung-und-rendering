@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://74l3mfx8nbbn"]
+[gd_scene load_steps=14 format=4 uid="uid://syxlhnv3s8vq"]
 
 [ext_resource type="Script" path="res://LongsFolder/FrontDoorscript.gd" id="1_yy6s1"]
 [ext_resource type="Texture2D" uid="uid://d3kfpn2fqs5ob" path="res://models/House_12.png" id="2_6anol"]
