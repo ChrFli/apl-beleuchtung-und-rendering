@@ -2,8 +2,10 @@ shader_type spatial;
 
 // Function to simulate the noise
 float noise(vec2 pos, float evolve) {
+
     float e = fract((evolve * 0.015));  // Zeitabhängige Animation
     return fract(sin(dot(pos * e, vec2(12.9898, 78.233))) * 43758.5453);
+
 }
 
 void fragment() {
@@ -16,3 +18,4 @@ void fragment() {
     // Output the color
     ALBEDO = colour;
 }
+

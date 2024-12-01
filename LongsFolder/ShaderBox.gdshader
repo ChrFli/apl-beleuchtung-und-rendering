@@ -8,7 +8,7 @@ void fragment() {
     float c = 0.0, z = 0.0;
     float t = TIME;
 
-    // Loop for complex pattern generation
+   // Loop for complex pattern generation
     for (float f = 0.0; f < 2.0; f += 0.07) {
         z += sin(cos(uv.y * 4.0 * f) + t + f * f) * 1.3 - 2.0;
         c += (0.04 + f * f * 0.001) / distance(uv, vec2(sin(t + f * f + uv.x * z), cos(t - f * f + uv.y * z)));
@@ -29,3 +29,4 @@ void fragment() {
     // Optional: if you need transparency or other effects, you can use the following:
     // ALPHA = 1.0; // Uncomment if transparency is needed
 }
+
