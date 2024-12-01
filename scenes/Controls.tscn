@@ -1,0 +1,120 @@
+[gd_scene load_steps=7 format=3 uid="uid://ydlll0f3qwsd"]
+
+[ext_resource type="Script" path="res://controls.gd" id="1_5dd32"]
+[ext_resource type="Texture2D" uid="uid://dhw22wqopsmo7" path="res://textures/start.jpg" id="1_do83a"]
+[ext_resource type="FontFile" uid="uid://cgmq25iexgtu2" path="res://textures/HelpMe.ttf" id="3_ougwt"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_skbiv"]
+texture = ExtResource("1_do83a")
+modulate_color = Color(0.780392, 0.780392, 0.780392, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4c56n"]
+bg_color = Color(0.239216, 0, 0, 0.286275)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tyb66"]
+bg_color = Color(0, 0, 0, 0.615686)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="Controls" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5dd32")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_skbiv")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -274.0
+offset_right = 275.0
+offset_bottom = -760.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.780392, 0.780392, 0.780392, 1)
+theme_override_fonts/font = ExtResource("3_ougwt")
+theme_override_font_sizes/font_size = 100
+text = "Controls"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = 840.0
+offset_right = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 10
+
+[node name="Back" type="Button" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxFlat_4c56n")
+theme_override_styles/normal = SubResource("StyleBoxFlat_tyb66")
+text = "Back to menu"
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxFlat_4c56n")
+theme_override_styles/normal = SubResource("StyleBoxFlat_tyb66")
+text = "Quit"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.780392, 0.780392, 0.780392, 1)
+theme_override_font_sizes/font_size = 35
+text = "Move with WASD
+Jump with Space
+Interact with E
+Exit game with Esc"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
