@@ -1,42 +1,25 @@
-[gd_scene load_steps=19 format=4 uid="uid://bvabvch8ao2jd"]
+[gd_scene load_steps=33 format=4 uid="uid://bvabvch8ao2jd"]
 
+[ext_resource type="Texture2D" uid="uid://l85ls44xygga" path="res://textures/磁磚.png" id="1_3bjx3"]
 [ext_resource type="Shader" path="res://LongsFolder/Shadertest.gdshader" id="1_pwpkt"]
 [ext_resource type="Shader" path="res://LongsFolder/Shadersball.gdshader" id="2_i6gng"]
 [ext_resource type="Shader" path="res://LongsFolder/ShaderBox.gdshader" id="3_x6v18"]
 [ext_resource type="Shader" path="res://LongsFolder/Shaderwall.gdshader" id="4_cxaws"]
-[ext_resource type="Shader" path="res://LongsFolder/Walltester.gdshader" id="5_mf5t0"]
 [ext_resource type="Texture2D" uid="uid://dnjpn38g5d8pg" path="res://models/House_5.png" id="6_nkm6m"]
+[ext_resource type="Shader" path="res://LongsFolder/Waterwaves.gdshader" id="7_hi7s8"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_c6xe3"]
-render_priority = 0
-shader = ExtResource("1_pwpkt")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o7rdd"]
+albedo_texture = ExtResource("1_3bjx3")
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_vqowd"]
-uv2_padding = 0.0
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_icx3e"]
-render_priority = 0
-shader = ExtResource("2_i6gng")
-shader_parameter/iTime = null
-shader_parameter/iResolution = null
-
-[sub_resource type="SphereMesh" id="SphereMesh_2oeea"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_s4nib"]
-render_priority = 0
-shader = ExtResource("3_x6v18")
-
-[sub_resource type="BoxMesh" id="BoxMesh_vp1uk"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_ikhem"]
-render_priority = 0
-shader = ExtResource("4_cxaws")
-
-[sub_resource type="BoxMesh" id="BoxMesh_stde2"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_kvvt4"]
-render_priority = 0
-shader = ExtResource("5_mf5t0")
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_aetli"]
+render_priority = 1
+shader = ExtResource("7_hi7s8")
+shader_parameter/albedo = Color(0.929412, 0.203922, 0, 1)
+shader_parameter/metallic = 1.0
+shader_parameter/roughness = 1.0
+shader_parameter/wave_direction = Vector2(2, 0)
+shader_parameter/wave_2_direction = Vector2(0, 1)
+shader_parameter/time_scale = 0.025
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3e080"]
 resource_name = "磁磚"
@@ -77,7 +60,113 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_lmfd7")
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_c6xe3"]
+render_priority = 0
+shader = ExtResource("1_pwpkt")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_vqowd"]
+uv2_padding = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_icx3e"]
+render_priority = 0
+shader = ExtResource("2_i6gng")
+shader_parameter/iTime = null
+shader_parameter/iResolution = null
+
+[sub_resource type="SphereMesh" id="SphereMesh_2oeea"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_s4nib"]
+render_priority = 0
+shader = ExtResource("3_x6v18")
+
+[sub_resource type="BoxMesh" id="BoxMesh_vp1uk"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ikhem"]
+render_priority = 0
+shader = ExtResource("4_cxaws")
+
+[sub_resource type="BoxMesh" id="BoxMesh_stde2"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kvvt4"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_3ch0a"]
+noise_type = 3
+seed = 10
+fractal_type = 2
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_wiieo"]
+seamless = true
+as_normal_map = true
+bump_strength = 32.0
+noise = SubResource("FastNoiseLite_3ch0a")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_s4cfs"]
+noise_type = 4
+fractal_type = 2
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_65iy0"]
+seamless = true
+as_normal_map = true
+bump_strength = 32.0
+noise = SubResource("FastNoiseLite_s4cfs")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_absfd"]
+render_priority = 0
+shader = ExtResource("7_hi7s8")
+shader_parameter/albedo = Color(0.20785, 0.572011, 0.762743, 1)
+shader_parameter/metallic = 0.37
+shader_parameter/roughness = 0.27
+shader_parameter/wave_direction = Vector2(2, 0)
+shader_parameter/wave_2_direction = Vector2(0, 1)
+shader_parameter/time_scale = 0.025
+shader_parameter/texture_normal = SubResource("NoiseTexture2D_wiieo")
+shader_parameter/texture_normal2 = SubResource("NoiseTexture2D_65iy0")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_o5mr7"]
+noise_type = 3
+fractal_type = 2
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_auntj"]
+seamless = true
+as_normal_map = true
+bump_strength = 32.5
+noise = SubResource("FastNoiseLite_o5mr7")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_peqrq"]
+noise_type = 4
+seed = 10
+fractal_type = 2
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_rk3er"]
+noise = SubResource("FastNoiseLite_peqrq")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_prt5t"]
+render_priority = 0
+shader = ExtResource("7_hi7s8")
+shader_parameter/albedo = Color(0.248408, 0.0178673, 0.0578264, 1)
+shader_parameter/metallic = 0.0
+shader_parameter/roughness = 0.02
+shader_parameter/wave_direction = Vector2(2, 0)
+shader_parameter/wave_2_direction = Vector2(0, 1)
+shader_parameter/time_scale = 0.025
+shader_parameter/texture_normal = SubResource("NoiseTexture2D_auntj")
+shader_parameter/texture_normal2 = SubResource("NoiseTexture2D_rk3er")
+
+[sub_resource type="QuadMesh" id="QuadMesh_68k1o"]
+subdivide_width = 200
+subdivide_depth = 200
+orientation = 1
+
 [node name="Node3D" type="Node3D"]
+
+[node name="BathroomWall07" type="MeshInstance3D" parent="."]
+transform = Transform3D(21.8939, 1.84671e-06, -1.78177e-06, -1.84672e-06, 20.3811, 0, 1.91402e-06, 1.82285e-13, 20.3811, 25.6411, -0.384647, -5.00353)
+material_override = SubResource("StandardMaterial3D_o7rdd")
+material_overlay = SubResource("ShaderMaterial_aetli")
+transparency = 0.06
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_14nge")
+skeleton = NodePath("")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.721581, 0, 0, 0, 0.721581, 0, 0, 0, 0.721581, 0, 0, 0)
@@ -104,3 +193,14 @@ transform = Transform3D(-9.05142, -7.63474e-07, -3.33725e-14, 0, -3.81737e-07, 8
 material_override = SubResource("ShaderMaterial_kvvt4")
 mesh = SubResource("ArrayMesh_14nge")
 skeleton = NodePath("")
+
+[node name="BathroomWall06" type="MeshInstance3D" parent="."]
+transform = Transform3D(-9.05142, 0, -7.63474e-07, 0, 8.73312, 0, 7.913e-07, 0, -8.73312, 12.4154, -0.314559, -0.0410137)
+material_override = SubResource("ShaderMaterial_absfd")
+mesh = SubResource("ArrayMesh_14nge")
+skeleton = NodePath("")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.46421, 0, 0, 0, 2.46421, 0, 0, 0, 2.46421, 39.1473, 0, 0)
+material_override = SubResource("ShaderMaterial_prt5t")
+mesh = SubResource("QuadMesh_68k1o")

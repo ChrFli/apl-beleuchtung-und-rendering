@@ -34,4 +34,3 @@ void fragment() {
     // Assign the final color to ALBEDO
     ALBEDO = color;
 }
-

@@ -47,4 +47,3 @@ void fragment() {
 
     EMISSION = c;
 }
-

@@ -29,4 +29,3 @@ void fragment() {
     // Optional: if you need transparency or other effects, you can use the following:
     // ALPHA = 1.0; // Uncomment if transparency is needed
 }
-

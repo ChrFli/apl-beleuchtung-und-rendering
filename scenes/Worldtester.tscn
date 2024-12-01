@@ -223,6 +223,7 @@ player_path = NodePath("../../Firstperson")
 
 [node name="CharacterBody3D2" parent="NavigationRegion3D" instance=ExtResource("17_q0c4o")]
 transform = Transform3D(0.997277, 0, 0, 0, 0.997277, 0, 0, 0, 0.997277, 16.1838, 0.625648, 8.86028)
+visible = false
 collision_layer = 8
 collision_mask = 8
 player_path = NodePath("../../Firstperson")
@@ -237,6 +238,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="ColorRect" type="ColorRect" parent="UI"]
+visible = false
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1082.0
