@@ -224,7 +224,6 @@ transform = Transform3D(1, 0, 0, 0, 1.78749, 0, 0, 0, 1, 8.33506, -12.7719, 15.0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.9484, 0)
-visible = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.99978, 0)
@@ -244,6 +243,7 @@ light_angular_distance = 8.25
 
 [node name="StaticBody3D2" type="StaticBody3D" parent="."]
 transform = Transform3D(4.54563, 0, 0, 0, 4.54563, 0, 0, 0, 4.54563, -0.0693305, -1.84676, -8.61529)
+visible = false
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D2"]
 transform = Transform3D(20.7248, 0, 0, 0, 0.88518, 0, 0, 0, 17.7036, 0.2289, -0.2615, 0)
