@@ -1,4 +1,5 @@
-[gd_scene load_steps=17 format=4 uid="uid://clgni3ek56r0e"]
+[gd_scene load_steps=15 format=4 uid="uid://clgni3ek56r0e"]
+
 
 [ext_resource type="Texture2D" uid="uid://cixp24n4yj3oy" path="res://models/House_6.png" id="2_0sfir"]
 [ext_resource type="PackedScene" uid="uid://eelx8utxq7f2" path="res://scenes/collision_walls.tscn" id="3_0v6e8"]
@@ -11,6 +12,8 @@
 [ext_resource type="PackedScene" uid="uid://coqnppu3804v3" path="res://scenes/Shader_Flame.tscn" id="10_hadp4"]
 [ext_resource type="PackedScene" uid="uid://c02vtrok50c3d" path="res://LongsFolder/zombie.tscn" id="10_isx5u"]
 [ext_resource type="PackedScene" uid="uid://b2u6goope0hlo" path="res://Interactables/masterkey.tscn" id="10_rhe5y"]
+[ext_resource type="AudioStream" uid="uid://2yip8b6ot6ja" path="res://audio/game_sound.mp3" id="12_pw426"]
+
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pb7eb"]
 size = Vector3(500, 1, 500)
@@ -87,6 +90,7 @@ light_angular_distance = 8.25
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.3588, -13.7458, 14.9109)
 player_path = NodePath("../Firstperson")
 
+<<<<<<< HEAD
 [node name="SmallLamp" parent="." instance=ExtResource("9_c21k0")]
 transform = Transform3D(0.999996, 1.19209e-07, 4.26326e-14, -1.19209e-07, 0.999996, -8.85958e-14, 1.1724e-13, -5.02709e-13, 1, -10, -13.2766, 1.99998)
 
@@ -147,6 +151,27 @@ transform = Transform3D(0.0999996, -1.77636e-15, 1.21072e-08, -1.21072e-08, -4.3
 
 [node name="Door2" parent="NavigationRegion3D" instance=ExtResource("4_ahox0")]
 transform = Transform3D(-4.32277, -3.72529e-07, 3.66223e-07, -5.96046e-08, 4.26267, -8.70414e-14, -3.77909e-07, 5.37348e-14, -4.18911, 23.1951, -12.8605, 20.1743)
+=======
+
+[editable path="Door"]
+[editable path="Key"]
+=======
+[node name="MainKey" parent="NavigationRegion3D" instance=ExtResource("10_rhe5y")]
+transform = Transform3D(1, 0, 3.82137e-15, 7.10543e-15, 1, 0, 3.82137e-15, 0, 1, 0, 0, 0)
+
+[node name="CollisionWalls" parent="NavigationRegion3D" instance=ExtResource("3_0v6e8")]
+transform = Transform3D(0.00409282, 1.6749e-08, -0.12768, -5.93889e-09, 0.127746, 1.65672e-08, 0.12768, 5.40505e-09, 0.00409282, 7.06734, -40.3619, 44.2509)
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("10_isx5u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.3588, -13.7458, 14.9109)
+player_path = NodePath("../Firstperson")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("12_pw426")
+volume_db = 1.0
+autoplay = true
+>>>>>>> c748ed92cb7380e681c4a8c6425741a3bec845c0
 
 [editable path="NavigationRegion3D/Door"]
 [editable path="NavigationRegion3D/Key"]
+
