@@ -24,6 +24,7 @@
 
 [sub_resource type="Environment" id="Environment_ydjuo"]
 background_mode = 1
+background_energy_multiplier = 0.0
 ambient_light_energy = 0.0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pb7eb"]
@@ -236,6 +237,7 @@ skeleton = NodePath("")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.493153, 0.869943, 0, -0.869943, 0.493153, -1.05695, 313.532, 0)
+visible = false
 light_energy = 2.534
 light_indirect_energy = 8.6
 light_volumetric_fog_energy = 1.2

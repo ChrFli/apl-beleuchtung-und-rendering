@@ -135,23 +135,6 @@ _data = {
 
 [node name="DoubleDoors" type="Node3D"]
 
-[node name="hinge1" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0142, 0, 0)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="hinge1" node_paths=PackedStringArray("playeranimation")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.505118, 0, 0)
-script = ExtResource("1_hflle")
-playeranimation = NodePath("../../AnimationPlayer")
-
-[node name="門002" type="MeshInstance3D" parent="hinge1/StaticBody3D"]
-transform = Transform3D(10.098, 0, 0, 0, -4.41398e-07, 10.098, 0, -10.098, -4.41398e-07, 0.00373018, -1.08718, -0.0179876)
-mesh = SubResource("ArrayMesh_i13jd")
-skeleton = NodePath("")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="hinge1/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 2.5, 0, 0, 0, 0.1, -0.00527191, -0.0650175, 0)
-shape = SubResource("BoxShape3D_qui8k")
-
 [node name="hinge2" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01288, 0, 0)
 
@@ -172,3 +155,20 @@ shape = SubResource("BoxShape3D_qui8k")
 libraries = {
 "": SubResource("AnimationLibrary_7ae4j")
 }
+
+[node name="hinge1" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0142, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="hinge1" node_paths=PackedStringArray("playeranimation")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.505118, 0, 0)
+script = ExtResource("1_hflle")
+playeranimation = NodePath("../../AnimationPlayer")
+
+[node name="門002" type="MeshInstance3D" parent="hinge1/StaticBody3D"]
+transform = Transform3D(10.098, 0, 0, 0, -4.41398e-07, 10.098, 0, -10.098, -4.41398e-07, 0.00373018, -1.08718, -0.0179876)
+mesh = SubResource("ArrayMesh_i13jd")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="hinge1/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 2.5, 0, 0, 0, 0.1, -0.00527191, -0.0650175, 0)
+shape = SubResource("BoxShape3D_qui8k")
