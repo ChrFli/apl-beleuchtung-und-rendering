@@ -1,4 +1,7 @@
-shader_type canvas_item;
+[gd_scene load_steps=4 format=3 uid="uid://diqp5p2ccnxcy"]
+
+[sub_resource type="Shader" id="Shader_4lcpn"]
+code = "shader_type canvas_item;
 
 uniform float time : hint_range(0.0, 10.0); // Zeit
 uniform float intensity : hint_range(0.0, 1.0) = 1.0; // Intensität des Glühwürmchen-Lichts
@@ -13,7 +16,7 @@ float random(vec2 p) {
 void fragment() {
     vec2 uv = FRAGCOORD.xy / resolution.xy;
     
-    // Berechnung einer zufälligen Position für jedes "Glühwürmchen"
+    // Berechnung einer zufälligen Position für jedes \"Glühwürmchen\"
     vec2 position = vec2(random(vec2(uv.x, uv.y)), random(vec2(uv.y, uv.x)));
     
     // Bewegung der Glühwürmchen basierend auf der Zeit und Geschwindigkeit
@@ -34,3 +37,20 @@ void fragment() {
     // Gib das Endergebnis aus
     COLOR = vec4(color, 1.0);
 }
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mh5k1"]
+shader = SubResource("Shader_4lcpn")
+shader_parameter/time = null
+shader_parameter/intensity = 1.0
+shader_parameter/speed = 1.0
+shader_parameter/resolution = null
+
+[sub_resource type="QuadMesh" id="QuadMesh_hvn8f"]
+
+[node name="ShaderWinGame" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 5, 0)
+material_override = SubResource("ShaderMaterial_mh5k1")
+mesh = SubResource("QuadMesh_hvn8f")

@@ -1,0 +1,125 @@
+[gd_scene load_steps=12 format=4 uid="uid://otepuwakt831"]
+
+[ext_resource type="PackedScene" uid="uid://eelx8utxq7f2" path="res://scenes/collision_walls.tscn" id="1_rdaid"]
+[ext_resource type="PackedScene" uid="uid://8ai42fc24mip" path="res://models/firstperson.tscn" id="2_o1iqc"]
+[ext_resource type="Texture2D" uid="uid://cixp24n4yj3oy" path="res://models/House_6.png" id="3_vvfk0"]
+[ext_resource type="Shader" path="res://ChristinsFolder/Shader_Stairst.gdshader" id="4_6y8w4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5c8p1"]
+size = Vector3(500, 1, 500)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t4ncp"]
+resource_name = "木地板"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("3_vvfk0")
+emission_enabled = true
+emission_energy_multiplier = 0.0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_57v2b"]
+_surfaces = [{
+"aabb": AABB(-1.07, -0.35, -6.20701e-08, 2.14, 1.42, 0.06),
+"format": 34359742465,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgABwAMAA0ADgAEAAcADgAHAA0ADwAOAA0AAgAQAAUABQARAAIAEgACABMAEwAOABIAFAAVABYAFAAWABcAGAAUABcAGAAXABkAGAAZABoAGAAaABsA"),
+"name": "木地板",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 28,
+"vertex_data": PackedByteArray("w/WIP7/1iD+BwnU9w/WIPzIzsz6BwnU9oHC9PjIzsz6BwnU9oHC9Pr/1iD+BwnU9mnC9vjIzsz55wnU9nXC9vjIzs76BwnU98SgcvzIzs76EwnU98CgcvzIzsz58wnU9w/WIPzIzs75tS4Uzw/WIP7/1iD9tS4Wzw/WIv7/1iD9tS4Wzw/WIvzIzs75tS4Uz8Sgcv7MeBT6GwnU9wvWIv58eBT6EwnU9nnC9vsH1iD+BwnU9w/WIv8D1iD+BwnU9oHC9PjIzs76BwnU9nXC9vjIzsz6BwnU9oHC9PsH1iD+BwnU9nnC9vjIzsz6BwnU97R7FPnHC9b2BwnU9yx7FPjIzs76BwnU9m3C9PjIzs76BwnU9m3C9PjIzsz6BwnU9u/UoP+nC9b2BwnU9wfWIPzIzsz6BwnU9wfWIPzIzs76BwnU9yPUoPzIzs76BwnU9")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_0635c"]
+resource_name = "地板（木板）"
+_surfaces = [{
+"aabb": AABB(-1.07, -0.35, -6.20701e-08, 2.14, 1.42, 0.06),
+"attribute_data": PackedByteArray("//+fQPb/f8D//59ALn67v7tTV0Ayfru/vFNXQPj/f8CMWNE/OH67v4hY0T/q/38/9pGJP+f/fz/5kYk/OH67vwAAcDX+/38/AACgNPb/f8D//59A/v9/wAAAoEDg/38/+ZGJPzh+u7/3kYk/Hq0wvwAA8DQUrTC/jljRP/7/f8CMWNE/OH67v/mRiT84fru/jljRP/7/f8D5kYk/OH67vwAA8DQUrTC/AABINQAAgMCOWNE//v9/wAAA8DQUrTC/u1NXQDJ+u7+6U1dA9P9/P4hY0T/q/38/i1jRPzh+u7+8U1dA/P9/wIpY0T84fru/jljRP/7/f8AAkllA+LNCPvSRWUD2/38/uFNXQPb/fz+6U1dANH67v4JYgUDctEI+/v+fQC5+u7/+/59AAACAP4ZYgUD2/38/"),
+"format": 34359742487,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADwAQABEAEgATABQAFQAWABcAGAAZABoAGgAbABgAHAACAB0AHQAeABwAHwAgACEAHwAhACIAIwAfACIAIwAiACQAIwAkACUAIwAlACYA"),
+"material": SubResource("StandardMaterial3D_t4ncp"),
+"name": "木地板",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 39,
+"vertex_data": PackedByteArray("w/WIP7/1iD+BwnU9w/WIPzIzsz6BwnU9oHC9PjIzsz6BwnU9oHC9Pr/1iD+BwnU9mnC9vjIzsz55wnU9nXC9vjIzs76BwnU98SgcvzIzs76EwnU98CgcvzIzsz58wnU9w/WIPzIzs75tS4Uzw/WIP7/1iD9tS4Wzw/WIv7/1iD9tS4Wzw/WIvzIzs75tS4Uz8CgcvzIzsz58wnU98Sgcv7MeBT6GwnU9wvWIv58eBT6EwnU9nnC9vsH1iD+BwnU9mnC9vjIzsz55wnU98CgcvzIzsz58wnU9nnC9vsH1iD+BwnU98CgcvzIzsz58wnU9wvWIv58eBT6EwnU9w/WIv8D1iD+BwnU9nnC9vsH1iD+BwnU9wvWIv58eBT6EwnU9oHC9PjIzsz6BwnU9oHC9PjIzs76BwnU9nXC9vjIzs76BwnU9nXC9vjIzsz6BwnU9oHC9PsH1iD+BwnU9nnC9vjIzsz6BwnU9nnC9vsH1iD+BwnU97R7FPnHC9b2BwnU9yx7FPjIzs76BwnU9m3C9PjIzs76BwnU9m3C9PjIzsz6BwnU9u/UoP+nC9b2BwnU9wfWIPzIzsz6BwnU9wfWIPzIzs76BwnU9yPUoPzIzs76BwnU9/3//f/7//7//f/9//v//v/9//3/+//+//3//f/7//7//f/9/////v/9//3////+//3//f////7//f/9/////v///AAAAAP+///8AAAAA/7///wAAAAD/v///AAAAAP+//3//f/7//7//f/9//v//v/9//3/+//+//3//f////7//f/9/////v/9//3////+//3//f/7//7//f/9//v//v/9//3/+//+//3//f/7//7//f/9//v//v/9//3/+//+//3//f/7//7//f/9//v//v/9//3/+//+//3//f/7//7//f/9//v//v/9//3/+//+//3//f/7//7//f/9//v//v/9//3////+//3//f////7//f/9//v//v/9//3/+//+//3//f/7//7//f/9//v//v/9//3/+//+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_57v2b")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g43my"]
+size = Vector3(1, 1, 0.001)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_37phj"]
+render_priority = 0
+shader = ExtResource("4_6y8w4")
+
+[sub_resource type="QuadMesh" id="QuadMesh_8wt8s"]
+
+[node name="SceneTest" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.05823, 0)
+
+[node name="CollisionWalls" parent="." instance=ExtResource("1_rdaid")]
+transform = Transform3D(0.1, 0, 0, 0, -4.37114e-09, 0.1, 0, -0.1, -4.37114e-09, 0, 4.33609, 0)
+
+[node name="Firstperson" parent="." instance=ExtResource("2_o1iqc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 86.5853, -4.27122)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.99978, 0)
+shape = SubResource("BoxShape3D_5c8p1")
+
+[node name="Floor" type="MeshInstance3D" parent="."]
+transform = Transform3D(435.198, 0, 0, 0, -1.90231e-05, -435.198, 0, 435.198, -1.90231e-05, 22.8317, 1.80101, -19.2185)
+mesh = SubResource("ArrayMesh_0635c")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.1422, 22.4927, 27.2191)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+shape = SubResource("BoxShape3D_g43my")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D/CollisionShape3D"]
+transform = Transform3D(10, 0, 0, 0, 20, 1.42109e-14, 0, -5.68434e-14, 3, 4.99893, -17.8865, 7.61347)
+material_override = SubResource("ShaderMaterial_37phj")
+mesh = SubResource("QuadMesh_8wt8s")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(0.998788, -0.0476251, 0.0124016, 0.0422078, 0.958552, 0.281775, -0.0253071, -0.280911, 0.9594, 0.537972, 8.7168, 44.1309)
+light_color = Color(0.929412, 0.67451, 0.376471, 1)
+light_energy = 16.0
+light_indirect_energy = 4.954
+light_volumetric_fog_energy = 11.71
+light_size = 0.463
+light_specular = 2.786
+spot_range = 16.973
+
+[node name="SpotLight3D4" type="SpotLight3D" parent="."]
+transform = Transform3D(0.998788, -0.0476251, 0.0124016, 0.0422078, 0.958552, 0.281775, -0.0253071, -0.280911, 0.9594, 0.537972, 5.11674, 37.6515)
+light_color = Color(0.995988, 0.897785, 0.690508, 1)
+light_energy = 16.0
+light_indirect_energy = 4.954
+light_volumetric_fog_energy = 11.71
+light_size = 0.463
+light_specular = 2.786
+spot_range = 16.973
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="."]
+transform = Transform3D(0.60854, -0.5646, -0.557589, 0.518908, -0.248473, 0.817921, -0.600344, -0.787076, 0.14177, -10.0003, 13.3179, 36.785)
+light_color = Color(0.526309, 0.701247, 0.460887, 1)
+light_energy = 16.0
+light_indirect_energy = 2.93
+light_size = 0.72
+light_specular = 3.765
+spot_range = 16.973
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="."]
+transform = Transform3D(-0.64327, -0.732643, 0.222347, 0.670199, -0.398406, 0.626183, -0.370184, 0.551822, 0.747299, 3.69043, 8.81629, 42.3622)
+light_color = Color(0.928645, 0.871247, 0.959899, 1)
+light_energy = 16.0
+light_indirect_energy = 2.93
+light_size = 0.72
+light_specular = 1.545
+spot_range = 16.973

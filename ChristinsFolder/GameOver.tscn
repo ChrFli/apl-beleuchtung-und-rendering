@@ -1,0 +1,96 @@
+[gd_scene load_steps=7 format=3 uid="uid://2moh32pirf"]
+
+[ext_resource type="Script" path="res://ChristinsFolder/game_over.gd" id="1_3la1l"]
+[ext_resource type="Texture2D" uid="uid://ddmp1uuoswb8c" path="res://textures/bloodframe2.png" id="1_bcgxe"]
+[ext_resource type="FontFile" uid="uid://cgmq25iexgtu2" path="res://textures/HelpMe.ttf" id="2_bcyvm"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_apjf4"]
+texture = ExtResource("1_bcgxe")
+modulate_color = Color(0.28485, 0.28485, 0.28485, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5tivo"]
+bg_color = Color(0.239216, 0, 0, 0.286275)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q8l44"]
+bg_color = Color(0, 0, 0, 0.615686)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3la1l")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_apjf4")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -274.0
+offset_right = 275.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.780392, 0.780392, 0.780392, 1)
+theme_override_fonts/font = ExtResource("2_bcyvm")
+theme_override_font_sizes/font_size = 100
+text = "You died"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = 840.0
+offset_right = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 10
+
+[node name="Back" type="Button" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxFlat_5tivo")
+theme_override_styles/normal = SubResource("StyleBoxFlat_q8l44")
+text = "Back to menu"
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxFlat_5tivo")
+theme_override_styles/normal = SubResource("StyleBoxFlat_q8l44")
+text = "Quit"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
