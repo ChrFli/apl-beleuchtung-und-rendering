@@ -533,6 +533,7 @@ skeleton = NodePath("")
 
 [node name="Außen_Light1" type="SpotLight3D" parent="."]
 transform = Transform3D(0.998788, -0.0476251, 0.0124015, 0.0422078, 0.958552, 0.281776, -0.0253071, -0.280911, 0.9594, 1.36399, -11.0231, 41.8895)
+visible = false
 light_color = Color(0.929412, 0.67451, 0.376471, 1)
 light_energy = 16.0
 light_indirect_energy = 4.954
@@ -544,6 +545,7 @@ spot_range = 16.973
 
 [node name="Außen_Light2" type="SpotLight3D" parent="."]
 transform = Transform3D(0.998788, -0.0476251, 0.0124015, 0.0422078, 0.958552, 0.281776, -0.0253071, -0.280911, 0.9594, 1.36399, -14.6232, 35.4101)
+visible = false
 light_color = Color(0.995988, 0.897785, 0.690508, 1)
 light_energy = 16.0
 light_indirect_energy = 4.954
@@ -555,6 +557,7 @@ spot_range = 16.973
 
 [node name="Außen_Light3" type="SpotLight3D" parent="."]
 transform = Transform3D(0.60854, -0.5646, -0.557589, 0.518908, -0.248473, 0.817921, -0.600344, -0.787076, 0.14177, -9.17428, -6.42204, 34.5436)
+visible = false
 light_color = Color(0.526309, 0.701247, 0.460887, 1)
 light_energy = 16.0
 light_indirect_energy = 2.93
@@ -565,6 +568,7 @@ spot_range = 16.973
 
 [node name="Außen_Light4" type="SpotLight3D" parent="."]
 transform = Transform3D(-0.64327, -0.732643, 0.222347, 0.670199, -0.398406, 0.626183, -0.370184, 0.551822, 0.747299, 4.51645, -10.9237, 40.1208)
+visible = false
 light_color = Color(0.928645, 0.871247, 0.959899, 1)
 light_energy = 16.0
 light_indirect_energy = 2.93

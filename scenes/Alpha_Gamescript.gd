@@ -41,27 +41,19 @@ func _on_door_no_key_door_opened() -> void:
 
 var spawn_toggle = true  # Start mit Spawnpunkt 1
 
+@onready var spawn_points = [spawn_point_1, spawn_point_2]
+
 func _on_static_body_3d_door_opened() -> void:
 	for n in range(2):  # Erstelle 2 Zombies
 		var instance = mynode.instantiate()
 		instance.player_path = get_node("Firstperson").get_path()
 
-		# Wähle zufällig einen der beiden Spawnpunkte
-		var selected_spawn_point = spawn_point_1 if randf() < 0.5 else spawn_point_2
+		# Wähle zyklisch einen Spawnpunkt
+		var selected_spawn_point = spawn_points[n % spawn_points.size()]
+		instance.global_transform.origin = selected_spawn_point.global_transform.origin
 
-		# Berechne eine zufällige Position um den ausgewählten Spawnpunkt
-		var random_offset = Vector3(
-			randf() * 4 - 2,  # Zufällige X-Verschiebung zwischen -2 und 2
-			0,                # Keine Höhenänderung (bleibt auf derselben Ebene)
-			randf() * 4 - 2   # Zufällige Z-Verschiebung zwischen -2 und 2
-		)
+		# Setze die Skalierung des Zombie
+		instance.scale = Vector3(2.5, 2.5, 2.5)
 
-		# Setze die globale Position des Zombies
-		instance.global_transform.origin = selected_spawn_point.global_transform.origin + random_offset
-		
-		# Setze die Skalierung des Zombies (z.B. 50% größer)
-		instance.scale = Vector3(2.5, 2.5, 2.5)  # Skaliere den Zombie auf 150% seiner normalen Größe
-
-		# Füge den Zombie zur Szene hinzu
 		add_child(instance)
-		print("Zombie erstellt.")
+		print("Zombie erstellt an Spawnpunkt:", selected_spawn_point.name)
