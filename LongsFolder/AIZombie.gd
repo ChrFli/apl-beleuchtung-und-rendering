@@ -5,7 +5,7 @@ var player = null
 
 const SPEED = 2.0
 const ATTACK_RANGE = 5
-var health = 100
+var health = 200
 
 @export var player_path : NodePath
 @onready var nav_agent=  $NavigationAgent3D

@@ -3,7 +3,6 @@ extends StaticBody3D
 var toggle = false
 var interactable= true
 @export var animation_player: AnimationPlayer
-signal door_opened
 
 func interact():
 	# Find the player node in the "player" group (assuming you've added the player to this group in Chardummy.gd)

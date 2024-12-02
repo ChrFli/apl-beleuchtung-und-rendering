@@ -258,6 +258,5 @@ color = Color(0.980392, 0.380392, 0.431373, 0.407843)
 transform = Transform3D(1.8631, 0, 0, 0, 1.8631, 0, 0, 0, 1.8631, -6.10221, 2.31011, 3.41046)
 
 [connection signal="player_hit" from="Firstperson" to="." method="_on_firstperson_player_hit"]
-[connection signal="door_opened" from="DoorNoKey/hinge/StaticBody3D" to="." method="_on_static_body_3d_door_opened"]
 
 [editable path="DoorNoKey"]
