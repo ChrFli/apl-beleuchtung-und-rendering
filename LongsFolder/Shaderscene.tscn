@@ -164,6 +164,7 @@ orientation = 1
 
 [node name="BathroomWall07" type="MeshInstance3D" parent="."]
 transform = Transform3D(21.8939, 1.84671e-06, -1.78177e-06, -1.84672e-06, 20.3811, 0, 1.91402e-06, 1.82285e-13, 20.3811, 25.6411, -0.384647, -5.00353)
+visible = false
 material_override = SubResource("StandardMaterial3D_o7rdd")
 material_overlay = SubResource("ShaderMaterial_aetli")
 transparency = 0.06
@@ -178,32 +179,38 @@ mesh = SubResource("PlaneMesh_vqowd")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.28414, 0, 0)
+visible = false
 material_override = SubResource("ShaderMaterial_icx3e")
 mesh = SubResource("SphereMesh_2oeea")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.41132, 0, 0)
+visible = false
 material_override = SubResource("ShaderMaterial_s4nib")
 mesh = SubResource("BoxMesh_vp1uk")
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
 transform = Transform3D(3.07197, 0, 0, 0, 2.00892, 0, 0, 0, 0.25233, 7.44533, 0, 0)
+visible = false
 material_override = SubResource("ShaderMaterial_ikhem")
 mesh = SubResource("BoxMesh_stde2")
 
 [node name="BathroomWall05" type="MeshInstance3D" parent="."]
 transform = Transform3D(-9.05142, -7.63474e-07, -3.33725e-14, 0, -3.81737e-07, 8.73312, -7.91301e-07, 8.73312, 3.81737e-07, 8.9603, -0.575438, 0.0218468)
+visible = false
 material_override = SubResource("ShaderMaterial_kvvt4")
 mesh = SubResource("ArrayMesh_14nge")
 skeleton = NodePath("")
 
 [node name="BathroomWall06" type="MeshInstance3D" parent="."]
 transform = Transform3D(-9.05142, 0, -7.63474e-07, 0, 8.73312, 0, 7.913e-07, 0, -8.73312, 12.4154, -0.314559, -0.0410137)
+visible = false
 material_override = SubResource("ShaderMaterial_absfd")
 mesh = SubResource("ArrayMesh_14nge")
 skeleton = NodePath("")
 
 [node name="MeshInstance3D5" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.46421, 0, 0, 0, 2.46421, 0, 0, 0, 2.46421, 39.1473, 0, 0)
+visible = false
 material_override = SubResource("ShaderMaterial_prt5t")
 mesh = SubResource("QuadMesh_68k1o")

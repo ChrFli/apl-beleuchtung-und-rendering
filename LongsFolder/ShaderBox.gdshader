@@ -12,25 +12,25 @@ float random(vec2 p) {
 
 void fragment() {
     vec2 uv = FRAGCOORD.xy / resolution.xy;
-    
+
     // Berechnung einer zufälligen Position für jedes "Glühwürmchen"
     vec2 position = vec2(random(vec2(uv.x, uv.y)), random(vec2(uv.y, uv.x)));
-    
+
     // Bewegung der Glühwürmchen basierend auf der Zeit und Geschwindigkeit
     position += vec2(sin(time * speed + position.x * 10.0), cos(time * speed + position.y * 10.0)) * 0.02;
-    
+
     // Abstand zwischen dem aktuellen Fragment und dem Glühwürmchen
     float dist = length(uv - position);
-    
+
     // Helligkeit des Glühwürmchens basierend auf dem Abstand und Zeit
     float brightness = exp(-dist * 30.0) * intensity;
-    
+
     // Flimmern des Glühwürmchens
     brightness *= 0.5 + 0.5 * sin(time * 5.0 + dist * 10.0); // Flimmern hinzufügen
-    
+
     // Setze die Farbe des Pixels
     vec3 color = vec3(brightness);
-    
+
     // Gib das Endergebnis aus
     COLOR = vec4(color, 1.0);
 }
