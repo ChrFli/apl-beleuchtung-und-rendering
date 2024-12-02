@@ -3,6 +3,7 @@ extends StaticBody3D
 var toggle = false
 var interactable= true
 @export var animation_player: AnimationPlayer
+signal door_opened
 
 func interact():
 	# Find the player node in the "player" group (assuming you've added the player to this group in Chardummy.gd)
@@ -16,8 +17,14 @@ func interact():
 				animation_player.play("closedoor")
 			if toggle == true:
 				animation_player.play("opendoor")
+				_doorgotopened()
+	
 			await get_tree().create_timer(1.0, false).timeout
 			interactable = true
 	else:
 		# Door can't be opened message
 		print("The door can't be opened because you don't have the key.")
+
+
+func _doorgotopened():
+	emit_signal("door_opened")

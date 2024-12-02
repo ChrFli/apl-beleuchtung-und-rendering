@@ -19,3 +19,5 @@ func interact():
 	else:
 		# Door can't be opened message
 		print("The door can't be opened because you don't have the key.")
+		
+		
