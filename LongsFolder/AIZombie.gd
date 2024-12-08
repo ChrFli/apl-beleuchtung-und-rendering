@@ -36,7 +36,10 @@ func _process(delta):
 	
 	#lifepoints 
 	if health <= 0:
-		die()
+		print(name, "has died.")
+		anim_tree.set("parameters/conditions/Death", true)
+		await get_tree().create_timer(6.0).timeout
+		queue_free()  # Remove the enemy from the scene
 	
 	
 	
@@ -52,4 +55,6 @@ func _hit_finished():
 	
 func die():
 	print(name, "has died.")
+	anim_tree.set("parameters/conditions/death", !_target_in_range())
+	await get_tree().create_timer(6.0).timeout
 	queue_free()  # Remove the enemy from the scene
