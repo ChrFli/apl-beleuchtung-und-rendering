@@ -36,10 +36,7 @@ func _process(delta):
 	
 	#lifepoints 
 	if health <= 0:
-		print(name, "has died.")
-		anim_tree.set("parameters/conditions/Death", true)
-		await get_tree().create_timer(6.0).timeout
-		queue_free()  # Remove the enemy from the scene
+		die()
 	
 	
 	
@@ -55,6 +52,9 @@ func _hit_finished():
 	
 func die():
 	print(name, "has died.")
-	anim_tree.set("parameters/conditions/death", !_target_in_range())
-	await get_tree().create_timer(6.0).timeout
-	queue_free()  # Remove the enemy from the scene
+	anim_tree.set("parameters/conditions/Death", true)
+	velocity =Vector3.ZERO
+	
+	look_at(Vector3(-player.global_position.x,  -global_position.y, -player.global_position.z), Vector3.UP)
+	await get_tree().create_timer(4.0).timeout
+	queue_free()
