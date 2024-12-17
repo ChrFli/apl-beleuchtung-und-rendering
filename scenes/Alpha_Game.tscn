@@ -19,8 +19,8 @@
 [ext_resource type="Texture2D" uid="uid://cvsgu5st4ggwc" path="res://TestingLightTexture/ceiling_light_2.jpg" id="17_teqgj"]
 [ext_resource type="Texture2D" uid="uid://df4y1tt1yssxr" path="res://TestingLightTexture/ceiling_light_3.png" id="18_nl4e6"]
 [ext_resource type="PackedScene" uid="uid://syxlhnv3s8vq" path="res://Interactables/FrontDoor.tscn" id="19_6uvgk"]
-[ext_resource type="PackedScene" uid="uid://bvabvch8ao2jd" path="res://LongsFolder/Shaderscene.tscn" id="20_jxiiu"]
-[ext_resource type="Shader" path="res://LongsFolder/Waterwaves.gdshader" id="21_ia61f"]
+[ext_resource type="PackedScene" uid="uid://bvabvch8ao2jd" path="res://Shaders/Shaderscene.tscn" id="20_jxiiu"]
+[ext_resource type="Shader" path="res://Shaders/Waterwaves.gdshader" id="21_ia61f"]
 [ext_resource type="PackedScene" uid="uid://cjgnrakmubd2a" path="res://ChristinsFolder/Scene_Music.tscn" id="22_q4efx"]
 [ext_resource type="Shader" path="res://ChristinsFolder/Shader_Stairst.gdshader" id="23_gbbip"]
 [ext_resource type="PackedScene" uid="uid://coqnppu3804v3" path="res://scenes/Shader_Flame.tscn" id="24_341fu"]
@@ -361,7 +361,6 @@ omni_range = 254.317
 
 [node name="Small_Lamp_Masterbedroom" type="Node3D" parent="NavigationRegion3D"]
 transform = Transform3D(0.0443858, 0, 0, 0, -2.01638e-09, 0.0443858, 0, -0.0461294, -1.94017e-09, -16.0867, -11.3187, -31.9526)
-visible = false
 
 [node name="Object_3" type="MeshInstance3D" parent="NavigationRegion3D/Small_Lamp_Masterbedroom"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.6905, -59.7546, -41.7972)
@@ -384,7 +383,6 @@ omni_range = 254.317
 
 [node name="Small_Lamp_Masterbedroom2" type="Node3D" parent="NavigationRegion3D"]
 transform = Transform3D(0.0443858, 0, 0, 0, -2.01638e-09, 0.0443858, 0, -0.0461294, -1.94017e-09, -25.476, -6.33949, 3.20977)
-visible = false
 
 [node name="Object_3" type="MeshInstance3D" parent="NavigationRegion3D/Small_Lamp_Masterbedroom2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.6905, -59.7546, -41.7972)

@@ -2,7 +2,7 @@
 
 [ext_resource type="Material" uid="uid://7w3edcfnbm3q" path="res://LongsFolder/SkinZombie.tres" id="1_5otq1"]
 [ext_resource type="Script" path="res://LongsFolder/AIZombie.gd" id="1_muy67"]
-[ext_resource type="ArrayMesh" uid="uid://b7qabw4mu5xwp" path="res://Zombiess.res" id="1_x2ehe"]
+[ext_resource type="ArrayMesh" uid="uid://b7qabw4mu5xwp" path="res://textures/Zombiess.res" id="1_x2ehe"]
 
 [sub_resource type="Skin" id="Skin_rydoq"]
 resource_name = "Skin"

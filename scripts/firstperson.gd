@@ -15,6 +15,8 @@ signal player_hit
 @onready var melee_anim= $AnimationPlayer
 @onready var melee_hitbox=$Node3D/Camera3D/Hitbox
 
+@onready var textafa =$Node3D/Camera3D/Label3D
+
 var has_key = false
 var has_masterkey = false
 
@@ -46,6 +48,7 @@ func mele3e():
 
 func melee():
 	if Input.is_action_just_pressed("Fire"):
+		show_text_with_timer()
 		if not melee_anim.is_playing():
 			melee_anim.play("MeleeReturn")
 			melee_anim.play("MeleeAttack")
@@ -56,6 +59,13 @@ func melee():
 					print("Hit:", body.name, "Remaining health:", body.health)
 					if body.health <= 0:
 						print(body.name, "is dead.")
+						
+func show_text_with_timer():
+	textafa.visible = true
+	get_tree().create_timer(0.5).connect("timeout", Callable(self, "_on_timer_finished"))
+
+func _on_timer_finished():
+	textafa.visible = false
 
 # Function to return the current state of has_key
 func _haskey():

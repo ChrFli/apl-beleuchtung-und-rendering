@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://0uk1llr8hs04"]
 
-[ext_resource type="Shader" path="res://LongsFolder/Watershader.gdshader" id="1_p0j7a"]
+[ext_resource type="Shader" path="res://Shaders/Watershader.gdshader" id="1_p0j7a"]
 [ext_resource type="Texture2D" uid="uid://cadk1p5j7uy83" path="res://LongsFolder/c771ea152fb77abf3a16e50287fcb23f.jpg" id="2_4npky"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_wpmc6"]

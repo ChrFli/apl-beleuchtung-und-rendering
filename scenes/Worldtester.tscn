@@ -18,7 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://df4y1tt1yssxr" path="res://TestingLightTexture/ceiling_light_3.png" id="16_0jowy"]
 [ext_resource type="Texture2D" uid="uid://dt11ci8tvmooe" path="res://TestingLightTexture/table_lamp_01_3.png" id="16_51tf8"]
 [ext_resource type="PackedScene" uid="uid://c02vtrok50c3d" path="res://LongsFolder/zombie.tscn" id="17_q0c4o"]
-[ext_resource type="PackedScene" uid="uid://bvabvch8ao2jd" path="res://LongsFolder/Shaderscene.tscn" id="19_57mnw"]
+[ext_resource type="PackedScene" uid="uid://bvabvch8ao2jd" path="res://Shaders/Shaderscene.tscn" id="19_57mnw"]
 [ext_resource type="Texture2D" uid="uid://ddmp1uuoswb8c" path="res://textures/bloodframe2.png" id="20_kycd0"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_pt3ne"]
@@ -138,7 +138,7 @@ size = Vector3(1, 0.942383, 1.75488)
 script = ExtResource("1_fwpgt")
 
 [node name="Firstperson" parent="." instance=ExtResource("5_spx1d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.10875, 0.189519, 5.93496)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.10875, 0.189519, 11.617)
 collision_layer = 15
 collision_mask = 15
 
@@ -215,12 +215,6 @@ mesh = SubResource("BoxMesh_c1w26")
 
 [node name="CharacterBody3D" parent="NavigationRegion3D" instance=ExtResource("17_q0c4o")]
 transform = Transform3D(0.997277, 0, 0, 0, 0.997277, 0, 0, 0, 0.997277, 16.1838, 0.625648, 4.12274)
-collision_layer = 8
-collision_mask = 8
-player_path = NodePath("../../Firstperson")
-
-[node name="CharacterBody3D2" parent="NavigationRegion3D" instance=ExtResource("17_q0c4o")]
-transform = Transform3D(0.997277, 0, 0, 0, 0.997277, 0, 0, 0, 0.997277, 16.1838, 0.625648, 8.86028)
 collision_layer = 8
 collision_mask = 8
 player_path = NodePath("../../Firstperson")
