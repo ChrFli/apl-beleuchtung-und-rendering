@@ -165,7 +165,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00548887, 1.24774, -0.0022
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.663662, -2.30437)
 
 [node name="DoubleDoors" parent="NavigationRegion3D" instance=ExtResource("3_sq84n")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.35115, 1.29076, -0.246839)
+transform = Transform3D(2.02082, 0, 0, 0, 1.78243, 0, 0, 0, 1, 9.35115, 2.39511, -0.246839)
 
 [node name="Portrait" parent="NavigationRegion3D" instance=ExtResource("5_g7abt")]
 transform = Transform3D(0.0593863, 0, 0, 0, 0.0593863, 0, 0, 0, 0.0593863, -8.82898, 0.189519, -4.5814)
@@ -250,6 +250,20 @@ color = Color(0.980392, 0.380392, 0.431373, 0.407843)
 [node name="DoorNoKey" parent="." instance=ExtResource("6_8g3t1")]
 transform = Transform3D(1.8631, 0, 0, 0, 1.8631, 0, 0, 0, 1.8631, -6.10221, 2.31011, 3.41046)
 
-[connection signal="player_hit" from="Firstperson" to="." method="_on_firstperson_player_hit"]
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 925.0
+theme_override_font_sizes/font_size = 46
+text = "ÖFFNEN SIE DIE TÜR SOFORT!"
+horizontal_alignment = 1
+vertical_alignment = 2
 
+[connection signal="player_hit" from="Firstperson" to="." method="_on_firstperson_player_hit"]
+[connection signal="door_interacted" from="NavigationRegion3D/DoubleDoors/hinge2/StaticBody3D" to="." method="_on_static_body_3d_door_interacted"]
+[connection signal="door_opened" from="NavigationRegion3D/DoubleDoors/hinge2/StaticBody3D" to="." method="_on_static_body_3d_door_opened"]
+[connection signal="door_interacted" from="NavigationRegion3D/DoubleDoors/hinge1/StaticBody3D" to="." method="_on_static_body_3d_door_interacted"]
+
+[editable path="Firstperson"]
+[editable path="NavigationRegion3D/DoubleDoors"]
 [editable path="DoorNoKey"]

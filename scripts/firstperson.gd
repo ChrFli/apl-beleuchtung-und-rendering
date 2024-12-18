@@ -1,29 +1,27 @@
 extends CharacterBody3D
 
-
 const SPEED = 15.0
 const JUMP_VELOCITY = 10
 const GRAVITY = 20
-
 var melee_damage= 50
 
 #signal
 signal player_hit
 
 @onready var camera= $Node3D/Camera3D
-
 @onready var melee_anim= $AnimationPlayer
 @onready var melee_hitbox=$Node3D/Camera3D/Hitbox
 
-@onready var textafa =$Node3D/Camera3D/Label3D
+
 
 var has_key = false
 var has_masterkey = false
 
-
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	add_to_group("player")
+	
+
 
 func _unhandled_input(event: InputEvent):
 	if event is InputEventMouseMotion:
@@ -48,7 +46,6 @@ func mele3e():
 
 func melee():
 	if Input.is_action_just_pressed("Fire"):
-		show_text_with_timer()
 		if not melee_anim.is_playing():
 			melee_anim.play("MeleeReturn")
 			melee_anim.play("MeleeAttack")
@@ -60,25 +57,6 @@ func melee():
 					if body.health <= 0:
 						print(body.name, "is dead.")
 						
-func show_text_with_timer():
-	textafa.visible = true
-	get_tree().create_timer(0.5).connect("timeout", Callable(self, "_on_timer_finished"))
-
-func _on_timer_finished():
-	textafa.visible = false
-
-# Function to return the current state of has_key
-func _haskey():
-	return has_key
-
-func pick_up_key():
-	has_key = true
-
-func _hasmasterkey():
-	return has_masterkey
-
-func pick_up_masterkey():
-	has_masterkey = true
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -107,6 +85,7 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 	
+	
 func hit():
 	emit_signal("player_hit")
 	
@@ -118,3 +97,20 @@ func debug_hitbox():
 			print(" - ", body.name)
 	else:
 		print("No bodies overlapping with hitbox.")
+####################################################################################################################
+
+####################################################################################################################
+#Key sachen
+func _haskey():
+	return has_key
+
+func pick_up_key():
+	has_key = true
+
+func _hasmasterkey():
+	return has_masterkey
+
+func pick_up_masterkey():
+	has_masterkey = true
+####################################################################################################################
+####################################################################################################################

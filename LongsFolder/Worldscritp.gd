@@ -4,6 +4,8 @@ extends Node3D
 
 var mynode= preload("res://LongsFolder/zombie.tscn")
 
+@onready  var worldlabel = $Label
+
 func _ready():
 	pass
 	#var instance = mynode.instantiate();
@@ -11,13 +13,10 @@ func _ready():
 	#add_child(instance)
 
 
-	
 func _process(delta):
 	pass
 	
 
-
-	
 func _on_firstperson_player_hit() -> void:
 	hit_rect.visible= true
 	await get_tree().create_timer(0.5).timeout
@@ -51,3 +50,14 @@ func _on_static_body_3d_door_opened() -> void:
 		instance.global_transform.origin = global_transform.origin + random_offset
 
 		add_child(instance)
+		
+		
+
+
+
+func _on_static_body_3d_door_interacted() -> void:
+	worldlabel.visible = true
+	get_tree().create_timer(0.9).connect("timeout", Callable(self, "_on_timer_finished2"))
+	
+func _on_timer_finished2():
+	worldlabel.visible = false
