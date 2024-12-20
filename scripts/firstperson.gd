@@ -4,6 +4,7 @@ const SPEED = 15.0
 const JUMP_VELOCITY = 10
 const GRAVITY = 20
 var melee_damage= 50
+var Lifepoints = 100;
 
 #signal
 signal player_hit
@@ -114,3 +115,14 @@ func pick_up_masterkey():
 	has_masterkey = true
 ####################################################################################################################
 ####################################################################################################################
+func take_damage(amount: int) -> void:
+	Lifepoints -= amount
+	print("Player health:", Lifepoints)
+	if Lifepoints <= 0:
+		die()
+
+func die() -> void:
+	print("Player has died.")
+   # Optional: Hier kannst du ein Game-Over-Event triggern oder den Spieler respawnen lassen.
+	print("Tree Type:", get_tree())  # Gibt die Art des Objekts aus
+	get_tree().change_scene_to_file("res://ChristinsFolder/GameOver.tscn")

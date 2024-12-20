@@ -417,6 +417,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.0303, -15.1775, -25.4243)
 [node name="SpawnPoint" type="Node3D" parent="Spawns"]
 transform = Transform3D(1, 0, 0, 0, 0.996255, 0.0864602, 0, -0.0864602, 0.996255, 39.0135, -16.672, -27.8894)
 
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 925.0
+theme_override_font_sizes/font_size = 46
+text = "ÖFFNEN SIE DIE TÜR SOFORT!"
+horizontal_alignment = 1
+vertical_alignment = 2
+
 [connection signal="player_hit" from="Firstperson" to="." method="_on_firstperson_player_hit"]
 [connection signal="door_interacted" from="NavigationRegion3D/DoubleDoors/hinge2/StaticBody3D" to="." method="_on_static_body_3d_door_interacted"]
 [connection signal="door_opened" from="NavigationRegion3D/DoubleDoors/hinge2/StaticBody3D" to="." method="_on_static_body_3d_door_opened"]

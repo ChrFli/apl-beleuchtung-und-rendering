@@ -49,6 +49,7 @@ func _target_in_range():
 	
 func _hit_finished():
 	player.hit()
+	player.take_damage(30)
 	
 func die():
 	print(name, "has died.")
