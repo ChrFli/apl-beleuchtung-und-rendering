@@ -8,6 +8,8 @@ var mynode= preload("res://LongsFolder/zombie.tscn")
 @onready var spawn_points = [spawn_point_1, spawn_point_2]
 
 @onready  var worldlabel = $Label
+@onready  var PaperLabel = $PaperLabel/PopupPanel
+
 
 func _ready():
 	pass
@@ -18,6 +20,9 @@ func _ready():
 
 func _process(delta):
 	pass
+	if Input.is_action_just_pressed("OutPaper") && PaperLabel.visible:
+		PaperLabel.visible = false
+		
 	
 
 func _on_firstperson_player_hit() -> void:
@@ -60,3 +65,8 @@ func _on_static_body_3d_door_interacted() -> void:
 	
 func _on_timer_finished2():
 	worldlabel.visible = false
+
+
+func _on_static_body_3d_pickedpaper() -> void:
+	print("HELLOAPAPER")
+	PaperLabel.visible=true  # Zeigt das PopupPanel an

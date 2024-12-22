@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=4 uid="uid://cs0j2mkyn65g1"]
+[gd_scene load_steps=33 format=4 uid="uid://cs0j2mkyn65g1"]
 
 [ext_resource type="PackedScene" uid="uid://drxna0qrhrswo" path="res://Interactables/door.tscn" id="1_22fkl"]
 [ext_resource type="Script" path="res://LongsFolder/Worldscritp.gd" id="1_fwpgt"]
@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://c02vtrok50c3d" path="res://LongsFolder/zombie.tscn" id="17_q0c4o"]
 [ext_resource type="PackedScene" uid="uid://bvabvch8ao2jd" path="res://Shaders/Shaderscene.tscn" id="19_57mnw"]
 [ext_resource type="Texture2D" uid="uid://ddmp1uuoswb8c" path="res://textures/bloodframe2.png" id="20_kycd0"]
+[ext_resource type="PackedScene" uid="uid://cj21guhlp5ga4" path="res://LongsFolder/paper.tscn" id="21_klpgl"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_pt3ne"]
 vertices = PackedVector3Array(-8.2921, 9.29533, -22.5686, -8.2921, 9.29533, -5.8186, 11.7079, 9.29533, -5.8186, 11.7079, 9.29533, -22.5686, -10.2921, 0.545332, -5.3186, -8.2921, 0.545332, -5.3186, -8.0421, 0.545332, -21.8186, -10.5421, 0.545332, -4.5686, -33.7921, 0.545332, -21.8186, -33.7921, 0.545332, -4.5686, -7.2921, 0.545332, -4.0686, -6.2921, 0.545332, -3.5686, -6.0421, 0.545332, -4.0686, -7.2921, 0.545332, -5.0686, -0.792099, 0.545332, -15.5686, -0.792099, 0.545332, -16.5686, -3.5421, 0.545332, -4.0686, 0.207901, 0.545332, -16.8186, 0.207901, 0.545332, -21.8186, 1.2079, 0.545332, -16.3186, 1.2079, 0.545332, -15.5686, 8.2079, 0.545332, -0.8186, 10.7079, 0.545332, -0.8186, 33.7079, 0.545332, -0.3186, 33.7079, 0.545332, -21.8186, 10.9579, 0.545332, -0.3186, -3.0421, 0.545332, -3.5686, -0.292099, 0.545332, -15.0686, -3.5421, 0.545332, -2.8186, -1.2921, 0.545332, -0.0685997, -1.0421, 0.545332, -0.5686, 0.707901, 0.545332, -0.5686, 0.957901, 0.545332, -15.0686, 0.957901, 0.545332, -0.0685997, 7.7079, 0.545332, -0.3186, -6.0421, 0.545332, -2.8186, -10.2921, 0.545332, -3.8186, -1.2921, 0.545332, 0.1814, -5.2921, 0.545332, 4.1814, -3.5421, 0.545332, 3.9314, -5.2921, 0.545332, 4.9314, -33.7921, 0.545332, 21.6814, -4.2921, 0.545332, 21.6814, -4.2921, 0.545332, 5.1814, 5.2079, 0.545332, 5.4314, 7.7079, 0.545332, 5.6814, 8.2079, 0.545332, 0.4314, 0.957901, 0.545332, 0.1814, 4.7079, 0.545332, 5.9314, 10.7079, 0.545332, 0.4314, 7.9579, 0.545332, 6.9314, 6.2079, 0.545332, 21.6814, 33.7079, 0.545332, 21.6814, 6.2079, 0.545332, 7.4314, -1.0421, 0.545332, 0.6814, -3.0421, 0.545332, 4.6814, 4.7079, 0.545332, 6.1814, 0.707901, 0.545332, 0.6814, -3.2921, 0.545332, 5.1814, 5.2079, 0.545332, 7.4314)
@@ -141,6 +142,9 @@ script = ExtResource("1_fwpgt")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.10875, 0.189519, 11.617)
 collision_layer = 15
 collision_mask = 15
+
+[node name="Melee" parent="Firstperson/Node3D/Camera3D" index="1"]
+transform = Transform3D(0.912203, -0.104536, 0.396179, 0.103304, 0.994348, 0.0245122, -0.396502, 0.0185668, 0.917846, 0.365792, -0.257266, -1.52628)
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
 navigation_mesh = SubResource("NavigationMesh_pt3ne")
@@ -268,11 +272,77 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.0303, -15.1775, -25.4243)
 [node name="SpawnPoint" type="Node3D" parent="Spawns"]
 transform = Transform3D(1, 0, 0, 0, 0.996255, 0.0864602, 0, -0.0864602, 0.996255, 39.0135, -16.672, -27.8894)
 
+[node name="Paper" parent="." instance=ExtResource("21_klpgl")]
+transform = Transform3D(0.498982, 0, 0, 0, 0.498982, 0, 0, 0, 0.498982, 1.53129, 0.625648, -10.8868)
+
+[node name="defaultMaterial5" parent="Paper/StaticBody3D" index="0"]
+transform = Transform3D(21.1382, 0, 0, 0, -3.38212e-06, 21.1382, 0, -21.1382, -3.38212e-06, 0, 2.31599, 1.35793)
+
+[node name="CollisionShape3D" parent="Paper/StaticBody3D" index="1"]
+transform = Transform3D(21.1382, 0, 0, 0, -3.38212e-06, 21.1382, 0, -21.1382, -3.38212e-06, 0, 2.31599, 1.35793)
+
+[node name="PaperLabel" type="Label" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1077.0
+theme_override_font_sizes/font_size = 46
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="PopupPanel" type="PopupPanel" parent="PaperLabel"]
+auto_translate_mode = 1
+position = Vector2i(560, 0)
+size = Vector2i(800, 1080)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PaperLabel/PopupPanel"]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 796.0
+offset_bottom = 1076.0
+
+[node name="Label" type="Label" parent="PaperLabel/PopupPanel/VBoxContainer"]
+layout_mode = 2
+text = "faust. Habe nun, ach! Philosophie,
+Juristerei und Medizin, 355
+Und leider auch Theologie !
+Durchaus studiert, mit heißem Bemühn.
+Da steh ich nun, ich armer Tor!
+Und bin so klug als wie zuvor;
+Heiße Magister, heiße Doktor gar, 360
+Und ziehe schon an die zehen Jahr,
+Herauf, herab und quer und krumm,
+Meine Schüler an der Nase herum –
+Und sehe, dass wir nichts wissen können!
+Das will mir schier das Herz verbrennen. 365
+Zwar bin ich gescheiter als alle die Laffen,
+Doktoren, Magister, Schreiber und Pfaffen;
+Mich plagen keine Skrupel noch Zweifel,
+Fürchte mich weder vor Hölle noch Teufel –
+Dafür ist mir auch alle Freud entrissen, 370
+Bilde mir nicht ein was Rechts zu wissen,
+Bilde mir nicht ein ich könnte was lehren
+Die Menschen zu bessern und zu bekehren.
+Auch hab ich weder Gut noch Geld,
+Noch Ehr und Herrlichkeit der Welt; 375
+Es möchte kein Hund so länger leben!
+Drum hab ich mich der Magie ergeben,
+Ob mir, durch Geistes Kraft und Mund,
+Nicht manch Geheimnis würde kund;
+Dass ich nicht mehr, mit sauerm Schweiß, 380
+Zu sagen brauche was ich nicht weiß;
+Dass ich erkenne was die Welt
+Im Innersten zusammenhält,
+Schau alle Wirkenskraft und Samen,
+Und tu nicht mehr in Worten kramen."
+horizontal_alignment = 1
+
 [connection signal="player_hit" from="Firstperson" to="." method="_on_firstperson_player_hit"]
 [connection signal="door_interacted" from="NavigationRegion3D/DoubleDoors/hinge2/StaticBody3D" to="." method="_on_static_body_3d_door_interacted"]
 [connection signal="door_opened" from="NavigationRegion3D/DoubleDoors/hinge2/StaticBody3D" to="." method="_on_static_body_3d_door_opened"]
 [connection signal="door_interacted" from="NavigationRegion3D/DoubleDoors/hinge1/StaticBody3D" to="." method="_on_static_body_3d_door_interacted"]
+[connection signal="pickedpaper" from="Paper/StaticBody3D" to="." method="_on_static_body_3d_pickedpaper"]
 
 [editable path="Firstperson"]
 [editable path="NavigationRegion3D/DoubleDoors"]
 [editable path="DoorNoKey"]
+[editable path="Paper"]
