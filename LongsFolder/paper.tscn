@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=4 uid="uid://cj21guhlp5ga4"]
 
-[ext_resource type="Script" path="res://LongsFolder/Paper.gd" id="1_ojvje"]
-[ext_resource type="Texture2D" uid="uid://d1u8wlhowsmnb" path="res://scenes/paper_debris_2.png" id="4_ucx3t"]
+[ext_resource type="Script" path="res://LongsFolder/paper.gd" id="1_ojvje"]
+[ext_resource type="Texture2D" uid="uid://bfbdehf6cxevs" path="res://paper_debris_2.png" id="4_ucx3t"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vpveb"]
 load_path = "res://.godot/imported/paper_debris_0.jpg-63cd4b8d133a899fc166b1ffa0654bfb.s3tc.ctex"
