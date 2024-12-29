@@ -558,7 +558,6 @@ spot_range = 16.973
 
 [node name="Dach" type="MeshInstance3D" parent="."]
 transform = Transform3D(101.266, 0, 0, 0, -2.82214e-06, -1.42874, 0, 64.5631, -6.24523e-08, 0, -4.55608, 0)
-visible = false
 material_override = SubResource("StandardMaterial3D_vr7hk")
 mesh = SubResource("QuadMesh_g248p")
 

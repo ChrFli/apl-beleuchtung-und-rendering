@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=4 uid="uid://otepuwakt831"]
+[gd_scene load_steps=13 format=4 uid="uid://otepuwakt831"]
 
 [ext_resource type="PackedScene" uid="uid://eelx8utxq7f2" path="res://scenes/collision_walls.tscn" id="1_rdaid"]
 [ext_resource type="PackedScene" uid="uid://8ai42fc24mip" path="res://models/firstperson.tscn" id="2_o1iqc"]
 [ext_resource type="Texture2D" uid="uid://cixp24n4yj3oy" path="res://models/House_6.png" id="3_vvfk0"]
 [ext_resource type="Shader" path="res://ChristinsFolder/Shader_Stairst.gdshader" id="4_6y8w4"]
+[ext_resource type="PackedScene" uid="uid://bd207v613km2h" path="res://ChristinsFolder/Scene_MusicBox.tscn" id="5_d81di"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5c8p1"]
 size = Vector3(500, 1, 500)
@@ -70,7 +71,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.99978, 0)
 shape = SubResource("BoxShape3D_5c8p1")
 
 [node name="Floor" type="MeshInstance3D" parent="."]
-transform = Transform3D(435.198, 0, 0, 0, -1.90231e-05, -435.198, 0, 435.198, -1.90231e-05, 22.8317, 1.80101, -19.2185)
+transform = Transform3D(435.198, 0, 0, 0, -1.90231e-05, -435.198, 0, 435.198, -1.90231e-05, 139.444, 3.37137, 3.58411)
 mesh = SubResource("ArrayMesh_0635c")
 skeleton = NodePath("")
 
@@ -123,3 +124,6 @@ light_indirect_energy = 2.93
 light_size = 0.72
 light_specular = 1.545
 spot_range = 16.973
+
+[node name="SceneMusicBox" parent="." instance=ExtResource("5_d81di")]
+transform = Transform3D(0.296837, 0, 9.99559, 0, 10, 0, -9.99559, 0, 0.296837, 31.5614, 4.77499, 24.9034)
