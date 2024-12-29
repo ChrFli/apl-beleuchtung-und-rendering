@@ -1,0 +1,74 @@
+[gd_scene load_steps=9 format=4 uid="uid://cj21guhlp5ga4"]
+
+[ext_resource type="Script" path="res://LongsFolder/paper.gd" id="1_ojvje"]
+[ext_resource type="Texture2D" uid="uid://bfbdehf6cxevs" path="res://paper_debris_2.png" id="4_ucx3t"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vpveb"]
+load_path = "res://.godot/imported/paper_debris_0.jpg-63cd4b8d133a899fc166b1ffa0654bfb.s3tc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v207y"]
+load_path = "res://.godot/imported/paper_debris_1.png-81596ec1acebe807d0f2ea098d60324f.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5dwcc"]
+resource_name = "T_paper_1001"
+cull_mode = 2
+albedo_texture = SubResource("CompressedTexture2D_vpveb")
+metallic = 1.0
+metallic_texture = SubResource("CompressedTexture2D_v207y")
+metallic_texture_channel = 2
+roughness_texture = SubResource("CompressedTexture2D_v207y")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("4_ucx3t")
+ao_enabled = true
+ao_texture = SubResource("CompressedTexture2D_v207y")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_vk1l1"]
+_surfaces = [{
+"aabb": AABB(-0.1485, -0.105, 0, 0.297, 0.21, 1e-05),
+"format": 34359742465,
+"index_count": 6,
+"index_data": PackedByteArray("AAACAAEAAgAAAAMA"),
+"name": "T_paper_1001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("YhAYvj0K1z0AAACAYhAYvj0K170AAAAAYhAYPj0K170AAAAAYhAYPj0K1z0AAACA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_bxr65"]
+resource_name = "Sketchfab_Scene_defaultMaterial5"
+_surfaces = [{
+"aabb": AABB(-0.1485, -0.105, 0, 0.297, 0.21, 1e-05),
+"attribute_data": PackedByteArray("lwLSPmN71T6XAtI+NKI0P877/zo0ojQ/zvv/OmN71T4="),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray("AAACAAEAAgAAAAMA"),
+"material": SubResource("StandardMaterial3D_5dwcc"),
+"name": "T_paper_1001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("YhAYvj0K1z0AAACAYhAYvj0K170AAAAAYhAYPj0K170AAAAAYhAYPj0K1z0AAACA/3//fwAA/7//f/9/AAD/v/9//38AAP+//3//fwAA/78=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_vk1l1")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_s61sv"]
+points = PackedVector3Array(0.1485, 0.105, 0, 0.1485, -0.105, 0, -0.1485, 0.105, 0, -0.1485, -0.105, 0)
+
+[node name="Paper" type="Node3D"]
+transform = Transform3D(0.998388, 0, 0, 0, 0.998388, 0, 0, 0, 0.998388, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+script = ExtResource("1_ojvje")
+
+[node name="defaultMaterial5" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(21.1382, 0, 0, 0, -3.38212e-06, 21.1382, 0, -21.1382, -3.38212e-06, 0, 2.31599, 1.35793)
+mesh = SubResource("ArrayMesh_bxr65")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(21.1382, 0, 0, 0, -3.38212e-06, 21.1382, 0, -21.1382, -3.38212e-06, 0, 2.31599, 1.35793)
+shape = SubResource("ConvexPolygonShape3D_s61sv")

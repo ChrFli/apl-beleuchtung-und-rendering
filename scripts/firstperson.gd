@@ -1,27 +1,28 @@
 extends CharacterBody3D
 
-
 const SPEED = 15.0
 const JUMP_VELOCITY = 10
 const GRAVITY = 20
-
 var melee_damage= 50
+var Lifepoints = 100;
 
 #signal
 signal player_hit
 
 @onready var camera= $Node3D/Camera3D
-
 @onready var melee_anim= $AnimationPlayer
 @onready var melee_hitbox=$Node3D/Camera3D/Hitbox
+
+
 
 var has_key = false
 var has_masterkey = false
 
-
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	add_to_group("player")
+	
+
 
 func _unhandled_input(event: InputEvent):
 	if event is InputEventMouseMotion:
@@ -56,19 +57,7 @@ func melee():
 					print("Hit:", body.name, "Remaining health:", body.health)
 					if body.health <= 0:
 						print(body.name, "is dead.")
-
-# Function to return the current state of has_key
-func _haskey():
-	return has_key
-
-func pick_up_key():
-	has_key = true
-
-func _hasmasterkey():
-	return has_masterkey
-
-func pick_up_masterkey():
-	has_masterkey = true
+						
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -97,6 +86,7 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 	
+	
 func hit():
 	emit_signal("player_hit")
 	
@@ -108,3 +98,31 @@ func debug_hitbox():
 			print(" - ", body.name)
 	else:
 		print("No bodies overlapping with hitbox.")
+####################################################################################################################
+
+####################################################################################################################
+#Key sachen
+func _haskey():
+	return has_key
+
+func pick_up_key():
+	has_key = true
+
+func _hasmasterkey():
+	return has_masterkey
+
+func pick_up_masterkey():
+	has_masterkey = true
+####################################################################################################################
+####################################################################################################################
+func take_damage(amount: int) -> void:
+	Lifepoints -= amount
+	print("Player health:", Lifepoints)
+	if Lifepoints <= 0:
+		die()
+
+func die() -> void:
+	print("Player has died.")
+   # Optional: Hier kannst du ein Game-Over-Event triggern oder den Spieler respawnen lassen.
+	print("Tree Type:", get_tree())  # Gibt die Art des Objekts aus
+	get_tree().change_scene_to_file("res://ChristinsFolder/GameOver.tscn")

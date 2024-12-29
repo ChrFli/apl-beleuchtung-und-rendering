@@ -49,7 +49,13 @@ func _target_in_range():
 	
 func _hit_finished():
 	player.hit()
+	player.take_damage(30)
 	
 func die():
 	print(name, "has died.")
-	queue_free()  # Remove the enemy from the scene
+	anim_tree.set("parameters/conditions/Death", true)
+	velocity =Vector3.ZERO
+	
+	look_at(Vector3(-player.global_position.x,  -global_position.y, -player.global_position.z), Vector3.UP)
+	await get_tree().create_timer(4.0).timeout
+	queue_free()

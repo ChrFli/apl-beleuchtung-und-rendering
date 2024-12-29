@@ -1,6 +1,7 @@
 [gd_scene load_steps=43 format=4 uid="uid://c00mi5j34onc2"]
 
 [ext_resource type="PackedScene" uid="uid://8ai42fc24mip" path="res://models/firstperson.tscn" id="1_jheb1"]
+[ext_resource type="Script" path="res://LongsFolder/Worldscritp.gd" id="1_tdeci"]
 [ext_resource type="Texture2D" uid="uid://cixp24n4yj3oy" path="res://models/House_6.png" id="2_5cjet"]
 [ext_resource type="PackedScene" uid="uid://eelx8utxq7f2" path="res://scenes/collision_walls.tscn" id="3_nkn2q"]
 [ext_resource type="PackedScene" uid="uid://drxna0qrhrswo" path="res://Interactables/door.tscn" id="4_1kr26"]
@@ -13,19 +14,14 @@
 [ext_resource type="Texture2D" uid="uid://buro7ueeenbay" path="res://TestingLightTexture/table_lamp_01_2.png" id="12_gyf5d"]
 [ext_resource type="Texture2D" uid="uid://bx1t4rillxfmj" path="res://TestingLightTexture/table_lamp_01_1.png" id="13_j1e8v"]
 [ext_resource type="Texture2D" uid="uid://dt11ci8tvmooe" path="res://TestingLightTexture/table_lamp_01_3.png" id="14_20a5j"]
-[ext_resource type="PackedScene" uid="uid://c02vtrok50c3d" path="res://LongsFolder/zombie.tscn" id="14_co8b0"]
 [ext_resource type="Texture2D" uid="uid://buvhg3mshv3a0" path="res://TestingLightTexture/ceiling_light_0.jpg" id="16_7pca5"]
 [ext_resource type="Texture2D" uid="uid://n1xaw4xymlac" path="res://TestingLightTexture/ceiling_light_1.png" id="17_fd4st"]
 [ext_resource type="Texture2D" uid="uid://cvsgu5st4ggwc" path="res://TestingLightTexture/ceiling_light_2.jpg" id="18_2may8"]
 [ext_resource type="Texture2D" uid="uid://df4y1tt1yssxr" path="res://TestingLightTexture/ceiling_light_3.png" id="19_7wa2w"]
 [ext_resource type="PackedScene" uid="uid://syxlhnv3s8vq" path="res://Interactables/FrontDoor.tscn" id="19_nuxd8"]
-[ext_resource type="PackedScene" uid="uid://bvabvch8ao2jd" path="res://LongsFolder/Shaderscene.tscn" id="20_d2r0j"]
-[ext_resource type="Shader" path="res://LongsFolder/Waterwaves.gdshader" id="21_7mk0v"]
-
-[sub_resource type="Environment" id="Environment_ydjuo"]
-background_mode = 1
-background_energy_multiplier = 0.0
-ambient_light_energy = 0.0
+[ext_resource type="PackedScene" uid="uid://bvabvch8ao2jd" path="res://Shaders/Shaderscene.tscn" id="20_d2r0j"]
+[ext_resource type="Shader" path="res://Shaders/Waterwaves.gdshader" id="21_7mk0v"]
+[ext_resource type="Texture2D" uid="uid://ddmp1uuoswb8c" path="res://textures/bloodframe2.png" id="22_funmm"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pb7eb"]
 size = Vector3(500, 1, 500)
@@ -217,17 +213,17 @@ subdivide_width = 200
 subdivide_depth = 200
 orientation = 1
 
-[node name="Test_Scene" type="WorldEnvironment"]
-environment = SubResource("Environment_ydjuo")
+[node name="Test_Scene" type="Node3D"]
+script = ExtResource("1_tdeci")
 
 [node name="Firstperson" parent="." instance=ExtResource("1_jheb1")]
-transform = Transform3D(1, 0, 0, 0, 1.78749, 0, 0, 0, 1, 8.33506, -12.7719, 15.0715)
+transform = Transform3D(1, 0, 0, 0, 1.78749, 0, 0, 0, 1, 8.33506, 7.48292, 15.0715)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.9484, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.99978, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.255, 0)
 shape = SubResource("BoxShape3D_pb7eb")
 
 [node name="Floor" type="MeshInstance3D" parent="StaticBody3D"]
@@ -257,7 +253,7 @@ transform = Transform3D(20.7519, 0, 0, 0, 0.886336, 0, 0, 0, 17.7267, 0, -0.2615
 shape = SubResource("ConcavePolygonShape3D_2x6i2")
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00306225, 0.00631237, -0.0115471)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00306225, 20.2611, -0.0115471)
 navigation_mesh = SubResource("NavigationMesh_papea")
 
 [node name="Door3" parent="NavigationRegion3D" instance=ExtResource("4_1kr26")]
@@ -351,20 +347,16 @@ transform = Transform3D(-1.88954e-07, 0, 4.18911, 0, 4.26267, 0, -4.32277, 0, -1
 [node name="DoubleDoors" parent="NavigationRegion3D" instance=ExtResource("5_7gk7y")]
 transform = Transform3D(3.87794, 0, 0, 0, 4.32731, 0, 0, 0, 4.02151, 1.03195, -12.8671, -0.532533)
 
-[node name="CharacterBody3D" parent="." instance=ExtResource("14_co8b0")]
-transform = Transform3D(2.3831, 0, 0, 0, 2.3831, 0, 0, 0, 2.3831, 30.9228, -16.8081, -20.0021)
-player_path = NodePath("../Firstperson")
-
 [node name="lamp_01" type="Node3D" parent="."]
 transform = Transform3D(0.8676, 0, 0, 0, 0.867512, 0, 0, 0, 0.867512, 24.0382, -6.70654, 25.022)
 
 [node name="defaultMaterial" type="MeshInstance3D" parent="lamp_01"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.24591, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 24.5941, 0)
 mesh = SubResource("ArrayMesh_bm1o6")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="lamp_01"]
-transform = Transform3D(1.15261, 0, 0, 0, 1.15272, 0, 0, 0, 1.15272, 0.0318813, -0.540643, 0.0266876)
+transform = Transform3D(1.1526, 0, 0, 0, 1.15272, 0, 0, 0, 1.15272, 0.0318813, 22.8075, 0.0266876)
 light_energy = 16.0
 shadow_enabled = true
 omni_range = 12.7777
@@ -373,11 +365,12 @@ omni_range = 12.7777
 transform = Transform3D(0.752729, 0, 0, 0, 0.752576, 0, 0, 0, 0.752576, -34.3713, -7.87874, 18.5445)
 
 [node name="defaultMaterial" type="MeshInstance3D" parent="lamp_02"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 26.914, 0)
 mesh = SubResource("ArrayMesh_bm1o6")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="lamp_02"]
-transform = Transform3D(1.3285, 0, 0, 0, 1.32877, 0, 0, 0, 1.32877, 0.0318794, -0.600768, 0.0266876)
+transform = Transform3D(1.3285, 0, 0, 0, 1.32877, 0, 0, 0, 1.32877, 0.0318794, 26.3132, 0.0266876)
 light_energy = 16.0
 shadow_enabled = true
 omni_range = 16.1618
@@ -386,30 +379,57 @@ omni_range = 16.1618
 transform = Transform3D(0.8676, 0, 0, 0, 0.867512, 0, 0, 0, 0.867512, 41.9116, -5.90442, -10.6)
 
 [node name="defaultMaterial" type="MeshInstance3D" parent="lamp_03"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 23.3482, 0)
 mesh = SubResource("ArrayMesh_bm1o6")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="lamp_03"]
-transform = Transform3D(1.15261, 0, 0, 0, 1.15272, 0, 0, 0, 1.15272, 0.0318794, -0.740542, 0.0266876)
+transform = Transform3D(1.1526, 0, 0, 0, 1.15272, 0, 0, 0, 1.15272, 0.0318794, 22.6076, 0.0266867)
 light_color = Color(1, 0.215686, 0.0980392, 1)
 light_energy = 16.0
 shadow_enabled = true
 distance_fade_enabled = true
 omni_range = 11.4427
 
-[node name="CharacterBody3D2" parent="." instance=ExtResource("14_co8b0")]
-transform = Transform3D(2.3831, 0, 0, 0, 2.3831, 0, 0, 0, 2.3831, 24.4159, -16.8081, -20.0021)
-player_path = NodePath("../Firstperson")
-
 [node name="FrontDoor" parent="." instance=ExtResource("19_nuxd8")]
-transform = Transform3D(3.88193, 0, 0, 0, 4.2867, 0, 0, 0, 3.88193, 1.04422, -12.8753, 30.456)
+transform = Transform3D(3.88193, 0, 0, 0, 4.2867, 0, 0, 0, 3.88193, 1.04422, 7.37952, 30.456)
 
 [node name="Node3D" parent="." instance=ExtResource("20_d2r0j")]
-transform = Transform3D(1.68068, 0, 0, 0, -4.34958e-08, -1.28004, 0, 0.995068, -5.59525e-08, 1.13551, -13.8814, -29.2687)
+transform = Transform3D(1.68068, 0, 0, 0, -4.34958e-08, -1.28004, 0, 0.995068, -5.59525e-08, 1.13551, 6.37342, -29.2687)
 
 [node name="MeshInstance3D5" type="MeshInstance3D" parent="."]
-transform = Transform3D(6.07185, 0, 0, 0, 0.878742, 0, 0, 0, 3.2863, -28.6105, -16.1832, 23.383)
+transform = Transform3D(6.07185, 0, 0, 0, 0.878742, 0, 0, 0, 3.2863, -28.6105, 4.07162, 23.383)
 material_override = SubResource("ShaderMaterial_qei7w")
 mesh = SubResource("QuadMesh_vwf7l")
 
+[node name="UI_ColorRect#TextureRect" type="TextureRect" parent="."]
+visible = false
+offset_right = 1921.0
+offset_bottom = 1082.0
+texture = ExtResource("22_funmm")
+
+[node name="Spawns" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20.2148, 0)
+
+[node name="SpawnPoint2" type="Node3D" parent="Spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.0303, -15.1775, -25.4243)
+
+[node name="SpawnPoint" type="Node3D" parent="Spawns"]
+transform = Transform3D(1, 0, 0, 0, 0.996255, 0.0864602, 0, -0.0864602, 0.996255, 39.0135, -16.672, -27.8894)
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 925.0
+theme_override_font_sizes/font_size = 46
+text = "ÖFFNEN SIE DIE TÜR SOFORT!"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[connection signal="player_hit" from="Firstperson" to="." method="_on_firstperson_player_hit"]
+[connection signal="door_interacted" from="NavigationRegion3D/DoubleDoors/hinge2/StaticBody3D" to="." method="_on_static_body_3d_door_interacted"]
+[connection signal="door_opened" from="NavigationRegion3D/DoubleDoors/hinge2/StaticBody3D" to="." method="_on_static_body_3d_door_opened"]
+[connection signal="door_interacted" from="NavigationRegion3D/DoubleDoors/hinge1/StaticBody3D" to="." method="_on_static_body_3d_door_interacted"]
+
 [editable path="NavigationRegion3D/Key"]
+[editable path="NavigationRegion3D/DoubleDoors"]

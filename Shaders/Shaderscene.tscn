@@ -1,12 +1,12 @@
 [gd_scene load_steps=33 format=4 uid="uid://bvabvch8ao2jd"]
 
 [ext_resource type="Texture2D" uid="uid://l85ls44xygga" path="res://textures/磁磚.png" id="1_3bjx3"]
-[ext_resource type="Shader" path="res://LongsFolder/Shadertest.gdshader" id="1_pwpkt"]
-[ext_resource type="Shader" path="res://LongsFolder/Shadersball.gdshader" id="2_i6gng"]
-[ext_resource type="Shader" path="res://LongsFolder/ShaderBox.gdshader" id="3_x6v18"]
-[ext_resource type="Shader" path="res://LongsFolder/Shaderwall.gdshader" id="4_cxaws"]
+[ext_resource type="Shader" path="res://Shaders/Shadertest.gdshader" id="1_pwpkt"]
+[ext_resource type="Shader" path="res://Shaders/Shadersball.gdshader" id="2_i6gng"]
+[ext_resource type="Shader" path="res://Shaders/ShaderBox.gdshader" id="3_x6v18"]
+[ext_resource type="Shader" path="res://Shaders/Shaderwall.gdshader" id="4_cxaws"]
 [ext_resource type="Texture2D" uid="uid://dnjpn38g5d8pg" path="res://models/House_5.png" id="6_nkm6m"]
-[ext_resource type="Shader" path="res://LongsFolder/Waterwaves.gdshader" id="7_hi7s8"]
+[ext_resource type="Shader" path="res://Shaders/Waterwaves.gdshader" id="7_hi7s8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o7rdd"]
 albedo_texture = ExtResource("1_3bjx3")

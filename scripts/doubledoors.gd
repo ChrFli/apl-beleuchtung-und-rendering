@@ -4,6 +4,12 @@ var toggle = false
 var interactable= true
 @export var playeranimation:AnimationPlayer
 signal door_opened
+signal door_interacted
+
+func _ready():
+	add_to_group("door")
+	
+	
 
 
 func interact():
@@ -22,7 +28,13 @@ func interact():
 	else:
 		# Door can't be opened message
 		print("The door can't be opened because you don't have the key.")
+		_notopenlabel()
 		
 
 func _dooropened():
 	emit_signal("door_opened")
+	
+
+func _notopenlabel():
+	print("Emitting door_interacted signal")  # Debugging
+	emit_signal("door_interacted")  # Signal senden

@@ -3,6 +3,13 @@ extends Node3D
 @onready  var hit_rect = $"UI_ColorRect#TextureRect"
 
 var mynode= preload("res://LongsFolder/zombie.tscn")
+@onready var spawn_point_1 = $Spawns/SpawnPoint
+@onready var spawn_point_2 = $Spawns/SpawnPoint2
+@onready var spawn_points = [spawn_point_1, spawn_point_2]
+
+@onready  var worldlabel = $Label
+@onready  var PaperLabel = $PaperLabel/PopupPanel
+
 
 func _ready():
 	pass
@@ -11,17 +18,17 @@ func _ready():
 	#add_child(instance)
 
 
-	
 func _process(delta):
 	pass
+	if Input.is_action_just_pressed("OutPaper") && PaperLabel.visible:
+		PaperLabel.visible = false
+		
 	
 
-
-	
 func _on_firstperson_player_hit() -> void:
 	hit_rect.visible= true
 	await get_tree().create_timer(0.5).timeout
-
+	
 	hit_rect.visible=false
 	
 
@@ -40,14 +47,26 @@ func _on_static_body_3d_door_opened() -> void:
 		var instance = mynode.instantiate()
 		instance.player_path = get_node("Firstperson").get_path()
 
-		# Berechne eine zufällige Position um den Spawnpunkt
-		var random_offset = Vector3(
-			randf() * 4 - 2,  # Zufällige X-Verschiebung zwischen -2 und 2
-			0,                # Keine Höhenänderung (bleibt auf derselben Ebene)
-			randf() * 4 - 2   # Zufällige Z-Verschiebung zwischen -2 und 2
-		)
+		# Wähle zyklisch einen Spawnpunkt
+		var selected_spawn_point = spawn_points[n % spawn_points.size()]
+		instance.global_transform.origin = selected_spawn_point.global_transform.origin
 
-		# Setze die Position des Zombies basierend auf dem Spawnpunkt
-		instance.global_transform.origin = global_transform.origin + random_offset
+		# Setze die Skalierung des Zombie
+		instance.scale = Vector3(2.5, 2.5, 2.5)
 
 		add_child(instance)
+		print("Zombie erstellt an Spawnpunkt:", selected_spawn_point.name)
+
+
+
+func _on_static_body_3d_door_interacted() -> void:
+	worldlabel.visible = true
+	get_tree().create_timer(0.9).connect("timeout", Callable(self, "_on_timer_finished2"))
+	
+func _on_timer_finished2():
+	worldlabel.visible = false
+
+
+func _on_static_body_3d_pickedpaper() -> void:
+	print("HELLOAPAPER")
+	PaperLabel.visible=true  # Zeigt das PopupPanel an

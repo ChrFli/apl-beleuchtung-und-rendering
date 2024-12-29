@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=4 uid="uid://h4ojtfjohma2"]
+[gd_scene load_steps=48 format=4 uid="uid://h4ojtfjohma2"]
 
 [ext_resource type="Script" path="res://scenes/Alpha_Gamescript.gd" id="1_e3d0n"]
 [ext_resource type="PackedScene" uid="uid://8ai42fc24mip" path="res://models/firstperson.tscn" id="1_iyenx"]
@@ -19,12 +19,16 @@
 [ext_resource type="Texture2D" uid="uid://cvsgu5st4ggwc" path="res://TestingLightTexture/ceiling_light_2.jpg" id="17_teqgj"]
 [ext_resource type="Texture2D" uid="uid://df4y1tt1yssxr" path="res://TestingLightTexture/ceiling_light_3.png" id="18_nl4e6"]
 [ext_resource type="PackedScene" uid="uid://syxlhnv3s8vq" path="res://Interactables/FrontDoor.tscn" id="19_6uvgk"]
-[ext_resource type="PackedScene" uid="uid://bvabvch8ao2jd" path="res://LongsFolder/Shaderscene.tscn" id="20_jxiiu"]
-[ext_resource type="Shader" path="res://LongsFolder/Waterwaves.gdshader" id="21_ia61f"]
+[ext_resource type="PackedScene" uid="uid://bvabvch8ao2jd" path="res://Shaders/Shaderscene.tscn" id="20_jxiiu"]
+[ext_resource type="Shader" path="res://Shaders/Waterwaves.gdshader" id="21_ia61f"]
 [ext_resource type="PackedScene" uid="uid://cjgnrakmubd2a" path="res://ChristinsFolder/Scene_Music.tscn" id="22_q4efx"]
 [ext_resource type="Shader" path="res://ChristinsFolder/Shader_Stairst.gdshader" id="23_gbbip"]
 [ext_resource type="PackedScene" uid="uid://coqnppu3804v3" path="res://scenes/Shader_Flame.tscn" id="24_341fu"]
 [ext_resource type="Texture2D" uid="uid://ddmp1uuoswb8c" path="res://textures/bloodframe2.png" id="25_eknyc"]
+
+[sub_resource type="Environment" id="Environment_2mk7l"]
+background_energy_multiplier = 0.0
+ambient_light_energy = 0.29
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2lljj"]
 size = Vector3(500, 1, 500)
@@ -219,7 +223,8 @@ albedo_color = Color(0.233925, 0.233925, 0.233925, 1)
 
 [sub_resource type="QuadMesh" id="QuadMesh_g248p"]
 
-[node name="AlphaGame" type="Node3D"]
+[node name="AlphaGame" type="WorldEnvironment"]
+environment = SubResource("Environment_2mk7l")
 script = ExtResource("1_e3d0n")
 
 [node name="Firstperson" parent="." instance=ExtResource("1_iyenx")]
@@ -250,7 +255,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00306225, -0.330349, -0.011
 navigation_mesh = SubResource("NavigationMesh_xjtns")
 
 [node name="Door3" parent="NavigationRegion3D" instance=ExtResource("3_p5cjr")]
-transform = Transform3D(-4.37471, 0, -3.67187e-07, 0, 4.28676, 0, 3.8245e-07, 0, -4.20013, -35.7271, -12.9706, 9.39718)
+transform = Transform3D(-4.37471, 0, -3.67187e-07, 0, 4.39001, 0, 3.8245e-07, 0, -4.20013, -35.7271, -12.894, 9.39718)
 
 [node name="Portrait" parent="NavigationRegion3D" instance=ExtResource("4_rsun0")]
 transform = Transform3D(0.1, 0, 0, 0, 0.097598, 0, 0, 0, 0.097598, -35.076, -12.7612, -31.4526)
@@ -291,6 +296,7 @@ omni_range = 254.317
 
 [node name="Lamp_Livingroom2" type="Node3D" parent="NavigationRegion3D"]
 transform = Transform3D(0.0443858, 0, 0, 0, -2.01638e-09, 0.0443858, 0, -0.0461294, -1.94017e-09, -14.0924, -12.4272, -28.7968)
+visible = false
 
 [node name="Object_3" type="MeshInstance3D" parent="NavigationRegion3D/Lamp_Livingroom2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 22.4557, -17.0418)
@@ -503,6 +509,7 @@ material_override = SubResource("ShaderMaterial_8depu")
 mesh = SubResource("QuadMesh_je660")
 
 [node name="SceneMusic" parent="." instance=ExtResource("22_q4efx")]
+visible = false
 
 [node name="Shader_Stairs" type="MeshInstance3D" parent="."]
 transform = Transform3D(9.73164, 0, 0, 0, -8.03348e-07, -2.92371, 0, 18.3785, -1.278e-07, -20.29, -4.79794, 8.66)

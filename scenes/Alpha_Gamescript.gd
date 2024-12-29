@@ -1,4 +1,4 @@
-extends Node3D
+extends WorldEnvironment
 
 
 @onready  var hit_rect = $"UI_ColorRect#TextureRect"
