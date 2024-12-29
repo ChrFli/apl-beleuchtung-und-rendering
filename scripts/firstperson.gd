@@ -126,3 +126,17 @@ func die() -> void:
    # Optional: Hier kannst du ein Game-Over-Event triggern oder den Spieler respawnen lassen.
 	print("Tree Type:", get_tree())  # Gibt die Art des Objekts aus
 	get_tree().change_scene_to_file("res://ChristinsFolder/GameOver.tscn")
+
+
+#####################################
+#Für Interaktion mit der Spieluhr
+
+var is_player_near: bool = false
+
+func _on_body_entered(body):
+	if body.is_in_group("player"):
+		is_player_near = true
+
+func _on_body_exited(body):
+	if body.is_in_group("player"):
+		is_player_near = false

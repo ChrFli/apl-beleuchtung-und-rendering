@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=4 uid="uid://h4ojtfjohma2"]
+[gd_scene load_steps=49 format=4 uid="uid://h4ojtfjohma2"]
 
 [ext_resource type="Script" path="res://scenes/Alpha_Gamescript.gd" id="1_e3d0n"]
 [ext_resource type="PackedScene" uid="uid://8ai42fc24mip" path="res://models/firstperson.tscn" id="1_iyenx"]
@@ -25,6 +25,7 @@
 [ext_resource type="Shader" path="res://ChristinsFolder/Shader_Stairst.gdshader" id="23_gbbip"]
 [ext_resource type="PackedScene" uid="uid://coqnppu3804v3" path="res://scenes/Shader_Flame.tscn" id="24_341fu"]
 [ext_resource type="Texture2D" uid="uid://ddmp1uuoswb8c" path="res://textures/bloodframe2.png" id="25_eknyc"]
+[ext_resource type="PackedScene" uid="uid://bd207v613km2h" path="res://ChristinsFolder/Scene_MusicBox.tscn" id="26_q4ayf"]
 
 [sub_resource type="Environment" id="Environment_2mk7l"]
 background_energy_multiplier = 0.0
@@ -354,7 +355,6 @@ shadow_bias = 0.0
 shadow_reverse_cull_face = true
 shadow_transmittance_bias = -0.13
 shadow_blur = 10.0
-distance_fade_enabled = true
 distance_fade_begin = 0.0
 distance_fade_shadow = 0.0
 omni_range = 254.317
@@ -565,6 +565,7 @@ spot_range = 16.973
 
 [node name="Dach" type="MeshInstance3D" parent="."]
 transform = Transform3D(101.266, 0, 0, 0, -2.82214e-06, -1.42874, 0, 64.5631, -6.24523e-08, 0, -4.55608, 0)
+visible = false
 material_override = SubResource("StandardMaterial3D_vr7hk")
 mesh = SubResource("QuadMesh_g248p")
 
@@ -584,6 +585,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.0303, -15.1775, -25.4243)
 
 [node name="SpawnPoint" type="Node3D" parent="Spawns"]
 transform = Transform3D(1, 0, 0, 0, 0.996255, 0.0864602, 0, -0.0864602, 0.996255, 37.1305, -16.672, -27.8894)
+
+[node name="SceneMusicBox" parent="." instance=ExtResource("26_q4ayf")]
+transform = Transform3D(0.0219907, 0, 12, 0, 12, 0, -12, 0, 0.0219907, 31.6155, -14.8458, 24.9689)
 
 [connection signal="player_hit" from="Firstperson" to="." method="_on_firstperson_player_hit"]
 [connection signal="door_opened" from="NavigationRegion3D/DoubleDoors/hinge2/StaticBody3D" to="." method="_on_static_body_3d_door_opened"]
