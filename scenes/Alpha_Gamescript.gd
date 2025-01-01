@@ -10,6 +10,7 @@ var mynode= preload("res://LongsFolder/zombie.tscn")
 
 @onready  var DoorLabel = $ScreenText/CantOpenDoor
 @onready  var FrontDoorLabel = $ScreenText/CantOpenFrontDoor
+@onready  var StoryLabel = $ScreenText/VBoxContainer/PopupPanel
 
 
 func _ready():
@@ -22,6 +23,8 @@ func _ready():
 	
 func _process(delta):
 	pass
+	if Input.is_action_just_pressed("OutPaper") && StoryLabel.visible:
+		StoryLabel.visible = false
 	
 
 
@@ -80,3 +83,7 @@ func _on_static_body_3d_frontdoor_interacted() -> void:
 func _on_timer_finished3():
 
 	FrontDoorLabel.visible = false
+
+
+func _on_static_body_3d_pickedpaper() -> void:
+	StoryLabel.visible=true

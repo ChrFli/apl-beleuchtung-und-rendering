@@ -1,20 +1,14 @@
-[gd_scene load_steps=9 format=4 uid="uid://dyobh2xvmndr7"]
+[gd_scene load_steps=8 format=4 uid="uid://dyobh2xvmndr7"]
 
 [ext_resource type="Script" path="res://scripts/paper.gd" id="1_0b33d"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ainso"]
-load_path = "res://.godot/imported/paper_0.png-d3d508b11bdbc0d638c4ce77e10bc68f.s3tc.ctex"
-
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_i532d"]
-load_path = "res://.godot/imported/paper_1.png-9cea127fade90cbb3bf1799d8826f32f.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ji68u"]
-load_path = "res://.godot/imported/paper_2.png-e1d2f45f0ab7cc728021591ec264f6cf.s3tc.ctex"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0j7d3"]
 resource_name = "Scene_-_Root"
 cull_mode = 2
-albedo_texture = SubResource("CompressedTexture2D_ainso")
 metallic_texture = SubResource("CompressedTexture2D_i532d")
 metallic_texture_channel = 2
 roughness_texture = SubResource("CompressedTexture2D_i532d")
@@ -38,7 +32,6 @@ _surfaces = [{
 blend_shape_mode = 0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_jfuwg"]
-resource_name = "Sketchfab_Scene_Box001__0"
 _surfaces = [{
 "aabb": AABB(-54.7555, -78.9719, 0, 109.511, 79.2617, 2.5157),
 "attribute_data": PackedByteArray("InkAz5cD886WA623K3nJt50DaqAyeZSgwAMKiSV5RYkBBM1xxHkOciMEnlq6edNaLQRVQ8N5fkM3BBosx3kxLJ+H7Mufh461rPiOtaz47MufhzefrPg3n5+Hxois+MaIn4ducqz4bnKfhx5crPgeXJ+HtUWs+LVFn4dVL6z4VS8ieQDPK3nJt1F5ybcyeQ/PMnmUoFh5lqAleUWJGnlDicR5DnIZegxyunnTWuF50lrDeX5D6Xl/Q8d5MSzteTksx3kxLDcEGiwlBAssxHkDLDcEGiwtBFVDCARTQyUECywjBJ5a/AOdWgEEzXHcA89xwAMKiZoDDomdA2qgdwNsoJYDrbdwA663lwPzzocDBc+XA/POInkAzzJ5D8+HAwXP"),

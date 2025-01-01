@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=4 uid="uid://h4ojtfjohma2"]
+[gd_scene load_steps=51 format=4 uid="uid://h4ojtfjohma2"]
 
 [ext_resource type="Script" path="res://scenes/Alpha_Gamescript.gd" id="1_e3d0n"]
 [ext_resource type="PackedScene" uid="uid://8ai42fc24mip" path="res://models/firstperson.tscn" id="1_iyenx"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://dt11ci8tvmooe" path="res://TestingLightTexture/table_lamp_01_3.png" id="11_f5rxv"]
 [ext_resource type="PackedScene" uid="uid://eelx8utxq7f2" path="res://scenes/collision_walls.tscn" id="12_sb46j"]
 [ext_resource type="PackedScene" uid="uid://ce244th5ihfds" path="res://Interactables/DoubleDoors.tscn" id="13_2tchk"]
+[ext_resource type="PackedScene" uid="uid://dyobh2xvmndr7" path="res://PAPER.tscn" id="15_ltk7g"]
 [ext_resource type="Texture2D" uid="uid://buvhg3mshv3a0" path="res://TestingLightTexture/ceiling_light_0.jpg" id="15_nlave"]
 [ext_resource type="Texture2D" uid="uid://n1xaw4xymlac" path="res://TestingLightTexture/ceiling_light_1.png" id="16_pq485"]
 [ext_resource type="Texture2D" uid="uid://cvsgu5st4ggwc" path="res://TestingLightTexture/ceiling_light_2.jpg" id="17_teqgj"]
@@ -231,12 +232,12 @@ environment = SubResource("Environment_2mk7l")
 script = ExtResource("1_e3d0n")
 
 [node name="Firstperson" parent="." instance=ExtResource("1_iyenx")]
-transform = Transform3D(1, 0, 0, 0, 1.78749, 0, 0, 0, 1, 8.33506, -12.7719, 15.0715)
+transform = Transform3D(1, 0, 0, 0, 1.78749, 0, 0, 0, 1, 8.33506, 8.64002, 15.0715)
 collision_layer = 134217729
 collision_mask = 134217729
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.9484, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.53648, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.99978, 0)
@@ -248,7 +249,7 @@ mesh = SubResource("ArrayMesh_dudrg")
 skeleton = NodePath("")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.493153, 0.869943, 0, -0.869943, 0.493153, -1.05695, 313.532, 0)
+transform = Transform3D(1, 0, 0, 0, 0.493153, 0.869943, 0, -0.869943, 0.493153, -1.05695, 334.944, 0)
 visible = false
 light_energy = 2.534
 light_indirect_energy = 8.6
@@ -256,7 +257,7 @@ light_volumetric_fog_energy = 1.2
 light_angular_distance = 8.25
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00306225, -0.330349, -0.0115471)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00306225, 21.0816, -0.0115471)
 navigation_mesh = SubResource("NavigationMesh_xjtns")
 
 [node name="Door3" parent="NavigationRegion3D" instance=ExtResource("3_p5cjr")]
@@ -438,7 +439,11 @@ transform = Transform3D(3.87794, 0, 0, 0, 4.32731, 0, 0, 0, 4.02151, 1.03195, -1
 [node name="DoorNoKey2" parent="NavigationRegion3D" instance=ExtResource("7_qn3hk")]
 transform = Transform3D(-4.23296, 0, 3.64859e-07, 0, 4.29142, 0, -3.70057e-07, 0, -4.1735, 23.2329, -12.8927, 20.1927)
 
+[node name="Paper" parent="NavigationRegion3D" instance=ExtResource("15_ltk7g")]
+transform = Transform3D(0.00932176, 0.0165583, 7.23787e-10, 0, -8.30601e-10, 0.0190019, 0.0165583, -0.00932176, -4.07467e-10, 1.88538, -15.3232, -21.0379)
+
 [node name="LAMPS" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 21.4119, 0)
 
 [node name="lamp_01" type="Node3D" parent="LAMPS"]
 transform = Transform3D(0.8676, 0, 0, 0, 0.867512, 0, 0, 0, 0.867512, 24.0382, -6.70654, 25.022)
@@ -502,27 +507,28 @@ distance_fade_enabled = true
 omni_range = 11.4427
 
 [node name="FrontDoor" parent="." instance=ExtResource("19_6uvgk")]
-transform = Transform3D(3.88193, 0, 0, 0, 4.2867, 0, 0, 0, 3.88193, 1.04422, -13.2639, 30.456)
+transform = Transform3D(3.88193, 0, 0, 0, 4.2867, 0, 0, 0, 3.88193, 1.04422, 8.14802, 30.456)
 
 [node name="TVShader" parent="." instance=ExtResource("20_jxiiu")]
-transform = Transform3D(1.68068, 0, 0, 0, -4.34958e-08, -1.28004, 0, 0.995068, -5.59525e-08, 1.13551, -14.2341, -29.2687)
+transform = Transform3D(1.68068, 0, 0, 0, -4.34958e-08, -1.28004, 0, 0.995068, -5.59525e-08, 1.13551, 7.17782, -29.2687)
 
 [node name="BathtubShader" type="MeshInstance3D" parent="."]
-transform = Transform3D(6.07185, 0, 0, 0, 0.878742, 0, 0, 0, 3.2863, -28.6105, -16.6366, 23.383)
+transform = Transform3D(6.07185, 0, 0, 0, 0.878742, 0, 0, 0, 3.2863, -28.6105, 4.77532, 23.383)
 material_override = SubResource("ShaderMaterial_8depu")
 mesh = SubResource("QuadMesh_je660")
 
 [node name="SceneMusic" parent="." instance=ExtResource("22_q4efx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 21.4119, 0)
 visible = false
 
 [node name="Shader_Stairs" type="MeshInstance3D" parent="."]
-transform = Transform3D(9.73164, 0, 0, 0, -8.03348e-07, -2.92371, 0, 18.3785, -1.278e-07, -20.29, -4.79794, 8.66)
+transform = Transform3D(9.73164, 0, 0, 0, -8.03348e-07, -2.92371, 0, 18.3785, -1.278e-07, -20.29, 16.614, 8.66)
 material_override = SubResource("ShaderMaterial_nngp0")
 mesh = SubResource("QuadMesh_wdh7q")
 skeleton = NodePath("")
 
 [node name="Außen_Light1" type="SpotLight3D" parent="."]
-transform = Transform3D(0.998788, -0.0476251, 0.0124015, 0.0422078, 0.958552, 0.281776, -0.0253071, -0.280911, 0.9594, 1.36399, -11.0231, 41.8895)
+transform = Transform3D(0.998788, -0.0476251, 0.0124015, 0.0422078, 0.958552, 0.281776, -0.0253071, -0.280911, 0.9594, 1.36399, 10.3888, 41.8895)
 visible = false
 light_color = Color(0.929412, 0.67451, 0.376471, 1)
 light_energy = 16.0
@@ -534,7 +540,7 @@ shadow_enabled = true
 spot_range = 16.973
 
 [node name="Außen_Light2" type="SpotLight3D" parent="."]
-transform = Transform3D(0.998788, -0.0476251, 0.0124015, 0.0422078, 0.958552, 0.281776, -0.0253071, -0.280911, 0.9594, 1.36399, -14.6232, 35.4101)
+transform = Transform3D(0.998788, -0.0476251, 0.0124015, 0.0422078, 0.958552, 0.281776, -0.0253071, -0.280911, 0.9594, 1.36399, 6.78872, 35.4101)
 visible = false
 light_color = Color(0.995988, 0.897785, 0.690508, 1)
 light_energy = 16.0
@@ -546,7 +552,7 @@ shadow_enabled = true
 spot_range = 16.973
 
 [node name="Außen_Light3" type="SpotLight3D" parent="."]
-transform = Transform3D(0.60854, -0.5646, -0.557589, 0.518908, -0.248473, 0.817921, -0.600344, -0.787076, 0.14177, -9.17428, -6.42204, 34.5436)
+transform = Transform3D(0.60854, -0.5646, -0.557589, 0.518908, -0.248473, 0.817921, -0.600344, -0.787076, 0.14177, -9.17428, 14.9899, 34.5436)
 visible = false
 light_color = Color(0.526309, 0.701247, 0.460887, 1)
 light_energy = 16.0
@@ -557,7 +563,7 @@ shadow_enabled = true
 spot_range = 16.973
 
 [node name="Außen_Light4" type="SpotLight3D" parent="."]
-transform = Transform3D(-0.64327, -0.732643, 0.222347, 0.670199, -0.398406, 0.626183, -0.370184, 0.551822, 0.747299, 4.51645, -10.9237, 40.1208)
+transform = Transform3D(-0.64327, -0.732643, 0.222347, 0.670199, -0.398406, 0.626183, -0.370184, 0.551822, 0.747299, 4.51645, 10.4882, 40.1208)
 visible = false
 light_color = Color(0.928645, 0.871247, 0.959899, 1)
 light_energy = 16.0
@@ -568,12 +574,12 @@ shadow_enabled = true
 spot_range = 16.973
 
 [node name="Dach" type="MeshInstance3D" parent="."]
-transform = Transform3D(101.266, 0, 0, 0, -2.82214e-06, -1.42874, 0, 64.5631, -6.24523e-08, 0, -4.55608, 0)
+transform = Transform3D(101.266, 0, 0, 0, -2.82214e-06, -1.42874, 0, 64.5631, -6.24523e-08, 0, 16.8558, 0)
 material_override = SubResource("StandardMaterial3D_vr7hk")
 mesh = SubResource("QuadMesh_g248p")
 
 [node name="ShaderFlame" parent="." instance=ExtResource("24_341fu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.0203, -13.7516, -10.8884)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.0203, 7.66032, -10.8884)
 
 [node name="UI_ColorRect#TextureRect" type="TextureRect" parent="."]
 visible = false
@@ -582,6 +588,7 @@ offset_bottom = 1082.0
 texture = ExtResource("25_eknyc")
 
 [node name="Spawns" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 21.4119, 0)
 
 [node name="SpawnPoint2" type="Node3D" parent="Spawns"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.0303, -15.1775, -25.4243)
@@ -590,7 +597,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.0303, -15.1775, -25.4243)
 transform = Transform3D(1, 0, 0, 0, 0.996255, 0.0864602, 0, -0.0864602, 0.996255, 37.1305, -16.672, -27.8894)
 
 [node name="SceneMusicBox" parent="." instance=ExtResource("26_q4ayf")]
-transform = Transform3D(0.0219907, 0, 12, 0, 12, 0, -12, 0, 0.0219907, 31.6143, -14.841, 24.9648)
+transform = Transform3D(0.0219907, 0, 12, 0, 12, 0, -12, 0, 0.0219907, 31.6143, 6.57092, 24.9648)
 visible = false
 
 [node name="ScreenText" type="Control" parent="."]
@@ -619,8 +626,26 @@ text = "Tür kann nicht geöffnet werden, du brauchst den Hausschlüssel."
 horizontal_alignment = 1
 vertical_alignment = 2
 
+[node name="VBoxContainer" type="VBoxContainer" parent="ScreenText"]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1090.0
+mouse_filter = 2
+
+[node name="PopupPanel" type="PopupPanel" parent="ScreenText/VBoxContainer"]
+initial_position = 1
+size = Vector2i(850, 1100)
+
+[node name="Label" type="Label" parent="ScreenText/VBoxContainer/PopupPanel"]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 846.0
+offset_bottom = 1096.0
+theme_override_font_sizes/font_size = 100
+text = "I MISS ME WIFE"
+
 [node name="Area3D" type="Area3D" parent="."]
-transform = Transform3D(8.59779, 0, 0, 0, 8.91348, 0, 0, 0, 14.277, -20.3116, -10.6451, 8.3226)
+transform = Transform3D(8.59779, 0, 0, 0, 8.91348, 0, 0, 0, 14.277, -20.3116, 10.7668, 8.3226)
 collision_layer = 134217728
 collision_mask = 134217728
 
@@ -632,10 +657,12 @@ shape = SubResource("BoxShape3D_8aif1")
 [connection signal="door_opened" from="NavigationRegion3D/DoubleDoors/hinge2/StaticBody3D" to="." method="_on_static_body_3d_door_opened"]
 [connection signal="door_interacted" from="NavigationRegion3D/DoubleDoors/hinge1/StaticBody3D" to="." method="_on_static_body_3d_door_interacted"]
 [connection signal="door_opened" from="NavigationRegion3D/DoubleDoors/hinge1/StaticBody3D" to="." method="_on_static_body_3d_door_opened"]
+[connection signal="pickedpaper" from="NavigationRegion3D/Paper/StaticBody3D" to="." method="_on_static_body_3d_pickedpaper"]
 [connection signal="Frontdoor_interacted" from="FrontDoor/hinge1/StaticBody3D" to="." method="_on_static_body_3d_frontdoor_interacted"]
 [connection signal="Frontdoor_interacted" from="FrontDoor/hinge2/StaticBody3D" to="." method="_on_static_body_3d_frontdoor_interacted"]
 [connection signal="body_entered" from="Area3D" to="Firstperson" method="_on_area_3d_body_entered"]
 
 [editable path="NavigationRegion3D/Key"]
 [editable path="NavigationRegion3D/DoubleDoors"]
+[editable path="NavigationRegion3D/Paper"]
 [editable path="FrontDoor"]
