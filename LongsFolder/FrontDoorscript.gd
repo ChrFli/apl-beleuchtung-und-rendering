@@ -3,6 +3,8 @@ extends StaticBody3D
 # script für die Animation der Tür beim Öffnen und Schließen
 var toggle = false
 var interactable= true
+
+signal Frontdoor_interacted
 @export var playeranimation:AnimationPlayer
 
 func interact():
@@ -20,3 +22,10 @@ func interact():
 	else:
 		# Door can't be opened message
 		print("The door can't be opened because you don't have the masterkey.")
+		_notFrontopenlabel()
+
+
+
+func _notFrontopenlabel():
+	print("Emitting door_interacted signal")  # Debugging
+	emit_signal("Frontdoor_interacted")  # Signal senden

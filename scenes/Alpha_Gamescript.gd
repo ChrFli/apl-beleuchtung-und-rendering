@@ -8,6 +8,10 @@ var mynode= preload("res://LongsFolder/zombie.tscn")
 @onready var spawn_point_2 = $Spawns/SpawnPoint2
 
 
+@onready  var DoorLabel = $ScreenText/CantOpenDoor
+@onready  var FrontDoorLabel = $ScreenText/CantOpenFrontDoor
+
+
 func _ready():
 	pass
 	#var instance = mynode.instantiate();
@@ -28,8 +32,6 @@ func _on_firstperson_player_hit() -> void:
 
 	hit_rect.visible=false
 	
-
-
 
 
 func _on_door_no_key_door_opened() -> void:
@@ -57,3 +59,24 @@ func _on_static_body_3d_door_opened() -> void:
 
 		add_child(instance)
 		print("Zombie erstellt an Spawnpunkt:", selected_spawn_point.name)
+
+
+
+####LABELS#####
+
+func _on_static_body_3d_door_interacted() -> void:
+	DoorLabel.visible = true
+	get_tree().create_timer(1.2).connect("timeout", Callable(self, "_on_timer_finished2"))
+	
+func _on_timer_finished2():
+	DoorLabel.visible = false
+	
+
+
+func _on_static_body_3d_frontdoor_interacted() -> void:
+	FrontDoorLabel.visible = true
+	get_tree().create_timer(1.2).connect("timeout", Callable(self, "_on_timer_finished3"))
+
+func _on_timer_finished3():
+
+	FrontDoorLabel.visible = false

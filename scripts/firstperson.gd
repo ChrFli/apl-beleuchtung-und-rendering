@@ -140,3 +140,8 @@ func _on_body_entered(body):
 func _on_body_exited(body):
 	if body.is_in_group("player"):
 		is_player_near = false
+
+
+func _on_area_3d_body_entered(body: Node3D) -> void:
+	print("HELLODAUDWHUADUHWA")
+	die()

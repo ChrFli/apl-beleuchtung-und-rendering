@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=4 uid="uid://h4ojtfjohma2"]
+[gd_scene load_steps=50 format=4 uid="uid://h4ojtfjohma2"]
 
 [ext_resource type="Script" path="res://scenes/Alpha_Gamescript.gd" id="1_e3d0n"]
 [ext_resource type="PackedScene" uid="uid://8ai42fc24mip" path="res://models/firstperson.tscn" id="1_iyenx"]
@@ -224,12 +224,16 @@ albedo_color = Color(0.233925, 0.233925, 0.233925, 1)
 
 [sub_resource type="QuadMesh" id="QuadMesh_g248p"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_8aif1"]
+
 [node name="AlphaGame" type="WorldEnvironment"]
 environment = SubResource("Environment_2mk7l")
 script = ExtResource("1_e3d0n")
 
 [node name="Firstperson" parent="." instance=ExtResource("1_iyenx")]
 transform = Transform3D(1, 0, 0, 0, 1.78749, 0, 0, 0, 1, 8.33506, -12.7719, 15.0715)
+collision_layer = 134217729
+collision_mask = 134217729
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.9484, 0)
@@ -425,14 +429,14 @@ omni_range = 254.317
 [node name="CollisionWalls" parent="NavigationRegion3D" instance=ExtResource("12_sb46j")]
 transform = Transform3D(0.1, 0, 0, 0, -4.37114e-09, 0.1, 0, -0.1, -4.37114e-09, 0, -15.0556, 0)
 
-[node name="Door2" parent="NavigationRegion3D" instance=ExtResource("3_p5cjr")]
-transform = Transform3D(-4.32277, 0, 3.66223e-07, 0, 4.26267, 0, -3.77909e-07, 0, -4.18911, 23.1952, -12.8426, 20.1744)
-
 [node name="Door4" parent="NavigationRegion3D" instance=ExtResource("3_p5cjr")]
 transform = Transform3D(-1.88954e-07, 0, 4.18911, 0, 4.26267, 0, -4.32277, 0, -1.83112e-07, -15.0763, -12.7795, -16.5502)
 
 [node name="DoubleDoors" parent="NavigationRegion3D" instance=ExtResource("13_2tchk")]
 transform = Transform3D(3.87794, 0, 0, 0, 4.32731, 0, 0, 0, 4.02151, 1.03195, -12.8422, -0.532533)
+
+[node name="DoorNoKey2" parent="NavigationRegion3D" instance=ExtResource("7_qn3hk")]
+transform = Transform3D(-4.23296, 0, 3.64859e-07, 0, 4.29142, 0, -3.70057e-07, 0, -4.1735, 23.2329, -12.8927, 20.1927)
 
 [node name="LAMPS" type="Node3D" parent="."]
 
@@ -565,7 +569,6 @@ spot_range = 16.973
 
 [node name="Dach" type="MeshInstance3D" parent="."]
 transform = Transform3D(101.266, 0, 0, 0, -2.82214e-06, -1.42874, 0, 64.5631, -6.24523e-08, 0, -4.55608, 0)
-visible = false
 material_override = SubResource("StandardMaterial3D_vr7hk")
 mesh = SubResource("QuadMesh_g248p")
 
@@ -587,11 +590,52 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.0303, -15.1775, -25.4243)
 transform = Transform3D(1, 0, 0, 0, 0.996255, 0.0864602, 0, -0.0864602, 0.996255, 37.1305, -16.672, -27.8894)
 
 [node name="SceneMusicBox" parent="." instance=ExtResource("26_q4ayf")]
-transform = Transform3D(0.0219907, 0, 12, 0, 12, 0, -12, 0, 0.0219907, 31.6155, -14.8458, 24.9689)
+transform = Transform3D(0.0219907, 0, 12, 0, 12, 0, -12, 0, 0.0219907, 31.6143, -14.841, 24.9648)
+visible = false
+
+[node name="ScreenText" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CantOpenDoor" type="Label" parent="ScreenText"]
+visible = false
+layout_mode = 0
+offset_right = 1929.0
+offset_bottom = 868.0
+theme_override_font_sizes/font_size = 45
+text = "Tür kann nicht geöffnet werden, du brauchst einen Schlüssel."
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="CantOpenFrontDoor" type="Label" parent="ScreenText"]
+visible = false
+layout_mode = 0
+offset_right = 1929.0
+offset_bottom = 868.0
+theme_override_font_sizes/font_size = 45
+text = "Tür kann nicht geöffnet werden, du brauchst den Hausschlüssel."
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(8.59779, 0, 0, 0, 8.91348, 0, 0, 0, 14.277, -20.3116, -10.6451, 8.3226)
+collision_layer = 134217728
+collision_mask = 134217728
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("BoxShape3D_8aif1")
 
 [connection signal="player_hit" from="Firstperson" to="." method="_on_firstperson_player_hit"]
+[connection signal="door_interacted" from="NavigationRegion3D/DoubleDoors/hinge2/StaticBody3D" to="." method="_on_static_body_3d_door_interacted"]
 [connection signal="door_opened" from="NavigationRegion3D/DoubleDoors/hinge2/StaticBody3D" to="." method="_on_static_body_3d_door_opened"]
+[connection signal="door_interacted" from="NavigationRegion3D/DoubleDoors/hinge1/StaticBody3D" to="." method="_on_static_body_3d_door_interacted"]
 [connection signal="door_opened" from="NavigationRegion3D/DoubleDoors/hinge1/StaticBody3D" to="." method="_on_static_body_3d_door_opened"]
+[connection signal="Frontdoor_interacted" from="FrontDoor/hinge1/StaticBody3D" to="." method="_on_static_body_3d_frontdoor_interacted"]
+[connection signal="Frontdoor_interacted" from="FrontDoor/hinge2/StaticBody3D" to="." method="_on_static_body_3d_frontdoor_interacted"]
+[connection signal="body_entered" from="Area3D" to="Firstperson" method="_on_area_3d_body_entered"]
 
 [editable path="NavigationRegion3D/Key"]
 [editable path="NavigationRegion3D/DoubleDoors"]
+[editable path="FrontDoor"]

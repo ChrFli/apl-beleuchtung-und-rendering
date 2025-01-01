@@ -25,4 +25,3 @@ void fragment() {
     // Setze die Farbe des Pixels
     ALBEDO = static_color;
 }
-

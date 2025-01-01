@@ -293,9 +293,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.0303, -15.1775, -25.4243)
 [node name="SpawnPoint" type="Node3D" parent="Spawns"]
 transform = Transform3D(1, 0, 0, 0, 0.996255, 0.0864602, 0, -0.0864602, 0.996255, 39.0135, -16.672, -27.8894)
 
-<<<<<<< HEAD
-[node name="Paper" parent="." instance=ExtResource("21_klpgl")]
-transform = Transform3D(0.498982, 0, 0, 0, 0.498982, 0, 0, 0, 0.498982, 1.53129, 0.625648, -10.8868)
 
 =======
 >>>>>>> 2a204ffeb49ff05b35a484c6731502fb548a5116
