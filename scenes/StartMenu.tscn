@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cumsdlh6evfco"]
+[gd_scene load_steps=8 format=3 uid="uid://cumsdlh6evfco"]
 
 [ext_resource type="Script" path="res://scenes/start_menu.gd" id="1_q74et"]
 [ext_resource type="Texture2D" uid="uid://dhw22wqopsmo7" path="res://textures/start.jpg" id="2_rtcwe"]
@@ -7,6 +7,8 @@
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y1uqd"]
 texture = ExtResource("2_rtcwe")
 modulate_color = Color(0.779291, 0.779291, 0.779291, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b43pv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l65gp"]
 bg_color = Color(0.239216, 0, 0, 0.286275)
@@ -60,7 +62,9 @@ theme_override_constants/separation = 10
 custom_minimum_size = Vector2(200, 60)
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_b43pv")
 theme_override_styles/hover = SubResource("StyleBoxFlat_l65gp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l65gp")
 theme_override_styles/normal = SubResource("StyleBoxFlat_vxccg")
 text = "Start Game"
 
@@ -68,7 +72,9 @@ text = "Start Game"
 custom_minimum_size = Vector2(200, 60)
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_b43pv")
 theme_override_styles/hover = SubResource("StyleBoxFlat_l65gp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l65gp")
 theme_override_styles/normal = SubResource("StyleBoxFlat_vxccg")
 text = "Controls"
 
@@ -76,7 +82,9 @@ text = "Controls"
 custom_minimum_size = Vector2(200, 60)
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_b43pv")
 theme_override_styles/hover = SubResource("StyleBoxFlat_l65gp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l65gp")
 theme_override_styles/normal = SubResource("StyleBoxFlat_vxccg")
 text = "About"
 
@@ -84,7 +92,9 @@ text = "About"
 custom_minimum_size = Vector2(200, 60)
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_b43pv")
 theme_override_styles/hover = SubResource("StyleBoxFlat_l65gp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l65gp")
 theme_override_styles/normal = SubResource("StyleBoxFlat_vxccg")
 text = "Quit"
 

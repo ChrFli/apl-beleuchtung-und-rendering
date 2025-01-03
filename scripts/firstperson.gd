@@ -12,6 +12,9 @@ signal player_hit
 @onready var camera= $Node3D/Camera3D
 @onready var melee_anim= $AnimationPlayer
 @onready var melee_hitbox=$Node3D/Camera3D/Hitbox
+@onready var sfx_hurt: AudioStreamPlayer3D = $sfx_hurt
+
+
 
 
 
@@ -53,6 +56,7 @@ func melee():
 		if melee_anim.current_animation == "MeleeAttack":
 			for body in melee_hitbox.get_overlapping_bodies():
 				if body is CharacterBody3D and body.is_in_group("Vikto"):
+					sfx_hurt.play()
 					body.health -= melee_damage
 					print("Hit:", body.name, "Remaining health:", body.health)
 					if body.health <= 0:

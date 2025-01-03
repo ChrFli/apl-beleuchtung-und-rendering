@@ -1,4 +1,5 @@
 extends StaticBody3D
+@onready var sfx_masterkey: AudioStreamPlayer3D = $"../sfx_masterkey"
 
 var toggle = false
 var interactable = true
@@ -13,6 +14,7 @@ func interact():
 
 		if player:
 			player.pick_up_masterkey()  # Let the character know it picked up the key
+			sfx_masterkey.play()
 			queue_free()  # Remove the key from the scene
 			player.has_masterkey = true  # Directly set the has_key status to true when the key is collected
 		

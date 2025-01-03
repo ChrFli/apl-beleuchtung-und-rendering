@@ -1,7 +1,9 @@
-[gd_scene load_steps=11 format=4 uid="uid://ce244th5ihfds"]
+[gd_scene load_steps=13 format=4 uid="uid://ce244th5ihfds"]
 
 [ext_resource type="Script" path="res://scripts/doubledoors.gd" id="1_hflle"]
 [ext_resource type="Texture2D" uid="uid://d3kfpn2fqs5ob" path="res://models/House_12.png" id="2_5sfo2"]
+[ext_resource type="AudioStream" uid="uid://d2oryrcjxbxeh" path="res://audio/door.mp3" id="3_pp6di"]
+[ext_resource type="AudioStream" uid="uid://2co42gnhjrre" path="res://audio/closedoor.mp3" id="4_ccgbh"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fyjnp"]
 resource_name = "門"
@@ -172,3 +174,11 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="hinge1/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 2.5, 0, 0, 0, 0.1, -0.00527191, -0.0650175, 0)
 shape = SubResource("BoxShape3D_qui8k")
+
+[node name="sfx_door" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_pp6di")
+volume_db = 12.235
+max_db = 6.0
+
+[node name="sfx_closedoor" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4_ccgbh")

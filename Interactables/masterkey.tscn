@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=4 uid="uid://b2u6goope0hlo"]
+[gd_scene load_steps=10 format=4 uid="uid://b2u6goope0hlo"]
 
 [ext_resource type="Texture2D" uid="uid://mu0kcqvm5q4h" path="res://textures/old_key_0.png" id="1_r08gk"]
 [ext_resource type="Script" path="res://scripts/masterkey.gd" id="1_xvm5c"]
 [ext_resource type="Texture2D" uid="uid://bxtp5kagqeud3" path="res://textures/old_key_1.png" id="2_adjy8"]
 [ext_resource type="Texture2D" uid="uid://2n67nekyf1ai" path="res://textures/old_key_2.png" id="3_ysa73"]
+[ext_resource type="AudioStream" uid="uid://b7v6fp1gw30en" path="res://audio/key.mp3" id="5_7oyvo"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3dfk3"]
 resource_name = "material"
@@ -68,3 +69,7 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 0.369342, 0, 0, 0, 1, -0.0090332, -0.0292358, 0)
 shape = SubResource("BoxShape3D_6i0lk")
+
+[node name="sfx_masterkey" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("5_7oyvo")
+volume_db = 1.0

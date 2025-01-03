@@ -1,7 +1,9 @@
-[gd_scene load_steps=11 format=4 uid="uid://drxna0qrhrswo"]
+[gd_scene load_steps=13 format=4 uid="uid://drxna0qrhrswo"]
 
 [ext_resource type="Script" path="res://scripts/door.gd" id="1_buymn"]
+[ext_resource type="AudioStream" uid="uid://d2oryrcjxbxeh" path="res://audio/door.mp3" id="3_q1ou8"]
 [ext_resource type="Texture2D" uid="uid://d3kfpn2fqs5ob" path="res://models/House_12.png" id="3_ri677"]
+[ext_resource type="AudioStream" uid="uid://2co42gnhjrre" path="res://audio/closedoor.mp3" id="4_14lcp"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_albk3"]
 size = Vector3(1.02771, 0.824951, 1)
@@ -120,3 +122,9 @@ skeleton = NodePath("")
 libraries = {
 "": SubResource("AnimationLibrary_5g8st")
 }
+
+[node name="sfx_door" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_q1ou8")
+
+[node name="sfx_closedoor" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4_14lcp")

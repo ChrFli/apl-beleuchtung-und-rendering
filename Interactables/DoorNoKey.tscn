@@ -1,7 +1,9 @@
-[gd_scene load_steps=11 format=4 uid="uid://5qimst4ek3ld"]
+[gd_scene load_steps=13 format=4 uid="uid://5qimst4ek3ld"]
 
 [ext_resource type="Script" path="res://scripts/DoorNoKey.gd" id="1_orxlo"]
 [ext_resource type="Texture2D" uid="uid://d3kfpn2fqs5ob" path="res://models/House_12.png" id="2_emndm"]
+[ext_resource type="AudioStream" uid="uid://d2oryrcjxbxeh" path="res://audio/door.mp3" id="3_anbvc"]
+[ext_resource type="AudioStream" uid="uid://2co42gnhjrre" path="res://audio/closedoor.mp3" id="4_8l3lw"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vq3lr"]
 size = Vector3(1.02771, 0.824951, 1)
@@ -120,3 +122,9 @@ skeleton = NodePath("")
 libraries = {
 "": SubResource("AnimationLibrary_5g8st")
 }
+
+[node name="sfx_door" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_anbvc")
+
+[node name="sfx_closedoor" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4_8l3lw")

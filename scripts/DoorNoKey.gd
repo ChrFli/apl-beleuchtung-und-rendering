@@ -3,6 +3,9 @@ extends StaticBody3D
 var toggle = false
 var interactable= true
 @export var animation_player: AnimationPlayer
+@onready var sfx_door: AudioStreamPlayer3D = $"../../sfx_door"
+@onready var sfx_closedoor: AudioStreamPlayer3D = $"../../sfx_closedoor"
+
 
 func interact():
 	# Find the player node in the "player" group (assuming you've added the player to this group in Chardummy.gd)
@@ -14,8 +17,10 @@ func interact():
 			toggle = !toggle
 			if toggle == false:
 				animation_player.play("closedoor")
+				sfx_closedoor.play()
 			if toggle == true:
 				animation_player.play("opendoor")
+				sfx_door.play()
 				_doorgotopened()
 	
 			await get_tree().create_timer(1.0, false).timeout

@@ -3,6 +3,10 @@ extends StaticBody3D
 var toggle = false
 var interactable= true
 @export var playeranimation:AnimationPlayer
+@onready var sfx_door: AudioStreamPlayer3D = $"../../sfx_door"
+@onready var sfx_closedoor: AudioStreamPlayer3D = $"../../sfx_closedoor"
+
+
 signal door_opened
 signal door_interacted
 
@@ -20,8 +24,10 @@ func interact():
 			toggle = !toggle
 			if toggle ==false:
 				playeranimation.play("closedouble")
+				sfx_closedoor.play()
 			if toggle ==true:
 				playeranimation.play("opendouble")
+				sfx_door.play()
 			await get_tree().create_timer(1.0,false).timeout
 			_dooropened()
 			interactable=true

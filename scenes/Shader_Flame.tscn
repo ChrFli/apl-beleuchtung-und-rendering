@@ -65,3 +65,4 @@ light_color = Color(1, 0.772549, 0.384314, 1)
 light_energy = 3.38
 light_indirect_energy = 2.587
 light_size = 0.14
+omni_range = 7.395

@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=4 uid="uid://cyij4yy6u7uxg"]
+[gd_scene load_steps=10 format=4 uid="uid://cyij4yy6u7uxg"]
 
 [ext_resource type="Script" path="res://scripts/key.gd" id="1_2jkup"]
 [ext_resource type="Texture2D" uid="uid://25juds8lmiru" path="res://textures/rust_key_0.png" id="1_jwfe3"]
 [ext_resource type="Texture2D" uid="uid://7bqgapii4fdh" path="res://textures/rust_key_1.png" id="2_135x0"]
 [ext_resource type="Texture2D" uid="uid://bkixsc12nnnfx" path="res://textures/rust_key_2.png" id="3_wutq4"]
+[ext_resource type="AudioStream" uid="uid://b7v6fp1gw30en" path="res://audio/key.mp3" id="5_x5c0v"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dnnir"]
 resource_name = "phong2"
@@ -70,3 +71,7 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(6.67025, 0, 0, 0, 6.67025, 0, 0, 0, 6.67025, -0.0112453, 2.01212, 0)
 shape = SubResource("BoxShape3D_7d42u")
+
+[node name="sfx_key" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("5_x5c0v")
+volume_db = 1.0

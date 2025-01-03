@@ -1,10 +1,16 @@
-[gd_scene load_steps=7 format=3 uid="uid://2moh32pirf"]
+[gd_scene load_steps=10 format=3 uid="uid://2moh32pirf"]
 
 [ext_resource type="Script" path="res://ChristinsFolder/game_over.gd" id="1_3la1l"]
 [ext_resource type="Texture2D" uid="uid://ddmp1uuoswb8c" path="res://textures/bloodframe2.png" id="1_bcgxe"]
 [ext_resource type="FontFile" uid="uid://cgmq25iexgtu2" path="res://textures/HelpMe.ttf" id="2_bcyvm"]
+[ext_resource type="Texture2D" uid="uid://dhw22wqopsmo7" path="res://textures/start.jpg" id="2_cr7fu"]
+[ext_resource type="AudioStream" uid="uid://b1tn3ofmsdvu8" path="res://audio/dead.mp3" id="4_4ga6w"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_apjf4"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q2pi1"]
+texture = ExtResource("2_cr7fu")
+modulate_color = Color(0.28485, 0.28485, 0.28485, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_k8nud"]
 texture = ExtResource("1_bcgxe")
 modulate_color = Color(0.28485, 0.28485, 0.28485, 1)
 
@@ -38,7 +44,16 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxTexture_apjf4")
+theme_override_styles/panel = SubResource("StyleBoxTexture_q2pi1")
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_k8nud")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
@@ -91,6 +106,10 @@ theme_override_font_sizes/font_size = 20
 theme_override_styles/hover = SubResource("StyleBoxFlat_5tivo")
 theme_override_styles/normal = SubResource("StyleBoxFlat_q8l44")
 text = "Quit"
+
+[node name="sfx_dead" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_4ga6w")
+volume_db = 10.045
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

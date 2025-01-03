@@ -11,6 +11,8 @@ var health = 200
 @onready var nav_agent=  $NavigationAgent3D
 
 @onready var anim_tree =$AnimationTree
+@onready var sfx_hit: AudioStreamPlayer3D = $sfx_hit
+
 
 func _ready(): 
 	player =  get_node(player_path)
@@ -49,6 +51,7 @@ func _target_in_range():
 	
 func _hit_finished():
 	player.hit()
+	sfx_hit.play()
 	player.take_damage(30)
 	
 func die():

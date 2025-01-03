@@ -292,6 +292,7 @@ skeleton = NodePath("")
 transform = Transform3D(22.5297, 0, 0, 0, 21.6781, -2.38742e-12, 0, -3.41061e-13, 22.5297, 14.284, 13.3868, 23.482)
 light_energy = 4.1
 light_volumetric_fog_energy = 8.756
+light_bake_mode = 1
 shadow_enabled = true
 shadow_bias = 0.0
 shadow_reverse_cull_face = true
@@ -332,8 +333,9 @@ skeleton = NodePath("")
 [node name="OmniLight3D" type="OmniLight3D" parent="NavigationRegion3D/Small_Lamp_Foyer"]
 transform = Transform3D(22.5297, 0, 0, 0, 21.6781, -2.38742e-12, 0, -3.41061e-13, 22.5297, 14.284, 13.3868, 23.482)
 light_color = Color(1, 0.75572, 0.634729, 1)
-light_energy = 1.096
+light_energy = 2.0
 light_volumetric_fog_energy = 8.756
+light_bake_mode = 1
 shadow_enabled = true
 shadow_bias = 0.0
 shadow_reverse_cull_face = true
@@ -353,8 +355,9 @@ skeleton = NodePath("")
 [node name="OmniLight3D" type="OmniLight3D" parent="NavigationRegion3D/Small_Lamp_Foyer2"]
 transform = Transform3D(22.5297, 0, 0, 0, 21.6781, -2.38742e-12, 0, -3.41061e-13, 22.5297, 14.284, 13.3868, 23.482)
 light_color = Color(1, 0.75572, 0.634729, 1)
-light_energy = 1.096
+light_energy = 2.0
 light_volumetric_fog_energy = 8.756
+light_bake_mode = 1
 shadow_enabled = true
 shadow_bias = 0.0
 shadow_reverse_cull_face = true
@@ -375,9 +378,10 @@ skeleton = NodePath("")
 [node name="OmniLight3D" type="OmniLight3D" parent="NavigationRegion3D/Small_Lamp_Masterbedroom"]
 transform = Transform3D(22.5297, 0, 0, 0, 21.6781, -2.33058e-12, 0, -3.41061e-13, 22.5297, -27.1895, -46.0686, 0.833054)
 light_color = Color(0.987166, 0.791629, 0.190185, 1)
-light_energy = 1.292
+light_energy = 2.0
 light_volumetric_fog_energy = 2.617
 light_size = 0.008
+light_bake_mode = 1
 shadow_enabled = true
 shadow_bias = 0.0
 shadow_reverse_cull_face = true
@@ -397,8 +401,9 @@ skeleton = NodePath("")
 [node name="OmniLight3D" type="OmniLight3D" parent="NavigationRegion3D/Small_Lamp_Masterbedroom2"]
 transform = Transform3D(22.5297, 0, 0, 0, 21.6781, -2.33058e-12, 0, -3.41061e-13, 22.5297, -27.1895, -46.0686, 0.833054)
 light_color = Color(0.987166, 0.791629, 0.190185, 1)
-light_energy = 1.161
+light_energy = 2.0
 light_volumetric_fog_energy = 8.756
+light_bake_mode = 1
 shadow_enabled = true
 shadow_bias = 0.0
 shadow_reverse_cull_face = true
@@ -419,6 +424,29 @@ transform = Transform3D(22.5297, 0, 0, 0, 21.6781, -2.38742e-12, 0, -3.41061e-13
 light_color = Color(0.965262, 0.63109, 1.15514e-05, 1)
 light_energy = 1.486
 light_volumetric_fog_energy = 8.756
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.0
+shadow_reverse_cull_face = true
+shadow_transmittance_bias = -0.13
+shadow_blur = 10.0
+distance_fade_begin = 0.0
+omni_range = 254.317
+
+[node name="Object_6" type="Node3D" parent="NavigationRegion3D"]
+transform = Transform3D(0.0443858, 0, 0, 0, -2.01638e-09, 0.0443858, 0, -0.0461294, -1.94017e-09, 44.845, -14.3176, 25.1999)
+
+[node name="Object_3" type="MeshInstance3D" parent="NavigationRegion3D/Object_6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.05614)
+mesh = SubResource("ArrayMesh_akvlr")
+skeleton = NodePath("")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="NavigationRegion3D/Object_6"]
+transform = Transform3D(22.5297, 0, 0, 0, 21.6781, -2.38742e-12, 0, -3.41061e-13, 22.5297, 14.284, 13.3868, 23.482)
+light_color = Color(0.965262, 0.63109, 1.15514e-05, 1)
+light_energy = 1.486
+light_volumetric_fog_energy = 8.756
+light_bake_mode = 1
 shadow_enabled = true
 shadow_bias = 0.0
 shadow_reverse_cull_face = true
@@ -456,6 +484,7 @@ skeleton = NodePath("")
 [node name="OmniLight3D" type="OmniLight3D" parent="LAMPS/lamp_01"]
 transform = Transform3D(1.15261, 0, 0, 0, 1.15272, 0, 0, 0, 1.15272, 0.0318813, -0.540643, 0.0266876)
 light_energy = 16.0
+light_bake_mode = 1
 shadow_enabled = true
 omni_range = 12.7777
 
@@ -469,6 +498,7 @@ skeleton = NodePath("")
 [node name="OmniLight3D" type="OmniLight3D" parent="LAMPS/lamp_02"]
 transform = Transform3D(1.3285, 0, 0, 0, 1.32877, 0, 0, 0, 1.32877, 0.0318794, -0.600768, 0.0266876)
 light_energy = 16.0
+light_bake_mode = 1
 shadow_enabled = true
 omni_range = 16.1618
 
@@ -483,6 +513,7 @@ skeleton = NodePath("")
 transform = Transform3D(1.15261, 0, 0, 0, 1.15272, 0, 0, 0, 1.15272, 0.0318794, -0.740542, 0.0266876)
 light_color = Color(1, 0.215686, 0.0980392, 1)
 light_energy = 16.0
+light_bake_mode = 1
 shadow_enabled = true
 distance_fade_enabled = true
 omni_range = 11.4427
@@ -500,10 +531,51 @@ light_color = Color(0.947742, 0.615761, 0.355892, 1)
 light_energy = 6.259
 light_indirect_energy = 4.918
 light_volumetric_fog_energy = 5.049
+light_bake_mode = 1
 shadow_enabled = true
 shadow_bias = 0.0
 shadow_blur = 6.224
 distance_fade_enabled = true
+omni_range = 11.4427
+
+[node name="Lamp_Diningroom" type="Node3D" parent="LAMPS"]
+transform = Transform3D(-0.8676, 0, -7.58403e-08, 0, 0.867512, 0, 7.5848e-08, 0, -0.867512, 26.3859, -4.55342, -13.0731)
+
+[node name="defaultMaterial" type="MeshInstance3D" parent="LAMPS/Lamp_Diningroom"]
+mesh = SubResource("ArrayMesh_3bk4h")
+skeleton = NodePath("")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="LAMPS/Lamp_Diningroom"]
+transform = Transform3D(1.15261, 0, 0, 0, 1.15272, 0, 0, 0, 1.15272, 0.0318794, -0.740542, 0.0266876)
+light_color = Color(0.947742, 0.615761, 0.355892, 1)
+light_energy = 10.0
+light_indirect_energy = 10.165
+light_volumetric_fog_energy = 0.0
+light_size = 0.212
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.0
+shadow_blur = 6.224
+omni_range = 11.4427
+
+[node name="Lamp_Diningroom2" type="Node3D" parent="LAMPS"]
+transform = Transform3D(-0.8676, 0, -7.58403e-08, 0, 0.867512, 0, 7.5848e-08, 0, -0.867512, 40.0082, -4.55342, -27.7586)
+
+[node name="defaultMaterial" type="MeshInstance3D" parent="LAMPS/Lamp_Diningroom2"]
+mesh = SubResource("ArrayMesh_3bk4h")
+skeleton = NodePath("")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="LAMPS/Lamp_Diningroom2"]
+transform = Transform3D(1.15261, 0, 0, 0, 1.15272, 0, 0, 0, 1.15272, 0.0318794, -0.740542, 0.0266876)
+light_color = Color(0.947742, 0.615761, 0.355892, 1)
+light_energy = 10.0
+light_indirect_energy = 10.165
+light_volumetric_fog_energy = 0.0
+light_size = 0.212
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.0
+shadow_blur = 6.224
 omni_range = 11.4427
 
 [node name="FrontDoor" parent="." instance=ExtResource("19_6uvgk")]
@@ -575,6 +647,7 @@ spot_range = 16.973
 
 [node name="Dach" type="MeshInstance3D" parent="."]
 transform = Transform3D(101.266, 0, 0, 0, -2.82214e-06, -1.42874, 0, 64.5631, -6.24523e-08, 0, 16.8558, 0)
+visible = false
 material_override = SubResource("StandardMaterial3D_vr7hk")
 mesh = SubResource("QuadMesh_g248p")
 
@@ -596,10 +669,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.0303, -15.1775, -25.4243)
 [node name="SpawnPoint" type="Node3D" parent="Spawns"]
 transform = Transform3D(1, 0, 0, 0, 0.996255, 0.0864602, 0, -0.0864602, 0.996255, 37.1305, -16.672, -27.8894)
 
-[node name="SceneMusicBox" parent="." instance=ExtResource("26_q4ayf")]
-transform = Transform3D(0.0219907, 0, 12, 0, 12, 0, -12, 0, 0.0219907, 31.6143, 6.57092, 24.9648)
-visible = false
-
 [node name="ScreenText" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
@@ -612,7 +681,7 @@ layout_mode = 0
 offset_right = 1929.0
 offset_bottom = 868.0
 theme_override_font_sizes/font_size = 45
-text = "Tür kann nicht geöffnet werden, du brauchst einen Schlüssel."
+text = "Door cannot be opened, you need a key."
 horizontal_alignment = 1
 vertical_alignment = 2
 
@@ -622,7 +691,7 @@ layout_mode = 0
 offset_right = 1929.0
 offset_bottom = 868.0
 theme_override_font_sizes/font_size = 45
-text = "Tür kann nicht geöffnet werden, du brauchst den Hausschlüssel."
+text = "Door cannot be opened, you need the house key."
 horizontal_alignment = 1
 vertical_alignment = 2
 
@@ -651,6 +720,9 @@ collision_mask = 134217728
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 shape = SubResource("BoxShape3D_8aif1")
+
+[node name="SceneMusicBox" parent="." instance=ExtResource("26_q4ayf")]
+transform = Transform3D(0.242096, 0, 11.9976, 0, 12, 0, -11.9976, 0, 0.242096, 31.7293, 6.53346, 24.9241)
 
 [connection signal="player_hit" from="Firstperson" to="." method="_on_firstperson_player_hit"]
 [connection signal="door_interacted" from="NavigationRegion3D/DoubleDoors/hinge2/StaticBody3D" to="." method="_on_static_body_3d_door_interacted"]

@@ -1,9 +1,10 @@
-[gd_scene load_steps=14 format=4 uid="uid://8ai42fc24mip"]
+[gd_scene load_steps=15 format=4 uid="uid://8ai42fc24mip"]
 
 [ext_resource type="Script" path="res://scripts/firstperson.gd" id="1_d1630"]
 [ext_resource type="Texture2D" uid="uid://tdct658fbhkp" path="res://models/House_0.png" id="2_e702h"]
 [ext_resource type="Script" path="res://scripts/raycast3d.gd" id="3_gtlgt"]
 [ext_resource type="Script" path="res://scripts/reticle.gd" id="4_6dw3u"]
+[ext_resource type="AudioStream" uid="uid://c63y1jajwqahd" path="res://audio/hit.mp3" id="5_iwcqg"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ajbgd"]
 height = 2.73106
@@ -221,3 +222,6 @@ points = PackedVector2Array(-5, 0, -15, 0)
 width = 2.0
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+
+[node name="sfx_hurt" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("5_iwcqg")
