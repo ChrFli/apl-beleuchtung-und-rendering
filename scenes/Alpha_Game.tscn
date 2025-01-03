@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=4 uid="uid://h4ojtfjohma2"]
+[gd_scene load_steps=54 format=4 uid="uid://h4ojtfjohma2"]
 
 [ext_resource type="Script" path="res://scenes/Alpha_Gamescript.gd" id="1_e3d0n"]
 [ext_resource type="PackedScene" uid="uid://8ai42fc24mip" path="res://models/firstperson.tscn" id="1_iyenx"]
@@ -27,6 +27,8 @@
 [ext_resource type="PackedScene" uid="uid://coqnppu3804v3" path="res://scenes/Shader_Flame.tscn" id="24_341fu"]
 [ext_resource type="Texture2D" uid="uid://ddmp1uuoswb8c" path="res://textures/bloodframe2.png" id="25_eknyc"]
 [ext_resource type="PackedScene" uid="uid://bd207v613km2h" path="res://ChristinsFolder/Scene_MusicBox.tscn" id="26_q4ayf"]
+[ext_resource type="Texture2D" uid="uid://ch4ogoyh71rfy" path="res://textures/paper3.png" id="27_rmx3n"]
+[ext_resource type="FontFile" uid="uid://cgmq25iexgtu2" path="res://textures/HelpMe.ttf" id="28_wlkh0"]
 
 [sub_resource type="Environment" id="Environment_2mk7l"]
 background_energy_multiplier = 0.0
@@ -224,6 +226,9 @@ shader = ExtResource("23_gbbip")
 albedo_color = Color(0.233925, 0.233925, 0.233925, 1)
 
 [sub_resource type="QuadMesh" id="QuadMesh_g248p"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7e6iu"]
+texture = ExtResource("27_rmx3n")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8aif1"]
 
@@ -696,22 +701,29 @@ horizontal_alignment = 1
 vertical_alignment = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScreenText"]
+visible = false
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1090.0
 mouse_filter = 2
 
 [node name="PopupPanel" type="PopupPanel" parent="ScreenText/VBoxContainer"]
+transparent_bg = true
 initial_position = 1
 size = Vector2i(850, 1100)
+theme_override_styles/panel = SubResource("StyleBoxTexture_7e6iu")
 
 [node name="Label" type="Label" parent="ScreenText/VBoxContainer/PopupPanel"]
-offset_left = 4.0
-offset_top = 4.0
-offset_right = 846.0
-offset_bottom = 1096.0
-theme_override_font_sizes/font_size = 100
-text = "I MISS ME WIFE"
+offset_right = 905.0
+offset_bottom = 1100.0
+theme_override_colors/font_color = Color(0.301105, 1.65449e-07, 7.21961e-08, 1)
+theme_override_fonts/font = ExtResource("28_wlkh0")
+theme_override_font_sizes/font_size = 80
+text = "
+
+
+
+  I MISS ME WIFE"
 
 [node name="Area3D" type="Area3D" parent="."]
 transform = Transform3D(8.59779, 0, 0, 0, 8.91348, 0, 0, 0, 14.277, -20.3116, 10.7668, 8.3226)
