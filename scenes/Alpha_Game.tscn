@@ -1,5 +1,6 @@
-[gd_scene load_steps=54 format=4 uid="uid://h4ojtfjohma2"]
+[gd_scene load_steps=57 format=4 uid="uid://h4ojtfjohma2"]
 
+[ext_resource type="Texture2D" uid="uid://d2qj20heq0tat" path="res://background/woods5.jpg" id="1_15ia8"]
 [ext_resource type="Script" path="res://scenes/Alpha_Gamescript.gd" id="1_e3d0n"]
 [ext_resource type="PackedScene" uid="uid://8ai42fc24mip" path="res://models/firstperson.tscn" id="1_iyenx"]
 [ext_resource type="Texture2D" uid="uid://cixp24n4yj3oy" path="res://models/House_6.png" id="2_hck46"]
@@ -30,9 +31,20 @@
 [ext_resource type="Texture2D" uid="uid://ch4ogoyh71rfy" path="res://textures/paper3.png" id="27_rmx3n"]
 [ext_resource type="FontFile" uid="uid://cgmq25iexgtu2" path="res://textures/HelpMe.ttf" id="28_wlkh0"]
 
-[sub_resource type="Environment" id="Environment_2mk7l"]
-background_energy_multiplier = 0.0
-ambient_light_energy = 0.29
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4gdpq"]
+sky_top_color = Color(1, 1, 1, 1)
+sky_horizon_color = Color(0.00485718, 0.08573, 0.108232, 1)
+sky_energy_multiplier = 0.2
+sky_cover = ExtResource("1_15ia8")
+ground_bottom_color = Color(0.105773, 0.186967, 0.201525, 1)
+ground_horizon_color = Color(0.00392157, 0.0862745, 0.109804, 1)
+
+[sub_resource type="Sky" id="Sky_lvwsa"]
+sky_material = SubResource("ProceduralSkyMaterial_4gdpq")
+
+[sub_resource type="Environment" id="Environment_gcqqw"]
+background_mode = 2
+sky = SubResource("Sky_lvwsa")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2lljj"]
 size = Vector3(500, 1, 500)
@@ -233,7 +245,7 @@ texture = ExtResource("27_rmx3n")
 [sub_resource type="BoxShape3D" id="BoxShape3D_8aif1"]
 
 [node name="AlphaGame" type="WorldEnvironment"]
-environment = SubResource("Environment_2mk7l")
+environment = SubResource("Environment_gcqqw")
 script = ExtResource("1_e3d0n")
 
 [node name="Firstperson" parent="." instance=ExtResource("1_iyenx")]
@@ -714,7 +726,7 @@ size = Vector2i(850, 1100)
 theme_override_styles/panel = SubResource("StyleBoxTexture_7e6iu")
 
 [node name="Label" type="Label" parent="ScreenText/VBoxContainer/PopupPanel"]
-offset_right = 905.0
+offset_right = 850.0
 offset_bottom = 1100.0
 theme_override_colors/font_color = Color(0.301105, 1.65449e-07, 7.21961e-08, 1)
 theme_override_fonts/font = ExtResource("28_wlkh0")
