@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=4 uid="uid://h4ojtfjohma2"]
+[gd_scene load_steps=60 format=4 uid="uid://h4ojtfjohma2"]
 
 [ext_resource type="Texture2D" uid="uid://d2qj20heq0tat" path="res://background/woods5.jpg" id="1_15ia8"]
 [ext_resource type="Script" path="res://scenes/Alpha_Gamescript.gd" id="1_e3d0n"]
@@ -28,6 +28,8 @@
 [ext_resource type="PackedScene" uid="uid://coqnppu3804v3" path="res://scenes/Shader_Flame.tscn" id="24_341fu"]
 [ext_resource type="Texture2D" uid="uid://ddmp1uuoswb8c" path="res://textures/bloodframe2.png" id="25_eknyc"]
 [ext_resource type="PackedScene" uid="uid://bd207v613km2h" path="res://ChristinsFolder/Scene_MusicBox.tscn" id="26_q4ayf"]
+[ext_resource type="AudioStream" uid="uid://ch02t5qias2l2" path="res://audio/screams.mp3" id="26_u7fdp"]
+[ext_resource type="Script" path="res://scenes/sound_stairs.gd" id="26_vnpqr"]
 [ext_resource type="Texture2D" uid="uid://ch4ogoyh71rfy" path="res://textures/paper3.png" id="27_rmx3n"]
 [ext_resource type="FontFile" uid="uid://cgmq25iexgtu2" path="res://textures/HelpMe.ttf" id="28_wlkh0"]
 
@@ -44,6 +46,7 @@ sky_material = SubResource("ProceduralSkyMaterial_4gdpq")
 
 [sub_resource type="Environment" id="Environment_gcqqw"]
 background_mode = 2
+background_energy_multiplier = 0.5
 sky = SubResource("Sky_lvwsa")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2lljj"]
@@ -270,7 +273,7 @@ skeleton = NodePath("")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.493153, 0.869943, 0, -0.869943, 0.493153, -1.05695, 334.944, 0)
 visible = false
-light_energy = 2.534
+light_energy = 0.0
 light_indirect_energy = 8.6
 light_volumetric_fog_energy = 1.2
 light_angular_distance = 8.25
@@ -352,7 +355,7 @@ skeleton = NodePath("")
 [node name="OmniLight3D" type="OmniLight3D" parent="NavigationRegion3D/Small_Lamp_Foyer"]
 transform = Transform3D(22.5297, 0, 0, 0, 21.6781, -2.38742e-12, 0, -3.41061e-13, 22.5297, 14.284, 13.3868, 23.482)
 light_color = Color(1, 0.75572, 0.634729, 1)
-light_energy = 2.0
+light_energy = 1.5
 light_volumetric_fog_energy = 8.756
 light_bake_mode = 1
 shadow_enabled = true
@@ -374,7 +377,7 @@ skeleton = NodePath("")
 [node name="OmniLight3D" type="OmniLight3D" parent="NavigationRegion3D/Small_Lamp_Foyer2"]
 transform = Transform3D(22.5297, 0, 0, 0, 21.6781, -2.38742e-12, 0, -3.41061e-13, 22.5297, 14.284, 13.3868, 23.482)
 light_color = Color(1, 0.75572, 0.634729, 1)
-light_energy = 2.0
+light_energy = 1.5
 light_volumetric_fog_energy = 8.756
 light_bake_mode = 1
 shadow_enabled = true
@@ -463,7 +466,6 @@ skeleton = NodePath("")
 [node name="OmniLight3D" type="OmniLight3D" parent="NavigationRegion3D/Object_6"]
 transform = Transform3D(22.5297, 0, 0, 0, 21.6781, -2.38742e-12, 0, -3.41061e-13, 22.5297, 14.284, 13.3868, 23.482)
 light_color = Color(0.965262, 0.63109, 1.15514e-05, 1)
-light_energy = 1.486
 light_volumetric_fog_energy = 8.756
 light_bake_mode = 1
 shadow_enabled = true
@@ -547,7 +549,7 @@ skeleton = NodePath("")
 [node name="OmniLight3D" type="OmniLight3D" parent="LAMPS/Lamp_Wall_Stairs"]
 transform = Transform3D(1.15261, 0, 0, 0, 1.15272, 0, 0, 0, 1.15272, 0.0318794, -0.740542, 0.0266876)
 light_color = Color(0.947742, 0.615761, 0.355892, 1)
-light_energy = 6.259
+light_energy = 3.0
 light_indirect_energy = 4.918
 light_volumetric_fog_energy = 5.049
 light_bake_mode = 1
@@ -617,6 +619,12 @@ transform = Transform3D(9.73164, 0, 0, 0, -8.03348e-07, -2.92371, 0, 18.3785, -1
 material_override = SubResource("ShaderMaterial_nngp0")
 mesh = SubResource("QuadMesh_wdh7q")
 skeleton = NodePath("")
+script = ExtResource("26_vnpqr")
+
+[node name="sfx_stairs" type="AudioStreamPlayer3D" parent="Shader_Stairs"]
+stream = ExtResource("26_u7fdp")
+autoplay = true
+max_distance = 22.0
 
 [node name="Dach" type="MeshInstance3D" parent="."]
 transform = Transform3D(101.266, 0, 0, 0, -2.82214e-06, -1.42874, 0, 64.5631, -6.24523e-08, 0, 16.8558, 0)
@@ -691,7 +699,7 @@ text = "
 
 
 
-  I MISS ME WIFE"
+  I MISS MY WIFE"
 
 [node name="Area3D" type="Area3D" parent="."]
 transform = Transform3D(8.59779, 0, 0, 0, 8.91348, 0, 0, 0, 14.277, -20.3116, 10.7668, 8.3226)

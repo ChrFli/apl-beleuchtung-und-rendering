@@ -87,3 +87,5 @@ func _on_timer_finished3():
 
 func _on_static_body_3d_pickedpaper() -> void:
 	StoryLabel.visible=true
+	await(get_tree().create_timer(2).timeout)
+	StoryLabel.visible=false

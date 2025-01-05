@@ -7,6 +7,10 @@ var interactable= true
 signal Frontdoor_interacted
 @export var playeranimation:AnimationPlayer
 
+
+
+
+
 func interact():
 	var player = get_tree().get_nodes_in_group("player")[0] 
 	if player and player._haskey() and player._hasmasterkey():  # Check if player has the key
