@@ -1,10 +1,11 @@
 extends StaticBody3D  # Das Hauptobjekt ist ein StaticBody3D
 
-@export var interact_key = "e"  # Die Taste, die der Spieler drücken muss
+@export var interact_key = "E"  # Die Taste, die der Spieler drücken muss
 @onready var audio_player = $AudioStreamPlayer3D  # Verweis auf die AudioStreamPlayer-Node
 @onready var detection_area = $Area3D  # Verweis auf die Area3D-Node
 
 var is_player_near: bool = false  # Flag, ob der Spieler in der Nähe ist
+
 
 func _ready():
 	# Signale der Area3D verbinden

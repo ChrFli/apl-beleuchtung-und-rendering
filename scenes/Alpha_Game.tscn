@@ -495,7 +495,7 @@ transform = Transform3D(0.00932176, 0.0165583, 7.23787e-10, 0, -8.30601e-10, 0.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 21.4119, 0)
 
 [node name="lamp_01" type="Node3D" parent="LAMPS"]
-transform = Transform3D(0.8676, 0, 0, 0, 0.867512, 0, 0, 0, 0.867512, 24.0382, -6.70654, 25.022)
+transform = Transform3D(0.8676, 0, 0, 0, 0.867512, 0, 0, 0, 0.867512, 24.0382, -6.08962, 25.022)
 
 [node name="defaultMaterial" type="MeshInstance3D" parent="LAMPS/lamp_01"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.24591, 0)
@@ -513,6 +513,7 @@ omni_range = 12.7777
 transform = Transform3D(0.752729, 0, 0, 0, 0.752576, 0, 0, 0, 0.752576, -34.3713, -7.87874, 18.5445)
 
 [node name="defaultMaterial" type="MeshInstance3D" parent="LAMPS/lamp_02"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.808, 0)
 mesh = SubResource("ArrayMesh_3bk4h")
 skeleton = NodePath("")
 
@@ -525,6 +526,7 @@ omni_range = 16.1618
 
 [node name="lamp_03" type="Node3D" parent="LAMPS"]
 transform = Transform3D(0.8676, 0, 0, 0, 0.867512, 0, 0, 0, 0.867512, 41.9116, -5.90442, -10.6)
+visible = false
 
 [node name="defaultMaterial" type="MeshInstance3D" parent="LAMPS/lamp_03"]
 mesh = SubResource("ArrayMesh_3bk4h")
@@ -560,7 +562,7 @@ distance_fade_enabled = true
 omni_range = 11.4427
 
 [node name="Lamp_Diningroom" type="Node3D" parent="LAMPS"]
-transform = Transform3D(-0.8676, 0, -7.58403e-08, 0, 0.867512, 0, 7.5848e-08, 0, -0.867512, 26.3859, -4.55342, -13.0731)
+transform = Transform3D(-0.8676, 0, -7.58403e-08, 0, 0.867512, 0, 7.5848e-08, 0, -0.867512, 26.3859, -5.09703, -13.0731)
 
 [node name="defaultMaterial" type="MeshInstance3D" parent="LAMPS/Lamp_Diningroom"]
 mesh = SubResource("ArrayMesh_3bk4h")
@@ -580,9 +582,10 @@ shadow_blur = 6.224
 omni_range = 11.4427
 
 [node name="Lamp_Diningroom2" type="Node3D" parent="LAMPS"]
-transform = Transform3D(-0.8676, 0, -7.58403e-08, 0, 0.867512, 0, 7.5848e-08, 0, -0.867512, 40.0082, -4.55342, -27.7586)
+transform = Transform3D(-0.8676, 0, -7.58403e-08, 0, 0.867512, 0, 7.5848e-08, 0, -0.867512, 40.0082, -4.97441, -27.7586)
 
 [node name="defaultMaterial" type="MeshInstance3D" parent="LAMPS/Lamp_Diningroom2"]
+transform = Transform3D(1, -6.39246e-10, 2.33769e-12, 6.39246e-10, 0.999973, -0.00731286, 2.34479e-12, 0.00731286, 0.999973, 0, 0, 0)
 mesh = SubResource("ArrayMesh_3bk4h")
 skeleton = NodePath("")
 
@@ -600,7 +603,7 @@ shadow_blur = 6.224
 omni_range = 11.4427
 
 [node name="FrontDoor" parent="." instance=ExtResource("19_6uvgk")]
-transform = Transform3D(3.88193, 0, 0, 0, 4.2867, 0, 0, 0, 3.88193, 1.04422, 8.14802, 30.456)
+transform = Transform3D(3.88193, 0, 0, 0, 4.35978, 0, 0, 0, 3.88193, 1.04422, 8.19666, 30.456)
 
 [node name="TVShader" parent="." instance=ExtResource("20_jxiiu")]
 transform = Transform3D(1.68068, 0, 0, 0, -4.34958e-08, -1.28004, 0, 0.995068, -5.59525e-08, 1.13551, 7.17782, -29.2687)
@@ -615,7 +618,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 21.4119, 0)
 visible = false
 
 [node name="Shader_Stairs" type="MeshInstance3D" parent="."]
-transform = Transform3D(9.73164, 0, 0, 0, -8.03348e-07, -2.92371, 0, 18.3785, -1.278e-07, -20.29, 16.614, 8.66)
+transform = Transform3D(9.73164, 0, 0, 0, -8.03348e-07, -2.92371, 0, 18.3785, -1.278e-07, -20.29, 16.4488, 8.66)
 material_override = SubResource("ShaderMaterial_nngp0")
 mesh = SubResource("QuadMesh_wdh7q")
 skeleton = NodePath("")
@@ -627,8 +630,7 @@ autoplay = true
 max_distance = 22.0
 
 [node name="Dach" type="MeshInstance3D" parent="."]
-transform = Transform3D(101.266, 0, 0, 0, -2.82214e-06, -1.42874, 0, 64.5631, -6.24523e-08, 0, 16.8558, 0)
-visible = false
+transform = Transform3D(101.266, 0, 0, 0, -2.82214e-06, -1.42874, 0, 64.5631, -6.24523e-08, 0, 16.4575, 0)
 material_override = SubResource("StandardMaterial3D_vr7hk")
 mesh = SubResource("QuadMesh_g248p")
 

@@ -183,46 +183,55 @@ skeleton = NodePath("")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.721581, 0, 0, 0, 0.721581, 0, 0, 0, 0.721581, 0, 0, 0)
+visible = false
 material_override = SubResource("ShaderMaterial_c6xe3")
 mesh = SubResource("PlaneMesh_vqowd")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.28414, 0, 0)
+visible = false
 material_override = SubResource("ShaderMaterial_icx3e")
 mesh = SubResource("SphereMesh_2oeea")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.41132, 0, 0)
+visible = false
 material_override = SubResource("ShaderMaterial_s4nib")
 mesh = SubResource("BoxMesh_vp1uk")
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
 transform = Transform3D(3.07197, 0, 0, 0, 2.00892, 0, 0, 0, 0.25233, 7.44533, 0, 0)
+visible = false
 material_override = SubResource("ShaderMaterial_ikhem")
 mesh = SubResource("BoxMesh_stde2")
 
 [node name="BathroomWall05" type="MeshInstance3D" parent="."]
 transform = Transform3D(-9.05142, -7.63474e-07, -3.33725e-14, 0, -3.81737e-07, 8.73312, -7.91301e-07, 8.73312, 3.81737e-07, 8.9603, -0.575438, 0.0218468)
+visible = false
 material_override = SubResource("ShaderMaterial_kvvt4")
 mesh = SubResource("ArrayMesh_14nge")
 skeleton = NodePath("")
 
 [node name="BathroomWall06" type="MeshInstance3D" parent="."]
 transform = Transform3D(-9.05142, 0, -7.63474e-07, 0, 8.73312, 0, 7.913e-07, 0, -8.73312, 12.4154, -0.314559, -0.0410137)
+visible = false
 material_override = SubResource("ShaderMaterial_absfd")
 mesh = SubResource("ArrayMesh_14nge")
 skeleton = NodePath("")
 
 [node name="MeshInstance3D5" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.46421, 0, 0, 0, 2.46421, 0, 0, 0, 2.46421, 39.1473, 0, 0)
+visible = false
 material_override = SubResource("ShaderMaterial_prt5t")
 mesh = SubResource("QuadMesh_68k1o")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.05927, 3.17306)
+visible = false
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Camera3D"]
 transform = Transform3D(2.09236, 0, 0, 0, 0.00157901, -1.16253, 0, 1.64493, 0.00111594, -0.142517, -0.0937371, -1.25802)
+visible = false
 transparency = 0.14
 mesh = SubResource("PlaneMesh_v1cr4")
 surface_material_override/0 = SubResource("ShaderMaterial_drqyw")
