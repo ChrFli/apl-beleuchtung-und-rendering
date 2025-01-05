@@ -11,6 +11,8 @@ var mynode= preload("res://LongsFolder/zombie.tscn")
 @onready  var DoorLabel = $ScreenText/CantOpenDoor
 @onready  var FrontDoorLabel = $ScreenText/CantOpenFrontDoor
 @onready  var StoryLabel = $ScreenText/VBoxContainer/PopupPanel
+@onready var sfx_fail: AudioStreamPlayer3D = $sfx_fail
+
 
 
 func _ready():
@@ -69,6 +71,7 @@ func _on_static_body_3d_door_opened() -> void:
 
 func _on_static_body_3d_door_interacted() -> void:
 	DoorLabel.visible = true
+	sfx_fail.play()
 	get_tree().create_timer(1.2).connect("timeout", Callable(self, "_on_timer_finished2"))
 	
 func _on_timer_finished2():
@@ -78,6 +81,7 @@ func _on_timer_finished2():
 
 func _on_static_body_3d_frontdoor_interacted() -> void:
 	FrontDoorLabel.visible = true
+	sfx_fail.play()
 	get_tree().create_timer(1.2).connect("timeout", Callable(self, "_on_timer_finished3"))
 
 func _on_timer_finished3():

@@ -1,7 +1,9 @@
-[gd_scene load_steps=14 format=4 uid="uid://syxlhnv3s8vq"]
+[gd_scene load_steps=16 format=4 uid="uid://syxlhnv3s8vq"]
 
 [ext_resource type="Script" path="res://LongsFolder/FrontDoorscript.gd" id="1_yy6s1"]
 [ext_resource type="Texture2D" uid="uid://d3kfpn2fqs5ob" path="res://models/House_12.png" id="2_6anol"]
+[ext_resource type="AudioStream" uid="uid://d2oryrcjxbxeh" path="res://audio/door.mp3" id="3_eljgi"]
+[ext_resource type="AudioStream" uid="uid://2co42gnhjrre" path="res://audio/closedoor.mp3" id="4_1vila"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fyjnp"]
 resource_name = "門"
@@ -207,3 +209,9 @@ shape = SubResource("BoxShape3D_w2ets")
 libraries = {
 "": SubResource("AnimationLibrary_7ae4j")
 }
+
+[node name="sfx_door" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_eljgi")
+
+[node name="sfx_closedoor" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4_1vila")
