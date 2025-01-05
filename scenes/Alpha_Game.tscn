@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=4 uid="uid://h4ojtfjohma2"]
+[gd_scene load_steps=58 format=4 uid="uid://h4ojtfjohma2"]
 
 [ext_resource type="Texture2D" uid="uid://d2qj20heq0tat" path="res://background/woods5.jpg" id="1_15ia8"]
 [ext_resource type="Script" path="res://scenes/Alpha_Gamescript.gd" id="1_e3d0n"]
@@ -30,6 +30,7 @@
 [ext_resource type="PackedScene" uid="uid://bd207v613km2h" path="res://ChristinsFolder/Scene_MusicBox.tscn" id="26_q4ayf"]
 [ext_resource type="Texture2D" uid="uid://ch4ogoyh71rfy" path="res://textures/paper3.png" id="27_rmx3n"]
 [ext_resource type="FontFile" uid="uid://cgmq25iexgtu2" path="res://textures/HelpMe.ttf" id="28_wlkh0"]
+[ext_resource type="PackedScene" uid="uid://bw7u6r21d6ikb" path="res://ChristinsFolder/win.tscn" id="31_3fa0p"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4gdpq"]
 sky_top_color = Color(1, 1, 1, 1)
@@ -254,7 +255,7 @@ collision_layer = 134217729
 collision_mask = 134217729
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.53648, 0)
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, -0.53648, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.99978, 0)
@@ -616,52 +617,6 @@ material_override = SubResource("ShaderMaterial_nngp0")
 mesh = SubResource("QuadMesh_wdh7q")
 skeleton = NodePath("")
 
-[node name="Außen_Light1" type="SpotLight3D" parent="."]
-transform = Transform3D(0.998788, -0.0476251, 0.0124015, 0.0422078, 0.958552, 0.281776, -0.0253071, -0.280911, 0.9594, 1.36399, 10.3888, 41.8895)
-visible = false
-light_color = Color(0.929412, 0.67451, 0.376471, 1)
-light_energy = 16.0
-light_indirect_energy = 4.954
-light_volumetric_fog_energy = 11.71
-light_size = 0.463
-light_specular = 2.786
-shadow_enabled = true
-spot_range = 16.973
-
-[node name="Außen_Light2" type="SpotLight3D" parent="."]
-transform = Transform3D(0.998788, -0.0476251, 0.0124015, 0.0422078, 0.958552, 0.281776, -0.0253071, -0.280911, 0.9594, 1.36399, 6.78872, 35.4101)
-visible = false
-light_color = Color(0.995988, 0.897785, 0.690508, 1)
-light_energy = 16.0
-light_indirect_energy = 4.954
-light_volumetric_fog_energy = 11.71
-light_size = 0.463
-light_specular = 2.786
-shadow_enabled = true
-spot_range = 16.973
-
-[node name="Außen_Light3" type="SpotLight3D" parent="."]
-transform = Transform3D(0.60854, -0.5646, -0.557589, 0.518908, -0.248473, 0.817921, -0.600344, -0.787076, 0.14177, -9.17428, 14.9899, 34.5436)
-visible = false
-light_color = Color(0.526309, 0.701247, 0.460887, 1)
-light_energy = 16.0
-light_indirect_energy = 2.93
-light_size = 0.72
-light_specular = 3.765
-shadow_enabled = true
-spot_range = 16.973
-
-[node name="Außen_Light4" type="SpotLight3D" parent="."]
-transform = Transform3D(-0.64327, -0.732643, 0.222347, 0.670199, -0.398406, 0.626183, -0.370184, 0.551822, 0.747299, 4.51645, 10.4882, 40.1208)
-visible = false
-light_color = Color(0.928645, 0.871247, 0.959899, 1)
-light_energy = 16.0
-light_indirect_energy = 2.93
-light_size = 0.72
-light_specular = 1.545
-shadow_enabled = true
-spot_range = 16.973
-
 [node name="Dach" type="MeshInstance3D" parent="."]
 transform = Transform3D(101.266, 0, 0, 0, -2.82214e-06, -1.42874, 0, 64.5631, -6.24523e-08, 0, 16.8558, 0)
 visible = false
@@ -747,6 +702,9 @@ shape = SubResource("BoxShape3D_8aif1")
 
 [node name="SceneMusicBox" parent="." instance=ExtResource("26_q4ayf")]
 transform = Transform3D(0.242096, 0, 11.9976, 0, 12, 0, -11.9976, 0, 0.242096, 31.7293, 6.53346, 24.9241)
+
+[node name="WinGame" parent="." instance=ExtResource("31_3fa0p")]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, -9, 0, 44)
 
 [connection signal="player_hit" from="Firstperson" to="." method="_on_firstperson_player_hit"]
 [connection signal="door_interacted" from="NavigationRegion3D/DoubleDoors/hinge2/StaticBody3D" to="." method="_on_static_body_3d_door_interacted"]

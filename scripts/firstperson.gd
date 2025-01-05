@@ -131,7 +131,6 @@ func die() -> void:
 	print("Tree Type:", get_tree())  # Gibt die Art des Objekts aus
 	get_tree().change_scene_to_file("res://ChristinsFolder/GameOver.tscn")
 
-
 #####################################
 #Für Interaktion mit der Spieluhr
 
