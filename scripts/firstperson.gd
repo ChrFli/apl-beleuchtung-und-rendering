@@ -130,6 +130,7 @@ func die() -> void:
    # Optional: Hier kannst du ein Game-Over-Event triggern oder den Spieler respawnen lassen.
 	print("Tree Type:", get_tree())  # Gibt die Art des Objekts aus
 	get_tree().change_scene_to_file("res://ChristinsFolder/GameOver.tscn")
+	
 
 #####################################
 #Für Interaktion mit der Spieluhr
@@ -148,3 +149,8 @@ func _on_body_exited(body):
 func _on_area_3d_body_entered(body: Node3D) -> void:
 	print("HELLODAUDWHUADUHWA")
 	die()
+
+
+func _on_win_area_body_entered(body: Node3D) -> void:
+	if body is CharacterBody3D and body.is_in_group("player"):
+		get_tree().change_scene_to_file("res://ChristinsFolder/GameWin.tscn")

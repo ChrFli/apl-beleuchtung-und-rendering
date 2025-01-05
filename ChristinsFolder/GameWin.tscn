@@ -1,17 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://cgdpmi4orgwtm"]
+[gd_scene load_steps=8 format=3 uid="uid://cgdpmi4orgwtm"]
 
 [ext_resource type="Script" path="res://ChristinsFolder/game_win.gd" id="1_mj2q5"]
 [ext_resource type="Texture2D" uid="uid://dhw22wqopsmo7" path="res://textures/start.jpg" id="2_wlajp"]
-[ext_resource type="Texture2D" uid="uid://ddmp1uuoswb8c" path="res://textures/bloodframe2.png" id="3_ylfrg"]
 [ext_resource type="FontFile" uid="uid://cgmq25iexgtu2" path="res://textures/HelpMe.ttf" id="4_1orkj"]
 [ext_resource type="AudioStream" uid="uid://dq7iylcxu8f74" path="res://audio/sound_win.mp3" id="5_ca056"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q2pi1"]
 texture = ExtResource("2_wlajp")
-modulate_color = Color(0.28485, 0.28485, 0.28485, 1)
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_k8nud"]
-texture = ExtResource("3_ylfrg")
 modulate_color = Color(0.28485, 0.28485, 0.28485, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5tivo"]
@@ -45,15 +40,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_q2pi1")
-
-[node name="Panel2" type="Panel" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxTexture_k8nud")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
