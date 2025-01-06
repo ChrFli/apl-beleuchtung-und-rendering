@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bc5w5r53vxrbw"]
+
+[ext_resource type="PackedScene" uid="uid://h4ojtfjohma2" path="res://scenes/Alpha_Game.tscn" id="1_rhw5w"]
+
+[node name="StartNode" type="Node3D"]
+
+[node name="AlphaGame" parent="." instance=ExtResource("1_rhw5w")]
