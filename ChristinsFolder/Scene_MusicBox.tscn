@@ -111,7 +111,7 @@ shape = SubResource("ConcavePolygonShape3D_h5rch")
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -0.00106276, -0.000311077, 0)
 shape = SubResource("BoxShape3D_hu6qk")
 
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Static_MusicBox"]
+[node name="sfx_musicbox" type="AudioStreamPlayer3D" parent="Static_MusicBox"]
 stream = ExtResource("15_wghc5")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]

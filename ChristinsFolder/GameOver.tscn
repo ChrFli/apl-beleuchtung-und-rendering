@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://2moh32pirf"]
+[gd_scene load_steps=12 format=3 uid="uid://2moh32pirf"]
 
 [ext_resource type="Script" path="res://ChristinsFolder/game_over.gd" id="1_3la1l"]
 [ext_resource type="Texture2D" uid="uid://ddmp1uuoswb8c" path="res://textures/bloodframe2.png" id="1_bcgxe"]
@@ -14,6 +14,8 @@ modulate_color = Color(0.28485, 0.28485, 0.28485, 1)
 texture = ExtResource("1_bcgxe")
 modulate_color = Color(0.28485, 0.28485, 0.28485, 1)
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3v20q"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5tivo"]
 bg_color = Color(0.239216, 0, 0, 0.286275)
 corner_radius_top_left = 16
@@ -27,6 +29,8 @@ corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1gf8b"]
 
 [node name="GameOver" type="Control"]
 layout_mode = 3
@@ -95,6 +99,7 @@ theme_override_constants/separation = 10
 custom_minimum_size = Vector2(200, 60)
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3v20q")
 theme_override_styles/hover = SubResource("StyleBoxFlat_5tivo")
 theme_override_styles/normal = SubResource("StyleBoxFlat_q8l44")
 text = "Back to menu"
@@ -103,6 +108,7 @@ text = "Back to menu"
 custom_minimum_size = Vector2(200, 60)
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1gf8b")
 theme_override_styles/hover = SubResource("StyleBoxFlat_5tivo")
 theme_override_styles/normal = SubResource("StyleBoxFlat_q8l44")
 text = "Quit"

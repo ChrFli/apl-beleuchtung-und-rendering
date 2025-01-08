@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cgdpmi4orgwtm"]
+[gd_scene load_steps=10 format=3 uid="uid://cgdpmi4orgwtm"]
 
 [ext_resource type="Script" path="res://ChristinsFolder/game_win.gd" id="1_mj2q5"]
 [ext_resource type="Texture2D" uid="uid://dhw22wqopsmo7" path="res://textures/start.jpg" id="2_wlajp"]
@@ -8,6 +8,8 @@
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q2pi1"]
 texture = ExtResource("2_wlajp")
 modulate_color = Color(0.28485, 0.28485, 0.28485, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pls5p"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5tivo"]
 bg_color = Color(0.239216, 0, 0, 0.286275)
@@ -22,6 +24,8 @@ corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ny6b5"]
 
 [node name="GameWin" type="Control"]
 layout_mode = 3
@@ -81,6 +85,7 @@ theme_override_constants/separation = 10
 custom_minimum_size = Vector2(200, 60)
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pls5p")
 theme_override_styles/hover = SubResource("StyleBoxFlat_5tivo")
 theme_override_styles/normal = SubResource("StyleBoxFlat_q8l44")
 text = "Back to menu"
@@ -89,6 +94,7 @@ text = "Back to menu"
 custom_minimum_size = Vector2(200, 60)
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ny6b5")
 theme_override_styles/hover = SubResource("StyleBoxFlat_5tivo")
 theme_override_styles/normal = SubResource("StyleBoxFlat_q8l44")
 text = "Quit"

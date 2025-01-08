@@ -1,34 +1,21 @@
-extends StaticBody3D  # Das Hauptobjekt ist ein StaticBody3D
+extends StaticBody3D
 
-@export var interact_key = "E"  # Die Taste, die der Spieler drücken muss
-@onready var audio_player = $AudioStreamPlayer3D  # Verweis auf die AudioStreamPlayer-Node
-@onready var detection_area = $Area3D  # Verweis auf die Area3D-Node
+@onready var sfx_musicbox: AudioStreamPlayer3D = $sfx_musicbox
 
-var is_player_near: bool = false  # Flag, ob der Spieler in der Nähe ist
-
-
-func _ready():
-	# Signale der Area3D verbinden
-	detection_area.connect("body_entered", Callable(self, "_on_body_entered"))
-	detection_area.connect("body_exited", Callable(self, "_on_body_exited"))
-
-func _process(delta):
-	# Prüfen, ob der Spieler in der Nähe ist und die Interaktionstaste drückt
-	if is_player_near and Input.is_action_just_pressed(interact_key):
-		interact()
+var toggle = false
+var interactable = true
 
 func interact():
-	# Musik abspielen oder neu starten
-	if audio_player.is_playing():
-		audio_player.stop()  # Stoppe die Wiedergabe, falls sie läuft
-	audio_player.play()  # Starte die Wiedergabe neu
+	if interactable:
+		interactable = false
+		toggle = !toggle
 
-func _on_body_entered(body):
-	# Überprüfen, ob das eintretende Objekt zur Gruppe "player" gehört
-	if body.is_in_group("player"):
-		is_player_near = true
+		# Find the player node in the "player" group
+		var player = get_tree().get_nodes_in_group("player")[0]  # Assuming there's only one player
 
-func _on_body_exited(body):
-	# Überprüfen, ob das verlassende Objekt zur Gruppe "player" gehört
-	if body.is_in_group("player"):
-		is_player_near = false
+		if player:
+			sfx_musicbox.play()  # Play the interaction sound
+
+		# Optional: Add a delay before re-enabling interaction
+		await get_tree().create_timer(1.0, false).timeout
+		interactable = true
