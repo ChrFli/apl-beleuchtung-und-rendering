@@ -174,6 +174,7 @@ shader_parameter/speed = 0.1
 
 [node name="BathroomWall07" type="MeshInstance3D" parent="."]
 transform = Transform3D(21.8939, 1.84671e-06, -1.78177e-06, -1.84672e-06, 20.3811, 0, 1.91402e-06, 1.82285e-13, 20.3811, 25.6411, -0.384647, -5.00353)
+visible = false
 material_override = SubResource("StandardMaterial3D_o7rdd")
 material_overlay = SubResource("ShaderMaterial_aetli")
 transparency = 0.06
@@ -183,7 +184,6 @@ skeleton = NodePath("")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.721581, 0, 0, 0, 0.721581, 0, 0, 0, 0.721581, 0, 0, 0)
-visible = false
 material_override = SubResource("ShaderMaterial_c6xe3")
 mesh = SubResource("PlaneMesh_vqowd")
 
